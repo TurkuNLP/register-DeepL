@@ -11,6 +11,8 @@ import re
 import json
 
 label_names=[] # how do I get a list of all the label names?
+# do I need to go through them all and make a list of unique labels?
+
 data=[]
 with gzip.open(file_name, 'rb') as f:
     for line in f:
@@ -39,7 +41,7 @@ with open("translated-register-data.jsonl", "wt") as f:
 file = "translated-register-data.jsonl"
 dataset = datasets.load_dataset(
     'json',                             
-    data_files={"everything":file, "test":file},    # I need the test set from Veronika?
+    data_files={"everything":file, "test":file},    # I need the test set from Veronika? ask Filip and Veronika
     split={
         "train":"everything[:80%]",  
         "validation":"everything[80%:90%]",   
