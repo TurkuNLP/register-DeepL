@@ -1,5 +1,14 @@
 #!/bin/bash
 
+
+# if more data is wanted then in the downsample.py we just have to take more eng and fi by 
+# changing it to [:percent:] ? so it takes from the middle?
+# or I guess I could make a new list that only has the leftovers like [percent:percent+percent]
+# => look at slicing :
+# check whether it is inclusive to decide the exact nummbers ^
+
+
+
 # right now nothing is really done to the swe and fre, just faulty lines are taken out
 # swe is downsampled to fit four files
 
