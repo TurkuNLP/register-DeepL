@@ -15,7 +15,11 @@ label_names=[] # how do I get a list of all the label names?
 # do I need to go through them all and make a list of unique labels? or separate them somehow? 
 # I hope there is a ready made list somewhere...
 
-# and for the data do I make the labels into a list as well???
+
+# Each sample has a binary value for each label. 
+# THIS IS THE CASE FOR MANY EXAMPLES (the data) BUT IT IS PROBABLY NOT VIABLE HERE SINCE THERE ARE SO MANY OPTIONS
+
+# and for the data do I make the labels into a list as well??? => probably
 
 
 file_name = "es_FINAL.tsv.gz" # or whatever the script gives as a parameter
@@ -84,10 +88,18 @@ dataset = dataset.map(tokenize)
 
 num_labels = len(label_names)
 model = transformers.XLMRobertaForSequenceClassification(model_name, num_labels=num_labels, problem_type="multi_label_classification")
+# a couple examples mentioned that I should have these dictionaries that map labels to integers and back
+# but this once again requires me to have a list of all the possible labels
+# id2label=id2label,
+# label2id=label2id
+
 
 
 
 # then I configure the model
+
+# I probably need to make my own compute_accuracy method based on the sentiment notebook and
+# an example notebook for multilabel classification I found online
 
 
 
