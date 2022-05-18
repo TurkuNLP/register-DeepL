@@ -14,12 +14,14 @@ import json
 label_names=[] # how do I get a list of all the label names?
 # do I need to go through them all and make a list of unique labels? or separate them somehow? 
 # I hope there is a ready made list somewhere...
+# => next thing is to make a list of the labels included in the picture?
 
 
 # Each sample has a binary value for each label. 
-# THIS IS THE CASE FOR MANY EXAMPLES (the data) BUT IT IS PROBABLY NOT VIABLE HERE SINCE THERE ARE SO MANY OPTIONS
+# THIS IS THE CASE FOR MANY EXAMPLES (the data) BUT IT IS PROBABLY NOT VIABLE HERE SINCE THERE ARE SO MANY OPTIONS?
+# apparently one-hot encoding is a thing and it seems to be necessary
 
-# and for the data do I make the labels into a list as well??? => probably
+# and for the data do I make the labels into a list as well??? => probably yes because of the one-hot encoding lol
 
 
 file_name = "es_FINAL.tsv.gz" # or whatever the script gives as a parameter
@@ -37,17 +39,20 @@ with gzip.open(file_name, 'rb') as f:
 
 
 
-random.seed(1234) # is this necessary since the data is already shuffled before doing the downsampling?
+random.seed(1234) # remember to shuffle since the data is now in en,fi,swe,fre order !!!!
 random.shuffle(data) 
 
 with open("translated-register-data.jsonl", "wt") as f:
     for cols in data:
         item = {
             "text": cols[1],
-            "label": label_names.index(cols[2]),    # this I have to change to include many labels (list of them?)
+            "label": label_names.index(cols[0]),    # this I have to change to include many labels (list of them?)
         }
         print(json.dumps(item,ensure_ascii=False,sort_keys=True),file=f)
 
+
+# unfortunately multilabel examples only show how to do from a ready test and they do not do this at all
+# so I probably need some help setting the labels?
 
 file = "translated-register-data.jsonl"
 dataset = datasets.load_dataset(
@@ -74,7 +79,7 @@ def tokenize(example):
     return tokenizer(
         example["text"],
         max_length=512,
-        truncation=True,
+        truncation=True # use some other method for this?
     )
 
 dataset = dataset.map(tokenize)
@@ -87,7 +92,7 @@ dataset = dataset.map(tokenize)
 
 
 num_labels = len(label_names)
-model = transformers.XLMRobertaForSequenceClassification(model_name, num_labels=num_labels, problem_type="multi_label_classification")
+model = transformers.XLMRobertaForSequenceClassification.from_pretrained(model_name, num_labels=num_labels, problem_type="multi_label_classification")
 # a couple examples mentioned that I should have these dictionaries that map labels to integers and back
 # but this once again requires me to have a list of all the possible labels
 # id2label=id2label,
@@ -106,7 +111,7 @@ model = transformers.XLMRobertaForSequenceClassification(model_name, num_labels=
 
 # and finally train the model
 
-
+#trainer.train()
 
 
 
