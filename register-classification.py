@@ -46,7 +46,7 @@ with open("translated-register-data.jsonl", "wt") as f:
     for cols in data:
         item = {
             "text": cols[1],
-            "label": label_names.index(cols[0]),    # this I have to change to include many labels (list of them?)
+            "label": label_names.index(cols[0]),    # this I have to change to include many labels (list of them?), one-hot encoding?
         }
         print(json.dumps(item,ensure_ascii=False,sort_keys=True),file=f)
 
