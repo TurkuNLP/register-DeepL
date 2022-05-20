@@ -130,3 +130,7 @@ model = transformers.XLMRobertaForSequenceClassification.from_pretrained(model_n
 # there seem to be some typos for some labels, and for one atleast NA was mentioned twice
 # IP was IG instead in a few places
 # could look at that more and mark the line numbers
+
+# I could probably change the swe and fre to have base+sub, base+sub like the finnish?
+# because if the sublabels are separated from the base labels it might just use the sublabel?
+# => (unlikely though)
