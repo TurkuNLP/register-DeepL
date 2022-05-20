@@ -5,12 +5,15 @@ import random
 import re
 import json
 
+#sinteractive --account project_2005092 --cores 2 --time 05:00:00 --mem 76000 --tmp 100
+
+
 from pprint import PrettyPrinter
 import logging
 pprint = PrettyPrinter(compact=True).pprint
 logging.disable(logging.INFO)
 
-file_name = "./AfterDeepL/es_FINAL.tsv.gz"
+file_name = "./AfterDeepL/ja_FINAL.tsv.gz"
 data=[]
 with gzip.open(file_name, 'rb') as f:
     for line in f:
