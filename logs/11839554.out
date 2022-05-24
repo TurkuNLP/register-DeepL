@@ -1,0 +1,48 @@
+Downloading and preparing dataset json/default to /users/annieske/.cache/huggingface/datasets/json/default-507ed9bf69921fe9/0.0.0/ac0ca5f5289a6cf108e706efcf040422dbbfa8e658dee6a819f20d76bb84d26b...
+Dataset json downloaded and prepared to /users/annieske/.cache/huggingface/datasets/json/default-507ed9bf69921fe9/0.0.0/ac0ca5f5289a6cf108e706efcf040422dbbfa8e658dee6a819f20d76bb84d26b. Subsequent calls will reuse this data.
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+{'loss': 2.9099, 'learning_rate': 9.333333333333334e-06, 'epoch': 0.11}
+{'eval_loss': 2.5886783599853516, 'eval_f1': 0.21166306695464362, 'eval_precision': 0.21166306695464362, 'eval_recall': 0.21166306695464362, 'eval_runtime': 28.4217, 'eval_samples_per_second': 32.581, 'eval_steps_per_second': 1.02, 'epoch': 0.11}
+{'loss': 2.4347, 'learning_rate': 8.666666666666668e-06, 'epoch': 0.22}
+{'eval_loss': 2.0883798599243164, 'eval_f1': 0.4481641468682505, 'eval_precision': 0.4481641468682505, 'eval_recall': 0.4481641468682505, 'eval_runtime': 28.61, 'eval_samples_per_second': 32.366, 'eval_steps_per_second': 1.014, 'epoch': 0.22}
+{'loss': 1.9753, 'learning_rate': 8.000000000000001e-06, 'epoch': 0.32}
+{'eval_loss': 1.8137189149856567, 'eval_f1': 0.5280777537796977, 'eval_precision': 0.5280777537796977, 'eval_recall': 0.5280777537796977, 'eval_runtime': 28.7283, 'eval_samples_per_second': 32.233, 'eval_steps_per_second': 1.009, 'epoch': 0.32}
+{'loss': 1.9096, 'learning_rate': 7.333333333333333e-06, 'epoch': 0.43}
+{'eval_loss': 1.7372138500213623, 'eval_f1': 0.5431965442764579, 'eval_precision': 0.5431965442764579, 'eval_recall': 0.5431965442764579, 'eval_runtime': 28.8209, 'eval_samples_per_second': 32.13, 'eval_steps_per_second': 1.006, 'epoch': 0.43}
+{'loss': 1.681, 'learning_rate': 6.666666666666667e-06, 'epoch': 0.54}
+{'eval_loss': 1.6278154850006104, 'eval_f1': 0.5809935205183585, 'eval_precision': 0.5809935205183585, 'eval_recall': 0.5809935205183585, 'eval_runtime': 28.8413, 'eval_samples_per_second': 32.107, 'eval_steps_per_second': 1.006, 'epoch': 0.54}
+{'loss': 1.6553, 'learning_rate': 6e-06, 'epoch': 0.65}
+{'eval_loss': 1.5192961692810059, 'eval_f1': 0.6058315334773218, 'eval_precision': 0.6058315334773218, 'eval_recall': 0.6058315334773218, 'eval_runtime': 28.7707, 'eval_samples_per_second': 32.185, 'eval_steps_per_second': 1.008, 'epoch': 0.65}
+{'loss': 1.5865, 'learning_rate': 5.333333333333334e-06, 'epoch': 0.76}
+{'eval_loss': 1.4809767007827759, 'eval_f1': 0.6166306695464363, 'eval_precision': 0.6166306695464363, 'eval_recall': 0.6166306695464363, 'eval_runtime': 28.8343, 'eval_samples_per_second': 32.115, 'eval_steps_per_second': 1.006, 'epoch': 0.76}
+{'loss': 1.5574, 'learning_rate': 4.666666666666667e-06, 'epoch': 0.86}
+{'eval_loss': 1.375784993171692, 'eval_f1': 0.6436285097192225, 'eval_precision': 0.6436285097192225, 'eval_recall': 0.6436285097192225, 'eval_runtime': 28.8305, 'eval_samples_per_second': 32.119, 'eval_steps_per_second': 1.006, 'epoch': 0.86}
+{'loss': 1.4269, 'learning_rate': 4.000000000000001e-06, 'epoch': 0.97}
+{'eval_loss': 1.384627342224121, 'eval_f1': 0.6436285097192225, 'eval_precision': 0.6436285097192225, 'eval_recall': 0.6436285097192225, 'eval_runtime': 28.8145, 'eval_samples_per_second': 32.137, 'eval_steps_per_second': 1.006, 'epoch': 0.97}
+{'loss': 1.3136, 'learning_rate': 3.3333333333333333e-06, 'epoch': 1.08}
+{'eval_loss': 1.3711098432540894, 'eval_f1': 0.6328293736501079, 'eval_precision': 0.6328293736501079, 'eval_recall': 0.6328293736501079, 'eval_runtime': 28.8336, 'eval_samples_per_second': 32.115, 'eval_steps_per_second': 1.006, 'epoch': 1.08}
+{'loss': 1.2613, 'learning_rate': 2.666666666666667e-06, 'epoch': 1.19}
+{'eval_loss': 1.3723812103271484, 'eval_f1': 0.6349892008639308, 'eval_precision': 0.6349892008639308, 'eval_recall': 0.6349892008639308, 'eval_runtime': 28.7976, 'eval_samples_per_second': 32.155, 'eval_steps_per_second': 1.007, 'epoch': 1.19}
+{'loss': 1.2431, 'learning_rate': 2.0000000000000003e-06, 'epoch': 1.29}
+{'eval_loss': 1.3357316255569458, 'eval_f1': 0.6371490280777538, 'eval_precision': 0.6371490280777538, 'eval_recall': 0.6371490280777538, 'eval_runtime': 28.8558, 'eval_samples_per_second': 32.091, 'eval_steps_per_second': 1.005, 'epoch': 1.29}
+{'loss': 1.2914, 'learning_rate': 1.3333333333333334e-06, 'epoch': 1.4}
+{'eval_loss': 1.3388983011245728, 'eval_f1': 0.6457883369330454, 'eval_precision': 0.6457883369330454, 'eval_recall': 0.6457883369330454, 'eval_runtime': 28.8258, 'eval_samples_per_second': 32.124, 'eval_steps_per_second': 1.006, 'epoch': 1.4}
+{'loss': 1.1444, 'learning_rate': 6.666666666666667e-07, 'epoch': 1.51}
+{'eval_loss': 1.3320258855819702, 'eval_f1': 0.6403887688984882, 'eval_precision': 0.6403887688984882, 'eval_recall': 0.6403887688984882, 'eval_runtime': 28.8395, 'eval_samples_per_second': 32.109, 'eval_steps_per_second': 1.006, 'epoch': 1.51}
+{'loss': 1.3337, 'learning_rate': 0.0, 'epoch': 1.62}
+{'eval_loss': 1.313633918762207, 'eval_f1': 0.6490280777537797, 'eval_precision': 0.6490280777537797, 'eval_recall': 0.6490280777537797, 'eval_runtime': 28.8242, 'eval_samples_per_second': 32.126, 'eval_steps_per_second': 1.006, 'epoch': 1.62}
+{'train_runtime': 1716.2294, 'train_samples_per_second': 6.992, 'train_steps_per_second': 0.874, 'train_loss': 1.6482838643391926, 'epoch': 1.62}
+F1: 0.6116504854368932
+SPANISH WITH ONLY MAIN/BASE LABELS! (SAME AS JUST BARE ENGLISH) 
+=> SIMILAR RESULTS WITH THE SAME HYPERPARAMETERS (A BIT BELOW THOUGH)

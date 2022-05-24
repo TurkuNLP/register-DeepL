@@ -1,0 +1,23 @@
+Downloading and preparing dataset json/default to /users/annieske/.cache/huggingface/datasets/json/default-41d15be8fa83a026/0.0.0/ac0ca5f5289a6cf108e706efcf040422dbbfa8e658dee6a819f20d76bb84d26b...
+Dataset json downloaded and prepared to /users/annieske/.cache/huggingface/datasets/json/default-41d15be8fa83a026/0.0.0/ac0ca5f5289a6cf108e706efcf040422dbbfa8e658dee6a819f20d76bb84d26b. Subsequent calls will reuse this data.
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+{'loss': 1.2467, 'learning_rate': 6.666666666666667e-06, 'epoch': 1.0}
+{'eval_loss': 1.1165828704833984, 'eval_f1': 0.6666666666666666, 'eval_precision': 0.6666666666666666, 'eval_recall': 0.6666666666666666, 'eval_runtime': 152.8379, 'eval_samples_per_second': 31.7, 'eval_steps_per_second': 0.995, 'epoch': 1.0}
+{'loss': 0.9919, 'learning_rate': 3.3333333333333333e-06, 'epoch': 2.0}
+{'eval_loss': 1.068042516708374, 'eval_f1': 0.6807017543859649, 'eval_precision': 0.6807017543859649, 'eval_recall': 0.6807017543859649, 'eval_runtime': 152.8236, 'eval_samples_per_second': 31.703, 'eval_steps_per_second': 0.995, 'epoch': 2.0}
+{'loss': 0.8269, 'learning_rate': 0.0, 'epoch': 3.0}
+{'eval_loss': 1.1313515901565552, 'eval_f1': 0.6823529411764706, 'eval_precision': 0.6823529411764706, 'eval_recall': 0.6823529411764706, 'eval_runtime': 152.7213, 'eval_samples_per_second': 31.724, 'eval_steps_per_second': 0.995, 'epoch': 3.0}
+{'train_runtime': 13106.2578, 'train_samples_per_second': 8.873, 'train_steps_per_second': 1.109, 'train_loss': 1.0218299134165636, 'epoch': 3.0}
+F1: 0.6654282765737874
+ALL OF THE ENGLISH DATA WITH XLMR LARGE
