@@ -40,8 +40,9 @@ random.shuffle(data)
 # get a list of all the unique labels in the data using set which does not allow duplicates
 
 labels = [one[0] for one in data]
-
-labelset = set(labels) #split_labels
+labels2 = [one[0] for one in tests]
+all_labels = labels + labels2
+labelset = set(all_labels) #split_labels
 unique_labels=list(labelset)
 
 #texts= [one[1] for one in data]
@@ -99,15 +100,17 @@ model = transformers.XLMRobertaForSequenceClassification.from_pretrained(model_n
 # these could be changed to epochs or something so that it trains longer
 trainer_args = transformers.TrainingArguments(
     "../multiclass/checkpoints",
-    evaluation_strategy="steps",
-    logging_strategy="steps",
+    evaluation_strategy="epoch",
+    logging_strategy="epoch",
+    save_strategy="epoch", #added
     load_best_model_at_end=True,
-    eval_steps=100,
-    logging_steps=100,
+    num_train_epochs=3, #added
+    # eval_steps=100,
+    # logging_steps=100,
     learning_rate=0.00001,
     per_device_train_batch_size=8,
     per_device_eval_batch_size=32,
-    max_steps=1500
+    # max_steps=1500
 )
 
 

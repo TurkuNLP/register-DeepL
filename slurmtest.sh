@@ -11,9 +11,5 @@
 #SBATCH --error=../logs/%j.err
 
 
-# export SOURCE_DIR=/scratch/project_2005092/Anni/register-DeepL
-# export FILE_DIR=/scratch/project_2005092/Anni/register-DeepL/AfterDeepL
-
-#module load python/3.6
-module load pytorch #/1.11.0 # I guess this did the trick, I did not have this specific version?
-srun python3 simple-register-with-tests.py main_labels_only/es_FINAL.modified.tsv.gz test_sets/spa_test_modified.tsv #downsampled/en_train.downsampled.tsv 
+module load pytorch             # first parameter is the train file and the second is the test file
+srun python3 simple-register-with-tests.py main_labels_only/ja_FINAL.modified.tsv.gz test_sets/jpn_test_modified.tsv  #downsampled/en_train.downsampled.tsv

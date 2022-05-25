@@ -11,4 +11,7 @@
 #SBATCH --error=../logs/%j.err
 
 module load pytorch 
-srun python3 register-multilabel.py main_labels_only/es_FINAL.modified.tsv.gz test_sets/spa_test_modified.tsv #downsampled/en_train.downsampled.tsv 
+srun python3 register-multilabel.py main_labels_only/pt_FINAL.modified.tsv.gz test_sets/pt_test_modified.tsv #downsampled/en_train.downsampled.tsv 
+
+# should try with the downsampled in a multilabel setting to get an english baseline
+# (same as with the original english in a multilabel setting that I ran)

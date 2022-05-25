@@ -1,0 +1,24 @@
+Downloading and preparing dataset json/default to /users/annieske/.cache/huggingface/datasets/json/default-f95bdf714fdb18ed/0.0.0/ac0ca5f5289a6cf108e706efcf040422dbbfa8e658dee6a819f20d76bb84d26b...
+Dataset json downloaded and prepared to /users/annieske/.cache/huggingface/datasets/json/default-f95bdf714fdb18ed/0.0.0/ac0ca5f5289a6cf108e706efcf040422dbbfa8e658dee6a819f20d76bb84d26b. Subsequent calls will reuse this data.
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+{'loss': 1.9339, 'learning_rate': 6.666666666666667e-06, 'epoch': 1.0}
+{'eval_loss': 1.5243252515792847, 'eval_f1': 0.5914732865623313, 'eval_precision': 0.5914732865623313, 'eval_recall': 0.5914732865623313, 'eval_runtime': 57.3187, 'eval_samples_per_second': 32.328, 'eval_steps_per_second': 1.012, 'epoch': 1.0}
+{'loss': 1.3462, 'learning_rate': 3.3333333333333333e-06, 'epoch': 2.0}
+{'eval_loss': 1.3947041034698486, 'eval_f1': 0.6216945493793847, 'eval_precision': 0.6216945493793847, 'eval_recall': 0.6216945493793847, 'eval_runtime': 56.9994, 'eval_samples_per_second': 32.509, 'eval_steps_per_second': 1.018, 'epoch': 2.0}
+{'loss': 1.0714, 'learning_rate': 0.0, 'epoch': 3.0}
+{'eval_loss': 1.3998953104019165, 'eval_f1': 0.6254722072315164, 'eval_precision': 0.6254722072315164, 'eval_recall': 0.6254722072315164, 'eval_runtime': 58.563, 'eval_samples_per_second': 31.641, 'eval_steps_per_second': 0.99, 'epoch': 3.0}
+{'train_runtime': 2498.892, 'train_samples_per_second': 8.901, 'train_steps_per_second': 1.113, 'train_loss': 1.4505052727703052, 'epoch': 3.0}
+F1: 0.7100000000000001
+
+JAPANESE MULTICLASS WITH TEST SETS

@@ -2846,4 +2846,4 @@ To disable this warning, you can either:
 100%|██████████| 29/29 [00:08<00:00,  3.21it/s]
 100%|██████████| 29/29 [00:08<00:00,  3.30it/s]
 F1: 0.2168284789644013
-SPANISH WITH XLMR BASE
+SPANISH WITH XLMR BASE (with sublabels included, multiclass)

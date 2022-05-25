@@ -45,4 +45,5 @@ To disable this warning, you can either:
 {'train_runtime': 2152.6925, 'train_samples_per_second': 5.574, 'train_steps_per_second': 0.697, 'train_loss': 1.6235314178466798, 'epoch': 1.62}
 F1: 0.6464646464646465
 
+MULTICLASS
 SURPRISINGLY GOOD EVALUATION FOR THE SPANISH TEST SET!!!!! (this makes me happy)

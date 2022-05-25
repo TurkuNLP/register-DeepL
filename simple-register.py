@@ -14,9 +14,9 @@ logging.disable(logging.INFO)
 
 file_name = sys.argv[1]
 data=[]
-with gzip.open(file_name, 'rb' ) as f:
+with open(file_name ) as f:
     for line in f:
-        line = line.decode()
+        #line = line.decode()
         line=line.rstrip("\n")
         cols=line.split("\t")
         if len(cols)!=2: #skip weird lines that don't have the right number of columns
@@ -82,16 +82,18 @@ model = transformers.XLMRobertaForSequenceClassification.from_pretrained(model_n
 
 
 trainer_args = transformers.TrainingArguments(
-    "checkpoints",
-    evaluation_strategy="steps",
-    logging_strategy="steps",
+    "../multiclass/checkpoints",
+    evaluation_strategy="epoch",
+    logging_strategy="epoch",
+    save_strategy="epoch", #added
     load_best_model_at_end=True,
-    eval_steps=100,
-    logging_steps=100,
+    num_train_epochs=3, #added
+    # eval_steps=100,
+    # logging_steps=100,
     learning_rate=0.00001,
     per_device_train_batch_size=8,
     per_device_eval_batch_size=32,
-    max_steps=1500
+    # max_steps=1500
 )
 
 

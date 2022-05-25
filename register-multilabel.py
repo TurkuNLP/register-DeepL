@@ -42,13 +42,14 @@ def all_possible_labels(data):
 
     return split_labels
 
-# I COULD ALSO MAKE THE UNQIQUE LABEL LIST MANUALLY?
-# get a list of all the unique labels in the data + test using set which does not allow duplicates
-labels1 = all_possible_labels(data)
-labels2 = all_possible_labels(tests)
-split_labels = labels1 + labels2
-labelset = set(split_labels) #split_labels
-unique_labels=list(labelset)
+# manual list of the main labels
+unique_labels = ["IN", "NA", "HI", "LY", "IP", "SP", "ID", "OP"]
+# # get a list of all the unique labels in the data + test using set which does not allow duplicates
+# labels1 = all_possible_labels(data)
+# labels2 = all_possible_labels(tests)
+# split_labels = labels1 + labels2
+# labelset = set(split_labels) #split_labels
+# unique_labels=list(labelset)
 
 
 def split_labels(data):
