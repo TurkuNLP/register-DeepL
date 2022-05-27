@@ -1,0 +1,26 @@
+6
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+{'loss': 0.3899, 'learning_rate': 5.333333333333333e-06, 'epoch': 1.0}
+{'eval_loss': 0.30361196398735046, 'eval_f1': 0.6103896103896103, 'eval_roc_auc': 0.7745454545454545, 'eval_accuracy': 0.5227272727272727, 'eval_runtime': 6.8002, 'eval_samples_per_second': 32.352, 'eval_steps_per_second': 1.029, 'epoch': 1.0}
+{'loss': 0.2655, 'learning_rate': 2.6666666666666664e-06, 'epoch': 2.0}
+{'eval_loss': 0.23704656958580017, 'eval_f1': 0.7257383966244725, 'eval_roc_auc': 0.8536363636363635, 'eval_accuracy': 0.6181818181818182, 'eval_runtime': 6.7938, 'eval_samples_per_second': 32.382, 'eval_steps_per_second': 1.03, 'epoch': 2.0}
+{'loss': 0.2026, 'learning_rate': 0.0, 'epoch': 3.0}
+{'eval_loss': 0.2192152887582779, 'eval_f1': 0.7357293868921776, 'eval_roc_auc': 0.8595454545454546, 'eval_accuracy': 0.6454545454545455, 'eval_runtime': 6.7901, 'eval_samples_per_second': 32.4, 'eval_steps_per_second': 1.031, 'epoch': 3.0}
+{'train_runtime': 548.3423, 'train_samples_per_second': 8.529, 'train_steps_per_second': 1.22, 'train_loss': 0.28599168580743767, 'epoch': 3.0}
+F1: 0.7346072186836518
+
+FinCore (very small and fast)
+results seem to be similar to the previous results that were in the paper that Veronika sent!
+dev results are slightly smaller though
+batch 7, epoch 3, learning rate 8e-6

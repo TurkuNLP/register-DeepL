@@ -26,27 +26,32 @@ for line in original:
         continue
     data.append(cols)
 
-tests=[]
-with gzip.open(test_set, 'rb') as f:
-    for line in f:
-        line = line.decode()
-        line=line.rstrip("\n")
-        cols=line.split("\t")
-        if len(cols)!=2: #skip weird lines that don't have the right number of columns
-            continue
-        tests.append(cols)
+def openFiles(data):
+    lines=[]
+    if "gz" in data:
+        with gzip.open(data, 'rb') as f:
+            for line in f:
+                line = line.decode()
+                line=line.rstrip("\n")
+                cols=line.split("\t")
+                if len(cols)!=2: #skip weird lines that don't have the right number of columns
+                    continue
+                lines.append(cols)
+    else:
+         with open(data) as f:
+            for line in f:
+                line=line.rstrip("\n")
+                cols=line.split("\t")
+                if len(cols)!=2: #skip weird lines that don't have the right number of columns
+                    continue
+                lines.append(cols)
+    return lines
 
-dev=[]
-with gzip.open(dev_set, 'rb') as f:
-    for line in f:
-        line = line.decode()
-        line=line.rstrip("\n")
-        cols=line.split("\t")
-        if len(cols)!=2: #skip weird lines that don't have the right number of columns
-            continue
-        dev.append(cols)
+tests=openFiles(test_set)
+dev=openFiles(dev_set)
 
-random.seed(1234) # remember to shuffle since the data is now in en,fi,swe,fre order
+
+#random.seed(1234) # remember to shuffle since the data is now in en,fi,swe,fre order
 random.shuffle(data) 
 
 # get a list of all the unique labels in the data using set which does not allow duplicates
@@ -61,15 +66,15 @@ def all_possible_labels(data):
 
     return split_labels
 
-unique_labels = ["IN", "NA", "HI", "LY", "IP", "SP", "ID", "OP"]
-# labels1 = all_possible_labels(data)
-# labels2 = all_possible_labels(tests)
-# labels3 =  all_possible_labels(dev)
-# all_labels= labels1 + labels2 + labels3
+#unique_labels = ["IN", "NA", "HI", "LY", "IP", "SP", "ID", "OP"]
+labels1 = all_possible_labels(data)
+labels2 = all_possible_labels(tests)
+labels3 =  all_possible_labels(dev)
+all_labels= labels1 + labels2 + labels3
 
-# labelset = set(all_labels) #split_labels
-# unique_labels=list(labelset)
-# print(len(unique_labels))
+labelset = set(all_labels) #split_labels
+unique_labels=list(labelset)
+print(len(unique_labels))
 
 def split_labels(data):
     texts= [one[1] for one in data]
@@ -193,7 +198,7 @@ dataset = datasets.DatasetDict({"train":train,"dev":dev, "test":test})
 #     })
 # )        
 
-model_name = "xlm-roberta-base" # we use the xlmr for tokenizing (large?, I used base previously)
+model_name = "xlm-roberta-large" # we use the xlmr for tokenizing (large?, I used base previously)
 tokenizer = transformers.AutoTokenizer.from_pretrained(model_name)
 
 def tokenize(example):
@@ -217,11 +222,11 @@ trainer_args = transformers.TrainingArguments(
     logging_strategy="epoch",   # changed both from steps
     save_strategy="epoch",
     load_best_model_at_end=True,
-    num_train_epochs=3,
+    num_train_epochs=6,
     #eval_steps=100,
     #logging_steps=100,
-    learning_rate=0.00001,
-    per_device_train_batch_size=8,
+    learning_rate=8e-6,# instead of 0.00001
+    per_device_train_batch_size=8, # instead of 8
     per_device_eval_batch_size=32,
     #max_steps=1500
 )
@@ -248,9 +253,11 @@ import numpy as np
 from transformers import EvalPrediction
 from sklearn.metrics import f1_score, roc_auc_score, accuracy_score
 # source: https://jesusleal.io/2021/04/21/Longformer-multilabel-classification/
-def multi_label_metrics(predictions, labels, threshold=0.3):  # with 0.1 the spanish data is not doing great
-    # the treshold has to be really low because the probabilities of the predictions are not great, could even do without any treshold then? or find one that works best between 0.1 and 0.5 (with english)
-    # first, apply sigmoid on predictions which are of shape (batch_size, num_labels) # why is the sigmoid applies? could do without it
+def multi_label_metrics(predictions, labels, threshold=0.5): 
+    # the treshold has to be really low because the probabilities of the predictions are not great,
+    #find one that works best between 0.1 and 0.5 => 0.3 seems to be the best for now
+
+    # sigmoid is used for multilabel, softmax for multiclass, argmax for binary
     sigmoid = torch.nn.Sigmoid()
     probs = sigmoid(torch.Tensor(predictions))
     #next, use threshold to turn them into integer predictions

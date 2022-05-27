@@ -21,3 +21,4 @@ To disable this warning, you can either:
 {'train_runtime': 4409.9574, 'train_samples_per_second': 26.369, 'train_steps_per_second': 3.297, 'train_loss': 1.154102341707938, 'epoch': 3.0}
 F1: 0.6565531475748194
 ALL OF ENGLISH DATA WITH XLMR BASE
+MULTICLASS

@@ -1,0 +1,27 @@
+8
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+{'loss': 0.3418, 'learning_rate': 5.333333333333333e-06, 'epoch': 1.0}
+{'eval_loss': 0.25785478949546814, 'eval_f1': 0.649151614668856, 'eval_roc_auc': 0.7902782200775927, 'eval_accuracy': 0.4949238578680203, 'eval_runtime': 24.0982, 'eval_samples_per_second': 32.699, 'eval_steps_per_second': 1.037, 'epoch': 1.0}
+{'loss': 0.2295, 'learning_rate': 2.6666666666666664e-06, 'epoch': 2.0}
+{'eval_loss': 0.20565710961818695, 'eval_f1': 0.7254800207576544, 'eval_roc_auc': 0.8477646017412518, 'eval_accuracy': 0.549492385786802, 'eval_runtime': 24.1803, 'eval_samples_per_second': 32.589, 'eval_steps_per_second': 1.034, 'epoch': 2.0}
+{'loss': 0.184, 'learning_rate': 0.0, 'epoch': 3.0}
+{'eval_loss': 0.19867339730262756, 'eval_f1': 0.7372301211163771, 'eval_roc_auc': 0.8510003372473619, 'eval_accuracy': 0.5748730964467005, 'eval_runtime': 24.1508, 'eval_samples_per_second': 32.628, 'eval_steps_per_second': 1.035, 'epoch': 3.0}
+{'train_runtime': 714.1653, 'train_samples_per_second': 8.086, 'train_steps_per_second': 1.155, 'train_loss': 0.2517766964074337, 'epoch': 3.0}
+F1: 0.7369530838165524
+
+FreCore
+THIS is also slightly worse than the previous results,
+ again might have to do with the learning rate and the number of epochs => increase at least the epochs
+ => if a lot of epochs could also implement early stopping
+ batch 7, epoch 3, learning rate 8e-6

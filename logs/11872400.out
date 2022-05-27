@@ -1,0 +1,27 @@
+6
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+{'loss': 0.4028, 'learning_rate': 6.4e-06, 'epoch': 1.0}
+{'eval_loss': 0.30250611901283264, 'eval_f1': 0.5844748858447488, 'eval_roc_auc': 0.75, 'eval_accuracy': 0.5272727272727272, 'eval_runtime': 6.7822, 'eval_samples_per_second': 32.438, 'eval_steps_per_second': 1.032, 'epoch': 1.0}
+{'loss': 0.2666, 'learning_rate': 4.8e-06, 'epoch': 2.0}
+{'eval_loss': 0.23733170330524445, 'eval_f1': 0.721030042918455, 'eval_roc_auc': 0.8463636363636364, 'eval_accuracy': 0.6136363636363636, 'eval_runtime': 6.7915, 'eval_samples_per_second': 32.394, 'eval_steps_per_second': 1.031, 'epoch': 2.0}
+{'loss': 0.1929, 'learning_rate': 3.2e-06, 'epoch': 3.0}
+{'eval_loss': 0.2282709926366806, 'eval_f1': 0.7053941908713692, 'eval_roc_auc': 0.8445454545454546, 'eval_accuracy': 0.5954545454545455, 'eval_runtime': 6.7945, 'eval_samples_per_second': 32.379, 'eval_steps_per_second': 1.03, 'epoch': 3.0}
+{'loss': 0.1498, 'learning_rate': 1.6e-06, 'epoch': 4.0}
+{'eval_loss': 0.22160784900188446, 'eval_f1': 0.7303609341825902, 'eval_roc_auc': 0.855, 'eval_accuracy': 0.65, 'eval_runtime': 6.7915, 'eval_samples_per_second': 32.393, 'eval_steps_per_second': 1.031, 'epoch': 4.0}
+{'loss': 0.1159, 'learning_rate': 0.0, 'epoch': 5.0}
+{'eval_loss': 0.21919645369052887, 'eval_f1': 0.7462686567164178, 'eval_roc_auc': 0.864090909090909, 'eval_accuracy': 0.6772727272727272, 'eval_runtime': 6.8018, 'eval_samples_per_second': 32.344, 'eval_steps_per_second': 1.029, 'epoch': 5.0}
+{'train_runtime': 887.0919, 'train_samples_per_second': 8.787, 'train_steps_per_second': 1.099, 'train_loss': 0.22561197134164662, 'epoch': 5.0}
+F1: 0.7451820128479657
+
+FinCore, slightly better results with epoch 5 and batch 8

@@ -45,3 +45,4 @@ To disable this warning, you can either:
 {'train_runtime': 1143.1018, 'train_samples_per_second': 10.498, 'train_steps_per_second': 1.312, 'train_loss': 1.702097869873047, 'epoch': 0.31}
 F1: 0.5721362229102167
 DOWNSAMPLED ENGLISH WITH XLMR LARGE(?)
+MULTICLASS
