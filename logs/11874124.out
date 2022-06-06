@@ -1,1 +1,30 @@
 8
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+{'loss': 0.2997, 'learning_rate': 6.666666666666667e-06, 'epoch': 1.0}
+{'eval_loss': 0.20755910873413086, 'eval_f1': 0.7058823529411765, 'eval_roc_auc': 0.8014747613857076, 'eval_accuracy': 0.5989717223650386, 'eval_runtime': 23.6508, 'eval_samples_per_second': 32.895, 'eval_steps_per_second': 1.057, 'epoch': 1.0}
+{'loss': 0.1829, 'learning_rate': 5.333333333333333e-06, 'epoch': 2.0}
+{'eval_loss': 0.1807975023984909, 'eval_f1': 0.7512019230769231, 'eval_roc_auc': 0.829851772482443, 'eval_accuracy': 0.6349614395886889, 'eval_runtime': 23.6081, 'eval_samples_per_second': 32.955, 'eval_steps_per_second': 1.059, 'epoch': 2.0}
+{'loss': 0.1384, 'learning_rate': 4e-06, 'epoch': 3.0}
+{'eval_loss': 0.1688137948513031, 'eval_f1': 0.7805164319248826, 'eval_roc_auc': 0.8517096959797108, 'eval_accuracy': 0.6838046272493573, 'eval_runtime': 23.617, 'eval_samples_per_second': 32.942, 'eval_steps_per_second': 1.059, 'epoch': 3.0}
+{'loss': 0.1097, 'learning_rate': 2.6666666666666664e-06, 'epoch': 4.0}
+{'eval_loss': 0.1704224944114685, 'eval_f1': 0.7896253602305475, 'eval_roc_auc': 0.861602681084909, 'eval_accuracy': 0.6863753213367609, 'eval_runtime': 23.6233, 'eval_samples_per_second': 32.934, 'eval_steps_per_second': 1.058, 'epoch': 4.0}
+{'loss': 0.0889, 'learning_rate': 1.3333333333333332e-06, 'epoch': 5.0}
+{'eval_loss': 0.17358703911304474, 'eval_f1': 0.7879818594104308, 'eval_roc_auc': 0.8652777477569279, 'eval_accuracy': 0.6773778920308483, 'eval_runtime': 23.6137, 'eval_samples_per_second': 32.947, 'eval_steps_per_second': 1.059, 'epoch': 5.0}
+{'loss': 0.0751, 'learning_rate': 0.0, 'epoch': 6.0}
+{'eval_loss': 0.17224876582622528, 'eval_f1': 0.7968217934165721, 'eval_roc_auc': 0.8699505016226698, 'eval_accuracy': 0.6928020565552699, 'eval_runtime': 23.6112, 'eval_samples_per_second': 32.95, 'eval_steps_per_second': 1.059, 'epoch': 6.0}
+{'train_runtime': 1388.2657, 'train_samples_per_second': 8.354, 'train_steps_per_second': 1.046, 'train_loss': 0.1491317184175013, 'epoch': 6.0}
+F1: 0.7802585193889541
+
+Swecore, treshold 0.5, epoch 6 => still not good enough,
+ bigger treshold still? epoch 7? change something else?
