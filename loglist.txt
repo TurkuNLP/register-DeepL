@@ -1,0 +1,129 @@
+Results for the benchmarks with different hyperparameters:
+
+(where no treshold marked it was 0.3)
+
+FIN
+11868621
+batch 7, epoch 3, learning rate 8e-6
+'eval_f1': 0.7357293868921776
+F1: 0.7346072186836518
+
+epoch 5 and batch 8
+eval_f1': 0.7462686567164178
+F1: 0.7451820128479657
+
+treshold 0.4, batch 8, epoch 5
+'eval_f1': 0.7517084282460138
+F1: 0.7505720823798626
+
+
+
+
+ENG (XLMR base)
+11854399
+epoch 3, learning rate= ??, batch 8,
+'eval_f1': 0.7406760415756833
+F1: 0.7331615120274914
+
+
+
+
+FRE
+11869551
+batch 7, epoch 3, learning rate 8e-6
+'eval_f1': 0.7372301211163771
+F1: 0.7369530838165524
+
+5 epochs, 8e-6 learning rate, batch 7
+'eval_f1': 0.7509176717357106,
+F1: 0.7414428646656135
+
+6 epochs, batch 8
+'eval_f1': 0.7566999474513925
+F1: 0.7429171038824764
+
+treshold 0.4, epoch 5, batch 8
+'eval_f1': 0.7480832420591457
+F1: 0.7478070175438596
+
+--batch 7 --treshold 0.4 --epochs 7
+'eval_f1': 0.7493232268543585
+F1: 0.7382022471910111
+
+--batch 7 --treshold 0.4 --epochs 5 --learning 7e-5
+EVALUATION ENDS UP AT O.O
+
+--batch 7 --treshold 0.4 --epochs 5 --learning 6e-5
+EVALUATION 0.0 again, cancel
+
+--batch 7 --treshold 0.4 --epochs 5 --learning 8e-6
+12005201
+'eval_f1': 0.7613259668508287
+F1: 0.7610619469026548
+(this is actually pretty good now, almost there)
+
+
+
+SWE
+11869512
+batch 7, epoch 3, learning rate 8e-6
+'eval_f1': 0.7628524046434493
+F1: 0.7625899280575541
+
+7 epochs, learning rate 8e-6, batch 7
+'eval_f1': 0.782656421514819
+F1: 0.7739420935412027
+
+treshold 0.4, epoch 5, batch 8
+'eval_f1': 0.7864406779661016
+F1: 0.7880496054114994
+
+treshold 0.5, epoch 6 , batch 8
+'eval_f1': 0.7968217934165721
+F1: 0.7802585193889541
+
+--batch 7 --treshold 0.6 --epochs 7
+'eval_f1': 0.7770034843205577
+F1: 0.7598039215686274
+
+--batch 8 --treshold 0.5 --epochs 4
+'eval_f1': 0.7719298245614035
+F1: 0.7716627634660421
+
+--batch 8 --treshold 0.4 --epochs 5 --learning 6e-5
+12004994
+EVALUATION 0.0
+cancel
+
+--batch 8 --treshold 0.6 --epochs 5 --learning 6e-5
+EVALUATION 0.0,cancel 
+
+--batch 7 --treshold 0.6 --epochs 5 --learning 7e-5
+EVALUATION 0.0, cancel
+
+--batch 7 --treshold 0.6 --epochs 5 --learning 8e-6
+'eval_f1': 0.7756068679692125
+F1: 0.7565588773642465
+
+--batch 7 --treshold 0.5 --epochs 5 --learning 8e-6
+'eval_f1': 0.7831603229527105
+F1: 0.7751027598355843
+
+--batch 7 --treshold 0.4 --epochs 5 --learning 8e-6
+'eval_f1': 0.7833427124366911
+F1: 0.7761877504293074
+
+--batch 7 --treshold 0.4 --epochs 6 --learning 8e-6
+'eval_f1': 0.7817371937639198
+F1: 0.7757437070938215
+
+--batch 7 --treshold 0.4 --epochs 6 --learning 0.0001
+EVALUATION 0.0, cancel
+
+--batch 7 --treshold 0.4 --epochs 6 --learning 0.001
+12013142
+bad results, cancel
+
+--batch 7 --treshold 0.4 --epochs 6 --learning 0.00001
+'eval_f1': 0.7933884297520661
+F1: 0.7819718309859155

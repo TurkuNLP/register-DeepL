@@ -9,12 +9,29 @@ import torch
 
 # something needs to be done about the test sets different labels
 
-
-file_name = sys.argv[1]
-test_name = sys.argv[2]
+#parser for the optional arguments related to hyperparameters
+parser = argparse.ArgumentParser(
+    description="A script for getting register labeling benchmarks",
+    epilog="Made by Anni Eskelinen"
+)
+parser.add_argument('file_name')
+parser.add_argument('test_name')
+parser.add_argument('--treshold', type=float, default=0.3,
+    help="The treshold which to use for predictions, used in evaluation"
+)
+parser.add_argument('--batch', type=int, default=8,
+    help="The batch size for the model"
+)
+parser.add_argument('--epochs', type=int, default=3,
+    help="The number of epochs to train for"
+)
+parser.add_argument('--learning', type=float, default=8e-6,
+    help="The learning rate for the model"
+)
+args = parser.parse_args()
 
 data=[]
-with gzip.open(file_name, 'rb') as f:
+with gzip.open(args.file_name, 'rb') as f:
     for line in f:
         line=line.decode().rstrip("\n")
         cols=line.split("\t")
@@ -23,7 +40,7 @@ with gzip.open(file_name, 'rb') as f:
         data.append(cols)
 
 tests=[]
-with open(test_name) as f:
+with open(args.test_name) as f:
     for line in f:
         line=line.rstrip("\n")
         cols=line.split("\t")
@@ -44,13 +61,6 @@ def all_possible_labels(data):
 
 # manual list of the main labels
 unique_labels = ["IN", "NA", "HI", "LY", "IP", "SP", "ID", "OP"]
-# # get a list of all the unique labels in the data + test using set which does not allow duplicates
-# labels1 = all_possible_labels(data)
-# labels2 = all_possible_labels(tests)
-# split_labels = labels1 + labels2
-# labelset = set(split_labels) #split_labels
-# unique_labels=list(labelset)
-
 
 def split_labels(data):
     texts= [one[1] for one in data]
@@ -135,13 +145,12 @@ def tokenize(example):
         truncation=True # use some other method for this?
     )
 
-dataset = dataset.map(tokenize) # NOW THERE IS A PROBLEM HERE!! 
-#TypeError: Values in `DatasetDict` should of type `Dataset` but got type '<class 'str'>'
+dataset = dataset.map(tokenize)
 
-#label ids to floats so that the trainer accepts these!
-dataset.set_format(type="torch", columns=['labels', 'input_ids', 'attention_mask'])
-dataset = dataset.map(lambda x : {"float_labels": x["labels"].to(torch.float32)}, remove_columns=["labels", "text"])
-dataset = dataset.rename_column("float_labels", "labels")
+# #label ids to floats so that the trainer accepts these!
+# dataset.set_format(type="torch", columns=['labels', 'input_ids', 'attention_mask'])
+# dataset = dataset.map(lambda x : {"float_labels": x["labels"].to(torch.float32)}, remove_columns=["labels", "text"])
+# dataset = dataset.rename_column("float_labels", "labels")
 
 
 num_labels = len(unique_labels)
@@ -157,9 +166,9 @@ trainer_args = transformers.TrainingArguments(
     logging_strategy="epoch",  # number of epochs = how many times the model has seen the whole training data
     save_strategy="epoch",
     load_best_model_at_end=True,
-    num_train_epochs=3,
-    learning_rate=0.00001,
-    per_device_train_batch_size=8,
+    num_train_epochs=args.epochs,
+    learning_rate=args.learning,
+    per_device_train_batch_size=args.batch,
     per_device_eval_batch_size=32,
 )
 
@@ -170,8 +179,10 @@ import numpy as np
 from transformers import EvalPrediction
 from sklearn.metrics import f1_score, roc_auc_score, accuracy_score
 # source: https://jesusleal.io/2021/04/21/Longformer-multilabel-classification/
-def multi_label_metrics(predictions, labels, threshold=0.3):  # with 0.1 the spanish data is not doing great
-    # the treshold has to be really low because the probabilities of the predictions are not great, could even do without any treshold then? or find one that works best between 0.1 and 0.5 (with english)
+def multi_label_metrics(predictions, labels):
+    # the treshold has to be really low because the probabilities of the predictions are not great, could even do without any treshold then? or find one that works best between 0.1 and 0.5
+    threshold=args.treshold
+
     # first, apply sigmoid on predictions which are of shape (batch_size, num_labels) # why is the sigmoid applies? could do without it
     sigmoid = torch.nn.Sigmoid()
     probs = sigmoid(torch.Tensor(predictions))

@@ -1,0 +1,27 @@
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+{'loss': 0.3745, 'learning_rate': 5.6e-05, 'epoch': 1.0}
+{'eval_loss': 0.36348867416381836, 'eval_f1': 0.0, 'eval_roc_auc': 0.5, 'eval_accuracy': 0.0, 'eval_runtime': 24.1891, 'eval_samples_per_second': 32.577, 'eval_steps_per_second': 1.034, 'epoch': 1.0}
+{'loss': 0.3652, 'learning_rate': 4.2e-05, 'epoch': 2.0}
+{'eval_loss': 0.3661831319332123, 'eval_f1': 0.0, 'eval_roc_auc': 0.5, 'eval_accuracy': 0.0, 'eval_runtime': 24.184, 'eval_samples_per_second': 32.584, 'eval_steps_per_second': 1.034, 'epoch': 2.0}
+{'loss': 0.3636, 'learning_rate': 2.8e-05, 'epoch': 3.0}
+{'eval_loss': 0.36309513449668884, 'eval_f1': 0.0, 'eval_roc_auc': 0.5, 'eval_accuracy': 0.0, 'eval_runtime': 24.1811, 'eval_samples_per_second': 32.587, 'eval_steps_per_second': 1.034, 'epoch': 3.0}
+{'loss': 0.3618, 'learning_rate': 1.4e-05, 'epoch': 4.0}
+{'eval_loss': 0.3638460636138916, 'eval_f1': 0.0, 'eval_roc_auc': 0.5, 'eval_accuracy': 0.0, 'eval_runtime': 24.1811, 'eval_samples_per_second': 32.587, 'eval_steps_per_second': 1.034, 'epoch': 4.0}
+{'loss': 0.3617, 'learning_rate': 0.0, 'epoch': 5.0}
+{'eval_loss': 0.3625246286392212, 'eval_f1': 0.0, 'eval_roc_auc': 0.5, 'eval_accuracy': 0.0, 'eval_runtime': 24.2013, 'eval_samples_per_second': 32.56, 'eval_steps_per_second': 1.033, 'epoch': 5.0}
+{'train_runtime': 1182.9165, 'train_samples_per_second': 8.137, 'train_steps_per_second': 1.162, 'train_loss': 0.36536697110262784, 'epoch': 5.0}
+F1: 0.0
+
+FRE
+--batch 7 --treshold 0.4 --epochs 5 --learning 7e-5
