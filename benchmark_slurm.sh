@@ -15,5 +15,5 @@
 module load pytorch 
 #srun cat monolingual_benchmark_files/train.tsv | python3 register-benchmark.py monolingual_benchmark_files/dev.tsv monolingual_benchmark_files/test.tsv
 #srun zcat multilingual-register-data-new/en_train1.tsv.gz multilingual-register-data-new/en_train2.tsv.gz multilingual-register-data-new/en_train3.tsv.gz multilingual-register-data-new/en_train4.tsv.gz | python3 register-benchmark.py multilingual-register-data-new/en_dev.tsv.gz multilingual-register-data-new/en_test.tsv.gz
-srun cat monolingual_benchmark_files/swe_train.tsv | python3 register-benchmark.py monolingual_benchmark_files/swe_dev.tsv monolingual_benchmark_files/swe_test.tsv --batch 7 --treshold 0.4 --epochs 6 --learning 0.00001
+srun cat monolingual_benchmark_files/swe_train.tsv | python3 register-benchmark.py monolingual_benchmark_files/swe_dev.tsv monolingual_benchmark_files/swe_test.tsv --batch 7 --treshold 0.4 --epochs 5 --learning 5e-6
 #srun cat monolingual_benchmark_files/fre_train.tsv | python3 register-benchmark.py monolingual_benchmark_files/fre_dev.tsv monolingual_benchmark_files/fre_test.tsv --batch 7 --treshold 0.4 --epochs 5 --learning 8e-6

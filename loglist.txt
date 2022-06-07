@@ -1,6 +1,7 @@
 Results for the benchmarks with different hyperparameters:
-
 (where no treshold marked it was 0.3)
+
+
 
 FIN
 11868621
@@ -64,6 +65,8 @@ F1: 0.7610619469026548
 
 
 
+
+
 SWE
 11869512
 batch 7, epoch 3, learning rate 8e-6
@@ -118,6 +121,7 @@ F1: 0.7761877504293074
 F1: 0.7757437070938215
 
 --batch 7 --treshold 0.4 --epochs 6 --learning 0.0001
+12012155
 EVALUATION 0.0, cancel
 
 --batch 7 --treshold 0.4 --epochs 6 --learning 0.001
@@ -127,3 +131,25 @@ bad results, cancel
 --batch 7 --treshold 0.4 --epochs 6 --learning 0.00001
 'eval_f1': 0.7933884297520661
 F1: 0.7819718309859155
+
+--batch 7 --treshold 0.4 --epochs 6 --learning 3e-6
+12023764
+'eval_f1': 0.7421602787456445
+F1: 0.7430232558139535
+
+--batch 8 --treshold 0.4 --epochs 6 --learning 3e-6
+'eval_f1': 0.7498542274052479
+F1: 0.7492694330800701
+
+--batch 8 --treshold 0.5 --epochs 5 --learning 3e-6
+12025448
+'eval_f1': 0.7463592233009708
+F1: 0.7460510328068044
+
+--batch 7 --treshold 0.4 --epochs 5 --learning 4e-6
+'eval_f1': 0.760806916426513
+F1: 0.760530871321408
+
+--batch 7 --treshold 0.4 --epochs 5 --learning 5e-6
+'eval_f1': 0.7775229357798166
+F1: 0.7772675086107922
