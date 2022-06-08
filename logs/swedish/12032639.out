@@ -1,0 +1,34 @@
+Downloading and preparing dataset csv/default to /users/annieske/.cache/huggingface/datasets/csv/default-d003f91bd3e172a5/0.0.0/433e0ccc46f9880962cc2b12065189766fbb2bee57a221866138fb9203c83519...
+Dataset csv downloaded and prepared to /users/annieske/.cache/huggingface/datasets/csv/default-d003f91bd3e172a5/0.0.0/433e0ccc46f9880962cc2b12065189766fbb2bee57a221866138fb9203c83519. Subsequent calls will reuse this data.
+['IP', 'IN', 'IN', 'IN', None]
+[['IP'], ['IN'], ['IN'], ['IN'], ['NA']]
+[[0, 0, 0, 1, 0, 0, 0, 0], [0, 0, 1, 0, 0, 0, 0, 0], [0, 0, 1, 0, 0, 0, 0, 0],
+ [0, 0, 1, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 1, 0, 0]]
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+{'loss': 0.3108, 'learning_rate': 8.333333333333334e-06, 'epoch': 1.0}
+{'eval_loss': 0.21075797080993652, 'eval_f1': 0.7280334728033473, 'eval_roc_auc': 0.8317262546685952, 'eval_accuracy': 0.6299694189602446, 'eval_runtime': 20.5793, 'eval_samples_per_second': 31.779, 'eval_steps_per_second': 1.02, 'epoch': 1.0}
+{'loss': 0.1856, 'learning_rate': 6.666666666666667e-06, 'epoch': 2.0}
+{'eval_loss': 0.16547296941280365, 'eval_f1': 0.787142857142857, 'eval_roc_auc': 0.8582096227281497, 'eval_accuracy': 0.7048929663608563, 'eval_runtime': 20.4686, 'eval_samples_per_second': 31.951, 'eval_steps_per_second': 1.026, 'epoch': 2.0}
+{'loss': 0.1324, 'learning_rate': 5e-06, 'epoch': 3.0}
+{'eval_loss': 0.14701606333255768, 'eval_f1': 0.8187456926257753, 'eval_roc_auc': 0.8861772189008364, 'eval_accuracy': 0.7110091743119266, 'eval_runtime': 20.4686, 'eval_samples_per_second': 31.951, 'eval_steps_per_second': 1.026, 'epoch': 3.0}
+{'loss': 0.1016, 'learning_rate': 3.3333333333333333e-06, 'epoch': 4.0}
+{'eval_loss': 0.14815253019332886, 'eval_f1': 0.8319444444444444, 'eval_roc_auc': 0.8913158520588187, 'eval_accuracy': 0.7431192660550459, 'eval_runtime': 20.4713, 'eval_samples_per_second': 31.947, 'eval_steps_per_second': 1.026, 'epoch': 4.0}
+{'loss': 0.077, 'learning_rate': 1.6666666666666667e-06, 'epoch': 5.0}
+{'eval_loss': 0.15013134479522705, 'eval_f1': 0.830344827586207, 'eval_roc_auc': 0.8925492436763626, 'eval_accuracy': 0.7400611620795107, 'eval_runtime': 20.4596, 'eval_samples_per_second': 31.965, 'eval_steps_per_second': 1.026, 'epoch': 5.0}
+{'loss': 0.0643, 'learning_rate': 0.0, 'epoch': 6.0}
+{'eval_loss': 0.1502865105867386, 'eval_f1': 0.8347107438016528, 'eval_roc_auc': 0.8954566734922513, 'eval_accuracy': 0.7477064220183486, 'eval_runtime': 20.46, 'eval_samples_per_second': 31.965, 'eval_steps_per_second': 1.026, 'epoch': 6.0}
+{'train_runtime': 938.2712, 'train_samples_per_second': 6.989, 'train_steps_per_second': 1.004, 'train_loss': 0.145307725149102, 'epoch': 6.0}
+F1: 0.825593395252838
+
+THE REAL SWEDISH CORPORA

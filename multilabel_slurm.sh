@@ -11,4 +11,4 @@
 #SBATCH --error=../logs/%j.err
 
 module load pytorch 
-srun python3 register-multilabel.py main_labels_only/pt_FINAL.modified.tsv.gz test_sets/pt_test_modified.tsv #downsampled/en_train.downsampled.tsv 
+srun python3 register-multilabel.py main_labels_only/pt_FINAL.modified.tsv.gz test_sets/pt_test_modified.tsv --batch 7 --treshold 0.4 --epochs 5 --learning 8e-6

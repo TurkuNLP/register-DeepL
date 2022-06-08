@@ -1,7 +1,6 @@
 import sys
 
-#cat multilingual-register-data-new/swe_train.tsv | python3 formatSwe_Fre.py | python3 change_labeling_for_train.py > monolingual_benchmark_files/swe_train.tsv
-
+# cat multilingual-register-data-new/originals/swe_train.tsv | python3 codedump/formatSwe_Fre.py | python3 codedump/change_labeling_for_train.py > monolingual_benchmark_files/swe_train.tsv
 
 data = sys.stdin.readlines()
 

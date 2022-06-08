@@ -63,6 +63,31 @@ EVALUATION 0.0 again, cancel
 F1: 0.7610619469026548
 (this is actually pretty good now, almost there)
 
+RUNNING WITH THE OTHER FRENCH dataset
+12032661
+--batch 7 --treshold 0.4 --epochs 5 --learning 8e-6
+F1: 0.7422166874221668
+
+then rerun with 
+--batch 7 --treshold 0.4 --epochs 5 --learning 3e-6
+12032693
+F1: 0.6489361702127661
+
+rerun
+F1: 0.5714285714285714
+
+rerun --batch 7 --treshold 0.4 --epochs 5 --learning 8e-6 
+12039472
+F1: 0.745
+
+rerun with the test and dev set correctly
+--batch 7 --treshold 0.4 --epochs 5 --learning 3e-6
+12040241
+F1: 0.678539626001781
+
+rerun --batch 7 --treshold 0.4 --epochs 5 --learning 8e-6 
+12040326
+F1: 0.7543713572023315
 
 
 
@@ -153,3 +178,39 @@ F1: 0.760530871321408
 --batch 7 --treshold 0.4 --epochs 5 --learning 5e-6
 'eval_f1': 0.7775229357798166
 F1: 0.7772675086107922
+
+--batch 7 --treshold 0.4 --epochs 6 --learning 4e-5
+'eval_f1': 0.7883683360258482
+F1: 0.7678471051152334
+
+--batch 7 --treshold 0.4 --epochs 6 --learning 4e-5
+WITHOUT SHUFFLING
+0.0 => it is not working..
+
+rerun previous
+'eval_f1': 0.7773019271948608
+F1: 0.7625344352617079
+
+runs with same hyperparameters but different way of building the dataset
+first 0.0
+
+then 
+120030089
+'eval_f1': 0.7943760984182776
+F1: 0.7688984881209503
+
+test with --batch 7 --treshold 0.4 --epochs 6 --learning 1e-5
+'eval_f1': 0.8017429193899782
+F1: 0.7904391328515841
+
+TEST WITH OTHER SWEDISH CORPORA
+12032012
+'eval_f1': 0.8297725706409372 (this was the last but not the best)
+F1: 0.8173374613003097
+
+rerun 12032639
+F1: 0.825593395252838
+
+rerun with the test and dev set correctly
+12020243
+F1: 0.8307905686546464

@@ -1,140 +1,97 @@
+from random import shuffle
 import transformers
 import datasets
 import gzip 
-import random
-import re
-import json
-import sys
 import torch
+import argparse
+from pprint import PrettyPrinter
+import logging
+import numpy as np
+from sklearn.preprocessing import MultiLabelBinarizer
 
-# something needs to be done about the test sets different labels
+pprint = PrettyPrinter(compact=True).pprint
+logging.disable(logging.INFO)
 
-#parser for the optional arguments related to hyperparameters
-parser = argparse.ArgumentParser(
-    description="A script for getting register labeling benchmarks",
-    epilog="Made by Anni Eskelinen"
-)
-parser.add_argument('file_name')
-parser.add_argument('test_name')
-parser.add_argument('--treshold', type=float, default=0.3,
-    help="The treshold which to use for predictions, used in evaluation"
-)
-parser.add_argument('--batch', type=int, default=8,
-    help="The batch size for the model"
-)
-parser.add_argument('--epochs', type=int, default=3,
-    help="The number of epochs to train for"
-)
-parser.add_argument('--learning', type=float, default=8e-6,
-    help="The learning rate for the model"
-)
-args = parser.parse_args()
+def arguments():
+    #parser for the optional arguments related to hyperparameters
+    parser = argparse.ArgumentParser(
+        description="A script for getting register labeling benchmarks",
+        epilog="Made by Anni Eskelinen"
+    )
+    parser.add_argument('train_set')
+    parser.add_argument('test_set')
+    parser.add_argument('--treshold', type=float, default=0.5,
+        help="The treshold which to use for predictions, used in evaluation"
+    )
+    parser.add_argument('--batch', type=int, default=8,
+        help="The batch size for the model"
+    )
+    parser.add_argument('--epochs', type=int, default=3,
+        help="The number of epochs to train for"
+    )
+    parser.add_argument('--learning', type=float, default=8e-6,
+        help="The learning rate for the model"
+    )
+    args = parser.parse_args()
 
-data=[]
-with gzip.open(args.file_name, 'rb') as f:
-    for line in f:
-        line=line.decode().rstrip("\n")
-        cols=line.split("\t")
-        if len(cols)!=2: #skip weird lines that don't have the right number of columns
-            continue
-        data.append(cols)
+    return args 
 
-tests=[]
-with open(args.test_name) as f:
-    for line in f:
-        line=line.rstrip("\n")
-        cols=line.split("\t")
-        if len(cols)!=2: #skip weird lines that don't have the right number of columns
-            continue
-        tests.append(cols)
-
-def all_possible_labels(data):
-    labels = [one[0] for one in data]
-    #this splits all of the labels into their own thing for multilabeling
-    split_labels= []
-    for labeled in labels:
-        labeleds = labeled.split()
-        for label in labeleds:
-            split_labels.append(label)
-
-    return split_labels
+args = arguments()
 
 # manual list of the main labels
 unique_labels = ["IN", "NA", "HI", "LY", "IP", "SP", "ID", "OP"]
 
-def split_labels(data):
-    texts= [one[1] for one in data]
+train = datasets.load_dataset(
+    "csv", 
+    data_files={'train':args.train_set}, 
+    delimiter="\t",
+    column_names=['label', 'text'],
+    features=datasets.Features({    # Here we tell how to interpret the attributes
+      "text":datasets.Value("string"),
+      "label":datasets.Value("string")})
+    )
 
-    # split the labels into a list in the data
-    for i in range(len(data)):
-        labeledlist = data[i][0]
-        lablist = labeledlist.split()
-        data[i][0] = lablist
-
-    labels = [one[0] for one in data]
-    return texts, labels
-
-texts, labels = split_labels(data)
-test_texts, test_labels = split_labels(tests)
-
-
-random.seed(1234) # remember to shuffle since the data is now in en,fi,swe,fre order !!!!
-random.shuffle(data) 
-
-
-# one-hot encoding! THIS ONLY ENCODES THE LABELS THAT ARE PRESENT IN THE DATA (SOME MAY NOT EXIST)
-import pandas as pd
-
-# first for data
-df = pd.DataFrame({
-    "text": texts,
-    "labels": labels
-})
-
-#then for test data
-dftest = pd.DataFrame({
-    "text": test_texts,
-    "labels": test_labels
-})
-# put on top of each other
-vertical_stack = pd.concat([df, dftest], axis=0)
-vertical_stack.reset_index(drop=True)
-
-from sklearn.preprocessing import MultiLabelBinarizer
-mlb = MultiLabelBinarizer()
-yt = mlb.fit_transform(vertical_stack.labels)
-# print(yt[0])
-# print(mlb.inverse_transform(yt[0].reshape(1,-1)))
-# print(mlb.classes_)
-
-ytlist= []
-for labs in yt:
-  ytlist.append(labs)
-
-length = len(df.index)
-length2 = len(dftest.index)
-
-# redo the dataframes with the encoded labels
-df = pd.DataFrame({
-    "text": vertical_stack.iloc[:length].text,
-    "labels": ytlist[:length]
-})
-
-dftest = pd.DataFrame({
-    "text": vertical_stack.iloc[length2:].text,
-    "labels": ytlist[length2:]
-})
-
-
-# make train and test into a dataset
-train = datasets.Dataset.from_pandas(df)
-test = datasets.Dataset.from_pandas(dftest)
+# remember to shuffle because the data is in en,fi,fre,swe order!
+# this shuffles by default
 train, dev = train.train_test_split(test_size=0.2).values()
-dataset = datasets.DatasetDict({"train":train,"dev":dev, "test":test})
 
+test = datasets.load_dataset(
+    "csv", 
+    data_files={'test':args.test_set}, 
+    delimiter="\t",
+    column_names=['label', 'text'],
+    features=datasets.Features({    # Here we tell how to interpret the attributes
+      "text":datasets.Value("string"),
+      "label":datasets.Value("string")})
+    )
+
+dataset = datasets.DatasetDict({"train":train,"dev":dev, "test":test})
+pprint(dataset)
+
+# the data is fitted to these main labels
+unique_labels = ["IN", "NA", "HI", "LY", "IP", "SP", "ID", "OP"]
+
+def split_labels(dataset):
+    # for some reason NA ends up as None in the dataset??? at least in some cases
+    if dataset['label'] == None:
+        dataset['label'] = np.array('NA')
+    else:
+        dataset['label'] = np.array(dataset['label'].split())
+    return dataset
+
+def binarize(dataset):
+    mlb = MultiLabelBinarizer()
+    mlb.fit([unique_labels])
+    dataset = dataset.map(lambda line: {'label': mlb.transform([line['label']])[0]})
+    return dataset
+
+pprint(dataset['train']['label'][:5])
+dataset = dataset.map(split_labels)
+pprint(dataset['train']['label'][:5])
+dataset = binarize(dataset)
+pprint(dataset['train']['label'][:5])
 
 # then use the XLMR tokenizer
-
 model_name = "xlm-roberta-large"
 tokenizer = transformers.AutoTokenizer.from_pretrained(model_name)
 
@@ -147,18 +104,8 @@ def tokenize(example):
 
 dataset = dataset.map(tokenize)
 
-# #label ids to floats so that the trainer accepts these!
-# dataset.set_format(type="torch", columns=['labels', 'input_ids', 'attention_mask'])
-# dataset = dataset.map(lambda x : {"float_labels": x["labels"].to(torch.float32)}, remove_columns=["labels", "text"])
-# dataset = dataset.rename_column("float_labels", "labels")
-
-
 num_labels = len(unique_labels)
 model = transformers.XLMRobertaForSequenceClassification.from_pretrained(model_name, num_labels=num_labels, problem_type="multi_label_classification")
-# a couple examples mentioned that I should have these dictionaries that map labels to integers and back
-# id2label=id2label,
-# label2id=label2id
-
 
 trainer_args = transformers.TrainingArguments(
     "../multilabel/checkpoints", # change this to put the checkpoints somewhere else
@@ -175,7 +122,6 @@ trainer_args = transformers.TrainingArguments(
 data_collator = transformers.DataCollatorWithPadding(tokenizer)
 
 #compute accuracy and loss
-import numpy as np
 from transformers import EvalPrediction
 from sklearn.metrics import f1_score, roc_auc_score, accuracy_score
 # source: https://jesusleal.io/2021/04/21/Longformer-multilabel-classification/
