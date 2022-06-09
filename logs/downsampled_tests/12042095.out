@@ -1,0 +1,116 @@
+Downloading and preparing dataset csv/default to /users/annieske/.cache/huggingface/datasets/csv/default-9e7974f8d8e8cf74/0.0.0/433e0ccc46f9880962cc2b12065189766fbb2bee57a221866138fb9203c83519...
+Dataset csv downloaded and prepared to /users/annieske/.cache/huggingface/datasets/csv/default-9e7974f8d8e8cf74/0.0.0/433e0ccc46f9880962cc2b12065189766fbb2bee57a221866138fb9203c83519. Subsequent calls will reuse this data.
+Downloading and preparing dataset csv/default to /users/annieske/.cache/huggingface/datasets/csv/default-2319d37a776a0e61/0.0.0/433e0ccc46f9880962cc2b12065189766fbb2bee57a221866138fb9203c83519...
+Dataset csv downloaded and prepared to /users/annieske/.cache/huggingface/datasets/csv/default-2319d37a776a0e61/0.0.0/433e0ccc46f9880962cc2b12065189766fbb2bee57a221866138fb9203c83519. Subsequent calls will reuse this data.
+{'dev': Dataset({
+    features: ['text', 'label'],
+    num_rows: 559
+}),
+ 'test': Dataset({
+    features: ['text', 'label'],
+    num_rows: 2019
+}),
+ 'train': Dataset({
+    features: ['text', 'label'],
+    num_rows: 2234
+})}
+['IN', 'OP', None, None, None]
+[['IN'], ['OP'], ['NA'], ['NA'], ['NA']]
+[[0, 0, 1, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 1, 0], [0, 0, 0, 0, 0, 1, 0, 0],
+ [0, 0, 0, 0, 0, 1, 0, 0], [0, 0, 0, 0, 0, 1, 0, 0]]
+{'label': [[0, 0, 1, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 1, 0]],
+ 'text': ['Metla Hanke 7084 Ravinteiden menetys kuusikoiden biomassan '
+          'korjuussa Tavoitteet Pohjoismaissa yhä suurempi osa puubiomassasta '
+          '( hakkuutähteet : oksat , neulaset ja latvat ) käytetään energian '
+          'tuotantoon . Koska näiden puunosien ravinnepitoisuudet ovat '
+          'korkeita , on epäilty hakkuutähteiden poistamisen metsästä '
+          'aiheuttavan pitkällä tähtäimellä metsän tuotoskyvyn heikkenemistä . '
+          'Jotta voitaisiin arvioida kokopuun korjuun seurannaisvaikutuksia '
+          'tietyllä kasvupaikalla , on tärkeää laatia ravinnetaseita ja niitä '
+          'varten mallintaa puiden ravinnesisältö .',
+          'Pyhä Johannes Edelläkävijä ( Johannes Kastaja ) Uudessa '
+          'Testamentissa on Luukkaan evankeliumin 1. luvussa ( Luuk.1:5-80 ) '
+          'kerrottu seikkaperäisesti pyhän Johannes Edelläkävijän eli pyhän '
+          'Johannes Kastajan syntyminen ja siihen liittyvät asiat . '
+          'Evankeliumi kertoo pyhän Johanneksen vanhurskaista ja iäkkäistä '
+          'vanhemmista , pappi Sakariaksesta ja hänen hedelmättömästä '
+          'vaimostaan Elisabetista , jotka elivät muinaisessa Hebronin '
+          'kaupungissa . Johanneksen äiti Elisabet oli Aaronin sukua ja hän '
+          'oli Zoian tytär ja Zoia taasen oli Kristuksen isoäidin , Neitsyt '
+          'Marian äidin Annan sisko . Näin ollen pyhä Johannes oli Kristuksen '
+          'serkku . Johanneksen isä Sakarias oli myös Aaronin sukua ja hän '
+          'kuului Abian pappisosastoon . Tuhatlukuinen temppelipapisto oli '
+          'jaettu 24 osastoon , joista Abian osasto oli kahdeksas . Enkelin '
+          'ennustus Kerran Sakariaksen ollessa toimittamassa jumalanpalvelusta '
+          'Jerusalemissa , ylienkeli Gariel ilmestyi hänelle suitsutusalttarin '
+          'oikealla puolella . Enkeli ennusti Sakariaalle , että hänestä tulee '
+          'isä pojalle , jolle hänen on annettava nimi Johannes ja joka on '
+          'oleva suuri Jumalan mies . Enkeli kertoi vielä Johanneksen tulevan '
+          'kulkemaan Herran edelläkävijänä ja hän valmistaa kansaa Vanhassa '
+          'Testamentissa ennustetun Vapahtajan , Messiaan tulemiseen . '
+          'Sakarias huolestui asiasta ja pelko valtasi hänet . Hän epäili , '
+          'etteivät he tämän ikäisenä voisi enää saada lasta ja hän pyysi '
+          'ennusmerkkiä . Se annettiin hänelle ja se oli samalla rangaistus '
+          'hänen epäuskostaan : hän tuli mykäksi siihen saakka kunnes '
+          'ylienkelin sanat kävisivät toteen . Jonkun ajan kuluttua Elisabet '
+          'tuli raskaaksi . Hän pelkäsi kohtaavansa ivaa ja pilkkaa '
+          'raskaudestaan noin iäkkäänä ja siksi hän piilotti asiaa viisi '
+          'kuukautta . Elisabetin ollessa kuudennella kuukaudella raskaana , '
+          'hänen serkkunsa Neitsyt Maria tuli hänen luokseen jakamaan yhteisen '
+          'ilon . Hän oli ylienkeli Gabrielilta saanut tiedon Kristuksen '
+          'syntymisestä ja tuli sen johdosta Elisabetin luo . Elisabet ” '
+          'Pyhällä Hegellä täyttyneenä ” oli ensimmäinen , joka tervehti '
+          'Jumalansynnyttäjää , Neitsyt Mariaa sanoin : ” Siunattu olet sinä , '
+          'naisista siunatuin , ja siunattu sinun kohtusi hedelmä ! Kuinka '
+          'minä saan sen kunnian , että Herrani äiti tulee minun luokseni ? ” '
+          'Elisabetin kohdussa oleva pyhä Johannes evankeliumin mukaan hypähti '
+          'kohdussa tässä tapaamisessa . Pyhän Johanneksen syntyminen Pian '
+          'Elisabet synnytti pojan ja sukulaiset sekä tutut riemuitsivat hänen '
+          'kanssaan . Kahdeksantena päivänä Mooseksen lain mukaisesti poika '
+          'ympärileikattiin ja hänelle annettiin nimi Johannes . Jokainen '
+          'paikallaolija oli hämmästynyt nimestä ja he halusivat ristiä lapsen '
+          'isän mukaan Sakariakseksi . He kysyivät asiaa lapsen isältä ja '
+          'Sakarias pyysi viittomalla kirjoitustaulun ja kirjoitti siihen : '
+          'Hänen nimensä on Johannes . Samalla hetkellä hän sai takaisin '
+          'puhekykynsä ja Sakarias ylisti Jumalaa ja profetoi Messiaan '
+          'tulemista maailmaan . Omasta pojastaan , pyhästä Johanneksesta hän '
+          'sanoi : ” Sinä käyt Herran edellä ja raivaat hänelle tien . Sinä '
+          'johdat hänen kansansa tuntemaan pelastuksen , syntien '
+          'anteeksiantamisen . ” ( Luuk.1:76 ) Jeesuksen syntymän ja paimenien '
+          'sekä itämaan tietäjien vierailun jälkeen paha kuningas Herodes '
+          'määräsi tapettavaksi kaikki poikalapset . Tämän kuulutuaan Elisabet '
+          'pakeni erämaahan ja piiloutui luolaan . Sakarias oli Jerusalemissa '
+          'jumalanpalveluksessa temppelissä , kun Herodes lähetti sotilaitaan '
+          'Sakariaan luo kysymään lapsen olinpaikkaa . Sakarias sanoi , ettei '
+          'hän sitä tiedä . Sotilaat tappoivat hänet temppelissä . Vanhurskas '
+          'Elisabet jatkoi elämäänsä lapsen kanssa erämaassa ja aikanaan hän '
+          'myös kuoli siellä . Pyhä Johannes enkelien suojaamana asui '
+          'erämaassa , kunnes tuli hänen aikansa saarnata katumusta ihmisille '
+          'ja hän tehtäväkseen tuli kastaa Kristus Jordan virrassa . Pyhä '
+          'Johannes oli siis syntyään nasaretilainen , mutta hän vietti '
+          'ensimmäiset elinvuotensa Juudean vuoristoseuduilla Jerusalemin ja '
+          'Ku']}
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+{'loss': 0.2573, 'learning_rate': 6.4e-06, 'epoch': 1.0}
+{'eval_loss': 0.18179169297218323, 'eval_f1': 0.743006993006993, 'eval_roc_auc': 0.8485221674876847, 'eval_accuracy': 0.7155635062611807, 'eval_runtime': 17.3551, 'eval_samples_per_second': 32.21, 'eval_steps_per_second': 1.037, 'epoch': 1.0}
+{'loss': 0.149, 'learning_rate': 4.8e-06, 'epoch': 2.0}
+{'eval_loss': 0.184298574924469, 'eval_f1': 0.7574978577549272, 'eval_roc_auc': 0.8624065279795868, 'eval_accuracy': 0.7191413237924866, 'eval_runtime': 17.3749, 'eval_samples_per_second': 32.173, 'eval_steps_per_second': 1.036, 'epoch': 2.0}
+{'loss': 0.1105, 'learning_rate': 3.2e-06, 'epoch': 3.0}
+{'eval_loss': 0.17543978989124298, 'eval_f1': 0.7669565217391303, 'eval_roc_auc': 0.8635999574724458, 'eval_accuracy': 0.7334525939177102, 'eval_runtime': 17.3501, 'eval_samples_per_second': 32.219, 'eval_steps_per_second': 1.037, 'epoch': 3.0}
+{'loss': 0.0838, 'learning_rate': 1.6e-06, 'epoch': 4.0}
+{'eval_loss': 0.1816963106393814, 'eval_f1': 0.7808695652173913, 'eval_roc_auc': 0.8715242584257717, 'eval_accuracy': 0.7513416815742398, 'eval_runtime': 17.3407, 'eval_samples_per_second': 32.236, 'eval_steps_per_second': 1.038, 'epoch': 4.0}
+{'loss': 0.0639, 'learning_rate': 0.0, 'epoch': 5.0}
+{'eval_loss': 0.1844654679298401, 'eval_f1': 0.7864583333333333, 'eval_roc_auc': 0.8752294715951376, 'eval_accuracy': 0.7584973166368515, 'eval_runtime': 17.3627, 'eval_samples_per_second': 32.196, 'eval_steps_per_second': 1.037, 'epoch': 5.0}
+{'train_runtime': 1487.4282, 'train_samples_per_second': 7.51, 'train_steps_per_second': 1.076, 'train_loss': 0.1328813886642456, 'epoch': 5.0}
+F1: 0.7802409638554217

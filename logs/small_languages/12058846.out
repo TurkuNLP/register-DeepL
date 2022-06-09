@@ -1,0 +1,90 @@
+Namespace(batch=7, epochs=5, learning=8e-06, multilingual=True, test_set='test_sets/chi_all_modified.tsv', train_set='main_labels_only/all_translated.tsv.gz', treshold=0.4)
+{'dev': Dataset({
+    features: ['text', 'label'],
+    num_rows: 7401
+}),
+ 'test': Dataset({
+    features: ['text', 'label'],
+    num_rows: 312
+}),
+ 'train': Dataset({
+    features: ['text', 'label'],
+    num_rows: 29603
+})}
+['NA IN', 'IN NA', 'ID', 'IP', 'OP']
+[['NA', 'IN'], ['IN', 'NA'], ['ID'], ['IP'], ['OP']]
+[[0, 0, 1, 0, 0, 1, 0, 0], [0, 0, 1, 0, 0, 1, 0, 0], [0, 1, 0, 0, 0, 0, 0, 0],
+ [0, 0, 0, 1, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 1, 0]]
+{'label': [[0, 0, 1, 0, 0, 1, 0, 0], [0, 0, 1, 0, 0, 1, 0, 0]],
+ 'text': ['Sábado, 20 de octubre de 2012 Teaser ¡Pensé que podría burlarse de '
+          'todos ustedes con un poco de tiro detrás de las escenas de mi '
+          'última sesión! Pasé hoy corriendo alrededor de un viejo parque de '
+          'caravanas, visitando mcdonalds para los conos de helado y riendo '
+          'con la increíble rachel claire y alexis como disparamos '
+          'posiblemente el modelo más caliente nunca. Voy a estar literalmente '
+          'saltando fuera de mi piel hasta que pueda mostrar las imágenes '
+          'finales. ¡No puedo esperar a escuchar lo que ustedes piensan del '
+          'estilo!',
+          'Ezko Kikoutchi Uma história da música Nascido no Japão, Ezko '
+          'Kikoutchi estudou órgão com Tetsuro Tominaga, Koichiro Hayashi, '
+          'Takuo Shimura e Yumyo Katsuki. Ela também estudou piano, música '
+          'vocal, canto gregoriano, harmonia e contraponto no St. Catherine '
+          "Women's Junior College (Japão). Ela obteve ali o diploma de "
+          'professora de música. Ela também foi selecionada para o Concerto de '
+          'Jovens Organistas em Musashino, uma cidade da Prefeitura de Tóquio. '
+          'Ezko Kikoutchi mudou-se para a Suíça em 1997 para estudar órgão na '
+          'Haute École de Musique de Lausanne, na classe de Keï Koito. Lá ela '
+          'obteve seu diploma de virtuosidade, bem como o primeiro prêmio, com '
+          'os parabéns do júri. Como organista, ela aperfeiçoou suas '
+          'habilidades com Andrzej Bialko em Cracóvia e Francis Jacob em '
+          'Estrasburgo. De 1998 a 2005 ela foi organista titular da paróquia '
+          'de Bellevaux - Saint-Luc em Lausanne. Desde 2001 ela é organista '
+          'titular da paróquia de Ecublens - Saint-Sulpice (Vaud). Na Haute '
+          'Ecole de Musique de Lausanne, ela estudou composição, análise '
+          'musical e orquestração com William Blank. Em 2006, ela obteve um '
+          'diploma de ensino em teoria. Desde 2008, Ezko Kikoutchi vem '
+          'estudando composição na Universidade das Artes de Berna na classe '
+          'de Eric Gaudibert e Xavier Dayer. Em 2010, ela completou a primeira '
+          'parte de seus estudos com um diploma de bacharelado. Ela também '
+          'estudou teatro musical com Françoise Rivalland e participou de '
+          'masterclasses com Klaus Huber, Vinko Globokar e William Blank. Seu '
+          'primeiro concerto de gravadora Paetzold foi apresentado em julho de '
+          '2011 pela solista Céline Herrero como parte do Diplomkonzert der '
+          'Studierenden im Master of Arts in Specialized Music Performance na '
+          'Universidade das Artes de Berna com a Orquestra Sinfônica de Berna. '
+          'Em 2012, Ezko Kikoutchi obteve a burguesia de Ecublens (Vaud) e a '
+          'cidadania suíça. Nesse mesmo ano, o Escritório Federal de Cultura '
+          'apoiou um de seus projetos e ela obteve um Mestrado em Composição e '
+          'Teoria na Universidade das Artes de Berna, na classe de Xavier '
+          'Dayer. Após seus estudos, ela foi aconselhada pelos compositores '
+          'José María Sánchez-Verdú e Nadir Vassena. Ela foi encarregada de '
+          'compor obras e colaborou com a Associação Suíça de Músicos, a '
+          'Associação de Concorrência Nicati, o Proton Bern Ensemble, os '
+          'ex-alunos do Festival de Lucerna, o NEC - Nouvel Ensemble '
+          'Contemporain de la Chaux-de-Fonds, o Inverspace Ensemble de Basel, '
+          'a Orquestra da Suíça de língua italiana, a Associação Usinesonore, '
+          'o We Spoke Collective e o Ensemble Contrechamps. Obras Header '
+          'Subtitle CHAIN para órgão solo ( 2000 ) Ryôya - depois do poema de '
+          'Akiko Yosano para soprano e órgão ( 2008 ) Séquence conséquence '
+          'para violino solo ( 2009 ) Vom Himmel hoch, da komm ich her para '
+          'clarinete e violino ( 2009 ) Lyrik depois dos poemas de Hilde Domin '
+          'para soprano, euphonium e piano ( 2009 ) I, Traumwasser para '
+          'soprano e piano II, Ars longa para soprano e euphonium III, Lyrique '
+          'para soprano, euphonium e piano I, Traumwasser para soprano e piano '
+          'II, Ars longa para soprano e euphonium III.. para oboé, violino, '
+          'violão, percussão, contrabaixo e eletrônica ( 2010 ) À MAIN DROITE '
+          'ET MAIN GAUCHE depois do poema de Paul Celan para cinco intérpretes '
+          '( 2010 ) Désertique para ney, clarinete, oud, req, violino e']}
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+{'loss': 0.1993, 'learning_rate': 6.4e-06, 'epoch': 1.0}

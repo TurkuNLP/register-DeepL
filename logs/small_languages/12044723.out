@@ -1,0 +1,96 @@
+{'dev': Dataset({
+    features: ['text', 'label'],
+    num_rows: 1851
+}),
+ 'test': Dataset({
+    features: ['text', 'label'],
+    num_rows: 332
+}),
+ 'train': Dataset({
+    features: ['text', 'label'],
+    num_rows: 7404
+})}
+['OP', 'IN', None, 'HI', 'LY']
+[['OP'], ['IN'], ['NA'], ['HI'], ['LY']]
+[[0, 0, 0, 0, 0, 0, 1, 0], [0, 0, 1, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 1, 0, 0],
+ [1, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 1, 0, 0, 0]]
+{'label': [[0, 0, 0, 0, 0, 0, 1, 0], [0, 0, 1, 0, 0, 0, 0, 0]],
+ 'text': ["UMA PALAVRA PROFÉTICA A ISRAEL Uma noite Israel estava no 'mar das "
+          "nações', que se agitavava mais ou menos ( Mateus 14:22 - 33 ) . "
+          'Yeshua estava na "montanha" diante do Pai, orando continuamente por '
+          'Israel, pois o sumo sacerdote tem as jóias de Israel em sua couraça '
+          'e os nomes dos filhos de Israel gravados em suas unhas ( 2 '
+          'Tessalonicenses 28:9 , 21 ). Yeshua havia chamado os discípulos a '
+          'irem antes dele para a outra margem. Israel tem caminhado nesta '
+          'noite escura por cerca de 2.700 anos. Israel tem tentado avançar '
+          'nas "ondas rápidas" das nações, mas o "vento" sempre foi contra '
+          'elas. Desde que o norte de Israel foi forçado ao exílio, o vento '
+          'nunca foi mais forte. O retorno ao solo israelense se tornou cada '
+          'vez mais difícil. O progresso abrandou até que Israel foi apanhado '
+          'por uma tempestade. O barco parece desaparecer atrás de grandes '
+          'ondas de espuma e as ondas do mar as engolem ( Levítico 26:38 ). '
+          'Sem a ajuda sobrenatural de Deus, ele não teria sobrevivido à ordem '
+          'dada: "Vá para a outra margem! Israel é forçado a parar, mesmo que '
+          'não queira. Yeshua assistiu enquanto os representantes de Israel '
+          'partiam para remar e velejar com o vento e assolados por grandes '
+          'ondas. Da montanha, Yeshua viu que estavam sobrecarregados ( Marcos '
+          '6:48 ), mas Ele orou e esperou que a vigília noturna passasse. '
+          'Somente quando Israel estava no máximo sobrecarregado, Ele estendia '
+          'a mão auxiliadora. Para Israel, a palavra santa de Deus promete: "E '
+          'na quarta vigília da noite, Jesus veio a eles com uma saraivada de '
+          'trovões". A quarta vigília tinha chegado, a última hora da noite '
+          'escura antes do amanhecer! Yeshua, a Luz Celestial, o Sol da '
+          'Retidão, está se aproximando de Seu povo Israel! A brilhante aurora '
+          'de Israel! Não é um amanhecer natural, mas um sobrenatural, uma '
+          'glória celestial! Ele caminha sobre as águas como se estivesse '
+          'caminhando na estrada, sobre os "problemas das nações" e está se '
+          'aproximando de Israel em apuros! Ele estava passando por Israel '
+          'primeiro ( Marcos 6:48b )! Ele quer testar a atitude de Israel em '
+          'relação a Ele. Israel não reconhece imediatamente quem é o "Homem" '
+          'Yeshua, mas, com medo, grita: "É um fantasma! "Por que Israel se '
+          'afastou muito do conhecimento de Deus? Por que eles não acreditam '
+          'que o Deus de Israel não os tenha abandonado neste momento? O medo '
+          'avassalador da morte os superou. As ondas das nações os engolem em '
+          'seu próprio sangue? Eles não',
+          'O blog Five Beards oferece comparações de produtos, assim como as '
+          'melhores ofertas e códigos de desconto em um formato compacto. O '
+          'blog lista os cinco melhores produtos do momento, classificados por '
+          'categoria. O objetivo é fornecer aos leitores opiniões muito '
+          'curtas, mas fundamentadas sobre os produtos . segunda-feira 25 de '
+          'fevereiro de 2013 5 melhor : aplicações iOS fevereiro de 2013 '
+          'Decidimos desta vez destacar as melhores aplicações iOS de '
+          'fevereiro de 2013 . 3. SportTracker - aplicativo esportivo gratuito '
+          'para transformar seu iPhone em um computador esportivo. Meça seu '
+          'tempo , distância e com acessórios também seu ritmo cardíaco . 4. '
+          'WhatsApp Messenger - Economize em suas contas telefônicas e '
+          'comunique-se gratuitamente com seus amigos no WhatsApp . O programa '
+          'busca automaticamente em sua agenda telefônica pessoas com o '
+          'WhatsApp e lhe permite enviar mensagens com elas gratuitamente, bem '
+          'como acessar as muitas outras características do programa. 5. Hill '
+          'Climb Racing - Um jogo de corrida muito viciante desenvolvido pela '
+          'Fingersoft de Oulu, Finlândia e GRÁTIS - NÃO FAÇA o download se '
+          'você tiver que ir para a cama cedo hoje à noite :)']}
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+{'loss': 0.2658, 'learning_rate': 6.4e-06, 'epoch': 1.0}
+{'eval_loss': 0.18937593698501587, 'eval_f1': 0.7316843345111896, 'eval_roc_auc': 0.8369284723643226, 'eval_accuracy': 0.5991356023770935, 'eval_runtime': 56.6052, 'eval_samples_per_second': 32.7, 'eval_steps_per_second': 1.025, 'epoch': 1.0}
+{'loss': 0.1784, 'learning_rate': 4.8e-06, 'epoch': 2.0}
+{'eval_loss': 0.1848098188638687, 'eval_f1': 0.7491264849755416, 'eval_roc_auc': 0.8498666005572083, 'eval_accuracy': 0.6277687736358725, 'eval_runtime': 56.6075, 'eval_samples_per_second': 32.699, 'eval_steps_per_second': 1.025, 'epoch': 2.0}
+{'loss': 0.1418, 'learning_rate': 3.2e-06, 'epoch': 3.0}
+{'eval_loss': 0.1906108260154724, 'eval_f1': 0.7507521407081694, 'eval_roc_auc': 0.8525354638767777, 'eval_accuracy': 0.631010264721772, 'eval_runtime': 57.6264, 'eval_samples_per_second': 32.121, 'eval_steps_per_second': 1.006, 'epoch': 3.0}
+{'loss': 0.112, 'learning_rate': 1.6e-06, 'epoch': 4.0}
+{'eval_loss': 0.20027948915958405, 'eval_f1': 0.7579092159559834, 'eval_roc_auc': 0.8592760489629735, 'eval_accuracy': 0.640194489465154, 'eval_runtime': 56.5413, 'eval_samples_per_second': 32.737, 'eval_steps_per_second': 1.026, 'epoch': 4.0}
+{'loss': 0.0883, 'learning_rate': 0.0, 'epoch': 5.0}
+{'eval_loss': 0.21343204379081726, 'eval_f1': 0.7516594186312657, 'eval_roc_auc': 0.8560315698897651, 'eval_accuracy': 0.6304700162074555, 'eval_runtime': 56.5504, 'eval_samples_per_second': 32.732, 'eval_steps_per_second': 1.026, 'epoch': 5.0}
+{'train_runtime': 4253.2108, 'train_samples_per_second': 8.704, 'train_steps_per_second': 1.244, 'train_loss': 0.15726391624638172, 'epoch': 5.0}
+F1: 0.6922024623803009

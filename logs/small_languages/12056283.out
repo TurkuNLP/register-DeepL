@@ -1,0 +1,172 @@
+Namespace(batch=8, epochs=5, learning=8e-06, test_set='test_sets/pt_test_modified.tsv', train_set='main_labels_only/pt_FINAL.modified.tsv.gz', treshold=0.3)
+{'dev': Dataset({
+    features: ['text', 'label'],
+    num_rows: 1851
+}),
+ 'test': Dataset({
+    features: ['text', 'label'],
+    num_rows: 332
+}),
+ 'train': Dataset({
+    features: ['text', 'label'],
+    num_rows: 7404
+})}
+['IP', None, None, 'IN', 'NA OP']
+[['IP'], ['NA'], ['NA'], ['IN'], ['NA', 'OP']]
+[[0, 0, 0, 1, 0, 0, 0, 0], [0, 0, 0, 0, 0, 1, 0, 0], [0, 0, 0, 0, 0, 1, 0, 0],
+ [0, 0, 1, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 1, 1, 0]]
+{'label': [[0, 0, 0, 1, 0, 0, 0, 0], [0, 0, 0, 0, 0, 1, 0, 0]],
+ 'text': ['Ще разполагате разполагате с цялото място прилепена (прилепена '
+          'къща) само за за себе си. Домакинът не разрешава разрешава партита '
+          'или пушене. Запознайте се с подробностите Acomodação de luxo, bem '
+          'próximo a 2 grandes reservas naturais com belos lagos florestais, e '
+          'um campo de golfe perto da acomodação. 30 minutos de Saltsjöbanan '
+          'até a cidade. 10min para os barcos do arquipélago. Sauna ao ar '
+          'livre a lenha para aluguel extra. A acomodação é caracterizada por '
+          'materiais orgânicos e luxuosos e design consciente, isto é '
+          'procurado em tudo o que fazemos. Também queremos melhorar a '
+          'sensação de sua estadia oferecendo produtos de banho da Rituals no '
+          'banheiro, e na entrada você pode comprar, entre outras coisas, '
+          'itens de presente da Rituals quando você for um convidado em nossa '
+          'B&B Помещението Isto é como um apartamento privado, no entanto, sem '
+          'máquina de lavar roupa, fogão ou forno. O edredom com uma sensação '
+          'de luxo completamente à prova de alergias, que se prolonga e faz '
+          'você dormir como um príncipe/principe. Camas confortáveis '
+          'cuidadosamente feitas com um toque de hotel de luxo, usando lençóis '
+          'e capas de edredão tecidas apenas com o mais fino algodão, para '
+          'maior durabilidade e uma boa noite de sono. A área é muito '
+          'tranqüila, quase adormecida, de uma maneira agradável e exuberante. '
+          'Alugue nossa sauna a lenha ao ar livre com vistas panorâmicas. '
+          'Desfrute do silêncio, do fogo crepitante e do calor que o limpa até '
+          'a alma. Достъп на гостите гостите O estacionamento é gratuito e '
+          'próximo, a lavanderia mediante reserva e taxa de 200kr O auto '
+          'check-in é possível em horários ímpares através de cadeado com '
+          'código na porta da frente. Se uma acolhida pessoal for desejada, '
+          'estamos felizes em fazê-lo. É sempre bom conhecer pessoas que '
+          'pensamos. O café da manhã não está incluído, mas será adicionado '
+          'com 70kr por dia/por pessoa. A acomodação é caracterizada por '
+          'materiais orgânicos e luxuosos e design consciente, isto é '
+          'procurado em tudo o que fazemos. Também queremos melhorar a '
+          'sensação de sua estadia oferecendo produtos de banho da Rituals no '
+          'banheiro, e na entrada você pode comprar, entre outras coisas, '
+          'itens de presente da Rituals quando você for um convidado em nossa '
+          'B&B Помещението Isto é como um apartamento privado, no entanto, sem '
+          'máquina de lavar roupa, fogão ou forno. O edredom com uma sensação '
+          'de luxo completamente à prova de alergias, que se prolonga e faz '
+          'você dormir como um príncipe/principe. Camas confortáveis '
+          'cuidadosamente feitas com um toque de hotel de luxo, usando lençóis '
+          'e capas de edredão tecidas apenas com o mais fino algodão, para '
+          'maior durabilidade e uma boa noite de sono. A área é muito '
+          'tranqüila, quase adormecida, de uma maneira agradável e exuberante. '
+          'Alugue nossa sauna a lenha ao ar livre com vistas panorâmicas. '
+          'Desfrute do silêncio, do fogo crepitante e do calor que o limpa até '
+          'a alma. Достъп на гостите гостите Estacionamento livre e fechado, '
+          'lavanderia com reserva e taxa de 200kr Други неща за отбелязване O '
+          'auto check-in é possível em horários ímpares por fechadura com '
+          'código na porta da frente. Se uma acolhida pessoal for desejada, '
+          'estamos felizes em fazê-lo. É sempre bom conhecer pessoas que '
+          'pensamos. O café da manhã não está incluído, mas será adicionado '
+          'com 70kr por dia/por pessoa. Acomodações luxuosas, bem próximo a 2 '
+          'grandes reservas naturais com belos lagos florestais, e um campo de '
+          'golfe perto das acomodações. 30 minutos de Saltsjöbanan até a '
+          'cidade. 10min para os barcos do arquipélago. Sauna ao ar livre a '
+          'lenha para aluguel extra. A acomodação é caracterizada por '
+          'materiais orgânicos e luxuosos e design consciente, isto é '
+          'procurado em tudo o que fazemos. Também queremos melhorar a '
+          'sensação de sua estadia oferecendo produtos de banho Rituals no '
+          'banheiro, e no... прочетете повече A acomodação é caracterizada por '
+          'materiais orgânicos e luxuosos e design consciente, isto é '
+          'procurado em tudo o que fazemos. Também queremos melhorar a '
+          'sensação de sua estadia oferecendo produtos de banho Rituals no '
+          'banheiro, e no... прочете повече 2 малки двойни легла',
+          'Eletrônica de consumo - eticamente infundada 8.4.2009 | Hanna-Kaisa '
+          'Hellsten Eletrônica de consumo facilita nosso dia-a-dia de muitas '
+          'maneiras e nos entretém em nosso tempo livre. Raramente paramos '
+          'para pensar sobre quais metais nossos dispositivos contêm, ou quem '
+          'os fabricou e sob quais condições. A cadeia de produção de '
+          'telefones celulares, laptops, mp3 players e consoles de jogos '
+          'levanta não apenas problemas ambientais, mas também muitas questões '
+          'éticas. Elas são mineradas em países pobres, muitas vezes sem '
+          'equipamentos de proteção e às vezes utilizando trabalho infantil. '
+          'Muitos países em desenvolvimento dependem das receitas geradas por '
+          'suas indústrias de mineração, como a Zâmbia e a República '
+          'Democrática do Congo, que produzem metade do cobalto mundial. Um '
+          'quarto do cobalto mundial é usado para baterias em equipamentos '
+          'eletrônicos portáteis. A mineração é perigosa tanto para os '
+          'trabalhadores quanto para o meio ambiente, pois gera muitos '
+          'resíduos e pode expor os mineiros a poeira mineral prejudicial aos '
+          'pulmões, entre outras coisas. Na Indonésia, o segundo maior país '
+          'produtor de estanho do mundo, o ambiente de mineração foi '
+          'amplamente destruído e muitos mineiros de estanho trabalham em '
+          'condições perigosas. Uma grande proporção dos mineiros que '
+          'trabalham em empregos de risco não conseguem ganhar um salário '
+          'mínimo para sustentar suas famílias. O trabalho infantil é comum '
+          'nas minas. No Katanga, Congo, por exemplo, estima-se que 50 000 '
+          'crianças trabalham em minas de cobre e cobalto sem equipamento de '
+          'proteção. A pobreza força muitas crianças a trabalharem em '
+          'perigosos poços de minas onde o risco de acidentes graves é alto. '
+          'Somente crianças podem caber nos buracos mais apertados das minas. '
+          'No Congo, as receitas da mineração continuam a alimentar um longo '
+          'conflito que já custou cinco milhões de vidas e é atualmente '
+          'alimentado principalmente pela mineração de minério de estanho no '
+          'leste do Congo, onde muitas minas são controladas por grupos '
+          'armados. O dinheiro da mineração é usado, entre outras coisas, para '
+          'comprar armas . O estanho é utilizado na soldagem de placas de '
+          'circuitos, e já mais de um terço do estanho do mundo é consumido '
+          'pela indústria eletrônica. A viagem das minas até o equipamento é '
+          'complexa e circula por muitos países. O minério bruto extraído na '
+          'África, por exemplo, é processado principalmente na Europa ou na '
+          'Ásia. Alguns dos metais refinados são vendidos através de trocas de '
+          'metais , outros diretamente aos fabricantes de materiais e produtos '
+          'químicos . Os fabricantes processam os metais em pós e produtos '
+          'químicos , que são vendidos a fabricantes de componentes '
+          'eletrônicos ou diretamente a fabricantes de equipamentos conhecidos '
+          '. As condições de trabalho nas fábricas de equipamentos de '
+          'fabricação muitas vezes não são melhores do que nas minas. A '
+          'maioria dos produtos eletrônicos de consumo são agora fabricados '
+          'nos chamados países de baixo custo de mão-de-obra. Os fabricantes '
+          'europeus estão terceirizando a produção para subcontratados com '
+          'base na competitividade e nos níveis de preços. O custo real dos '
+          'telefones celulares de baixo custo é suportado pelos trabalhadores '
+          'e pelo meio ambiente nos países pobres. Na China e nas Filipinas, '
+          'por exemplo, os telefones celulares e seus componentes são '
+          'fabricados sob condições miseráveis: turnos de 12 horas e semanas '
+          'de trabalho de seis dias são a rotina diária de muitas pessoas. Na '
+          'China, a violação dos limites de horas extras estabelecidos pela '
+          'legislação do país é mais a regra do que a exceção. Os '
+          'trabalhadores das fábricas de eletrônicos são geralmente mulheres '
+          'jovens que migraram do campo e recebem um salário mínimo de 35 '
+          'centavos por hora, mal o suficiente para viver. Os materiais '
+          'tóxicos utilizados na produção são uma pressão sobre a saúde dos '
+          'trabalhadores e o meio ambiente, e os trabalhadores nem sempre usam '
+          'equipamentos de proteção, o que retarda o trabalho e dificulta o '
+          'cumprimento das metas de desempenho, enquanto que o não cumprimento '
+          'das metas pode significar trabalho extra não remunerado. Os '
+          'fabricantes têm o poder de mudar as coisas e a responsabilidade '
+          'pela ética da cadeia de produção de seus equipamentos . No entanto, '
+          'o controle muitas vezes se estende apenas ao primeiro estágio da '
+          'cadeia de produção, se é que existe.']}
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+{'loss': 0.2643, 'learning_rate': 6.4e-06, 'epoch': 1.0}
+{'eval_loss': 0.1999395787715912, 'eval_f1': 0.7198557583953121, 'eval_roc_auc': 0.8395015201447504, 'eval_accuracy': 0.5694219340896812, 'eval_runtime': 56.2487, 'eval_samples_per_second': 32.907, 'eval_steps_per_second': 1.031, 'epoch': 1.0}
+{'loss': 0.1754, 'learning_rate': 4.8e-06, 'epoch': 2.0}
+{'eval_loss': 0.18980827927589417, 'eval_f1': 0.7460282916213274, 'eval_roc_auc': 0.8646509558756481, 'eval_accuracy': 0.589411129119395, 'eval_runtime': 56.2216, 'eval_samples_per_second': 32.923, 'eval_steps_per_second': 1.032, 'epoch': 2.0}
+{'loss': 0.1378, 'learning_rate': 3.2e-06, 'epoch': 3.0}
+{'eval_loss': 0.20233964920043945, 'eval_f1': 0.7292912040990607, 'eval_roc_auc': 0.8595149858119219, 'eval_accuracy': 0.5640194489465153, 'eval_runtime': 56.2312, 'eval_samples_per_second': 32.918, 'eval_steps_per_second': 1.031, 'epoch': 3.0}
+{'loss': 0.1073, 'learning_rate': 1.6e-06, 'epoch': 4.0}
+{'eval_loss': 0.20641443133354187, 'eval_f1': 0.7479530869661429, 'eval_roc_auc': 0.8612186972637756, 'eval_accuracy': 0.6029173419773096, 'eval_runtime': 58.1004, 'eval_samples_per_second': 31.859, 'eval_steps_per_second': 0.998, 'epoch': 4.0}
+{'loss': 0.0852, 'learning_rate': 0.0, 'epoch': 5.0}
+{'eval_loss': 0.21713779866695404, 'eval_f1': 0.7419141914191419, 'eval_roc_auc': 0.8591150583974514, 'eval_accuracy': 0.5980551053484603, 'eval_runtime': 58.0252, 'eval_samples_per_second': 31.9, 'eval_steps_per_second': 1.0, 'epoch': 5.0}
+{'train_runtime': 4184.1397, 'train_samples_per_second': 8.848, 'train_steps_per_second': 1.107, 'train_loss': 0.15400503170927968, 'epoch': 5.0}
+F1: 0.6666666666666666

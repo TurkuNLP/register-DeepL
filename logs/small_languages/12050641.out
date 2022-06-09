@@ -1,0 +1,161 @@
+Namespace(batch=8, epochs=3, learning=8e-06, test_set='test_sets/pt_test_modified.tsv', train_set='main_labels_only/pt_FINAL.modified.tsv.gz', treshold=0.3)
+{'dev': Dataset({
+    features: ['text', 'label'],
+    num_rows: 1851
+}),
+ 'test': Dataset({
+    features: ['text', 'label'],
+    num_rows: 332
+}),
+ 'train': Dataset({
+    features: ['text', 'label'],
+    num_rows: 7404
+})}
+[None, None, 'NA OP', None, None]
+[['NA'], ['NA'], ['NA', 'OP'], ['NA'], ['NA']]
+[[0, 0, 0, 0, 0, 1, 0, 0], [0, 0, 0, 0, 0, 1, 0, 0], [0, 0, 0, 0, 0, 1, 1, 0],
+ [0, 0, 0, 0, 0, 1, 0, 0], [0, 0, 0, 0, 0, 1, 0, 0]]
+{'label': [[0, 0, 0, 0, 0, 1, 0, 0], [0, 0, 0, 0, 0, 1, 0, 0]],
+ 'text': ['Artigos sobre eventos tsunami com conseqüências materiais e/ou '
+          'humanas registradas no mundo (excluindo França e DOM) desde 1 de '
+          'janeiro de 2001. Todos esses dados são compilados em nosso banco de '
+          'dados BD CATNAT e podem ser monitorados por e-mail ou RSS feed. '
+          '27/12: A Indonésia elevou o nível de alerta para o vulcão que gerou '
+          'um tsunami no Estreito de Sunda. As autoridades também estenderam o '
+          'raio da zona de interdição para cinco quilômetros. Escolas e casas '
+          'na ilha mais ao sul de Vanuatu, Aneityum, foram danificadas pelo '
+          'tsunami que se seguiu ao terremoto subaquático de 7,5 graus ao '
+          'largo da Nova Caledônia. Uma onda de água penetrou no interior, mas '
+          'as pessoas haviam se refugiado em terrenos mais altos. A água se '
+          'moveu cerca de 200 metros para o interior. A costa oeste da '
+          'Groenlândia foi parcialmente evacuada no domingo devido a um '
+          'tsunami após um terremoto de magnitude 4. Duas pessoas morreram, '
+          'quatro ficaram desaparecidas e nove ficaram feridas. A região de '
+          'Ica, no Peru centro-oeste, foi abalada por um forte terremoto de '
+          'magnitude 6,9. O terremoto causou pânico em Lima e em várias outras '
+          'cidades do país. Várias dezenas de pessoas foram feridas. 11/04: Um '
+          'novo tremor secundário muito forte de magnitude 7,1 na escala '
+          'Richter ocorreu esta manhã no nordeste do Japão, não muito longe da '
+          'usina nuclear de Fukushima, causando tremores nos edifícios de '
+          'Tóquio. 23/11: As autoridades indonésias dizem que o número final '
+          'de mortos do tsunami é de 509. Pelo menos 185 pessoas morreram, 7 '
+          'estão desaparecidas e pelo menos 310 outras ficaram feridas no '
+          'arquipélago samoano (220.000 habitantes) em um tsunami desencadeado '
+          'por um poderoso terremoto de magnitude 8 ao amanhecer no Pacífico '
+          'Sul. O número de mortos foi confirmado em 142 em Samoa, 34 em Samoa '
+          'Americana e nove em Tonga. Além disso, acredita-se que sete pessoas '
+          'desaparecidas estejam mortas. Um pequeno tsunami causado por um '
+          'terremoto submarino de magnitude 6,2 ocorreu na costa chilena nas '
+          'áreas de Puerto Aysén e Puerto Chacabuco.',
+          'As partes são relatadas após a revelação "Atravessa a linha do que '
+          'é apropriado se se trata de festejar juntos da forma sugerida no '
+          'artigo", diz a chanceler da Justiça Anna Skarhed. Tanto a Ministra '
+          'da Fazenda Magdalena Andersson quanto a Chanceler da Justiça Anna '
+          'Skarhed criticam as viagens do partido Kronofogden junto com os '
+          'administradores da bancarrota. Os Ombudsmen Parlamentares e a '
+          'Unidade Nacional Anticorrupção estão agora considerando investigar '
+          'a tradição dos cruzeiros. "A objetividade não deve ser '
+          'questionada", diz Anna Skarhed. A cada ano, o Estado paga taxas de '
+          'mais de cem milhões de coroas aos administradores da falência do '
+          'país. As faturas devem ser examinadas pela unidade de supervisão da '
+          'Kronofogdens e na segunda-feira, a revelação do DN de que os '
+          'funcionários da unidade de supervisão em Estocolmo foram em viagens '
+          'de cruzeiro e conferências com administradores de falências '
+          'despertaram fortes reações em muitos quadrantes. O DN também foi '
+          'capaz de informar que não foi apenas a parte sob escrutínio que '
+          'teve jantares de vinho com os funcionários em Kronofogden. Cerca de '
+          'vinte representantes do Judiciário, ou seja, conselheiros e outros '
+          'funcionários dos tribunais distritais em Estocolmo, também estão '
+          'nas listas de presença. Vários deles julgaram grandes casos de '
+          'falência: "Não tenho comentários sobre o fato de que as pessoas se '
+          'reúnem e discutem questões administrativas, o que pode ser bom, é '
+          'claro. Mas isso ultrapassa a linha do que é apropriado se se trata '
+          'de festejar juntos da forma sugerida no artigo, diz a Chanceler da '
+          'Justiça Anna Skarhed. Ela assinala que os juízes são sempre '
+          'independentes em seu escritório e na tomada de decisões. Mas um '
+          'juiz do tribunal distrital deve ser capaz de levantar e discutir '
+          'questões judiciais com seus colegas juízes. - Quando você tem '
+          'tarefas responsáveis, você também tem que ser extra cuidadoso com '
+          'sua objetividade e que ela não pode ser questionada. Estou um pouco '
+          'surpreso com os dados porque os juízes e os tribunais distritais '
+          'geralmente são muito restritivos quanto à participação em eventos '
+          'externos. Especialmente se eles incluem a parte a ser auditada. '
+          'Tanto o Procurador Geral Gunnar Stetler da Unidade Nacional '
+          'Anticorrupção quanto o Ombudsman da Justiça (JO) estão agora '
+          'considerando lançar uma investigação sobre as tradições da '
+          'conferência da autoridade, que vem sendo realizada há 14 anos. - Já '
+          'houve uma reclamação de um particular e acho que vamos receber '
+          'mais. Os casos relativos à Autoridade de Execução geralmente '
+          'resultam em muitas reclamações. Se decidirmos avançar com uma '
+          'investigação, é a exigência da constituição sueca de imparcialidade '
+          'que estamos focalizando", diz o Ombudsman Lars Lindström. Lena '
+          'Bäcker, chefe de operações da Autoridade de Execução, tem '
+          'repetidamente apontado que a autoridade cumpriu todas as diretrizes '
+          'relativas à representação e à política de álcool. Mas de acordo com '
+          'o Ombudsman, o caso ainda pode ser revisto. - O arranjo pode atrair '
+          'suspeitas. Há muito o que pensar aqui, diz Lars Lindström. Uma '
+          'revisão das listas de participantes nas conferências dos últimos '
+          'dez anos mostra que a Agência Tributária Sueca também teve '
+          'funcionários em algumas das conferências. Entretanto, vários '
+          'funcionários da autoridade escolheram participar apenas dos '
+          'seminários e palestras, e posteriormente optaram por não participar '
+          'do jantar. Lena Bäcker defendeu anteriormente as viagens e jantares '
+          'da conferência dizendo que os oficiais estão bem conscientes de seu '
+          'papel de escrutínio e têm uma "abordagem de supervisão" quando vão '
+          'nos cruzeiros. Mas agora ela mudou de idéia. - Há uma discussão '
+          'sobre o que fazemos na agência o tempo todo, todos os dias. É '
+          'importante para nós que tudo o que fazemos seja feito com a máxima '
+          'confiança. Se houver a menor suspeita de influência indevida, isso '
+          'é motivo suficiente para ter uma discussão. Vamos agora defender '
+          'que as atividades ocorram durante o dia. Então não há mais jantares '
+          'e cruzeiros? - Não, nós da Kronofogdens defenderemos as atividades '
+          'diurnas no futuro. Isso significa que não há jantares com vinho ou '
+          'cerveja. Se você vem discutindo isso todos os dias há 14 anos, por '
+          'que você está tomando esta decisão agora? - Temos revisado '
+          'constantemente nossos procedimentos e, como eu disse, não queremos '
+          'que haja qualquer suspeita de influência indevida. A Ministra da '
+          'Fazenda Magdalena Andersson escreve em um comentário ao DN que']}
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+{'loss': 0.4055, 'learning_rate': 9.333333333333334e-06, 'epoch': 0.11}
+{'eval_loss': 0.35590052604675293, 'eval_f1': 0.447316538882804, 'eval_roc_auc': 0.6791680656370148, 'eval_accuracy': 0.24095083738519718, 'eval_runtime': 57.6531, 'eval_samples_per_second': 32.106, 'eval_steps_per_second': 1.006, 'epoch': 0.11}
+{'loss': 0.3316, 'learning_rate': 8.666666666666668e-06, 'epoch': 0.22}
+{'eval_loss': 0.2933483123779297, 'eval_f1': 0.575681130171544, 'eval_roc_auc': 0.7350947327555917, 'eval_accuracy': 0.4089681253376553, 'eval_runtime': 57.9232, 'eval_samples_per_second': 31.956, 'eval_steps_per_second': 1.001, 'epoch': 0.22}
+{'loss': 0.2665, 'learning_rate': 8.000000000000001e-06, 'epoch': 0.32}
+{'eval_loss': 0.25416216254234314, 'eval_f1': 0.6409744408945688, 'eval_roc_auc': 0.8178473398268683, 'eval_accuracy': 0.39330091842247433, 'eval_runtime': 58.2107, 'eval_samples_per_second': 31.798, 'eval_steps_per_second': 0.996, 'epoch': 0.32}
+{'loss': 0.2579, 'learning_rate': 7.333333333333333e-06, 'epoch': 0.43}
+{'eval_loss': 0.24167996644973755, 'eval_f1': 0.6725905673274094, 'eval_roc_auc': 0.8078718441505358, 'eval_accuracy': 0.5094543490005402, 'eval_runtime': 58.2633, 'eval_samples_per_second': 31.77, 'eval_steps_per_second': 0.995, 'epoch': 0.43}
+{'loss': 0.2439, 'learning_rate': 6.666666666666667e-06, 'epoch': 0.54}
+{'eval_loss': 0.2227991223335266, 'eval_f1': 0.6944622621338464, 'eval_roc_auc': 0.8360508046289671, 'eval_accuracy': 0.5002701242571583, 'eval_runtime': 58.3594, 'eval_samples_per_second': 31.717, 'eval_steps_per_second': 0.994, 'epoch': 0.54}
+{'loss': 0.208, 'learning_rate': 6e-06, 'epoch': 0.65}
+{'eval_loss': 0.21572990715503693, 'eval_f1': 0.6967509025270758, 'eval_roc_auc': 0.8243596160536418, 'eval_accuracy': 0.5364667747163695, 'eval_runtime': 59.8007, 'eval_samples_per_second': 30.953, 'eval_steps_per_second': 0.97, 'epoch': 0.65}
+{'loss': 0.2167, 'learning_rate': 5.333333333333334e-06, 'epoch': 0.76}
+{'eval_loss': 0.21321284770965576, 'eval_f1': 0.7039827771797632, 'eval_roc_auc': 0.8402620968237314, 'eval_accuracy': 0.5251215559157212, 'eval_runtime': 58.782, 'eval_samples_per_second': 31.489, 'eval_steps_per_second': 0.987, 'epoch': 0.76}
+{'loss': 0.2111, 'learning_rate': 4.666666666666667e-06, 'epoch': 0.86}
+{'eval_loss': 0.214072123169899, 'eval_f1': 0.7015184381778741, 'eval_roc_auc': 0.8368338546440058, 'eval_accuracy': 0.5299837925445705, 'eval_runtime': 58.6744, 'eval_samples_per_second': 31.547, 'eval_steps_per_second': 0.989, 'epoch': 0.86}
+{'loss': 0.2167, 'learning_rate': 4.000000000000001e-06, 'epoch': 0.97}
+{'eval_loss': 0.20252905786037445, 'eval_f1': 0.7231200172376643, 'eval_roc_auc': 0.8519245592321998, 'eval_accuracy': 0.5424095083738519, 'eval_runtime': 58.5518, 'eval_samples_per_second': 31.613, 'eval_steps_per_second': 0.991, 'epoch': 0.97}
+{'loss': 0.1789, 'learning_rate': 3.3333333333333333e-06, 'epoch': 1.08}
+{'eval_loss': 0.19801883399486542, 'eval_f1': 0.7274272360314424, 'eval_roc_auc': 0.8584045320713379, 'eval_accuracy': 0.5548352242031335, 'eval_runtime': 58.4795, 'eval_samples_per_second': 31.652, 'eval_steps_per_second': 0.992, 'epoch': 1.08}
+{'loss': 0.1866, 'learning_rate': 2.666666666666667e-06, 'epoch': 1.19}
+{'eval_loss': 0.19652532041072845, 'eval_f1': 0.7292294446835988, 'eval_roc_auc': 0.8560068908112255, 'eval_accuracy': 0.5586169638033496, 'eval_runtime': 58.3046, 'eval_samples_per_second': 31.747, 'eval_steps_per_second': 0.995, 'epoch': 1.19}
+{'loss': 0.1697, 'learning_rate': 2.0000000000000003e-06, 'epoch': 1.3}
+{'eval_loss': 0.19494269788265228, 'eval_f1': 0.7345626072041166, 'eval_roc_auc': 0.8603765201923635, 'eval_accuracy': 0.5656401944894651, 'eval_runtime': 58.352, 'eval_samples_per_second': 31.721, 'eval_steps_per_second': 0.994, 'epoch': 1.3}
+{'loss': 0.1617, 'learning_rate': 1.3333333333333334e-06, 'epoch': 1.4}
+{'eval_loss': 0.19688674807548523, 'eval_f1': 0.7328176795580111, 'eval_roc_auc': 0.8511719697940923, 'eval_accuracy': 0.5769854132901134, 'eval_runtime': 58.3769, 'eval_samples_per_second': 31.708, 'eval_steps_per_second': 0.994, 'epoch': 1.4}
+{'loss': 0.1679, 'learning_rate': 6.666666666666667e-07, 'epoch': 1.51}
+{'eval_loss': 0.19458535313606262, 'eval_f1': 0.7368649587494573, 'eval_roc_auc': 0.8583950289494722, 'eval_accuracy': 0.5769854132901134, 'eval_runtime': 58.3588, 'eval_samples_per_second': 31.718, 'eval_steps_per_second': 0.994, 'epoch': 1.51}
+{'loss': 0.166, 'learning_rate': 0.0, 'epoch': 1.62}
+{'eval_loss': 0.193086177110672, 'eval_f1': 0.7379655848399043, 'eval_roc_auc': 0.8581870081411763, 'eval_accuracy': 0.5786061588330632, 'eval_runtime': 58.3418, 'eval_samples_per_second': 31.727, 'eval_steps_per_second': 0.994, 'epoch': 1.62}
+{'train_runtime': 2181.4417, 'train_samples_per_second': 5.501, 'train_steps_per_second': 0.688, 'train_loss': 0.22590904490152994, 'epoch': 1.62}
+F1: 0.6700507614213198

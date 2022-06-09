@@ -1,0 +1,75 @@
+Downloading and preparing dataset csv/default to /users/annieske/.cache/huggingface/datasets/csv/default-81fe0042dac0baf4/0.0.0/433e0ccc46f9880962cc2b12065189766fbb2bee57a221866138fb9203c83519...
+Dataset csv downloaded and prepared to /users/annieske/.cache/huggingface/datasets/csv/default-81fe0042dac0baf4/0.0.0/433e0ccc46f9880962cc2b12065189766fbb2bee57a221866138fb9203c83519. Subsequent calls will reuse this data.
+{'dev': Dataset({
+    features: ['text', 'label'],
+    num_rows: 1858
+}),
+ 'test': Dataset({
+    features: ['text', 'label'],
+    num_rows: 1177
+}),
+ 'train': Dataset({
+    features: ['text', 'label'],
+    num_rows: 7429
+})}
+['ID', 'IP', 'IN OP', None, 'IP']
+[['ID'], ['IP'], ['IN', 'OP'], ['NA'], ['IP']]
+[[0, 1, 0, 0, 0, 0, 0, 0], [0, 0, 0, 1, 0, 0, 0, 0], [0, 0, 1, 0, 0, 0, 1, 0],
+ [0, 0, 0, 0, 0, 1, 0, 0], [0, 0, 0, 1, 0, 0, 0, 0]]
+{'label': [[0, 1, 0, 0, 0, 0, 0, 0], [0, 0, 0, 1, 0, 0, 0, 0]],
+ 'text': ['In reply to "Uniformly continuous", posted by Pasha on Nov 10, '
+          '2003: &gt;Show that the requirement in the definition of uniform '
+          'continuity can be &gt;rephrased as follows, in terms of diameters '
+          'of sets: To every eps&gt;0 there &gt;exists a delta&gt;0 such that '
+          'diam(F(E))&lt;eps for all E in X with &gt;diam(E)&lt;delta. Let f '
+          "be uniformly continuous. Let e&gt;0 be given, and let d'&gt;0 be "
+          'found according to the definition uniform continuity, such that d '
+          "corresponds to e/2. So we know: d(x,y) &lt; d' --&gt; d(f(x),f(y)) "
+          '&lt; e/2, for all x and y in the domain of f. We claim that this d '
+          'works. If E is such that diam(E) &lt; d, we have to show that '
+          'diam(f(E)) &lt; e. To this end, let p and q be points of f(E). So '
+          'p=f(x), for some x in E, and q=f(y), for some y in E. As diam(E) '
+          '&lt; d, we know that d(x,y) &lt; d, so d(f(x),f(y)) = d(p,q) &lt; '
+          'e/2. this is true for ALL p,q in f(E), so diam(f(E)) = sup{d(a,b): '
+          'a,b in f(E)} &lt;= e/2 &lt; e. This is what we wanted. Now let f '
+          'satisfy the diameter-property. We want to show that f is uniformly '
+          'continuous, so let e&gt;0 be given. Let d &gt; 0 be found for the '
+          'diameter-property applied to this e. If now x and y are points of '
+          'the domain of f with d(x,y) &lt; d, we know that diam({x,y}) = '
+          'd(x,y) &lt; d, so diam(f({x,y})) = d(f(x),f(y)) &lt; e by the '
+          'property and we are done.',
+          'Paris 1913, Coco Chanel est toute dévouée à son travail et vit une '
+          'grande histoire d’amour avec le fortuné Boy Capel. Au Théâtre des '
+          'Champs-Élysées, Igor Stravinsky présente le Sacre du Printemps. '
+          'Coco est subjuguée. Mais l’œuvre, jugée anticonformiste, est '
+          'conspuée par une salle au bord de l’émeute. 7 ans plus tard, Coco, '
+          'couronnée de succès, est dévastée par la mort de Boy. Igor, réfugié '
+          'à Paris suite à la révolution russe, fait alors sa connaissance. La '
+          'rencontre est électrique. Coco propose à Igor de l’héberger dans sa '
+          "villa à Garches, pour qu'il puisse travailler. Igor s’y installe, "
+          'avec ses enfants et sa femme. Commence alors une liaison passionnée '
+          'entre les deux créateurs…']}
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+{'loss': 0.2554, 'learning_rate': 6.4e-06, 'epoch': 1.0}
+{'eval_loss': 0.1904619336128235, 'eval_f1': 0.7354157096922371, 'eval_roc_auc': 0.8402584344684025, 'eval_accuracy': 0.5984930032292788, 'eval_runtime': 57.9635, 'eval_samples_per_second': 32.055, 'eval_steps_per_second': 1.018, 'epoch': 1.0}
+{'loss': 0.1647, 'learning_rate': 4.8e-06, 'epoch': 2.0}
+{'eval_loss': 0.17790713906288147, 'eval_f1': 0.7642090846838621, 'eval_roc_auc': 0.8585626144798997, 'eval_accuracy': 0.6420882669537137, 'eval_runtime': 57.866, 'eval_samples_per_second': 32.109, 'eval_steps_per_second': 1.02, 'epoch': 2.0}
+{'loss': 0.1279, 'learning_rate': 3.2e-06, 'epoch': 3.0}
+{'eval_loss': 0.18469297885894775, 'eval_f1': 0.7675944783887758, 'eval_roc_auc': 0.8628985864298696, 'eval_accuracy': 0.6533907427341227, 'eval_runtime': 57.7225, 'eval_samples_per_second': 32.188, 'eval_steps_per_second': 1.022, 'epoch': 3.0}
+{'loss': 0.0993, 'learning_rate': 1.6e-06, 'epoch': 4.0}
+{'eval_loss': 0.19151157140731812, 'eval_f1': 0.7759439294596427, 'eval_roc_auc': 0.8680477093308482, 'eval_accuracy': 0.6571582346609257, 'eval_runtime': 57.9167, 'eval_samples_per_second': 32.081, 'eval_steps_per_second': 1.019, 'epoch': 4.0}
+{'loss': 0.0792, 'learning_rate': 0.0, 'epoch': 5.0}
+{'eval_loss': 0.20225688815116882, 'eval_f1': 0.7765401227551716, 'eval_roc_auc': 0.8668734356645279, 'eval_accuracy': 0.6609257265877287, 'eval_runtime': 59.6798, 'eval_samples_per_second': 31.133, 'eval_steps_per_second': 0.989, 'epoch': 5.0}
+{'train_runtime': 4329.0566, 'train_samples_per_second': 8.58, 'train_steps_per_second': 1.227, 'train_loss': 0.14529169948312073, 'epoch': 5.0}
+F1: 0.7752345215759849

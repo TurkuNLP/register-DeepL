@@ -1,0 +1,52 @@
+Downloading and preparing dataset csv/default to /users/annieske/.cache/huggingface/datasets/csv/default-641ce0696736ee71/0.0.0/433e0ccc46f9880962cc2b12065189766fbb2bee57a221866138fb9203c83519...
+Dataset csv downloaded and prepared to /users/annieske/.cache/huggingface/datasets/csv/default-641ce0696736ee71/0.0.0/433e0ccc46f9880962cc2b12065189766fbb2bee57a221866138fb9203c83519. Subsequent calls will reuse this data.
+Downloading and preparing dataset csv/default to /users/annieske/.cache/huggingface/datasets/csv/default-460ae460f1bea7e7/0.0.0/433e0ccc46f9880962cc2b12065189766fbb2bee57a221866138fb9203c83519...
+Dataset csv downloaded and prepared to /users/annieske/.cache/huggingface/datasets/csv/default-460ae460f1bea7e7/0.0.0/433e0ccc46f9880962cc2b12065189766fbb2bee57a221866138fb9203c83519. Subsequent calls will reuse this data.
+{'dev': Dataset({
+    features: ['text', 'label'],
+    num_rows: 1852
+}),
+ 'test': Dataset({
+    features: ['text', 'label'],
+    num_rows: 312
+}),
+ 'train': Dataset({
+    features: ['text', 'label'],
+    num_rows: 7405
+})}
+[None, 'HI', 'IN IP', 'HI IN', None]
+[['NA'], ['HI'], ['IN', 'IP'], ['HI', 'IN'], ['NA']]
+[[0, 0, 0, 0, 0, 1, 0, 0], [1, 0, 0, 0, 0, 0, 0, 0], [0, 0, 1, 1, 0, 0, 0, 0],
+ [1, 0, 1, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 1, 0, 0]]
+{'label': [[0, 0, 0, 0, 0, 1, 0, 0], [1, 0, 0, 0, 0, 0, 0, 0]],
+ 'text': ['4 PNR '
+          '在我生命中最大的转折点，在完成我的设计学学位后，我决定将接下来的几年献给我的马和冒险。2018年7月底，我和我的马术生活伙伴波特从南部转移到北部的佩里戈德。走了一个星期的路，才到达我们一段时间的家。最后，一个月后，我决定上路。我唯一的制约因素？要在我感冒之前回到家。那是九月初，我有足够的时间!这本笔记本将告诉你这次没有任何目的地或时间限制的骑马旅行的故事，这是一个--我希望--长长的清单中的第一个。我们将带您穿过佩里戈尔-利穆赞（Périgord-Limousin），然后是米勒瓦希（Millevaches）高原，然后是奥弗涅火山（Auvergne '
+          'Volcanoes），最后是魁北克（Quercy '
+          "Causses），享受您的阅读吧PS：我们是Pot'（马），我是75天。但这可能是一个生命的结束。这可能是一切的结束。我写了一些话，在这个事件发生后的几天里，它们在这里。我差点失去我的马的那一天--10月9日，我被告知 "
+          '"这不安全，有楼梯"。然而我还是去了那里。一个非常平常的GR，有很好的红色和白色的标志，甚至还有孔波斯特拉路线，有贝壳。我心想，太好了，它将是美丽和维护良好的，也许我们不会孤单。经过一个月的行走，在小路上没有遇到任何人，我们希望能和别人一起完成一点。这条路非常陡峭，朝向峡谷，先是穿过落叶树，然后是针叶树，水平差异很大，在一些通道上有木质栏杆，我们可以（重新）站在上面。然后是著名的楼梯。这种情况不多，然后对马来说，滑雪道外的情况不是很复杂，它已经习惯了。更多的台阶，这次更长，越野的技术性更强，有一些曲折，但顺利通过。然后是一座小木桥，两边都是固定的，有几米长，最后有三个台阶可以下去，不难，马也习惯了。小路变窄了，变得更窄了，我们来到了岩石区，那里的溪流成倍增加，几乎每次都有一座小木桥。路又变窄了，回头对马来说变得不可能，它只能往前走。好了，我们继续前进。左边是岩石、石头、树木和植被，右边先是空旷，然后是更多的岩石、石头、树木和植被，但在底部是火车线。它的两边都有金属电缆固定，但上面也有，这很正常。另外，在这个区间里，铁路要经过几个隧道，小路就在边缘通过，高高在上，通道很微妙，最好没有火车来打扰这几个很有技术含量的步骤所需的注意力。最后，还是在之后，有了河水，它很急，打在石头上，声音既强烈又柔和，但它从未停止，我们听到了水的所有力量。因此，我们在这个相当不错的环境中前进，但我们都知道，我们不能回头，我们必须继续朝着这个方向前进。这时，一个棘手的通道出现了，这是一座木桥，有防滑安全条，右手边有一个木栏杆。我告诉自己，一定要滑好，我们要慢慢走。此外，大桥绕过一堵墙',
+          '2011年8月18日 蓝莓奶油包 '
+          '这些包子可以用或不用蓝莓制作，也可以换成其他浆果。半升的面团可以做32个包子，但我用一半做了一个包子，另一半做了一个小包子。因此，这里的格雷厄姆饼干的馅料是16个包子的。']}
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+{'loss': 0.2657, 'learning_rate': 6.4e-06, 'epoch': 1.0}
+{'eval_loss': 0.19930943846702576, 'eval_f1': 0.7185772650805093, 'eval_roc_auc': 0.822710001685121, 'eval_accuracy': 0.5950323974082073, 'eval_runtime': 58.6881, 'eval_samples_per_second': 31.557, 'eval_steps_per_second': 0.988, 'epoch': 1.0}
+{'loss': 0.1801, 'learning_rate': 4.8e-06, 'epoch': 2.0}
+{'eval_loss': 0.19284386932849884, 'eval_f1': 0.7363321799307958, 'eval_roc_auc': 0.8429000381613303, 'eval_accuracy': 0.6015118790496761, 'eval_runtime': 58.6874, 'eval_samples_per_second': 31.557, 'eval_steps_per_second': 0.988, 'epoch': 2.0}
+{'loss': 0.142, 'learning_rate': 3.2e-06, 'epoch': 3.0}
+{'eval_loss': 0.2007121443748474, 'eval_f1': 0.7399352151781584, 'eval_roc_auc': 0.8442191085768025, 'eval_accuracy': 0.6225701943844493, 'eval_runtime': 58.6261, 'eval_samples_per_second': 31.59, 'eval_steps_per_second': 0.989, 'epoch': 3.0}
+{'loss': 0.1126, 'learning_rate': 1.6e-06, 'epoch': 4.0}
+{'eval_loss': 0.20922154188156128, 'eval_f1': 0.7479489516864174, 'eval_roc_auc': 0.8528666455495723, 'eval_accuracy': 0.6301295896328294, 'eval_runtime': 60.4038, 'eval_samples_per_second': 30.66, 'eval_steps_per_second': 0.96, 'epoch': 4.0}
+{'loss': 0.0905, 'learning_rate': 0.0, 'epoch': 5.0}
+{'eval_loss': 0.21569299697875977, 'eval_f1': 0.7494871210394348, 'eval_roc_auc': 0.8537105813435684, 'eval_accuracy': 0.6333693304535637, 'eval_runtime': 58.5811, 'eval_samples_per_second': 31.614, 'eval_steps_per_second': 0.99, 'epoch': 5.0}
+{'train_runtime': 4380.4972, 'train_samples_per_second': 8.452, 'train_steps_per_second': 1.208, 'train_loss': 0.1581656789509245, 'epoch': 5.0}
+F1: 0.5557206537890045

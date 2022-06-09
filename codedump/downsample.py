@@ -197,7 +197,10 @@ def formatEN_FIN(data):
             data[i][0] = "other"
             indeces_delete.append(i)
             #print(data[i], i)
-        
+        if data[i][3] == "":
+            indeces_delete.append(i)
+
+
         # count how many chars the current text has
         current_char_count = len(data[i][1])
         # check whether the current label/key exist already
@@ -239,6 +242,11 @@ def formatFRE_SWE(data):
                 # gets rid of empty lines as well
                 indeces_delete.append(i)
                 continue
+        if data[i][0] == "":
+            indeces_delete.append(i)
+            #print(data[i], i)
+        if data[i][1] == "":
+            indeces_delete.append(i)
         
         # count how many characters current text has
         current_char_count = len(data[i][3])

@@ -1,0 +1,112 @@
+{'dev': Dataset({
+    features: ['text', 'label'],
+    num_rows: 7401
+}),
+ 'test': Dataset({
+    features: ['text', 'label'],
+    num_rows: 312
+}),
+ 'train': Dataset({
+    features: ['text', 'label'],
+    num_rows: 29603
+})}
+['IN', 'ID', None, 'HI', 'IN']
+[['IN'], ['ID'], ['NA'], ['HI'], ['IN']]
+[[0, 0, 1, 0, 0, 0, 0, 0], [0, 1, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 1, 0, 0],
+ [1, 0, 0, 0, 0, 0, 0, 0], [0, 0, 1, 0, 0, 0, 0, 0]]
+{'label': [[0, 0, 1, 0, 0, 0, 0, 0], [0, 1, 0, 0, 0, 0, 0, 0]],
+ 'text': ['Código fuente de la página Elder ( Kōga ) La función que solicita '
+          'está restringida a los usuarios pertenecientes al siguiente grupo : '
+          'usuarios . Puede ver y copiar el texto fuente de esta página : { { '
+          'GDW-GDWO | nombre = Elder | nombre en japonés = 長老 | pronunciación '
+          '= chooroo | significado = ( clan / pueblo ) elder | imagen = [ [ '
+          'Image:Elder color .png|250px] ] [ [ Photo:Kurojakigdwm.jpg|250px] ] '
+          '| residencia = [ Kōga] ] , [ Wikipedia : Prefectura de '
+          'Shiga|Prefectura de Shiga] ] ( japonés 滋賀県・甲賀 ) | primera aparición '
+          '= parte 12 | actor de voz = [ '
+          'http://www.animenewsnetwork.com/encyclopedia / people .php?id=18568 '
+          'Kan Tanaka ] | raza = | sexo = macho | peso = | altura = | color '
+          'del pelaje = | ojos = azul | rasgos distintivos = ojo derecho '
+          'perforado , cuerpo completo en forma de cono ( manga ) | edad-gdw = '
+          '| alianza-gdw = [ Kōga] ]t , [ [ Tesshin ] ] | muerte-gdw = | '
+          'edad-gdwo = | alianza-gdwo = [ [ [ Tsukikage ( Kōga ) | Tsukikage ] '
+          "] , [ Toshimitsu ] ] , [ Orion ] | muerte-gdwo = } ' ' 'Elder ' ' ( "
+          "jap. ' 'Chōrō ' ' ) es el miembro más antiguo de [ [ Kōga ninja "
+          'dogs|Kōga ninja dogs] ] en [ [ Ginga Densetsu Weed] ]y [ Ginga '
+          'Densetsu Weed : Orion] ]respectivamente. ==Ginga Densetsu Weed == '
+          '===Manga== = Hace más de 10 años, el mayor fue uno de los [ [ '
+          'Kurojaki] ]siete subordinados que saltaron con él a la ardiente [ [ '
+          '[ Itō Iga-no-kami mansion|Itō mansion] ] Milagrosamente, el mayor '
+          'sobrevivió, pero ya no tiene pelaje, sólo una piel rocosa. Al '
+          'parecer, el Anciano criaba cachorros de perro ninja huérfanos y '
+          'vivía con ellos en una cueva a la que se accedía a través de '
+          '[[Gyōjanuma]]. Actuó como líder , pero cedió el papel al hijo de '
+          'Kurojak, [ Tesshin] ]tras su regreso a Kōga . El anciano odia a [ [ '
+          "Gin] ]y [ [ Guerreros de Ōu|Ōu's Warriors]] , y hace que Tesshin "
+          'crea una mentira contada por [ [ Sniper|Murder S]] de que Kurojak '
+          'fue asesinado por los Uōli . A pesar de su hostilidad, [ [ Weed] ] '
+          'es capaz de llegar a un acuerdo con Tesshin , y se va con las '
+          'tropas de Weed - aunque el Anciano no aprueba esto en absoluto . '
+          'Cuando Tesshin sale a despedirse del Anciano, lo encuentra en las '
+          'cataratas de Sennindaki . Los antepasados Kōgi se arrojaron a las '
+          'cataratas cuando ya no pudieron cumplir con sus obligaciones . El '
+          'Anciano no puede creer que Tesshin se haya unido a las fuerzas de '
+          'Weed, pero cuando no puede convertir a Tesshin, [[Tsukikage ( Kōga '
+          ') |Tsukikage]] o [ Toshimitsu]] a su lado, el Anciano decide '
+          'contarles la verdad sobre la muerte de sus padres. Entonces se '
+          'lanza a la cascada, pero Weed , [ Jerome] ] , [ Ken] ] y [ Hiro] ] '
+          'son capaces de sacarlo adelante. Weed le dice al Anciano que '
+          'todavía tiene trabajo que hacer. Deja a todos los cachorros menores '
+          'de un año al cuidado del Anciano. Elder enseña a los cachorros '
+          'habilidades ninja, como trepar a los árboles. ===Anime== = Elder '
+          'lidera la aldea Kōga, pero está mal de salud. La manada de Weed se '
+          'acerca.',
+          '¿Hay alguna manera de que me instalen una línea más rápido? Hola, '
+          'estoy en proceso de mudarme de oficina y me acaban de informar de '
+          'que BT openreach no puede instalar la línea para la fecha de la '
+          'mudanza. Esto es una pesadilla total ya que necesitamos tener la '
+          'banda ancha activa en la línea el día de la mudanza. El pedido es a '
+          'través de mi ISP que a su vez ha hecho un pedido a través de BT '
+          'openreach. Me preguntaba si alguien tiene algún truco para '
+          'conseguir adelantar las fechas de instalación. Actualmente quieren '
+          'poner la línea 3 días después de que nos mudemos, lo que '
+          'significará que la banda ancha tardará otros 3 días. Cualquier '
+          'consejo sería muy apreciado. BT está ocupada lidiando con los '
+          'retrasos causados por las inundaciones (supuestamente) y por lo '
+          'tanto los largos tiempos de entrega son normales en algunas áreas '
+          'en este momento. Al parecer, un proveedor de servicios de Internet '
+          'puede acelerar la instalación si se trata de una conexión '
+          'comercial. Así que cambiar a un paquete de negocios con una línea '
+          'de negocios podría ser una opción. Tu otra opción es el cable de '
+          'Virgin Media si puedes conseguirlo. Para ser honesto, 6 días sin '
+          'banda ancha es realmente quiite bueno para un movimiento de casa, '
+          'otros han esperado semanas o meses. Gracias por tu respuesta, '
+          'debería haber mencionado que esto es para un negocio y que son '
+          'líneas comerciales las que se han pedido. BT también afirma que son '
+          'los Juegos Olímpicos los que están retrasando las cosas, como '
+          'patrocinador oficial se podría pensar que estarían más preparados. '
+          'Creo que voy a tener que seguir molestando a Openreach.']}
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+{'loss': 0.1949, 'learning_rate': 6.4e-06, 'epoch': 1.0}
+{'eval_loss': 0.15705177187919617, 'eval_f1': 0.7945237538029488, 'eval_roc_auc': 0.8736327230225147, 'eval_accuracy': 0.6796378867720578, 'eval_runtime': 236.2811, 'eval_samples_per_second': 31.323, 'eval_steps_per_second': 0.982, 'epoch': 1.0}
+{'loss': 0.1114, 'learning_rate': 4.8e-06, 'epoch': 2.0}
+{'eval_loss': 0.11492379754781723, 'eval_f1': 0.8601827223314444, 'eval_roc_auc': 0.9152014044370541, 'eval_accuracy': 0.7653019862180787, 'eval_runtime': 238.5861, 'eval_samples_per_second': 31.02, 'eval_steps_per_second': 0.972, 'epoch': 2.0}
+{'loss': 0.061, 'learning_rate': 3.2e-06, 'epoch': 3.0}
+{'eval_loss': 0.0853661596775055, 'eval_f1': 0.9090182648401827, 'eval_roc_auc': 0.9482623219569634, 'eval_accuracy': 0.835157411160654, 'eval_runtime': 242.0722, 'eval_samples_per_second': 30.574, 'eval_steps_per_second': 0.958, 'epoch': 3.0}
+{'loss': 0.0298, 'learning_rate': 1.6e-06, 'epoch': 4.0}
+{'eval_loss': 0.06439414620399475, 'eval_f1': 0.9391463344951717, 'eval_roc_auc': 0.9655957748277562, 'eval_accuracy': 0.8910957978651534, 'eval_runtime': 231.8575, 'eval_samples_per_second': 31.92, 'eval_steps_per_second': 1.001, 'epoch': 4.0}
+{'loss': 0.0145, 'learning_rate': 0.0, 'epoch': 5.0}
+{'eval_loss': 0.05534122884273529, 'eval_f1': 0.9488701209769459, 'eval_roc_auc': 0.9718226891814354, 'eval_accuracy': 0.9081205242534792, 'eval_runtime': 238.5421, 'eval_samples_per_second': 31.026, 'eval_steps_per_second': 0.973, 'epoch': 5.0}
+{'train_runtime': 17295.6873, 'train_samples_per_second': 8.558, 'train_steps_per_second': 1.223, 'train_loss': 0.08230440685951447, 'epoch': 5.0}
+F1: 0.5674157303370787

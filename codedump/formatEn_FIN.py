@@ -37,6 +37,8 @@ for i in range(len(data)):
         data[i][0] = "other"
         indeces_delete.append(i)
         #print(data[i], i)
+    if data[i][1] == "":
+        indeces_delete.append(i)
 
 # remove the faulty lines
 for i in sorted(indeces_delete, reverse=True):

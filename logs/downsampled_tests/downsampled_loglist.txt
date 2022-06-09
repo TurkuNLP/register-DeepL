@@ -1,0 +1,50 @@
+FINNISH 
+
+12042095
+'eval_f1': 0.7864583333333333
+F1: 0.7802409638554217
+=> downsampled does better than original
+
+SWEDISH
+
+12042278
+'eval_f1': 0.7995018679950188
+F1: 0.7655146785581569
+=> downsampled does worse on the test set
+but otherwise evaluation is similar to original
+
+
+ENGLISH
+12043517
+'eval_f1': 0.7287559483344664
+F1: 0.6975587516060844
+=> same as with swedish
+
+
+MULTILINGUAL
+
+ENGLISH
+12044526
+--batch 7 --treshold 0.4 --epochs 5 --learning 8e-6 
+'eval_f1': 0.7741493491664764
+F1: 0.6917153253786917
+
+FINNISH
+12045071
+--batch 7 --treshold 0.4 --epochs 5 --learning 8e-6 
+'eval_f1': 0.7756410256410257
+F1: 0.8111587982832619
+
+
+SWEDISH
+12045212
+--batch 7 --treshold 0.4 --epochs 5 --learning 8e-6 
+'eval_f1': 0.7709370755998189
+F1: 0.809647495361781
+
+
+FRENCH
+12047321
+--batch 7 --treshold 0.4 --epochs 5 --learning 8e-6 
+'eval_f1': 0.7765401227551716
+F1: 0.7752345215759849

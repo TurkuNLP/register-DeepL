@@ -1,0 +1,113 @@
+ORIGINALLY THESE WERE THE SETTINGS 
+    eval_steps=100,
+    logging_steps=100,
+    learning_rate=0.00001,
+    per_device_train_batch_size=8,
+    max_steps=1500
+
+    treshold 0.3
+
+
+ALL THE GOOD NUMBERS ARE FALSE BECAUSE THE TEST SET WAS SPLICED WRONG!!!!!! :(
+
+
+
+0.4 treshold seems to be the best for now
+
+
+
+PORTUGUESE
+
+F1: 0.8021425244527247
+F1: 0.8386698923200987
+
+12044723
+--batch 7 --treshold 0.4 --epochs 5 --learning 8e-6 
+'eval_f1': 0.7516594186312657
+F1: 0.6922024623803009
+
+12067618
+--batch 8 --treshold 0.3 --epochs 5 --learning 8e-6
+'eval_f1': 0.7477378062237917
+F1: 0.6640726329442284
+
+test with steps
+12050641
+F1: 0.6700507614213198
+=> theory is that there is something going on with the shuffling since it worked previously
+
+12055899
+test with default settings and possibly proper shuffling?
+F1: 0.6676056338028169
+DID NOT HELP...
+
+12056283
+--batch 8 --treshold 0.3 --epochs 5 --learning 8e-6
+F1: 0.6666666666666666
+
+SPANISH
+F1: 0.8075641687391489
+
+12045641
+--batch 7 --treshold 0.4 --epochs 5 --learning 8e-6 
+'eval_f1': 0.7378551787351054
+F1: 0.6728110599078341
+
+12047632
+--batch 8 --treshold 0.3 --epochs 5 --learning 8e-6
+F1: 0.6636363636363636
+
+
+
+JAPANESE
+F1: 0.792918057100482
+
+12045673
+--batch 7 --treshold 0.4 --epochs 5 --learning 8e-6 
+'eval_f1': 0.7506297229219143
+F1: 0.6542056074766356
+
+12048128
+--batch 8 --treshold 0.3 --epochs 5 --learning 8e-6
+F1: 0.6311111111111111
+
+
+CHINESE
+F1: 0.817153011597456
+
+12045680
+--batch 7 --treshold 0.4 --epochs 5 --learning 8e-6 
+'eval_f1': 0.7494871210394348
+F1: 0.5557206537890045
+
+12048131
+--batch 8 --treshold 0.3 --epochs 5 --learning 8e-6
+F1: 0.5356125356125356
+
+
+
+MULTILINGUAL SHOULD RUN ONCE MORE AND SAVE THE MODEL, THEN CAN TEST ON OTHER TEST SETS
+
+CHINESE TEST SET
+12047169
+--batch 7 --treshold 0.4 --epochs 5 --learning 8e-6 
+'eval_f1': 0.9488701209769459
+F1: 0.5674157303370787
+
+
+
+SPANISH TEST SET
+12049956
+--batch 8 --treshold 0.3 --epochs 5 --learning 8e-6
+F1: 0.6812227074235807
+
+PORTUGUESE TEST SET
+12049960
+--batch 8 --treshold 0.3 --epochs 5 --learning 8e-6
+F1: 0.6459143968871596
+
+
+JAPANESE TEST SET
+12050240
+--batch 8 --treshold 0.3 --epochs 5 --learning 8e-6
+F1: 0.635593220338983

@@ -1,0 +1,132 @@
+Downloading and preparing dataset csv/default to /users/annieske/.cache/huggingface/datasets/csv/default-f6c311d1792875e2/0.0.0/433e0ccc46f9880962cc2b12065189766fbb2bee57a221866138fb9203c83519...
+Dataset csv downloaded and prepared to /users/annieske/.cache/huggingface/datasets/csv/default-f6c311d1792875e2/0.0.0/433e0ccc46f9880962cc2b12065189766fbb2bee57a221866138fb9203c83519. Subsequent calls will reuse this data.
+{'dev': Dataset({
+    features: ['text', 'label'],
+    num_rows: 558
+}),
+ 'test': Dataset({
+    features: ['text', 'label'],
+    num_rows: 9569
+}),
+ 'train': Dataset({
+    features: ['text', 'label'],
+    num_rows: 2230
+})}
+['NA IN', 'ID', 'NA IN', 'ID', 'HI']
+[['NA', 'IN'], ['ID'], ['NA', 'IN'], ['ID'], ['HI']]
+[[0, 0, 1, 0, 0, 1, 0, 0], [0, 1, 0, 0, 0, 0, 0, 0], [0, 0, 1, 0, 0, 1, 0, 0],
+ [0, 1, 0, 0, 0, 0, 0, 0], [1, 0, 0, 0, 0, 0, 0, 0]]
+{'label': [[0, 0, 1, 0, 0, 1, 0, 0], [0, 1, 0, 0, 0, 0, 0, 0]],
+ 'text': ['Five common nightmares - and what they mean Dream interpreters '
+          'claim there are many common symbols that occur in nightmares all '
+          'over the world. This, they believe, is down to a shared human '
+          'experience through the ages and means such symbols can be used like '
+          'a language, providing a key to unlocking their meaning. American '
+          'psychotherapist Dr Alex Lukeman claims once you have identified the '
+          'main symbols and their general meaning you should work out how they '
+          'relate to your own personal experiences - and then act on what your '
+          'nightmare is trying to tell you. Here are five of the most common '
+          'nightmares - and what they symbolise Spiders Spiders are often '
+          'negative symbols in our dreams because they are seen as frightening '
+          'by so much of society and often represent a controlling or '
+          'ensnaring force. For men (and some women) spiders can represent '
+          "something about women or a specific woman. 'Spiders are also a very "
+          "old form of life,' says Dr Lukeman. 'One of the things they "
+          'represent in dreams is something very primitive and basic - '
+          'something rooted in the depth of our being, such as our mother. For '
+          'someone who comes from a family where the mother was unloving , a '
+          'spider can be a perfect dream symbol. The evil mother becomes and '
+          "evil spider. ' Spiders can also symbolise an evil male force. It "
+          "could be an overbearing boss, father or lover. 'If you are in a "
+          'relationship unsettling to you and you have a spider dream, think '
+          "carefully about what is taking place,' says Dr Lukeman. 'Are you "
+          'fooling yourself about the other person? Is he or she what he '
+          "appears to be? Honor your instincts and feelings.' Health problems "
+          'Dr Lukeman says dreams about health problems can work on different '
+          'levels - but says they can often actually be an indication of real '
+          "illness. 'Something in ourselves understands everything that goes "
+          "on in our body,' he says. 'If you think about it something keeps "
+          'our bodies ticking over and running as they should without us '
+          "thinking about it,' he says. 'And this thing often knows if "
+          'something is wrong with us and will try to tell us. I have had many '
+          'patients who have discovered hidden health problems through their '
+          "dreams.' Common symbols for health problems are dreaming of a "
+          'specific ailment and primitive, evil fish at the bottom of the sea. '
+          "'This relates to the fact that the bottom of the sea often "
+          "represents the depth of our consciousness,' he says. But Dr Lukeman "
+          'is keen to stress that dreams about health do not always indicate '
+          "actual health problems. 'Dreams about health can often simply "
+          "indicate a more general concern about your life,' he says Running "
+          'for your life Dr Lukeman claims running is linked to the primitive '
+          'days of our cavemen ancestors where life was short and dangerous '
+          'and there was a real possibility of being chased by beasts of prey. '
+          "'Our brain still contains areas dominant during the earliest stages "
+          "of human development,' he says. 'These parts of our brain respond "
+          'instinctively to danger or stress, sounding the alarm and preparing '
+          'us for flight or battle. Fear and danger trigger the instinctive '
+          'response: the urge is to run, run faster than the thing that is '
+          "after us.' He advises trying to identify what is 'chasing' you in "
+          'real life. This could be anything that is overwhelming you in an '
+          'emotional, mental or physical sense, from work to a relationship, '
+          "then identifying what you can do to alter things. 'Chase dreams "
+          "signal ideas of helplessness,' he says. 'Do something to regain a "
+          'sense of control over your life. It could be something as simple as '
+          're-arranging your day to include time for yourself to relax. It '
+          'could be as complex as leaving a bad relationship or an '
+          "unfulfilling job.' Teeth Dreaming that your teeth are falling out "
+          "is one of the most common nightmares of all. 'Teeth are used to "
+          'speak and communicate, to chew food, to protect and attack (in more '
+          'primitive times), to convey feelings, and have a cosmetic value in '
+          "a world where good looks are valued highly,' says Dr Lukeman. For "
+          'this reason teeth dreams can relate to many areas of your life: '
+          'from feelings that you are not being heard or acknowledged or a '
+          'feeling that you are not able to express yourself properly or a '
+          "feeling that you are not in control of a situation. 'Ask yourself "
+          "if you feel frustrated about the way people listen to you,' says Dr "
+          "Lukeman. 'Perhaps you need to improve your communication skills. If "
+          'you have the dream more than',
+          'In reply to "Uniformly continuous", posted by Pasha on Nov 10, '
+          '2003: &gt;Show that the requirement in the definition of uniform '
+          'continuity can be &gt;rephrased as follows, in terms of diameters '
+          'of sets: To every eps&gt;0 there &gt;exists a delta&gt;0 such that '
+          'diam(F(E))&lt;eps for all E in X with &gt;diam(E)&lt;delta. Let f '
+          "be uniformly continuous. Let e&gt;0 be given, and let d'&gt;0 be "
+          'found according to the definition uniform continuity, such that d '
+          "corresponds to e/2. So we know: d(x,y) &lt; d' --&gt; d(f(x),f(y)) "
+          '&lt; e/2, for all x and y in the domain of f. We claim that this d '
+          'works. If E is such that diam(E) &lt; d, we have to show that '
+          'diam(f(E)) &lt; e. To this end, let p and q be points of f(E). So '
+          'p=f(x), for some x in E, and q=f(y), for some y in E. As diam(E) '
+          '&lt; d, we know that d(x,y) &lt; d, so d(f(x),f(y)) = d(p,q) &lt; '
+          'e/2. this is true for ALL p,q in f(E), so diam(f(E)) = sup{d(a,b): '
+          'a,b in f(E)} &lt;= e/2 &lt; e. This is what we wanted. Now let f '
+          'satisfy the diameter-property. We want to show that f is uniformly '
+          'continuous, so let e&gt;0 be given. Let d &gt; 0 be found for the '
+          'diameter-property applied to this e. If now x and y are points of '
+          'the domain of f with d(x,y) &lt; d, we know that diam({x,y}) = '
+          'd(x,y) &lt; d, so diam(f({x,y})) = d(f(x),f(y)) &lt; e by the '
+          'property and we are done.']}
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+{'loss': 0.3722, 'learning_rate': 6.4e-06, 'epoch': 1.0}
+{'eval_loss': 0.27629098296165466, 'eval_f1': 0.6144756277695715, 'eval_roc_auc': 0.7552598497378221, 'eval_accuracy': 0.4121863799283154, 'eval_runtime': 17.7414, 'eval_samples_per_second': 31.452, 'eval_steps_per_second': 1.015, 'epoch': 1.0}
+{'loss': 0.2457, 'learning_rate': 4.8e-06, 'epoch': 2.0}
+{'eval_loss': 0.22874754667282104, 'eval_f1': 0.7025920873124147, 'eval_roc_auc': 0.8206799987913204, 'eval_accuracy': 0.4982078853046595, 'eval_runtime': 17.5702, 'eval_samples_per_second': 31.758, 'eval_steps_per_second': 1.024, 'epoch': 2.0}
+{'loss': 0.1962, 'learning_rate': 3.2e-06, 'epoch': 3.0}
+{'eval_loss': 0.2364509552717209, 'eval_f1': 0.676470588235294, 'eval_roc_auc': 0.7997753020879941, 'eval_accuracy': 0.48028673835125446, 'eval_runtime': 17.5849, 'eval_samples_per_second': 31.732, 'eval_steps_per_second': 1.024, 'epoch': 3.0}
+{'loss': 0.1611, 'learning_rate': 1.6e-06, 'epoch': 4.0}
+{'eval_loss': 0.2210133820772171, 'eval_f1': 0.7283783783783784, 'eval_roc_auc': 0.8383037856064459, 'eval_accuracy': 0.53584229390681, 'eval_runtime': 17.5538, 'eval_samples_per_second': 31.788, 'eval_steps_per_second': 1.025, 'epoch': 4.0}
+{'loss': 0.1372, 'learning_rate': 0.0, 'epoch': 5.0}
+{'eval_loss': 0.22330592572689056, 'eval_f1': 0.7287559483344664, 'eval_roc_auc': 0.8370734443983706, 'eval_accuracy': 0.5394265232974911, 'eval_runtime': 21.3057, 'eval_samples_per_second': 26.19, 'eval_steps_per_second': 0.845, 'epoch': 5.0}
+{'train_runtime': 1442.9872, 'train_samples_per_second': 7.727, 'train_steps_per_second': 1.105, 'train_loss': 0.2224824217793336, 'epoch': 5.0}
+F1: 0.6975587516060844

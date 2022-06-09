@@ -1,0 +1,109 @@
+Namespace(batch=8, epochs=3, learning=8e-06, test_set='test_sets/pt_test_modified.tsv', train_set='main_labels_only/pt_FINAL.modified.tsv.gz', treshold=0.5)
+{'dev': Dataset({
+    features: ['text', 'label'],
+    num_rows: 1851
+}),
+ 'test': Dataset({
+    features: ['text', 'label'],
+    num_rows: 332
+}),
+ 'train': Dataset({
+    features: ['text', 'label'],
+    num_rows: 7404
+})}
+[None, 'LY', None, 'OP', 'NA SP']
+[['NA'], ['LY'], ['NA'], ['OP'], ['NA', 'SP']]
+[[0, 0, 0, 0, 0, 1, 0, 0], [0, 0, 0, 0, 1, 0, 0, 0], [0, 0, 0, 0, 0, 1, 0, 0],
+ [0, 0, 0, 0, 0, 0, 1, 0], [0, 0, 0, 0, 0, 1, 0, 1]]
+{'label': [[0, 0, 0, 0, 0, 1, 0, 0], [0, 0, 0, 0, 1, 0, 0, 0]],
+ 'text': ['Koh-Lanta, o reality show TF1, está se transformando em uma série '
+          'negra. Ontem, no Camboja, o médico francês encarregado de monitorar '
+          'os candidatos durante o jogo tirou sua própria vida. Seu suicídio '
+          'ocorre dez dias após a morte de um candidato no primeiro dia de '
+          'filmagem na ilha de Koh Rong, no Camboja. E obviamente não foi por '
+          'acaso: "Nos últimos dias, meu nome tem sido manchado na mídia. '
+          'Acusações e suposições injustas foram feitas contra mim", diz '
+          'Thierry Costa, 38 anos, em uma carta póstuma manuscrita encontrada '
+          'em seu quarto de hotel e autenticada pela empresa de produção '
+          'Adventure Lines Productions (ALP), que anunciou o suicídio. Gérald '
+          'Babin, 25 anos, morreu de ataque cardíaco. Segundo a produtora, o '
+          'candidato sofreu cãibras durante o primeiro jogo após a chegada dos '
+          'participantes ao local. O médico de emergência do show deu-lhe '
+          'primeiros socorros antes de evacuá-lo para o hospital onde ele '
+          'morreu. As autoridades cambojanas encerraram o caso como uma morte '
+          'natural. Mas na França, a morte tomou um rumo judicial com a '
+          'abertura de uma investigação por "homicídio involuntário" e uma '
+          'queixa de difamação por parte da ALP, que foi implicada em um '
+          'testemunho anônimo de um de seus membros. Amplamente divulgado pelo '
+          'site Arrêt sur Images, ele "questiona claramente a atitude da '
+          'produção e do médico".',
+          'Eu Desejo Letra Ei, aqui é a estação de rádio W-S-K-E-E. Estamos '
+          'recebendo chamadas na linha de desejos Tornando todos os seus '
+          'desejos malucos em realidade Olá 1 - Eu gostaria de ser um pouco '
+          'mais alto, eu gostaria de ser um bailarino, Eu gostaria de ter uma '
+          'garota que parecesse bem, eu a chamaria de "eu gostaria de ter um '
+          'coelho de chapéu com um morcego e um Impala de seis e quatro, eu '
+          'gostaria de ter uns seis pés e nove para poder ficar com Leoshi, '
+          'porque ela não me conhece, mas ela está muito bem, você sabe que eu '
+          'a vejo o tempo todo, e mesmo em meus sonhos eu posso planejar uma '
+          'maneira de fazê-la minha Porque eu sei que ela está vivendo phat O '
+          'namorado dela é alto e ele joga bola Então como eu vou competir com '
+          "isso 'Porque quando se trata de jogar basquetebol eu sou sempre o "
+          'último a ser escolhido E em alguns casos nunca fui escolhido Então '
+          'eu apenas me encosto na parede Ou sento na arquibancada com o resto '
+          "das garotas Que vieram para ver seus homens jogar Dag y'all! Eu "
+          'nunca entendi, negro Por que os atletas pegam as garotas voadoras E '
+          'eu pego as ratazanas do capuz Eu digo a elas: "Scat, skittle, '
+          'scabobble" Fui atingido por uma garrafa E eu estive no hospital Por '
+          'falar essa bagunça Eu confesso que é uma vergonha quando você vive '
+          'em uma cidade É do tamanho de uma caixa e ninguém sabe o seu nome '
+          'Fico feliz por ter caído em mim Como se o rápido adoecesse, enjoado '
+          'do meu estômago Com o pensamento de mim e dela juntos, certo? Então '
+          'quando eu a convidei para sair ela disse que eu não era o tipo dela '
+          '(rpt 1, 1) [ Letra de: '
+          'http://www.lyricsfreak.com/s/skee+lo/i+w\\\\\\... Eu gostaria de '
+          'ter um carro novinho em folha Até agora, eu tenho este hatchback E '
+          'para onde quer que eu vá, você me ri e quando estou no meu carro eu '
+          'tenho um pneu sobressalente no banco de trás Mas isso é plano E '
+          'você realmente quer saber o que é realmente louco Veja, eu não '
+          'consigo nem mesmo ter um encontro Então, o que você acha disso? '
+          'Ouvi dizer que a noite do baile de formatura é uma noite de bomba '
+          "Com os ratos do capô você pode segurar firme Mas realmente tho' Sou "
+          'um figaro Quando estou no meu carro não consigo nem um olá Bem, '
+          'tanta gente quer fazer um cruzeiro Crenshaw no domingo Bem, então '
+          'eu tenho que entrar no meu carro e ir Você sabe que eu pego o 110 '
+          'até o 105 Saia em Crenshaw e diga aos meus amigos que parecem vivos '
+          'Porque é difícil sobreviver quando você vive em uma selva de '
+          'concreto e essas garotas continuam passando por mim Ela parece '
+          'voar, ela parece voar Faz-me dizer meu, meu, meu (rpt 1, 1) Eu '
+          'gostaria de ser um pouco mais alto... Quem me dera ser um bailarino '
+          'Quem me dera ser um pouco mais alto, eu gostaria de ser um '
+          "bailarino (3) Ei, eu gostaria de ter meu caminho 'Porque todos os "
+          'dias seria uma sexta-feira Você poderia até acelerar na rodovia Eu '
+          "jogaria jogos do gueto Diga o nome dos meus filhos 'Little Mookie', "
+          'grande Al, Lorraine Yo você sabe que isso está no real Então se '
+          'você está com pouca sorte então você deve notar como eu me sinto '
+          'Porque se você não me quer por perto Veja eu vou simples, eu vou '
+          'fácil, eu vou greyhound Ei, você , que som é esse? Todo mundo olha '
+          'o que está acontecendo Ahhhh, sim, isso não é fresco? Todo mundo '
+          'quer descer como um dado (rpt 1, 1)']}
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+{'loss': 0.2683, 'learning_rate': 5.333333333333333e-06, 'epoch': 1.0}
+{'eval_loss': 0.20296330749988556, 'eval_f1': 0.7048811013767209, 'eval_roc_auc': 0.8063826620147913, 'eval_accuracy': 0.5813074014046461, 'eval_runtime': 58.795, 'eval_samples_per_second': 31.482, 'eval_steps_per_second': 0.986, 'epoch': 1.0}
+{'loss': 0.1794, 'learning_rate': 2.6666666666666664e-06, 'epoch': 2.0}
+{'eval_loss': 0.19176726043224335, 'eval_f1': 0.7275811924381969, 'eval_roc_auc': 0.8261688010975083, 'eval_accuracy': 0.6207455429497569, 'eval_runtime': 58.6121, 'eval_samples_per_second': 31.581, 'eval_steps_per_second': 0.99, 'epoch': 2.0}
+{'loss': 0.1416, 'learning_rate': 0.0, 'epoch': 3.0}
+{'eval_loss': 0.18517722189426422, 'eval_f1': 0.7484457197513152, 'eval_roc_auc': 0.8411376725302581, 'eval_accuracy': 0.6477579686655862, 'eval_runtime': 59.5607, 'eval_samples_per_second': 31.078, 'eval_steps_per_second': 0.974, 'epoch': 3.0}
+{'train_runtime': 2623.0929, 'train_samples_per_second': 8.468, 'train_steps_per_second': 1.059, 'train_loss': 0.19645799124644248, 'epoch': 3.0}
+F1: 0.6676056338028169

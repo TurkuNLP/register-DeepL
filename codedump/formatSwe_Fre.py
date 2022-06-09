@@ -24,6 +24,12 @@ for i in range(len(data)):
             indeces_delete.append(i)
             continue
 
+    if data[i][0] == "":
+        indeces_delete.append(i)
+        #print(data[i], i)
+    if data[i][3] == "":
+        indeces_delete.append(i)
+
 # remove the faulty lines
 for i in sorted(indeces_delete, reverse=True):
     data.pop(i)

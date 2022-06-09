@@ -1,0 +1,24 @@
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+{'loss': 0.2553, 'learning_rate': 6.666666666666667e-06, 'epoch': 1.0}
+{'eval_loss': 0.19586148858070374, 'eval_f1': 0.71939477303989, 'eval_roc_auc': 0.8486312556950711, 'eval_accuracy': 0.5625674217907227, 'eval_runtime': 57.9017, 'eval_samples_per_second': 32.02, 'eval_steps_per_second': 1.002, 'epoch': 1.0}
+{'loss': 0.1696, 'learning_rate': 3.3333333333333333e-06, 'epoch': 2.0}
+{'eval_loss': 0.18956241011619568, 'eval_f1': 0.7328528249244363, 'eval_roc_auc': 0.8529778032999946, 'eval_accuracy': 0.5906148867313916, 'eval_runtime': 57.8496, 'eval_samples_per_second': 32.049, 'eval_steps_per_second': 1.003, 'epoch': 2.0}
+{'loss': 0.1322, 'learning_rate': 0.0, 'epoch': 3.0}
+{'eval_loss': 0.19238495826721191, 'eval_f1': 0.7358708189158015, 'eval_roc_auc': 0.8569480169859921, 'eval_accuracy': 0.5927723840345199, 'eval_runtime': 57.8426, 'eval_samples_per_second': 32.053, 'eval_steps_per_second': 1.003, 'epoch': 3.0}
+{'train_runtime': 2527.4897, 'train_samples_per_second': 8.799, 'train_steps_per_second': 1.1, 'train_loss': 0.1857193086439652, 'epoch': 3.0}
+F1: 0.8075641687391489
+
+MULTILABEL
+OKAY WOW, WITH THE TRANSLATED TRAINING DATA VALIDATION IS 73% BUT WHEN EVALUTATING WITH THE
+NATIVE SPANISH DATASET WE GET 80%! ?????

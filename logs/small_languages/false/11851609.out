@@ -1,0 +1,22 @@
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+{'loss': 0.2639, 'learning_rate': 6.666666666666667e-06, 'epoch': 1.0}
+{'eval_loss': 0.21297572553157806, 'eval_f1': 0.6873977086743045, 'eval_roc_auc': 0.8239337917873408, 'eval_accuracy': 0.5296655879180151, 'eval_runtime': 56.4893, 'eval_samples_per_second': 32.82, 'eval_steps_per_second': 1.027, 'epoch': 1.0}
+{'loss': 0.1816, 'learning_rate': 3.3333333333333333e-06, 'epoch': 2.0}
+{'eval_loss': 0.1855553388595581, 'eval_f1': 0.7278040008990785, 'eval_roc_auc': 0.8587286501297144, 'eval_accuracy': 0.5550161812297735, 'eval_runtime': 56.5728, 'eval_samples_per_second': 32.772, 'eval_steps_per_second': 1.025, 'epoch': 2.0}
+{'loss': 0.141, 'learning_rate': 0.0, 'epoch': 3.0}
+{'eval_loss': 0.1833605319261551, 'eval_f1': 0.7401611047180667, 'eval_roc_auc': 0.859741777970184, 'eval_accuracy': 0.5836030204962244, 'eval_runtime': 56.5765, 'eval_samples_per_second': 32.77, 'eval_steps_per_second': 1.025, 'epoch': 3.0}
+{'train_runtime': 2477.0981, 'train_samples_per_second': 8.978, 'train_steps_per_second': 1.123, 'train_loss': 0.19549353694538554, 'epoch': 3.0}
+F1: 0.817153011597456
+
+CHINESE IS DOING VERY SIMILARLY TO SPANISH WITH MULTILABEL AND THE NATIVE TEST SET!

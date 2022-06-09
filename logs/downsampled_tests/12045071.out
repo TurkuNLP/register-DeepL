@@ -1,0 +1,123 @@
+Downloading and preparing dataset csv/default to /users/annieske/.cache/huggingface/datasets/csv/default-2319d37a776a0e61/0.0.0/433e0ccc46f9880962cc2b12065189766fbb2bee57a221866138fb9203c83519...
+Dataset csv downloaded and prepared to /users/annieske/.cache/huggingface/datasets/csv/default-2319d37a776a0e61/0.0.0/433e0ccc46f9880962cc2b12065189766fbb2bee57a221866138fb9203c83519. Subsequent calls will reuse this data.
+{'dev': Dataset({
+    features: ['text', 'label'],
+    num_rows: 1858
+}),
+ 'test': Dataset({
+    features: ['text', 'label'],
+    num_rows: 2019
+}),
+ 'train': Dataset({
+    features: ['text', 'label'],
+    num_rows: 7429
+})}
+['IN', None, None, 'IN', 'ID']
+[['IN'], ['NA'], ['NA'], ['IN'], ['ID']]
+[[0, 0, 1, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 1, 0, 0], [0, 0, 0, 0, 0, 1, 0, 0],
+ [0, 0, 1, 0, 0, 0, 0, 0], [0, 1, 0, 0, 0, 0, 0, 0]]
+{'label': [[0, 0, 1, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 1, 0, 0]],
+ 'text': ['On the Edge of the New World Plimoth Plantation Alan Villiers '
+          'sailed a full-size replica of the ship Mayflower from England to '
+          'New England in 1957.  In the same year, building had begun on '
+          'Plimoth Plantation , a representation of the village set up by the '
+          'Mayflower colonists. The town was named for the last place the '
+          'settlers had seen in England in 1620.  Spelling was not '
+          'standardised then.  The Plantation version was one of several used '
+          'at the time and distinguished it from the name of the modern city '
+          'close by.  The Mayflower i s moored alongside the State Pier there. '
+          "Plimoth Plantation fulfilled the vision of 'Harry' Hornblower II "
+          'who had spent boyhood holidays in Massachusetts.  He became '
+          'fascinated with the stories of the Pilgrim Fathers and the symbolic '
+          'landing point they were supposed to have first stepped onto -- the '
+          "' Plymouth Rock' .  There is no documentary evidence to support the "
+          'claim, and, in fact, the settlers actually made landfall near the '
+          'tip of Cape Cod close to modern Provincetown.  They made their '
+          'first permanent homes within a couple of hundred metres of where '
+          'the Rock sits under a classical canopy dating from 1920. Hornblower '
+          "opened a 'first house' representation on the waterfront in 1949, "
+          'adding a second house and then a fort/meeting house soon after.  In '
+          '1956, his family provided the land for the present village '
+          'reconstruction, where building began the following year.  The fort '
+          'was moved there.  It now acts as the main entrance to the '
+          "colonists' village project, with many houses with their backyards, "
+          "workshops and fields with sheep, cattle and goats. Native 'wigwams' "
+          'were set up in 1964.  Costumed guides described life in the colony '
+          'and the ways in which the houses had been furnished with antiques.  '
+          'Mannequins were placed to represent the inhabitants.  It depicted '
+          'the village as it might have been in 1627 when it really stood '
+          'where the city is today. In the late 1970s, staff began to try out '
+          'techniques that had been established in other US museums such as '
+          'Old Sturbridge, also in Massachusetts, and a few places in '
+          'Britain.  This was First Person Interpretation.  They adopted '
+          'well-researched roles based on real historical people, their lives '
+          'and characters.  Visitors found themselves being greeted as if they '
+          'were seventeenth century travellers.  Careful training by '
+          'linguistic specialists prepared them to use one of seventeen local '
+          'or regional English dialects with appropriate vocabulary.  '
+          'Meticulous preparation allowed them to deal with questions about '
+          'village life and the culture of the colony.  Suitable ways of '
+          'responding to visitors who referred to twentieth century features '
+          'such as fridges or automobiles were devised.  These glossed over '
+          'such things by saying something like "you will have your new '
+          'devices; we have to make use of what we can". In the late 1960s, a '
+          'crucial development began to appear.  People from the nearby Native '
+          'American community, the Wampanoag, were drawn in to operate a '
+          "'summer camp' Native Village alongside the Pilgrim Village.  It "
+          "gradually established close to the settlers' homes but with its "
+          'distinct style and culture.  Wampanoag huts, crops and craftwork '
+          'were placed on view and in the hands of Native peoples.  The route '
+          'in to the main village from the museum entrance runs through the '
+          'Wampanoag site, taking visitors in the correct historical stages of '
+          'Native America being followed by settlers arriving from England. '
+          'Other museums have had to move away from the white European view of '
+          'the United States.  Black slave history is the subject of the '
+          'National Underground Railroad Freedom Centre in Cincinnati.  The '
+          'Magnolia Plantation and Gardens near Charleston has been restoring '
+          'slave huts for visitors to see.  Native American life and culture '
+          'is so far on show in small centres and archaeological sites.  But '
+          'Colonial Williamsburg, an important museum and town in Virginia '
+          'with key War of Independence connections, has been building up the '
+          'depiction of black history slowly over some decades.  Sited in a '
+          'prominent slave state the role of black people was central to life '
+          'in Williamsburg.  The problem has been twofold.  As a museum '
+          'devoted to the mid-eighteenth century, it has to have black folk '
+          'shown in slave and servant roles, which can reinforce a status that '
+          'is no longer acceptable.  At the same time, at least in the 1950s '
+          'and 60s, the museum could only go so far in placing black people in '
+          'more important staff positions as some whites opposed such moves. '
+          'Plimoth Plantation now gives more stress to the',
+          'Piispa Arsenin suuren paaston paimenkirje 2014 Matka kohti '
+          'pääsiäistä on alkanut . Ylösnousemusajan juhlaa kohti matkataan '
+          'Ortodoksisessa kirkossa paastonajan kautta . Neljäkymmenen päivän '
+          'ajan kestävä pyhä paasto pysäyttää kvartaaliajan ihmisen '
+          'hengellisten asoiden äärelle . - Suuri paasto on muutoksen ja '
+          'parannuksen tekemisen aikaa . Se on erityinen itsetutkiskelun '
+          'aikajakso , jolle meidän on tarpeen asettaa itsellemme erityisiä '
+          'tavoitteita ja päämääriä , muistuttaa piispa Arseni Esipaimen on '
+          'julkaissut suuren paaston alkuun paimenkirjeen , jossa hän '
+          'muistuttaa paastoajan tavoitteista .']}
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+{'loss': 0.2568, 'learning_rate': 6.4e-06, 'epoch': 1.0}
+{'eval_loss': 0.19114115834236145, 'eval_f1': 0.7466415272213057, 'eval_roc_auc': 0.8432686113010813, 'eval_accuracy': 0.6232508073196986, 'eval_runtime': 57.4705, 'eval_samples_per_second': 32.33, 'eval_steps_per_second': 1.027, 'epoch': 1.0}
+{'loss': 0.166, 'learning_rate': 4.8e-06, 'epoch': 2.0}
+{'eval_loss': 0.17452149093151093, 'eval_f1': 0.7678989237248479, 'eval_roc_auc': 0.8573138959996324, 'eval_accuracy': 0.6620021528525296, 'eval_runtime': 57.2018, 'eval_samples_per_second': 32.482, 'eval_steps_per_second': 1.031, 'epoch': 2.0}
+{'loss': 0.1292, 'learning_rate': 3.2e-06, 'epoch': 3.0}
+{'eval_loss': 0.18228977918624878, 'eval_f1': 0.7632130384167637, 'eval_roc_auc': 0.8559497685666995, 'eval_accuracy': 0.6523143164693218, 'eval_runtime': 57.1938, 'eval_samples_per_second': 32.486, 'eval_steps_per_second': 1.032, 'epoch': 3.0}
+{'loss': 0.0991, 'learning_rate': 1.6e-06, 'epoch': 4.0}
+{'eval_loss': 0.18584401905536652, 'eval_f1': 0.7753986332574032, 'eval_roc_auc': 0.8690775736311106, 'eval_accuracy': 0.6593110871905274, 'eval_runtime': 57.1975, 'eval_samples_per_second': 32.484, 'eval_steps_per_second': 1.032, 'epoch': 4.0}
+{'loss': 0.077, 'learning_rate': 0.0, 'epoch': 5.0}
+{'eval_loss': 0.19690707325935364, 'eval_f1': 0.7756410256410257, 'eval_roc_auc': 0.8678025234654535, 'eval_accuracy': 0.6582346609257266, 'eval_runtime': 58.3113, 'eval_samples_per_second': 31.863, 'eval_steps_per_second': 1.012, 'epoch': 5.0}
+{'train_runtime': 4270.4006, 'train_samples_per_second': 8.698, 'train_steps_per_second': 1.243, 'train_loss': 0.1456324704847318, 'epoch': 5.0}
+F1: 0.8111587982832619

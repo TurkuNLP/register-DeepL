@@ -1,0 +1,91 @@
+Downloading and preparing dataset csv/default to /users/annieske/.cache/huggingface/datasets/csv/default-519013be4b021e15/0.0.0/433e0ccc46f9880962cc2b12065189766fbb2bee57a221866138fb9203c83519...
+Dataset csv downloaded and prepared to /users/annieske/.cache/huggingface/datasets/csv/default-519013be4b021e15/0.0.0/433e0ccc46f9880962cc2b12065189766fbb2bee57a221866138fb9203c83519. Subsequent calls will reuse this data.
+{'dev': Dataset({
+    features: ['text', 'label'],
+    num_rows: 357
+}),
+ 'test': Dataset({
+    features: ['text', 'label'],
+    num_rows: 1177
+}),
+ 'train': Dataset({
+    features: ['text', 'label'],
+    num_rows: 1425
+})}
+[None, 'IP IN', 'IP', 'IP', None]
+[['NA'], ['IP', 'IN'], ['IP'], ['IP'], ['NA']]
+[[0, 0, 0, 0, 0, 1, 0, 0], [0, 0, 1, 1, 0, 0, 0, 0], [0, 0, 0, 1, 0, 0, 0, 0],
+ [0, 0, 0, 1, 0, 0, 0, 0], [0, 0, 0, 0, 0, 1, 0, 0]]
+{'label': [[0, 0, 0, 0, 0, 1, 0, 0], [0, 0, 1, 1, 0, 0, 0, 0]],
+ 'text': ['För en stund sedan ringde en kompis till mig. Han bor i Södra '
+          'Stationsområdet och har börjat tröttna på det. Sen en tid har allt '
+          'allvarligare brott begåtts i hans hemmakvarter kring Magnus '
+          'Ladulåsgatan. Kvarteren har med sina ungkarlhotell och sociala '
+          'försöksboenden i och för sig alltid varit ganska ruffiga, men nu är '
+          'det värre än någonsin. Förra veckan smällde en bomb i grannhuset '
+          'hos en Expressen-journalist, som klarade sig med blotta '
+          'förskräckelsen och sedan gick under jord. Grova misshandelsfall, '
+          'våldtäkter, rån, fylla och droghandel hör till vardagen. För en tid '
+          'sedan var min vän kallad på förhör för att ge sin version efter att '
+          'ha bevittnat en ytterst grov (med baseballträ utförd) '
+          'rånmisshandel. Den hade skett ett stenkast från hans portingång. '
+          'Mycket av brottsligheten som sker på Söder har koppling till det '
+          'här området, och nu, för två timmar sedan var det dags igen: en '
+          'kvinna försökte skjuta ner två män som hade attackerat henne med '
+          'golfklubbor. Hon skottskadades själv efter att pistolen brunnit av '
+          'och skottet hade träffade henne i benet. Nu är hon misstänkt för '
+          'mordförsök. Gisses, vart är gamla Söder på väg?',
+          'Feather Light Pj Pant - Calvin Klein - Vinröd - Sovplagg - '
+          'Underkläder - Kvinna - Nelly.com Pyjamasbyxa i trikå från CALVIN '
+          'KLEIN. Lös modell med lagda veck framtill i midja. Avsmalnande '
+          'benslut. Följsam resår i linning. Maskintvätt 30 grader.Tillverkad '
+          'av 93% Modal och 7% Elastan. Färg: Vinröd Calvin Klein är ett '
+          'varumärke som är världskänt för sina underkläder, både för män och '
+          'kvinnor. Minimalistiskt är ett ledord för Calvin Klein och sedan '
+          'varumärket lanserades 1968 har de satsat på att göra sina kläder så '
+          'enkelt eleganta och stilrena som möjligt. När Calvin Klein skapade '
+          'sin första underklädeskollektion för män blev den genast mycket '
+          'åtråvärd och idag har de... ett brett sortiment av kalsonger och '
+          'boxershorts. Strax efteråt följdes succén upp med en komplett '
+          'kollektion med bad- och underkläder för kvinnor. Idag är både '
+          'trosor, BH och badplagg riktiga storsäljare. Läs mer '
+          'Standardleverans: Fri frakt vid köp över 100 kr, 3-5 arbetsdagar. '
+          'Expressleverans: 59 kr, 1-3 arbetsdagar (upp till 3 dagar för '
+          'postnummer som börjar på 62 och 82-98). Express hemleverans: 99 kr, '
+          '1-2 arbetsdagar (Stockholm, Göteborg och Malmö), klicka här för mer '
+          'information. 14 dagars returrätt. Klicka här för mer information om '
+          'byten och returer. Säkra betalningar: Välj mellan kortbetalning, '
+          'direktbetalning, faktura, konto/delbetalning, PayPal eller '
+          'postförskott. Nelly.com - Nordens största nätbutik för mode- och '
+          'skönhetsmedvetna killar och tjejer mellan 18 och 35 år. Nelly.com '
+          'inspirerar med nyheter varje dag från några av butikens 850 olika '
+          'varumärken till bra priser och snabb leverans. Här möts allt från '
+          'internationellt välkända modehus till Nellys egna unika varumärken '
+          'såsom Nly Trend och Nly Shoes. Några av våra övriga varumärken är '
+          'Jeffrey Campbell, Converse, Elise Ryan, Odd Molly, Primeboots, '
+          'Hunkydory och Cheap Monday. Våra kategorier innefattar skor, '
+          'kläder, klänningar, festklänningar och mycket mer.']}
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+{'loss': 0.3254, 'learning_rate': 6.4e-06, 'epoch': 1.0}
+{'eval_loss': 0.22123222053050995, 'eval_f1': 0.7216216216216217, 'eval_roc_auc': 0.8115495844787314, 'eval_accuracy': 0.6106442577030813, 'eval_runtime': 11.1353, 'eval_samples_per_second': 32.06, 'eval_steps_per_second': 1.078, 'epoch': 1.0}
+{'loss': 0.2146, 'learning_rate': 4.8e-06, 'epoch': 2.0}
+{'eval_loss': 0.17730063199996948, 'eval_f1': 0.783289817232376, 'eval_roc_auc': 0.85303020672779, 'eval_accuracy': 0.7002801120448179, 'eval_runtime': 11.6097, 'eval_samples_per_second': 30.75, 'eval_steps_per_second': 1.034, 'epoch': 2.0}
+{'loss': 0.1685, 'learning_rate': 3.2e-06, 'epoch': 3.0}
+{'eval_loss': 0.15653902292251587, 'eval_f1': 0.8095238095238094, 'eval_roc_auc': 0.8791015842244927, 'eval_accuracy': 0.7086834733893558, 'eval_runtime': 11.695, 'eval_samples_per_second': 30.526, 'eval_steps_per_second': 1.026, 'epoch': 3.0}
+{'loss': 0.1362, 'learning_rate': 1.6e-06, 'epoch': 4.0}
+{'eval_loss': 0.16079458594322205, 'eval_f1': 0.7895392278953922, 'eval_roc_auc': 0.8695696216611316, 'eval_accuracy': 0.6778711484593838, 'eval_runtime': 11.6774, 'eval_samples_per_second': 30.572, 'eval_steps_per_second': 1.028, 'epoch': 4.0}
+{'loss': 0.1163, 'learning_rate': 0.0, 'epoch': 5.0}
+{'eval_loss': 0.15667389333248138, 'eval_f1': 0.7995018679950188, 'eval_roc_auc': 0.8752423211987351, 'eval_accuracy': 0.7058823529411765, 'eval_runtime': 11.7026, 'eval_samples_per_second': 30.506, 'eval_steps_per_second': 1.025, 'epoch': 5.0}
+{'train_runtime': 936.1141, 'train_samples_per_second': 7.611, 'train_steps_per_second': 1.09, 'train_loss': 0.19220863604078106, 'epoch': 5.0}
+F1: 0.7655146785581569

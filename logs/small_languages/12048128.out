@@ -1,0 +1,53 @@
+Namespace(batch=8, epochs=5, learning=8e-06, test_set='test_sets/jpn_test_modified.tsv', train_set='main_labels_only/ja_FINAL.modified.tsv.gz', treshold=0.3)
+{'dev': Dataset({
+    features: ['text', 'label'],
+    num_rows: 1848
+}),
+ 'test': Dataset({
+    features: ['text', 'label'],
+    num_rows: 100
+}),
+ 'train': Dataset({
+    features: ['text', 'label'],
+    num_rows: 7392
+})}
+['NA OP', 'NA OP', 'OP', 'IN', 'ID SP']
+[['NA', 'OP'], ['NA', 'OP'], ['OP'], ['IN'], ['ID', 'SP']]
+[[0, 0, 0, 0, 0, 1, 1, 0], [0, 0, 0, 0, 0, 1, 1, 0], [0, 0, 0, 0, 0, 0, 1, 0],
+ [0, 0, 1, 0, 0, 0, 0, 0], [0, 1, 0, 0, 0, 0, 0, 1]]
+{'label': [[0, 0, 0, 0, 0, 1, 1, 0], [0, 0, 0, 0, 0, 1, 1, 0]],
+ 'text': ['小説が物語を語るように（「やれやれ」とEMフォスターは文句を言った）、料理本にはレシピがある。そして、フォースターのように、物語を小説の残念な要素だと感じる小説家がいるように、レシピを料理の残念な要素だと感じる料理研究家もいるのだ。エリザベス・デイビッドまでのほとんどの料理本では、レシピはどこか場当たり的なものでした。デイヴィッドのレシピがうまくいかなかったという苦情を聞くことがありますが、それは彼女が読者が自分のテクニックを駆使してレシピを作ることを想定していたからだと私は思います。でも、それは、読者が自分なりに工夫して作ることを前提にしていたからだと思います。それ以来、私たちは、レシピは、正確に従えば、料理の完成への道筋を示してくれるはずだという考えを持つようになったのです。料理人なら、そんなことは幻想だと知っている。例えば、シンプルなトマトソースを作ってみよう。ニンニクを刻むかつぶす。それを油でしばらく煮てから、トマトの缶を入れ、塩と砂糖も少々入れる。煮込むだけ。これほど簡単なことはないでしょう。しかし、レシピによると、ニンニクを中火で焼くと、ジュウジュウと激しく音を立てて、茶色くなる。レシピ通り10分ほど煮込んだソースは、まだとても液状で、パスタは出来上がって水気を切りました。このように、経験豊富な料理人はどの段階でも判断を下し、何度も鍋の火力を上げたり下げたりしていることだろう。このような判断を正確に説明しようとすると、レシピは長くなり、退屈になります。ニンニクを香りが出るまで軽く炒める」とか、「ソースはとろみが出るまで煮詰める」とか、ヒントはあっても、それだけだ。レシピ通りに作ろうとする人（そういう人はたくさんいます）は、レシピ通りに料理ができないと、とてもイライラしてしまいます。オーブンやコンロの温度も違えば（私のガスマーク6とあなたのガスマーク6では30度以上違うかもしれません）、機器も、湿度も、水の質も異なります。このような矛盾をすべて解決するような説明書は作れないのです。そのためか、多くの人が1冊の料理本から1つか2つしかレシピを作らないという調査結果もあります。私が最初に考えたのは、「レシピのない料理」という本を書くことだった。この本は、私の本の初版が出た後、2冊の本に掲載された。私は、材料や作り方のリストではなく、料理がどのように機能するかを一般的に説明しながら、この本を書いてみたのです。しかし、上に書いたような理由で、呆れるほど衒学的で退屈なものだった。フォースターのように、私は我慢した。そして、レシピを読みたい人のために、レシピの後に「なぜそうするのか」というセクションを設け、簡単なキッチンサイエンスを提供することにしました。ほとんどの家庭の料理人にとって、料理がどのように機能するかを理解することは、説明書よりも大切なことだと思ったからです。日々の食卓に並ぶ料理のほとんどに、レシピは必要ないのです。ケーキを焼くときに、材料のリストと正確なガイドラインがあれば便利なのは知っています。でも、ここでは特に、材料を混ぜたり、調理したりするときに何が起こっているのかを知る必要があります。私はケーキ作りの技術に長けているわけではありませんが、少なくともケーキの真ん中が陥没したときに、何が問題だったのかを知ることができます。私はいくつかの神話を払拭したことを願っています '
+          '- '
+          'しかし、私は彼らが慎重なハロルド-マッギーの食品と料理についての読者が楽しませるものではないことを認めなければならない。乾燥豆を浸し、早ゆでする必要がありますか '
+          '- '
+          'そして、あなたはそれらの調理水に塩を置くことができますか？米をといで澱粉を落とすのか？また、昔から人気のある、肉を「封印」するのか？そしてもちろん、茄子は塩漬けにするのでしょうか？この記事について '
+          'The great recipe swindle この記事は、guardian.co.ukに2012年5月8日火曜日、5.40 '
+          'EDTで公開されました。最終更新日：2012年5月9日（水）04.26 EDT .それは、2012年5月8日（火曜日）に05.57 '
+          'EDTで最初に公開されました。',
+          'この作品は、弟殺しの犯人を追うBDが、アナコンダ、ウー先生、ニクソンのホワイトハウスを巻き込んだ卑劣な計画を阻止するブラックスプロイテーション映画である。アーセニオ・ホールがテイスティフリーズ役で共演し、ボキーム・ウッドバインがブラックハンドジャック役、トミー・デヴィッドソンがクリームコーン役で出演している。このキャラクターたちのさらなる冒険を望むなら、アニメのスピンオフがあるが、次は？「ブラック・ダイナマイトの創世記には、我々がやろうとしたいくつかのタイプのアイデアがあった」と、ホワイトはCraveOnlineに語る。「モンティ・パイソンのように、同じキャストを使いながら、異なるタイプの映画を作ろうと考えていました。ブレイジング・サドルズの精神で、バック・アンド・ザ・プリーチャーを混ぜたような西部劇コメディになるようなものを議論し、決定に近づいたようです。Blazing '
+          'Saddles は、もちろんメル・ブルックスの代表作で、Empire の読者が選ぶ史上 12 '
+          '番目に面白い映画に選ばれている。一方、『バックと説教師』はシドニー・ポワチエの監督デビュー作で、ハリー・ベラフォンテと共演し、人種差別主義者の賞金稼ぎから幌馬車隊を守る物語である。ハリー・ベラフォンテと共演し、人種差別的な賞金稼ぎから幌馬車隊を守る。コメディでありながら、「ロック・リッジ・サーガ」のような狂気は感じられない。ブラック・ダイナマイト2」は、どんな作品になるにせよ、まだ始動していませんが、かなり活発に開発が行われているようです。前作とほぼ同じキャストで、おそらくスコット・サンダースが撮影開始時にカメラの後ろに再登場することを期待している。今日エンパイアを購読し、ファークライ3を手に入れよう今月は39.99ドルでEmpireの年間購読を申し込めば、世界最高の映画雑誌が届くだけでなく、待望のXboxまたはPS3用「ファークライ3」が手に入ります。']}
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+{'loss': 0.2809, 'learning_rate': 6.4e-06, 'epoch': 1.0}
+{'eval_loss': 0.23020638525485992, 'eval_f1': 0.6603814952861213, 'eval_roc_auc': 0.810945004543291, 'eval_accuracy': 0.4880952380952381, 'eval_runtime': 57.6125, 'eval_samples_per_second': 32.076, 'eval_steps_per_second': 1.007, 'epoch': 1.0}
+{'loss': 0.1971, 'learning_rate': 4.8e-06, 'epoch': 2.0}
+{'eval_loss': 0.1962376832962036, 'eval_f1': 0.7251842219332466, 'eval_roc_auc': 0.8538045855989692, 'eval_accuracy': 0.5492424242424242, 'eval_runtime': 56.4355, 'eval_samples_per_second': 32.745, 'eval_steps_per_second': 1.028, 'epoch': 2.0}
+{'loss': 0.1572, 'learning_rate': 3.2e-06, 'epoch': 3.0}
+{'eval_loss': 0.20124836266040802, 'eval_f1': 0.7328615656789031, 'eval_roc_auc': 0.8531459285861951, 'eval_accuracy': 0.5871212121212122, 'eval_runtime': 56.4087, 'eval_samples_per_second': 32.761, 'eval_steps_per_second': 1.028, 'epoch': 3.0}
+{'loss': 0.1245, 'learning_rate': 1.6e-06, 'epoch': 4.0}
+{'eval_loss': 0.20315445959568024, 'eval_f1': 0.7383528372709208, 'eval_roc_auc': 0.8569067639748269, 'eval_accuracy': 0.5974025974025974, 'eval_runtime': 57.975, 'eval_samples_per_second': 31.876, 'eval_steps_per_second': 1.0, 'epoch': 4.0}
+{'loss': 0.1031, 'learning_rate': 0.0, 'epoch': 5.0}
+{'eval_loss': 0.20917585492134094, 'eval_f1': 0.7388026607538802, 'eval_roc_auc': 0.8560449809854856, 'eval_accuracy': 0.5946969696969697, 'eval_runtime': 56.4106, 'eval_samples_per_second': 32.76, 'eval_steps_per_second': 1.028, 'epoch': 5.0}
+{'train_runtime': 4184.1163, 'train_samples_per_second': 8.833, 'train_steps_per_second': 1.104, 'train_loss': 0.1725373734643449, 'epoch': 5.0}
+F1: 0.6311111111111111

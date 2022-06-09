@@ -1,0 +1,74 @@
+Namespace(batch=8, epochs=5, learning=8e-06, test_set='test_sets/spa_test_modified.tsv', train_set='main_labels_only/es_FINAL.modified.tsv.gz', treshold=0.3)
+{'dev': Dataset({
+    features: ['text', 'label'],
+    num_rows: 1851
+}),
+ 'test': Dataset({
+    features: ['text', 'label'],
+    num_rows: 99
+}),
+ 'train': Dataset({
+    features: ['text', 'label'],
+    num_rows: 7401
+})}
+['ID', 'NA OP', 'NA OP', 'IP', 'OP']
+[['ID'], ['NA', 'OP'], ['NA', 'OP'], ['IP'], ['OP']]
+[[0, 1, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 1, 1, 0], [0, 0, 0, 0, 0, 1, 1, 0],
+ [0, 0, 0, 1, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 1, 0]]
+{'label': [[0, 1, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 1, 1, 0]],
+ 'text': ['Sexo: Ubicación: St Jean, CAN o Burdeos, FR Re�: [Concurso de '
+          'fotografía] Los ganadores de 2011 Publicar fotos y pdf con sus '
+          'mensajes pims Sexo: Ubicación: 62 St Pol sur Ternoise sobre todo '
+          'porque las fotos son muy hermosas IP archiv�e Sexo: Ubicación: St '
+          'Jean, CAN o Burdeos, FR Re�: [Concurso de fotografía] Los ganadores '
+          'de 2011 Publicar fotos y pdf con sus mensajes fleau-fox Re�: '
+          '[Concurso de fotografía] Los ganadores de 2011 ¡bravo al ganador! '
+          'IP archiv�e Re�: [Concurso de fotografía] Los ganadores de 2011 '
+          'Otra difícil elección IP archiv�e Re�: [Concurso de fotografía] Los '
+          'ganadores de 2011 Gracias a todos, me alegro de que os guste tanto. '
+          'IP archiv�e tengo problemas para encontrar un artículo original '
+          'para citarte. Sexo: Re�: [Concurso de fotografía] Los ganadores de '
+          'la F�licitación 2011, la victoria es ampliamente m�rit�e IP '
+          'archiv�e Sexo: Ubicación: 62 St Pol sur Ternoise bravo al ganador '
+          'IP archiv�e',
+          'Orangutanes fumadores En la isla central indonesia de Java, dos '
+          'orangutanes han sido reubicados en un zoológico tras ser '
+          'sorprendidos regularmente fumando cigarrillos. Los visitantes '
+          'arrojaron cigarrillos encendidos a los orangutanes con la esperanza '
+          'de que reaccionaran (léase: oportunidades fotográficas) y el '
+          'resultado fue una reubicación en el aislamiento. No sólo se trata '
+          'de relaciones públicas gratuitas para los gigantes del tabaco, sino '
+          'que también es una historia triste si se tiene en cuenta que los '
+          'orangutanes están en peligro de extinción y no necesitan más '
+          'peligros externos en forma de cigarrillos que puedan deteriorar aún '
+          'más sus condiciones de vida. Los dos orangutanes fumadores ya '
+          'padecen tuberculosis y hepatitis B. El hecho de que el personal de '
+          'los zoológicos se vea obligado a informar a los visitantes de que '
+          'no deben proporcionar cigarrillos a los orangutanes dice mucho '
+          'sobre lo lejos que tiene que llegar la humanidad para darse cuenta '
+          'de lo que es correcto y adecuado, lo que es de sentido común y lo '
+          'que es un puro disparate.']}
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+{'loss': 0.2683, 'learning_rate': 6.4e-06, 'epoch': 1.0}
+{'eval_loss': 0.2012362778186798, 'eval_f1': 0.7193941943626421, 'eval_roc_auc': 0.8564291721047363, 'eval_accuracy': 0.526742301458671, 'eval_runtime': 58.9229, 'eval_samples_per_second': 31.414, 'eval_steps_per_second': 0.984, 'epoch': 1.0}
+{'loss': 0.1801, 'learning_rate': 4.8e-06, 'epoch': 2.0}
+{'eval_loss': 0.19122324883937836, 'eval_f1': 0.7379445777874755, 'eval_roc_auc': 0.8581168713601981, 'eval_accuracy': 0.5829281469475959, 'eval_runtime': 58.663, 'eval_samples_per_second': 31.553, 'eval_steps_per_second': 0.989, 'epoch': 2.0}
+{'loss': 0.142, 'learning_rate': 3.2e-06, 'epoch': 3.0}
+{'eval_loss': 0.1922295093536377, 'eval_f1': 0.7453632991490291, 'eval_roc_auc': 0.8626700726566746, 'eval_accuracy': 0.602377093462993, 'eval_runtime': 60.7937, 'eval_samples_per_second': 30.447, 'eval_steps_per_second': 0.954, 'epoch': 3.0}
+{'loss': 0.1132, 'learning_rate': 1.6e-06, 'epoch': 4.0}
+{'eval_loss': 0.20665568113327026, 'eval_f1': 0.7376106194690265, 'eval_roc_auc': 0.8541854539999444, 'eval_accuracy': 0.6007563479200432, 'eval_runtime': 58.4163, 'eval_samples_per_second': 31.686, 'eval_steps_per_second': 0.993, 'epoch': 4.0}
+{'loss': 0.0922, 'learning_rate': 0.0, 'epoch': 5.0}
+{'eval_loss': 0.2163267880678177, 'eval_f1': 0.7381215469613259, 'eval_roc_auc': 0.8547908147516515, 'eval_accuracy': 0.6029173419773096, 'eval_runtime': 58.3902, 'eval_samples_per_second': 31.701, 'eval_steps_per_second': 0.993, 'epoch': 5.0}
+{'train_runtime': 4367.5968, 'train_samples_per_second': 8.473, 'train_steps_per_second': 1.06, 'train_loss': 0.1591580236447295, 'epoch': 5.0}
+F1: 0.6636363636363636

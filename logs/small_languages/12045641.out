@@ -1,0 +1,77 @@
+Downloading and preparing dataset csv/default to /users/annieske/.cache/huggingface/datasets/csv/default-ded05e8b6d128e4e/0.0.0/433e0ccc46f9880962cc2b12065189766fbb2bee57a221866138fb9203c83519...
+Dataset csv downloaded and prepared to /users/annieske/.cache/huggingface/datasets/csv/default-ded05e8b6d128e4e/0.0.0/433e0ccc46f9880962cc2b12065189766fbb2bee57a221866138fb9203c83519. Subsequent calls will reuse this data.
+Downloading and preparing dataset csv/default to /users/annieske/.cache/huggingface/datasets/csv/default-8f7d72d41ce57dff/0.0.0/433e0ccc46f9880962cc2b12065189766fbb2bee57a221866138fb9203c83519...
+Dataset csv downloaded and prepared to /users/annieske/.cache/huggingface/datasets/csv/default-8f7d72d41ce57dff/0.0.0/433e0ccc46f9880962cc2b12065189766fbb2bee57a221866138fb9203c83519. Subsequent calls will reuse this data.
+{'dev': Dataset({
+    features: ['text', 'label'],
+    num_rows: 1851
+}),
+ 'test': Dataset({
+    features: ['text', 'label'],
+    num_rows: 99
+}),
+ 'train': Dataset({
+    features: ['text', 'label'],
+    num_rows: 7401
+})}
+['ID', 'NA OP', 'NA OP', 'IP', 'OP']
+[['ID'], ['NA', 'OP'], ['NA', 'OP'], ['IP'], ['OP']]
+[[0, 1, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 1, 1, 0], [0, 0, 0, 0, 0, 1, 1, 0],
+ [0, 0, 0, 1, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 1, 0]]
+{'label': [[0, 1, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 1, 1, 0]],
+ 'text': ['Sexo: Ubicación: St Jean, CAN o Burdeos, FR Re�: [Concurso de '
+          'fotografía] Los ganadores de 2011 Publicar fotos y pdf con sus '
+          'mensajes pims Sexo: Ubicación: 62 St Pol sur Ternoise sobre todo '
+          'porque las fotos son muy hermosas IP archiv�e Sexo: Ubicación: St '
+          'Jean, CAN o Burdeos, FR Re�: [Concurso de fotografía] Los ganadores '
+          'de 2011 Publicar fotos y pdf con sus mensajes fleau-fox Re�: '
+          '[Concurso de fotografía] Los ganadores de 2011 ¡bravo al ganador! '
+          'IP archiv�e Re�: [Concurso de fotografía] Los ganadores de 2011 '
+          'Otra difícil elección IP archiv�e Re�: [Concurso de fotografía] Los '
+          'ganadores de 2011 Gracias a todos, me alegro de que os guste tanto. '
+          'IP archiv�e tengo problemas para encontrar un artículo original '
+          'para citarte. Sexo: Re�: [Concurso de fotografía] Los ganadores de '
+          'la F�licitación 2011, la victoria es ampliamente m�rit�e IP '
+          'archiv�e Sexo: Ubicación: 62 St Pol sur Ternoise bravo al ganador '
+          'IP archiv�e',
+          'Orangutanes fumadores En la isla central indonesia de Java, dos '
+          'orangutanes han sido reubicados en un zoológico tras ser '
+          'sorprendidos regularmente fumando cigarrillos. Los visitantes '
+          'arrojaron cigarrillos encendidos a los orangutanes con la esperanza '
+          'de que reaccionaran (léase: oportunidades fotográficas) y el '
+          'resultado fue una reubicación en el aislamiento. No sólo se trata '
+          'de relaciones públicas gratuitas para los gigantes del tabaco, sino '
+          'que también es una historia triste si se tiene en cuenta que los '
+          'orangutanes están en peligro de extinción y no necesitan más '
+          'peligros externos en forma de cigarrillos que puedan deteriorar aún '
+          'más sus condiciones de vida. Los dos orangutanes fumadores ya '
+          'padecen tuberculosis y hepatitis B. El hecho de que el personal de '
+          'los zoológicos se vea obligado a informar a los visitantes de que '
+          'no deben proporcionar cigarrillos a los orangutanes dice mucho '
+          'sobre lo lejos que tiene que llegar la humanidad para darse cuenta '
+          'de lo que es correcto y adecuado, lo que es de sentido común y lo '
+          'que es un puro disparate.']}
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+{'loss': 0.2578, 'learning_rate': 6.4e-06, 'epoch': 1.0}
+{'eval_loss': 0.19890359044075012, 'eval_f1': 0.7254191209787042, 'eval_roc_auc': 0.8407090011748365, 'eval_accuracy': 0.5850891410048622, 'eval_runtime': 57.4342, 'eval_samples_per_second': 32.228, 'eval_steps_per_second': 1.01, 'epoch': 1.0}
+{'loss': 0.1758, 'learning_rate': 4.8e-06, 'epoch': 2.0}
+{'eval_loss': 0.19580605626106262, 'eval_f1': 0.7346553352219075, 'eval_roc_auc': 0.8357103843036029, 'eval_accuracy': 0.6104808211777417, 'eval_runtime': 57.3017, 'eval_samples_per_second': 32.303, 'eval_steps_per_second': 1.012, 'epoch': 2.0}
+{'loss': 0.1372, 'learning_rate': 3.2e-06, 'epoch': 3.0}
+{'eval_loss': 0.19256559014320374, 'eval_f1': 0.7516188714153561, 'eval_roc_auc': 0.8507036665338222, 'eval_accuracy': 0.6331712587790383, 'eval_runtime': 57.2972, 'eval_samples_per_second': 32.305, 'eval_steps_per_second': 1.012, 'epoch': 3.0}
+{'loss': 0.1053, 'learning_rate': 1.6e-06, 'epoch': 4.0}
+{'eval_loss': 0.21411088109016418, 'eval_f1': 0.7430523917995443, 'eval_roc_auc': 0.8496951600115569, 'eval_accuracy': 0.6229065370070233, 'eval_runtime': 57.2217, 'eval_samples_per_second': 32.348, 'eval_steps_per_second': 1.014, 'epoch': 4.0}
+{'loss': 0.0825, 'learning_rate': 0.0, 'epoch': 5.0}
+{'eval_loss': 0.2264559268951416, 'eval_f1': 0.7378551787351054, 'eval_roc_auc': 0.845100973102622, 'eval_accuracy': 0.6207455429497569, 'eval_runtime': 58.6236, 'eval_samples_per_second': 31.574, 'eval_steps_per_second': 0.989, 'epoch': 5.0}
+{'train_runtime': 4238.4464, 'train_samples_per_second': 8.731, 'train_steps_per_second': 1.248, 'train_loss': 0.15171228708076118, 'epoch': 5.0}
+F1: 0.6728110599078341

@@ -1,0 +1,140 @@
+{'dev': Dataset({
+    features: ['text', 'label'],
+    num_rows: 1851
+}),
+ 'test': Dataset({
+    features: ['text', 'label'],
+    num_rows: 332
+}),
+ 'train': Dataset({
+    features: ['text', 'label'],
+    num_rows: 7404
+})}
+[None, None, 'NA OP', None, None]
+[['NA'], ['NA'], ['NA', 'OP'], ['NA'], ['NA']]
+[[0, 0, 0, 0, 0, 1, 0, 0], [0, 0, 0, 0, 0, 1, 0, 0], [0, 0, 0, 0, 0, 1, 1, 0],
+ [0, 0, 0, 0, 0, 1, 0, 0], [0, 0, 0, 0, 0, 1, 0, 0]]
+{'label': [[0, 0, 0, 0, 0, 1, 0, 0], [0, 0, 0, 0, 0, 1, 0, 0]],
+ 'text': ['Artigos sobre eventos tsunami com conseqüências materiais e/ou '
+          'humanas registradas no mundo (excluindo França e DOM) desde 1 de '
+          'janeiro de 2001. Todos esses dados são compilados em nosso banco de '
+          'dados BD CATNAT e podem ser monitorados por e-mail ou RSS feed. '
+          '27/12: A Indonésia elevou o nível de alerta para o vulcão que gerou '
+          'um tsunami no Estreito de Sunda. As autoridades também estenderam o '
+          'raio da zona de interdição para cinco quilômetros. Escolas e casas '
+          'na ilha mais ao sul de Vanuatu, Aneityum, foram danificadas pelo '
+          'tsunami que se seguiu ao terremoto subaquático de 7,5 graus ao '
+          'largo da Nova Caledônia. Uma onda de água penetrou no interior, mas '
+          'as pessoas haviam se refugiado em terrenos mais altos. A água se '
+          'moveu cerca de 200 metros para o interior. A costa oeste da '
+          'Groenlândia foi parcialmente evacuada no domingo devido a um '
+          'tsunami após um terremoto de magnitude 4. Duas pessoas morreram, '
+          'quatro ficaram desaparecidas e nove ficaram feridas. A região de '
+          'Ica, no Peru centro-oeste, foi abalada por um forte terremoto de '
+          'magnitude 6,9. O terremoto causou pânico em Lima e em várias outras '
+          'cidades do país. Várias dezenas de pessoas foram feridas. 11/04: Um '
+          'novo tremor secundário muito forte de magnitude 7,1 na escala '
+          'Richter ocorreu esta manhã no nordeste do Japão, não muito longe da '
+          'usina nuclear de Fukushima, causando tremores nos edifícios de '
+          'Tóquio. 23/11: As autoridades indonésias dizem que o número final '
+          'de mortos do tsunami é de 509. Pelo menos 185 pessoas morreram, 7 '
+          'estão desaparecidas e pelo menos 310 outras ficaram feridas no '
+          'arquipélago samoano (220.000 habitantes) em um tsunami desencadeado '
+          'por um poderoso terremoto de magnitude 8 ao amanhecer no Pacífico '
+          'Sul. O número de mortos foi confirmado em 142 em Samoa, 34 em Samoa '
+          'Americana e nove em Tonga. Além disso, acredita-se que sete pessoas '
+          'desaparecidas estejam mortas. Um pequeno tsunami causado por um '
+          'terremoto submarino de magnitude 6,2 ocorreu na costa chilena nas '
+          'áreas de Puerto Aysén e Puerto Chacabuco.',
+          'As partes são relatadas após a revelação "Atravessa a linha do que '
+          'é apropriado se se trata de festejar juntos da forma sugerida no '
+          'artigo", diz a chanceler da Justiça Anna Skarhed. Tanto a Ministra '
+          'da Fazenda Magdalena Andersson quanto a Chanceler da Justiça Anna '
+          'Skarhed criticam as viagens do partido Kronofogden junto com os '
+          'administradores da bancarrota. Os Ombudsmen Parlamentares e a '
+          'Unidade Nacional Anticorrupção estão agora considerando investigar '
+          'a tradição dos cruzeiros. "A objetividade não deve ser '
+          'questionada", diz Anna Skarhed. A cada ano, o Estado paga taxas de '
+          'mais de cem milhões de coroas aos administradores da falência do '
+          'país. As faturas devem ser examinadas pela unidade de supervisão da '
+          'Kronofogdens e na segunda-feira, a revelação do DN de que os '
+          'funcionários da unidade de supervisão em Estocolmo foram em viagens '
+          'de cruzeiro e conferências com administradores de falências '
+          'despertaram fortes reações em muitos quadrantes. O DN também foi '
+          'capaz de informar que não foi apenas a parte sob escrutínio que '
+          'teve jantares de vinho com os funcionários em Kronofogden. Cerca de '
+          'vinte representantes do Judiciário, ou seja, conselheiros e outros '
+          'funcionários dos tribunais distritais em Estocolmo, também estão '
+          'nas listas de presença. Vários deles julgaram grandes casos de '
+          'falência: "Não tenho comentários sobre o fato de que as pessoas se '
+          'reúnem e discutem questões administrativas, o que pode ser bom, é '
+          'claro. Mas isso ultrapassa a linha do que é apropriado se se trata '
+          'de festejar juntos da forma sugerida no artigo, diz a Chanceler da '
+          'Justiça Anna Skarhed. Ela assinala que os juízes são sempre '
+          'independentes em seu escritório e na tomada de decisões. Mas um '
+          'juiz do tribunal distrital deve ser capaz de levantar e discutir '
+          'questões judiciais com seus colegas juízes. - Quando você tem '
+          'tarefas responsáveis, você também tem que ser extra cuidadoso com '
+          'sua objetividade e que ela não pode ser questionada. Estou um pouco '
+          'surpreso com os dados porque os juízes e os tribunais distritais '
+          'geralmente são muito restritivos quanto à participação em eventos '
+          'externos. Especialmente se eles incluem a parte a ser auditada. '
+          'Tanto o Procurador Geral Gunnar Stetler da Unidade Nacional '
+          'Anticorrupção quanto o Ombudsman da Justiça (JO) estão agora '
+          'considerando lançar uma investigação sobre as tradições da '
+          'conferência da autoridade, que vem sendo realizada há 14 anos. - Já '
+          'houve uma reclamação de um particular e acho que vamos receber '
+          'mais. Os casos relativos à Autoridade de Execução geralmente '
+          'resultam em muitas reclamações. Se decidirmos avançar com uma '
+          'investigação, é a exigência da constituição sueca de imparcialidade '
+          'que estamos focalizando", diz o Ombudsman Lars Lindström. Lena '
+          'Bäcker, chefe de operações da Autoridade de Execução, tem '
+          'repetidamente apontado que a autoridade cumpriu todas as diretrizes '
+          'relativas à representação e à política de álcool. Mas de acordo com '
+          'o Ombudsman, o caso ainda pode ser revisto. - O arranjo pode atrair '
+          'suspeitas. Há muito o que pensar aqui, diz Lars Lindström. Uma '
+          'revisão das listas de participantes nas conferências dos últimos '
+          'dez anos mostra que a Agência Tributária Sueca também teve '
+          'funcionários em algumas das conferências. Entretanto, vários '
+          'funcionários da autoridade escolheram participar apenas dos '
+          'seminários e palestras, e posteriormente optaram por não participar '
+          'do jantar. Lena Bäcker defendeu anteriormente as viagens e jantares '
+          'da conferência dizendo que os oficiais estão bem conscientes de seu '
+          'papel de escrutínio e têm uma "abordagem de supervisão" quando vão '
+          'nos cruzeiros. Mas agora ela mudou de idéia. - Há uma discussão '
+          'sobre o que fazemos na agência o tempo todo, todos os dias. É '
+          'importante para nós que tudo o que fazemos seja feito com a máxima '
+          'confiança. Se houver a menor suspeita de influência indevida, isso '
+          'é motivo suficiente para ter uma discussão. Vamos agora defender '
+          'que as atividades ocorram durante o dia. Então não há mais jantares '
+          'e cruzeiros? - Não, nós da Kronofogdens defenderemos as atividades '
+          'diurnas no futuro. Isso significa que não há jantares com vinho ou '
+          'cerveja. Se você vem discutindo isso todos os dias há 14 anos, por '
+          'que você está tomando esta decisão agora? - Temos revisado '
+          'constantemente nossos procedimentos e, como eu disse, não queremos '
+          'que haja qualquer suspeita de influência indevida. A Ministra da '
+          'Fazenda Magdalena Andersson escreve em um comentário ao DN que']}
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+{'loss': 0.2601, 'learning_rate': 6.4e-06, 'epoch': 1.0}
+{'eval_loss': 0.2024061530828476, 'eval_f1': 0.7205022732193116, 'eval_roc_auc': 0.8490511476085593, 'eval_accuracy': 0.5515937331172339, 'eval_runtime': 58.2624, 'eval_samples_per_second': 31.77, 'eval_steps_per_second': 0.995, 'epoch': 1.0}
+{'loss': 0.1755, 'learning_rate': 4.8e-06, 'epoch': 2.0}
+{'eval_loss': 0.1886218637228012, 'eval_f1': 0.7403169014084506, 'eval_roc_auc': 0.8568396244481865, 'eval_accuracy': 0.5769854132901134, 'eval_runtime': 58.0468, 'eval_samples_per_second': 31.888, 'eval_steps_per_second': 0.999, 'epoch': 2.0}
+{'loss': 0.1383, 'learning_rate': 3.2e-06, 'epoch': 3.0}
+{'eval_loss': 0.19063784182071686, 'eval_f1': 0.7428444641668516, 'eval_roc_auc': 0.8561659868020065, 'eval_accuracy': 0.5969746083198271, 'eval_runtime': 58.0228, 'eval_samples_per_second': 31.901, 'eval_steps_per_second': 1.0, 'epoch': 3.0}
+{'loss': 0.1085, 'learning_rate': 1.6e-06, 'epoch': 4.0}
+{'eval_loss': 0.20588165521621704, 'eval_f1': 0.7494486104984561, 'eval_roc_auc': 0.8617840662348082, 'eval_accuracy': 0.6066990815775256, 'eval_runtime': 58.0264, 'eval_samples_per_second': 31.899, 'eval_steps_per_second': 1.0, 'epoch': 4.0}
+{'loss': 0.0878, 'learning_rate': 0.0, 'epoch': 5.0}
+{'eval_loss': 0.21059726178646088, 'eval_f1': 0.7477378062237917, 'eval_roc_auc': 0.8605653179556682, 'eval_accuracy': 0.6083198271204754, 'eval_runtime': 59.105, 'eval_samples_per_second': 31.317, 'eval_steps_per_second': 0.981, 'epoch': 5.0}
+{'train_runtime': 4369.1448, 'train_samples_per_second': 8.473, 'train_steps_per_second': 1.06, 'train_loss': 0.15404010055904513, 'epoch': 5.0}
+F1: 0.6640726329442284

@@ -1,7 +1,5 @@
-from random import shuffle
 import transformers
 import datasets
-import gzip 
 import torch
 import argparse
 from pprint import PrettyPrinter
@@ -32,19 +30,28 @@ def arguments():
     parser.add_argument('--learning', type=float, default=8e-6,
         help="The learning rate for the model"
     )
+    parser.add_argument('--multilingual', action='store_true', default=False)
     args = parser.parse_args()
 
     return args 
 
 args = arguments()
+pprint(args)
 
 # manual list of the main labels
 unique_labels = ["IN", "NA", "HI", "LY", "IP", "SP", "ID", "OP"]
 
+# it is possible to load zipped csv files like this according to documentation:
+# https://huggingface.co/docs/datasets/loading#csv
+# To load zipped CSV files:
+# url = "https://domain.org/train_data.zip"
+# data_files = {"train": url}
+# dataset = load_dataset("csv", data_files=data_files)
 train = datasets.load_dataset(
     "csv", 
-    data_files={'train':args.train_set}, 
+    data_files={'train':args.train_set}, # for multilingual I could give array of files instead of one file that I made
     delimiter="\t",
+    split='train', # so that it returns a dataset instead of datasetdict
     column_names=['label', 'text'],
     features=datasets.Features({    # Here we tell how to interpret the attributes
       "text":datasets.Value("string"),
@@ -52,13 +59,17 @@ train = datasets.load_dataset(
     )
 
 # remember to shuffle because the data is in en,fi,fre,swe order!
-# this shuffles by default
+
+train.shuffle(seed=1234)
+
+# this also shuffles by default
 train, dev = train.train_test_split(test_size=0.2).values()
 
 test = datasets.load_dataset(
     "csv", 
     data_files={'test':args.test_set}, 
     delimiter="\t",
+    split='test',
     column_names=['label', 'text'],
     features=datasets.Features({    # Here we tell how to interpret the attributes
       "text":datasets.Value("string"),
@@ -72,7 +83,8 @@ pprint(dataset)
 unique_labels = ["IN", "NA", "HI", "LY", "IP", "SP", "ID", "OP"]
 
 def split_labels(dataset):
-    # for some reason NA ends up as None in the dataset??? at least in some cases
+    # NA ends up as None because NA means that there is nothing (not available)
+    # so we have to fix it
     if dataset['label'] == None:
         dataset['label'] = np.array('NA')
     else:
@@ -90,6 +102,7 @@ dataset = dataset.map(split_labels)
 pprint(dataset['train']['label'][:5])
 dataset = binarize(dataset)
 pprint(dataset['train']['label'][:5])
+pprint(dataset['train'][:2])
 
 # then use the XLMR tokenizer
 model_name = "xlm-roberta-large"
@@ -201,6 +214,8 @@ trainer = MultilabelTrainer(
 
 trainer.train()
 
-eval_results = trainer.evaluate(dataset["test"])
-
-print('F1:', eval_results['eval_f1'])
+if args.multilingual == True:
+    trainer.model.save_pretrained("Translated_multilingual")
+else:
+    eval_results = trainer.evaluate(dataset["test"])
+    print('F1:', eval_results['eval_f1'])

@@ -1,0 +1,96 @@
+{'dev': Dataset({
+    features: ['text', 'label'],
+    num_rows: 1858
+}),
+ 'test': Dataset({
+    features: ['text', 'label'],
+    num_rows: 9569
+}),
+ 'train': Dataset({
+    features: ['text', 'label'],
+    num_rows: 7429
+})}
+[None, None, 'NA OP', None, 'IN']
+[['NA'], ['NA'], ['NA', 'OP'], ['NA'], ['IN']]
+[[0, 0, 0, 0, 0, 1, 0, 0], [0, 0, 0, 0, 0, 1, 0, 0], [0, 0, 0, 0, 0, 1, 1, 0],
+ [0, 0, 0, 0, 0, 1, 0, 0], [0, 0, 1, 0, 0, 0, 0, 0]]
+{'label': [[0, 0, 0, 0, 0, 1, 0, 0], [0, 0, 0, 0, 0, 1, 0, 0]],
+ 'text': ['Monet koulut ja päiväkodit sekä nuorisotilat järjestävät omia '
+          'tapahtumia ja tempauksia Earth Hourin innostamina . Kaitaan koulu '
+          'on jo monena vuonna osallistunut Earth Houriin sammuttamalla '
+          'mahdollisuuksien mukaan valot yhden oppitunnin ajaksi . Opettajat '
+          'voivat myös halutessaan sammuttaa muita elektronisia laitteita , '
+          'kuten tykkejä , dokumenttikameroita ja tietokoneita . ” Earth '
+          'Houriin osallistuminen on helppo tapa nostaa esiin ympäristö- ja '
+          'ilmastoasioita sekä keskustella niistä oppilaiden kanssa ” , kertoo '
+          'Kaitaan koulun ekotukihenkilö Anna Rytkönen . ” Earth Hourin '
+          'yhteydessä on muutenkin hyvä tarkastella omia toimintatapoja ja '
+          'miettiä onko tykin oltava päällä koko oppitunnin ajan tai voisiko '
+          'tunnin viettää vähemmillä valoilla ja hyödyntää enemmän '
+          'luonnonvaloa . Oppilaat ovat jopa sanoneet , että luonnonvalon '
+          'käyttäminen rauhoittaa oppituntia ” , Rytkönen jatkaa . Earth '
+          'Houriin voi osallistua myös yksityishenkilönä . Tänä vuonna '
+          'kiinnitetään lisäksi huomiota tilanteeseen arktisella alueella , '
+          'missä ilmastonmuutos vaikuttaa voimakkaimmin . Tue kampanjaa '
+          'allekirjoittamalla vetoomus kestävästi tuotetun energian puolesta . '
+          'Earth Hour on WWF:n järjestämä maailmanlaajuinen ilmastotapahtuma , '
+          'jossa yksittäiset ihmiset ja erilaiset yhteisöt eri puolilla '
+          'maapalloa sammuttavat tarpeettomat valonsa tunniksi ilmaistakseen '
+          'huolensa ympäristön tilasta ja ilmastokriisistä päättäjille . '
+          'Espoon kaupungilla on pitkät perinteet Earth Hourista , sillä Espoo '
+          'oli ensimmäinen suomalainen kaupunki , joka aloitti Earth Hourin '
+          'viettämisen vuonna 2008 .',
+          'Tuesday, 24 July 2012 Things are looking up in the moth world on '
+          'the May The cold wet weather and strong easterly winds has been '
+          'disaterous for the moths of the island so far this year. Coupled '
+          'with this the vegetation took such a hit from the winter storms and '
+          "high rabbit population that there isn't much for what moths are "
+          'about to feed oand lay eggs on. But with the winds going round to '
+          'the south west and the air warming up suddenly we are getting a few '
+          'more moths in our trap that we run each night. The interesting '
+          "thing is that many don't breed on the island but are blown over "
+          "from the mainland which goes to show that moths don't have to "
+          'disperse just by their own wing power but spread around the country '
+          'using their the winds. Most moths are adapted to be able to deal '
+          'with difficult years and hopefully with different conditions we '
+          'will be getting 200 moths per trap again next year. Here are a few '
+          'from the last few days. Light arches - only recorded  in one '
+          'previous year in 2007. Marbled beauty - a moth that lives on '
+          'lichens growing on old buildings,  rocks and stone walls - habitats '
+          'we have in abundance on the May. Brown China- mark  - a micro moth '
+          'that has larval that live under the water in pools and ditches, '
+          'again something we have a lot of this year. Campion - in lives on '
+          'the ripening seeds of the sea campion that carpets the island, '
+          "you'd think we would have more of them. Burnished brass with its "
+          'metallic glistening patches on its wings. Brimstone moth  - only 2 '
+          'previous records, in August 1979 and August 1910. Its caterpillers '
+          'lives on hawthorn and related bushes so this one must have been '
+          'blown over from Lothian. The true lovers knot - a beautiful little '
+          'moth that lives on heathland and moorland, its caterpillers are '
+          'thought to feed on heathers, a long way from the island. Others '
+          'that escaped the cameras include a treble bar and the first record '
+          'for the island of a light emerald, a moth of broadleaf woodland !']}
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+{'loss': 0.2529, 'learning_rate': 6.4e-06, 'epoch': 1.0}
+{'eval_loss': 0.1903342306613922, 'eval_f1': 0.720913286373573, 'eval_roc_auc': 0.8245395910777353, 'eval_accuracy': 0.6151776103336921, 'eval_runtime': 58.532, 'eval_samples_per_second': 31.743, 'eval_steps_per_second': 1.008, 'epoch': 1.0}
+{'loss': 0.162, 'learning_rate': 4.8e-06, 'epoch': 2.0}
+{'eval_loss': 0.17587997019290924, 'eval_f1': 0.7646122356151921, 'eval_roc_auc': 0.8668107356135896, 'eval_accuracy': 0.6393972012917115, 'eval_runtime': 58.25, 'eval_samples_per_second': 31.897, 'eval_steps_per_second': 1.013, 'epoch': 2.0}
+{'loss': 0.1254, 'learning_rate': 3.2e-06, 'epoch': 3.0}
+{'eval_loss': 0.18120810389518738, 'eval_f1': 0.7732652587607334, 'eval_roc_auc': 0.8662171186989583, 'eval_accuracy': 0.6620021528525296, 'eval_runtime': 58.2582, 'eval_samples_per_second': 31.893, 'eval_steps_per_second': 1.013, 'epoch': 3.0}
+{'loss': 0.0951, 'learning_rate': 1.6e-06, 'epoch': 4.0}
+{'eval_loss': 0.19052979350090027, 'eval_f1': 0.7733698130414955, 'eval_roc_auc': 0.8713016834470462, 'eval_accuracy': 0.658772874058127, 'eval_runtime': 58.2448, 'eval_samples_per_second': 31.9, 'eval_steps_per_second': 1.013, 'epoch': 4.0}
+{'loss': 0.0756, 'learning_rate': 0.0, 'epoch': 5.0}
+{'eval_loss': 0.20388957858085632, 'eval_f1': 0.7741493491664764, 'eval_roc_auc': 0.8713067248955793, 'eval_accuracy': 0.6620021528525296, 'eval_runtime': 60.4873, 'eval_samples_per_second': 30.717, 'eval_steps_per_second': 0.975, 'epoch': 5.0}
+{'train_runtime': 4354.0394, 'train_samples_per_second': 8.531, 'train_steps_per_second': 1.22, 'train_loss': 0.14220833212642348, 'epoch': 5.0}
+F1: 0.6917153253786917
