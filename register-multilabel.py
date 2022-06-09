@@ -62,8 +62,8 @@ train = datasets.load_dataset(
 
 train.shuffle(seed=1234)
 
-# this also shuffles by default
-train, dev = train.train_test_split(test_size=0.2).values()
+# # this also shuffles by default
+# train, dev = train.train_test_split(test_size=0.2).values()
 
 test = datasets.load_dataset(
     "csv", 
@@ -76,7 +76,7 @@ test = datasets.load_dataset(
       "label":datasets.Value("string")})
     )
 
-dataset = datasets.DatasetDict({"train":train,"dev":dev, "test":test})
+dataset = datasets.DatasetDict({"train":train, "test":test}) # "dev":dev,
 pprint(dataset)
 
 # the data is fitted to these main labels
@@ -205,7 +205,7 @@ trainer = MultilabelTrainer(
     model=model,
     args=trainer_args,
     train_dataset=dataset["train"],
-    eval_dataset=dataset["dev"],
+    eval_dataset=dataset["test"],
     compute_metrics=compute_metrics,
     data_collator=data_collator,
     tokenizer = tokenizer,

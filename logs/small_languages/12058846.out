@@ -88,3 +88,5 @@ To disable this warning, you can either:
 	- Avoid using `tokenizers` before the fork if possible
 	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
 {'loss': 0.1993, 'learning_rate': 6.4e-06, 'epoch': 1.0}
+{'eval_loss': 0.14104370772838593, 'eval_f1': 0.8080032571395336, 'eval_roc_auc': 0.8834824855515445, 'eval_accuracy': 0.6953114443994055, 'eval_runtime': 240.3988, 'eval_samples_per_second': 30.786, 'eval_steps_per_second': 0.965, 'epoch': 1.0}
+{'loss': 0.111, 'learning_rate': 4.8e-06, 'epoch': 2.0}

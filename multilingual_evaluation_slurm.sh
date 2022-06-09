@@ -14,7 +14,16 @@ module load pytorch
 
 # MULTI/CROSSLINGUAL (try on test set)
 
-# I COULD MAKE A LOOP FOR ALL OF THESE
+# more loops to test all kings oflearning rates, epochs, tresholds ets.
+
+
+FILES=" test_sets/spa_test_modified.tsv, test_sets/pt_test_modified.tsv, test_sets/jpn_test_modified.tsv, test_sets/chi_all_modified.tsv "
+Field_Separator=$IFS
+
+for file in $FILES; do
+    srun python3multilingual_evaluation.py $file --batch 8 --treshold 0.4 --epochs 5 --learning 8e-6
+done
+
 
 # SPANISH
 #srun python3 multilingual_evaluation.py test_sets/spa_test_modified.tsv --batch 8 --treshold 0.4 --epochs 5 --learning 8e-6

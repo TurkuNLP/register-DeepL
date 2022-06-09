@@ -13,6 +13,7 @@ ALL THE GOOD NUMBERS ARE FALSE BECAUSE THE TEST SET WAS SPLICED WRONG!!!!!! :(
 
 
 0.4 treshold seems to be the best for now
+what about using the test set as "dev" and not testing at all?
 
 
 
@@ -44,6 +45,12 @@ DID NOT HELP...
 12056283
 --batch 8 --treshold 0.3 --epochs 5 --learning 8e-6
 F1: 0.6666666666666666
+
+what about using the test set as "dev" and not testing at all?
+12061778
+
+
+
 
 SPANISH
 F1: 0.8075641687391489
