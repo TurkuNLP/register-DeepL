@@ -178,3 +178,5 @@ To disable this warning, you can either:
 {'eval_loss': 0.13813188672065735, 'eval_f1': 0.8539122568973315, 'eval_roc_auc': 0.9173092255938546, 'eval_accuracy': 0.8269767441860465, 'eval_runtime': 33.4667, 'eval_samples_per_second': 32.121, 'eval_steps_per_second': 1.016, 'epoch': 5.0}
 {'train_runtime': 4234.7179, 'train_samples_per_second': 8.565, 'train_steps_per_second': 1.224, 'train_loss': 0.0938011986080453, 'epoch': 5.0}
 F1: 0.8012333965844401
+
+MULTILINGUAL FIN DATASET

@@ -55,7 +55,24 @@ F1: 0.6972222222222222
 --batch 8 --treshold 0.4 --epochs 5 --learning 8e-6
 F1: 0.6648721399730821
 
+12077636
+--batch 8 --treshold 0.5 --epochs 5 --learning 1e-6
+F1: 0.6424242424242425
 
+12077637
+--batch 8 --treshold 0.4 --epochs 5 --learning 1e-6
+F1: 0.6912181303116146
+
+12077638
+--batch 7 --treshold 0.4 --epochs 5 --learning 1e-6
+
+12077641
+--batch 7 --treshold 0.5 --epochs 5 --learning 1e-6
+F1: 0.6666666666666667
+
+12078275
+--batch 7 --treshold 0.4 --epochs 5 --learning 4e-6
+F1: 0.6722925457102672
 
 SPANISH
 F1: 0.8075641687391489
@@ -71,6 +88,7 @@ F1: 0.6636363636363636
 
 12076049
 --batch 8 --treshold 0.4 --epochs 5 --learning 8e-6
+F1: 0.6965174129353234
 
 
 
@@ -109,10 +127,10 @@ F1: 0.5356125356125356
 F1: 0.6259314456035767
 => this is interesting because the eval F1 kept going down but this was better :D
 
+TESTS WITH DIFFERENT THINGS
+12078321
 
-
-
-
+12078347
 
 
 
