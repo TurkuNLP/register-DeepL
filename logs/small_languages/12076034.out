@@ -1,0 +1,121 @@
+Namespace(batch=8, epochs=5, learning=8e-06, multilingual=False, test_set=['test_sets/pt_test_modified.tsv'], train_set=['main_labels_only/pt_FINAL.modified.tsv.gz'], treshold=0.4)
+{'dev': Dataset({
+    features: ['text', 'label'],
+    num_rows: 1851
+}),
+ 'test': Dataset({
+    features: ['text', 'label'],
+    num_rows: 332
+}),
+ 'train': Dataset({
+    features: ['text', 'label'],
+    num_rows: 7404
+})}
+['NA SP', 'IN', 'HI', None, 'IN']
+[['NA', 'SP'], ['IN'], ['HI'], ['NA'], ['IN']]
+[[0, 0, 0, 0, 0, 1, 0, 1], [0, 0, 1, 0, 0, 0, 0, 0], [1, 0, 0, 0, 0, 0, 0, 0],
+ [0, 0, 0, 0, 0, 1, 0, 0], [0, 0, 1, 0, 0, 0, 0, 0]]
+{'label': [[0, 0, 0, 0, 0, 1, 0, 1], [0, 0, 1, 0, 0, 0, 0, 0]],
+ 'text': ['Posts marcados Por outro lado, às vezes as pessoas caem, tropeçam '
+          'ou quebram acidentalmente as coisas. Na verdade, há tantos '
+          'incidentes como estes que temos um monte de expressões para falar '
+          'sobre eles. Em alguns casos, uma pessoa pode ter apenas um momento '
+          'desajeitado, mas outras pessoas são desajeitadas o tempo todo! '
+          'Neste episódio, Harp e Maura dão exemplos do que as pessoas '
+          'desajeitadas fazem e explicam as expressões que podemos usar para '
+          'falar sobre elas! Maura: Agora, uma pessoa que é desastrada é uma '
+          'pessoa desajeitada, é o tipo de pessoa que acabamos de descrever, '
+          'que muitas vezes pode quebrar coisas ou entrar em coisas ou cair. '
+          'Harpa: Exatamente. Quando alguém faz algo assim, você pode chamá-lo '
+          'de klutz , ou quando alguém está fazendo isso o tempo todo, ele é '
+          'um klutz . Maura: Certo. Então você pode estar começando a pensar '
+          'em alguém que você conhece que é um klutz , porque todos nós '
+          'conhecemos pessoas que são realmente desajeitadas . Harpa: Sim. Eu '
+          'estou pensando em alguém no meu trabalho. Ele está sempre se '
+          'deparando com coisas e deixando cair coisas. Eu nunca lhe daria um '
+          'bom copo. Tenho certeza de que ele o quebraria. Ele é tão '
+          'desastrado Maura: Sim. Às vezes há apenas pessoas que muitas vezes '
+          'têm acidentes e quebram as coisas. Às vezes é engraçado, mas às '
+          'vezes se elas quebram algo ou se machucam, não é tão engraçado '
+          'assim. Testemunhos de Categorias de Blog De todos os podcasts com '
+          "exemplos em inglês do 'mundo real', eu gosto mais do seu. Talvez "
+          'seja o divertimento que você coloca nas lições. Os alunos podem '
+          'ouvir isso em suas vozes. E eles também sentem sua dedicação ao que '
+          'você está fazendo - não é apenas um trabalho que você faz, mas um '
+          'presente que você dá a todos que escutam. E enquanto os alunos '
+          'gostam dos PDFs do Lipservice para todas as informações que ele '
+          'contém, como professor, estou impressionado com o esforço '
+          'profissional colocado em fazê-los. Eu dou ao podcast Culips e à '
+          'equipe Culips minha mais alta recomendação, tanto como professor, '
+          'quanto como ouvinte. -- Jim Damico, professor de ESL, Ulaanbaatar '
+          'Mongólia. Culips é um dos sites que costumo ouvir para melhorar '
+          'minha habilidade de falar inglês. Gosto dos tópicos com expressões '
+          'idiomáticas ou gírias, porque não conseguimos encontrá-los em '
+          'nenhum livro. Maura e Harpa são fáceis de entender (e temos o texto '
+          'se precisarmos dele). É muito divertido trabalhar de tal maneira. '
+          'Obrigado! -- Patrick , França Olá! Meu nome é Julio, sou do México '
+          'e estudo inglês há cerca de 3 anos.... Eu quero que você saiba que '
+          'este é um ótimo site... e os podcasts Culips são tão divertidos... '
+          'você está fazendo um trabalho incrível para pessoas que não falam '
+          'inglês como língua nativa... graças a você eu melhorei minha '
+          'compreensão auditiva e aprendi novas frases...eu sempre faço o '
+          'download do podcast e as carrego no meu celular.... Obrigado '
+          'novamente e continuo fazendo bem.... Tome cuidado :) P.D. Estou '
+          'entusiasmado com os próximos novos podcasts....I realmente quero '
+          'ouvi-los agora jaja..... -- Julio , México Olá! Como você está? Eu '
+          'só queria agradecer a todos vocês por seus esforços e energias '
+          'gastas neste grande website e compartilhar conosco seus magníficos '
+          'conhecimentos. Sei o quanto estas atividades seriam difíceis e '
+          'demoradas e não acontecerão sem uma forte motivação para o '
+          'trabalho. E a melhor parte é que eu posso sentir isso em cada '
+          'podcast individual. -- M.K_Soft , Irã Um dia, há cerca de três '
+          'meses, visitei o culips.com pela primeira vez, depois baixei alguns '
+          'podcasts e os escutei e achei este podcast tão útil e cheio de '
+          'diversão. Depois desse dia, decidi ouvir os podcasts todos os dias. '
+          'Então eu baixei todos os podcasts e continuei a escutá-los até '
+          'agora e isso realmente me ajudou a melhorar meu inglês e agora '
+          'estou tão absorvido em seguir este grande podcast. Quero agradecer '
+          'a esta incrível equipe por seu excelente trabalho em nos ensinar '
+          'inglês com suas vozes calorosas e seus trabalhos honestos. Muito '
+          'obrigado Maura, Harp, Robin e Jessie. -- Esmaeil , Irã Olá, querido '
+          'Culips! Definitivamente Culips é um dos melhores websites que '
+          'fornecem podcasts ESL para segundos idiomas. Todos que experimentam '
+          'o podcast Culips, mesmo uma vez, adorariam seu trabalho! Eu '
+          'realmente quero lhe agradecer pelo seu esforço e bom trabalho! Na '
+          'verdade, estou aprendendo inglês aqui e também recebo muitas '
+          'informações sobre o mundo todo. Amo vocês e, por favor, continuem! '
+          'Com a maior consideração',
+          'As legendas não são úteis quando a própria mídia sincronizada é uma '
+          'apresentação alternativa das informações também apresentadas em '
+          'texto em uma página web. Por exemplo, se as informações na página '
+          'forem acompanhadas por uma apresentação na forma de mídia '
+          'sincronizada que não forneça mais informações do que as presentes '
+          'no texto, mas que seja mais fácil de entender para pessoas com '
+          'deficiências cognitivas, linguísticas ou de aprendizagem, então '
+          'isso não requer legendas, pois as informações já estão presentes na '
+          'página no texto ou em uma versão alternativa do texto (por exemplo, '
+          'para imagens)']}
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+{'loss': 0.2618, 'learning_rate': 6.4e-06, 'epoch': 1.0}
+{'eval_loss': 0.22954005002975464, 'eval_f1': 0.6555555555555556, 'eval_roc_auc': 0.79799781370462, 'eval_accuracy': 0.5602409638554217, 'eval_runtime': 11.3948, 'eval_samples_per_second': 29.136, 'eval_steps_per_second': 0.965, 'epoch': 1.0}
+{'loss': 0.1768, 'learning_rate': 4.8e-06, 'epoch': 2.0}
+{'eval_loss': 0.21999239921569824, 'eval_f1': 0.6852367688022284, 'eval_roc_auc': 0.8143518784880042, 'eval_accuracy': 0.6024096385542169, 'eval_runtime': 10.2805, 'eval_samples_per_second': 32.294, 'eval_steps_per_second': 1.07, 'epoch': 2.0}
+{'loss': 0.1395, 'learning_rate': 3.2e-06, 'epoch': 3.0}
+{'eval_loss': 0.24848131835460663, 'eval_f1': 0.6675639300134589, 'eval_roc_auc': 0.8120816792282761, 'eval_accuracy': 0.5813253012048193, 'eval_runtime': 10.2738, 'eval_samples_per_second': 32.315, 'eval_steps_per_second': 1.071, 'epoch': 3.0}
+{'loss': 0.1084, 'learning_rate': 1.6e-06, 'epoch': 4.0}
+{'eval_loss': 0.26768016815185547, 'eval_f1': 0.6693017127799735, 'eval_roc_auc': 0.8181419365974338, 'eval_accuracy': 0.5632530120481928, 'eval_runtime': 10.2763, 'eval_samples_per_second': 32.307, 'eval_steps_per_second': 1.07, 'epoch': 4.0}
+{'loss': 0.0865, 'learning_rate': 0.0, 'epoch': 5.0}
+{'eval_loss': 0.28633999824523926, 'eval_f1': 0.6596306068601584, 'eval_roc_auc': 0.8119929808411485, 'eval_accuracy': 0.5572289156626506, 'eval_runtime': 10.5091, 'eval_samples_per_second': 31.592, 'eval_steps_per_second': 1.047, 'epoch': 5.0}
+{'train_runtime': 4056.9344, 'train_samples_per_second': 9.125, 'train_steps_per_second': 1.141, 'train_loss': 0.15460006845692578, 'epoch': 5.0}
+F1: 0.6648721399730821

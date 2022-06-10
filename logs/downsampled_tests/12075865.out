@@ -1,0 +1,113 @@
+Namespace(batch=7, epochs=5, learning=8e-06, multilingual=False, test_set=['multilingual-register-data-new/formatted/fre_test.formatted.tsv'], train_set=['main_labels_only/original_downsampled/fre_train.downsampled_modified.tsv'], treshold=0.4)
+Downloading and preparing dataset csv/default to /users/annieske/.cache/huggingface/datasets/csv/default-2770fa0c83a3adc2/0.0.0/433e0ccc46f9880962cc2b12065189766fbb2bee57a221866138fb9203c83519...
+Dataset csv downloaded and prepared to /users/annieske/.cache/huggingface/datasets/csv/default-2770fa0c83a3adc2/0.0.0/433e0ccc46f9880962cc2b12065189766fbb2bee57a221866138fb9203c83519. Subsequent calls will reuse this data.
+{'dev': Dataset({
+    features: ['text', 'label'],
+    num_rows: 385
+}),
+ 'test': Dataset({
+    features: ['text', 'label'],
+    num_rows: 1177
+}),
+ 'train': Dataset({
+    features: ['text', 'label'],
+    num_rows: 1539
+})}
+['NA IP', None, 'IP', 'NA SP', 'IP']
+[['NA', 'IP'], ['NA'], ['IP'], ['NA', 'SP'], ['IP']]
+[[0, 0, 0, 1, 0, 1, 0, 0], [0, 0, 0, 0, 0, 1, 0, 0], [0, 0, 0, 1, 0, 0, 0, 0],
+ [0, 0, 0, 0, 0, 1, 0, 1], [0, 0, 0, 1, 0, 0, 0, 0]]
+{'label': [[0, 0, 0, 1, 0, 1, 0, 0], [0, 0, 0, 0, 0, 1, 0, 0]],
+ 'text': ['- Lancement sur le marché mondial de batteries PRIMOVE beaucoup '
+          'plus légères et à recharge plus rapide, et de systèmes de '
+          'propulsion novateurs pour les autobus électriques- Bombardier met '
+          'en vedette ses projets actuels internationaux, y compris le système '
+          'INNOVIA Monorail 300 de grande capacité pour São Paulo, les '
+          'nouveaux métros MOVIA sans conducteur pour Singapour et la solution '
+          'CITYFLO 650 CBTC pour la plus importante mise à niveau de la '
+          'signalisation du métro de Londres- Des exploitants de transport '
+          'public de premier plan en Suisse choisissent Bombardier pour le '
+          'développement de produits de prochaine générationLe chef de file de '
+          'la technologie du rail, Bombardier Transport, a annoncé aujourd’hui '
+          'son entrée dans un nouveau segment de marché en faisant la '
+          'démonstration de sa solution révolutionnaire de mobilité électrique '
+          'BOMBARDIER PRIMOVE, développée pour le secteur des autobus. Le '
+          'système de mobilité électrique sans fil PRIMOVE a déjà fait ses '
+          'preuves dans l’exploitation de tramways. Bombardier a peaufiné '
+          'cette technologie encore davantage afin d’offrir les mêmes '
+          'avantages pour le secteur des autobus électriques, ce qui pourrait '
+          'éventuellement permettre à des passagers en Europe de profiter de '
+          'déplacements en autobus sans émission dès 2014. Les visiteurs au '
+          'congrès de l’UITP à Genève auront l’occasion de faire l’expérience '
+          'du confort et du silence de roulement d’un autobus électrique '
+          'équipé du système de propulsion et de contrôle PRIMOVE. La nouvelle '
+          'gamme étendue de technologies PRIMOVE comprend maintenant des '
+          'batteries PRIMOVE ultralégères et le système de propulsion et de '
+          'contrôle PRIMOVE, qui optimise l’efficacité énergétique des '
+          'véhicules routiers. Le marché des autobus électriques est appelé à '
+          'croître considérablement au cours des dix prochaines années et la '
+          'technologie de Bombardier propulsera certainement cette croissance. '
+          'Sous le thème « En route vers demain », outre sa '
+          'technologiePRIMOVE, Bombardier fait également la démonstration de '
+          'son leadership technologique continu dans le secteur du transport '
+          'collectif. L’entreprise présente des solutions qui sont en cours de '
+          'livraison afin d’accroître la capacité dans le cadre de certains '
+          'des projets les plus difficiles au monde et d’encourager le passage '
+          'de la voiture au rail. Ces projets comprennent le nouveau système '
+          'BOMBARDIER INNOVIA Monorail 300 à grande capacité en cours de '
+          'livraison à São Paulo pour transporter un demi-million de passagers '
+          'par jour. Le système CBTC BOMBARDIER CITYFLO 650, en cours '
+          'd’installation dans le métro de Londres dans le cadre de la plus '
+          'importante mise à niveau de son système de signalisation de son '
+          'histoire, qui englobe 40\xa0% du réseau et quatre lignes qui '
+          'transportent 1,3\xa0million de passagers par jour, sera également '
+          'en vedette. De plus, les visiteurs pourront en apprendre davantage '
+          'sur le métro BOMBARDIER MOVIA sans conducteur, dont les premières '
+          'unités sont déjà à l’essai par la Land Transport Authority de '
+          'Singapour. Le parc de 73\xa0trains automatisés sera exploité sur la '
+          'ligne du centre-ville de Singapour, la plus longue ligne '
+          'souterraine de transport collectif sans conducteur au monde, qui '
+          'transporte environ un demi-million de passagers par jour. '
+          'Bombardier continue aussi de renforcer sa position de chef de file '
+          'du marché du transport léger sur rail. Les plus récents modèles de '
+          'la famille de tramways BOMBARDIER FLEXITY sont entrés en service '
+          'payant à Blackpool, au Royaume-Uni, en avril\xa02012, alors que les '
+          'activités de fabrication et de livraison battent leur plein pour '
+          'les Compagnies des transports en commun de Bâle (BVB), en Suisse; '
+          "l'exploitant BVG à Berlin, en Allemagne; les villes de Gold Coast "
+          'et de Melbourne, en Australie; et la ville de Toronto, au Canada. '
+          'Jusqu’à présent, 1 236 tramways FLEXITY 100 à plancher bas intégral '
+          'ont été vendus dans le monde.Jürg Baumgartner, directeur général '
+          'des BVB, a déclaré : « Je suis convaincu que la ville de Bâle a '
+          'obtenu les meilleurs tramways possible pour son réseau. Le tramway '
+          'FLEXITY déclasse largement tous les autres véhicules. Les tramways '
+          'ont toujours façonné l’identité de notre',
+          'En dominant Saint-Etienne à Geoffroy-Guichard (1-2), Caen s’est '
+          'octroyé la 3e place de Ligue 1, dimanche, lors de la 28e journée de '
+          'Ligue 1. Une déception de plus pour Saint-Etienne, éliminé de '
+          'l’Europa League jeudi dernier, et qui manque une fois de plus le '
+          'coche en championnat.']}
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+{'loss': 0.3468, 'learning_rate': 6.4e-06, 'epoch': 1.0}
+{'eval_loss': 0.25813907384872437, 'eval_f1': 0.6535626535626535, 'eval_roc_auc': 0.7737575680027935, 'eval_accuracy': 0.5216652506372133, 'eval_runtime': 35.9546, 'eval_samples_per_second': 32.736, 'eval_steps_per_second': 1.029, 'epoch': 1.0}
+{'loss': 0.2283, 'learning_rate': 4.8e-06, 'epoch': 2.0}
+{'eval_loss': 0.20310606062412262, 'eval_f1': 0.7298028604561269, 'eval_roc_auc': 0.8269879785808961, 'eval_accuracy': 0.6049277824978759, 'eval_runtime': 35.9641, 'eval_samples_per_second': 32.727, 'eval_steps_per_second': 1.029, 'epoch': 2.0}
+{'loss': 0.1761, 'learning_rate': 3.2e-06, 'epoch': 3.0}
+{'eval_loss': 0.20047712326049805, 'eval_f1': 0.7311586051743532, 'eval_roc_auc': 0.8352309993653015, 'eval_accuracy': 0.6142735768903993, 'eval_runtime': 35.9284, 'eval_samples_per_second': 32.76, 'eval_steps_per_second': 1.03, 'epoch': 3.0}
+{'loss': 0.1422, 'learning_rate': 1.6e-06, 'epoch': 4.0}
+{'eval_loss': 0.19295164942741394, 'eval_f1': 0.747078778741048, 'eval_roc_auc': 0.8429226320761884, 'eval_accuracy': 0.6389124893797791, 'eval_runtime': 35.9159, 'eval_samples_per_second': 32.771, 'eval_steps_per_second': 1.03, 'epoch': 4.0}
+{'loss': 0.1187, 'learning_rate': 0.0, 'epoch': 5.0}
+{'eval_loss': 0.19548438489437103, 'eval_f1': 0.7463249151903507, 'eval_roc_auc': 0.8424963001579547, 'eval_accuracy': 0.6457094307561597, 'eval_runtime': 35.8978, 'eval_samples_per_second': 32.788, 'eval_steps_per_second': 1.031, 'epoch': 5.0}
+{'train_runtime': 1094.8254, 'train_samples_per_second': 7.029, 'train_steps_per_second': 1.005, 'train_loss': 0.20241324684836648, 'epoch': 5.0}
+F1: 0.747078778741048

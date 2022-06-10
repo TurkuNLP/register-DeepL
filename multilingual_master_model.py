@@ -23,8 +23,9 @@ def arguments():
         description="A script for getting register labeling benchmarks",
         epilog="Made by Anni Eskelinen"
     )
-    parser.add_argument('--train_sets', nargs="+")
-    parser.add_argument('--dev_sets', nargs="+")
+    parser.add_argument('--train_sets', nargs="+", required=True)
+    parser.add_argument('--dev_sets', nargs="+", required=True)
+   # parser.add_argument('--test_sets', nargs="+")
     parser.add_argument('--treshold', type=float, default=0.5,
         help="The treshold which to use for predictions, used in evaluation"
     )

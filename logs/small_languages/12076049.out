@@ -1,0 +1,99 @@
+Namespace(batch=8, epochs=5, learning=8e-06, multilingual=False, test_set=['test_sets/spa_test_modified.tsv'], train_set=['main_labels_only/es_FINAL.modified.tsv.gz'], treshold=0.4)
+{'dev': Dataset({
+    features: ['text', 'label'],
+    num_rows: 1851
+}),
+ 'test': Dataset({
+    features: ['text', 'label'],
+    num_rows: 99
+}),
+ 'train': Dataset({
+    features: ['text', 'label'],
+    num_rows: 7401
+})}
+['IP', 'IP', 'IN IP', None, 'NA OP']
+[['IP'], ['IP'], ['IN', 'IP'], ['NA'], ['NA', 'OP']]
+[[0, 0, 0, 1, 0, 0, 0, 0], [0, 0, 0, 1, 0, 0, 0, 0], [0, 0, 1, 1, 0, 0, 0, 0],
+ [0, 0, 0, 0, 0, 1, 0, 0], [0, 0, 0, 0, 0, 1, 1, 0]]
+{'label': [[0, 0, 0, 1, 0, 0, 0, 0], [0, 0, 0, 1, 0, 0, 0, 0]],
+ 'text': ['Diseño clásico en aluminio negro con cristales de plástico '
+          'resistente. La baliza con sensor crepuscular Smartsensor12™ '
+          'proporciona un brillo agradable y natural. El fondo IP44 protege '
+          'contra la humedad. Funciona con pilas (2 x 1,5 voltios LR20 - no '
+          'incluidas) que proporcionan hasta 1100 horas de funcionamiento. Se '
+          'suministra con poste y espiga de tierra, para una colocación '
+          'flexible directamente en el suelo o en el poste. Dimensiones '
+          '198×310/560 mm Altura del poste: 250mm',
+          'Buscando algunas buenas empresas ¿Conoce alguna empresa urbana que '
+          'esté buscando acceso a capital de crecimiento? ¿Y de empresas '
+          'urbanas que estén creciendo a un ritmo extraordinario? ICIC está '
+          'aceptando nominaciones para sus programas Inner City Capital '
+          'Connections (ICCC) e Inner City 100.  Con casi medio millón de '
+          'empresas en los centros urbanos de los Estados Unidos, el ICIC se '
+          'basa en una red de socios nominadores para identificar empresas '
+          'para nuestros programas.  Puede nominar a su propia empresa o a '
+          'otra que reúna los requisitos para el programa. Nominar a una '
+          'empresa para Inner City Capital Connections Inner City Capital '
+          'Connections (ICCC) es un programa nacional gratuito diseñado para '
+          'impulsar el crecimiento de las empresas de los centros urbanos. El '
+          'ICCC muestra a las empresas cómo aprovechar las fuentes de capital, '
+          'las educa sobre sus opciones financieras y proporciona un foro '
+          'donde las empresas pueden conectarse con los inversores. Desde el '
+          'inicio del programa en 2005, los participantes han recaudado más de '
+          '406 millones de dólares en capital, el 90% de los cuales se '
+          'obtuvieron en los dos años siguientes a la participación.  En '
+          'conjunto, los antiguos alumnos del ICCC han generado 1.847 puestos '
+          'de trabajo directos y 546 indirectos.  Los participantes del ICCC '
+          'demuestran que las empresas urbanas en crecimiento, si tienen '
+          'acceso al capital, son capaces de generar los puestos de trabajo y '
+          'la riqueza cruciales para la transformación de sus comunidades. '
+          'Requisitos: Empresa independiente con ánimo de lucro, sociedad o '
+          'propietario Ubicación en el centro de la ciudad: sede o más del 51% '
+          'de las operaciones físicas en zonas urbanas económicamente '
+          'desfavorecidas de EE.UU. o tener el 40% o más de sus empleados '
+          'residentes en una zona económicamente desfavorecida. Ingresos de 2 '
+          'millones de dólares o más en 2012 Fecha límite: 31 de agosto '
+          'Nominar a una empresa para el programa Inner City 100 En su 15º '
+          'año, el programa Inner City 100 de ICIC reconoce a las empresas de '
+          'más rápido crecimiento en las zonas urbanas de EE.UU. y apoya su '
+          'crecimiento mediante el acceso a la educación ejecutiva durante '
+          'todo el año, las oportunidades de establecer contactos y la '
+          'visibilidad nacional.  El programa culmina con el Simposio anual '
+          'Inner City 100, en el que las empresas ganadoras y cientos de otras '
+          'pequeñas empresas se reúnen en Boston para recibir una formación de '
+          'vanguardia en materia de gestión y para dar a conocer la '
+          'clasificación de las Inner City 100.  Desde el inicio del programa, '
+          '720 empresas únicas han obtenido puestos en la lista anual de Inner '
+          'City 100, generando colectivamente más de 2.100 millones de dólares '
+          'en ventas anuales.  Y lo que es más importante, las ganadoras de '
+          'Inner City 100 han creado casi 73.000 puestos de trabajo y '
+          'actualmente dan empleo a más de 103.000 personas. Requisitos: '
+          'Empresa independiente con ánimo de lucro, sociedad o propietario '
+          'Ubicación en una ciudad interior: sede o más del 51% de las '
+          'operaciones físicas en zonas urbanas económicamente desfavorecidas '
+          'de EE.UU. o que el 40% o más de sus empleados residan en una zona '
+          'económicamente desfavorecida. Diez o más empleados a tiempo '
+          'completo en 2011 Historial de crecimiento de 5 años -- ventas de al '
+          'menos 200.000 dólares en 2007 y al menos 1 millón de dólares en '
+          '2011, sin disminución de ventas en 2011 Fecha límite: 30 de '
+          'septiembre Hola, me pregunto si los plazos se ampliaron o es '
+          'demasiado tarde para nominar ?']}
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+{'loss': 0.2656, 'learning_rate': 6.4e-06, 'epoch': 1.0}
+{'eval_loss': 0.1916828751564026, 'eval_f1': 0.6965174129353234, 'eval_roc_auc': 0.8221227621483376, 'eval_accuracy': 0.5757575757575758, 'eval_runtime': 3.2198, 'eval_samples_per_second': 30.747, 'eval_steps_per_second': 1.242, 'epoch': 1.0}
+{'loss': 0.1783, 'learning_rate': 4.8e-06, 'epoch': 2.0}
+{'eval_loss': 0.19950290024280548, 'eval_f1': 0.6571428571428571, 'eval_roc_auc': 0.8099744245524297, 'eval_accuracy': 0.5252525252525253, 'eval_runtime': 3.1609, 'eval_samples_per_second': 31.32, 'eval_steps_per_second': 1.265, 'epoch': 2.0}
+{'loss': 0.1404, 'learning_rate': 3.2e-06, 'epoch': 3.0}
+{'eval_loss': 0.20799532532691956, 'eval_f1': 0.6451612903225807, 'eval_roc_auc': 0.8105285592497868, 'eval_accuracy': 0.5252525252525253, 'eval_runtime': 3.6531, 'eval_samples_per_second': 27.101, 'eval_steps_per_second': 1.095, 'epoch': 3.0}
+{'loss': 0.1096, 'learning_rate': 1.6e-06, 'epoch': 4.0}

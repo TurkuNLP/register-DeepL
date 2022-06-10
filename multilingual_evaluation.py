@@ -16,20 +16,20 @@ def arguments():
         description="A script for getting register labeling benchmarks",
         epilog="Made by Anni Eskelinen"
     )
-    parser.add_argument('--test_set')
+    parser.add_argument('--model', required=True)
+    parser.add_argument('--test_set', required=True)
     parser.add_argument('--treshold', type=float, default=0.5,
         help="The treshold which to use for predictions, used in evaluation"
     )
-    parser.add_argument('--batch', type=int, default=8,
-        help="The batch size for the model"
-    )
-    parser.add_argument('--epochs', type=int, default=3,
-        help="The number of epochs to train for"
-    )
-    parser.add_argument('--learning', type=float, default=8e-6,
-        help="The learning rate for the model"
-    )
-    parser.add_argument('--multilingual', action='store_true')
+    # parser.add_argument('--batch', type=int, default=8,
+    #     help="The batch size for the model"
+    # )
+    # parser.add_argument('--epochs', type=int, default=3,
+    #     help="The number of epochs to train for"
+    # )
+    # parser.add_argument('--learning', type=float, default=8e-6,
+    #     help="The learning rate for the model"
+    # )
     args = parser.parse_args()
 
     return args 
@@ -64,12 +64,12 @@ def binarize(dataset):
     dataset = dataset.map(lambda line: {'label': mlb.transform([line['label']])[0]})
     return dataset
 
-pprint(dataset['test']['label'][:5])
+# pprint(dataset['test']['label'][:5])
 dataset = dataset.map(split_labels)
-pprint(dataset['test']['label'][:5])
+# pprint(dataset['test']['label'][:5])
 dataset = binarize(dataset)
-pprint(dataset['test']['label'][:5])
-pprint(dataset['test'][:2])
+# pprint(dataset['test']['label'][:5])
+# pprint(dataset['test'][:2])
 
 model_name = "xlm-roberta-large"
 tokenizer = transformers.AutoTokenizer.from_pretrained(model_name)
@@ -84,20 +84,20 @@ def tokenize(example):
 dataset = dataset.map(tokenize)
 
 
+num_labels = len(unique_labels)
+model = transformers.XLMRobertaForSequenceClassification.from_pretrained(args.model, num_labels=num_labels, problem_type="multi_label_classification")
 
-model = transformers.AutoModelForTokenClassification.from_pretrained("Translated_multilingual")
-
-trainer_args = transformers.TrainingArguments(
-    "../multilabel/checkpoints", # change this to put the checkpoints somewhere else
-    evaluation_strategy="epoch",
-    logging_strategy="epoch",  # number of epochs = how many times the model has seen the whole training data
-    save_strategy="epoch",
-    load_best_model_at_end=True,
-    num_train_epochs=args.epochs,
-    learning_rate=args.learning,
-    per_device_train_batch_size=args.batch,
-    per_device_eval_batch_size=32,
-)
+# trainer_args = transformers.TrainingArguments(
+#     "../multilabel/checkpoints", # change this to put the checkpoints somewhere else
+#     evaluation_strategy="epoch",
+#     logging_strategy="epoch",  # number of epochs = how many times the model has seen the whole training data
+#     save_strategy="epoch",
+#     load_best_model_at_end=True,
+#     num_train_epochs=args.epochs,
+#     learning_rate=args.learning,
+#     per_device_train_batch_size=args.batch,
+#     per_device_eval_batch_size=32,
+# )
 
 data_collator = transformers.DataCollatorWithPadding(tokenizer)
 
@@ -134,27 +134,27 @@ def compute_metrics(p: EvalPrediction):
         labels=p.label_ids)
     return result
 
-from collections import defaultdict
+# from collections import defaultdict
 
-class LogSavingCallback(transformers.TrainerCallback):
-    def on_train_begin(self, *args, **kwargs):
-        self.logs = defaultdict(list)
-        self.training = True
+# class LogSavingCallback(transformers.TrainerCallback):
+#     def on_train_begin(self, *args, **kwargs):
+#         self.logs = defaultdict(list)
+#         self.training = True
 
-    def on_train_end(self, *args, **kwargs):
-        self.training = False
+#     def on_train_end(self, *args, **kwargs):
+#         self.training = False
 
-    def on_log(self, args, state, control, logs, model=None, **kwargs):
-        if self.training:
-            for k, v in logs.items():
-                if k != "epoch" or v not in self.logs[k]:
-                    self.logs[k].append(v)
+#     def on_log(self, args, state, control, logs, model=None, **kwargs):
+#         if self.training:
+#             for k, v in logs.items():
+#                 if k != "epoch" or v not in self.logs[k]:
+#                     self.logs[k].append(v)
 
-training_logs = LogSavingCallback()
+# training_logs = LogSavingCallback()
 
-early_stopping = transformers.EarlyStoppingCallback(
-    early_stopping_patience=5
-)
+# early_stopping = transformers.EarlyStoppingCallback(
+#     early_stopping_patience=5
+# )
 
 # we do this because for some reason the problem type does not change the loss function in the trainer
 class MultilabelTrainer(transformers.Trainer):
@@ -170,13 +170,12 @@ class MultilabelTrainer(transformers.Trainer):
 
 trainer = MultilabelTrainer(
     model=model,
-    args=trainer_args,
-    train_dataset=dataset["train"],
-    eval_dataset=dataset["dev"],
+    #args=trainer_args,
+    eval_dataset=dataset["test"],
     compute_metrics=compute_metrics,
     data_collator=data_collator,
     tokenizer = tokenizer,
-    callbacks=[early_stopping, training_logs]
+    #callbacks=[early_stopping, training_logs]
 )
 
 eval_results = trainer.evaluate(dataset["test"])

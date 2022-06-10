@@ -1,0 +1,98 @@
+Namespace(batch=8, epochs=5, learning=8e-06, multilingual=True, test_set=['multilingual-register-data-new/formatted/fre_test.formatted.tsv'], train_set=['main_labels_only/original_downsampled/all_downsampled.tsv.gz'], treshold=0.4)
+{'dev': Dataset({
+    features: ['text', 'label'],
+    num_rows: 1858
+}),
+ 'test': Dataset({
+    features: ['text', 'label'],
+    num_rows: 1177
+}),
+ 'train': Dataset({
+    features: ['text', 'label'],
+    num_rows: 7429
+})}
+['IN', 'HI', 'IP', None, 'IP']
+[['IN'], ['HI'], ['IP'], ['NA'], ['IP']]
+[[0, 0, 1, 0, 0, 0, 0, 0], [1, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 1, 0, 0, 0, 0],
+ [0, 0, 0, 0, 0, 1, 0, 0], [0, 0, 0, 1, 0, 0, 0, 0]]
+{'label': [[0, 0, 1, 0, 0, 0, 0, 0], [1, 0, 0, 0, 0, 0, 0, 0]],
+ 'text': ['The Cost of Retirement For many, saving for retirement is a '
+          'difficult process even during the best of times. And in 2009, '
+          'according to a recent survey from Wells Fargo, 20% of pre-retirees '
+          'have reduced funding to their retirement savings. Many who once '
+          'thought they were secure are now forced to delay their retirement '
+          'plans by several years. What?s even more troubling is that 41% of '
+          'women and 32% of men now believe they will have to work after '
+          'retirement just to make ends meet . Considering that saving $1 '
+          'million will only amount to about $40,000 per year for the average '
+          'retiree (assuming you stick to a widely accepted rule of thumb that '
+          'says you should limit your withdrawals to 4% of your savings during '
+          'your first year in retirement), it?s easy to understand why '
+          'retirement has become almost a luxury. Below, Kiplinger.com '
+          'examines the cost of retirement.',
+          'silkkimaalaus Silkkimaalaus SILKKIMAALAUS Vaikka silkkimaalaus '
+          'onkin periaatteessa hyvin helppoa , se on samalla myös hyvin '
+          'haastavaa . Värin levittymistä ei voi koskaan täysin kontrolloida , '
+          'ja se tekeekin silkkimaalauksesta niin mielenkiintoista . täytä ¾ '
+          'mehumaijan alin osa vedellä . Reiällinen osa vuorataan '
+          'sanomalehdillä ja froteepyyhkeellä . Kääri silkki löysästi '
+          'puuvillakankaan tai makulatuuripaperin sisään . Katso etteivät '
+          'silkit kosketa toisiaan . Kääri paketti kerälle ja sido se löysästi '
+          'kiinni . Kääri paketti froteeseen . Työn päälle vielä '
+          'alumiinifoliota jotta höyrystyvä vesi ei valu työn päälle . Höyrytä '
+          '1-4 tuntiin . Koetilkku höyrytyksessä helpottaa ajan määrittelyä . '
+          'Kun olet höyryttänyt oio kaikki rypyt tai ne saattavat jäädä '
+          'pysyviksi . ( tehokeino ? ) Gutta : vesiohenteisia ja '
+          'liuotinpohjaisia . Guttaviiva vedetään hitaasti ja rauhallisesti '
+          'puristaen pulloa . Varmista että guttaviiva rajaa haluamasi osat - '
+          'vesi etsii näppärästi vuotokohdat . Tarkastele työtäsi valoa vasten '
+          '. Korjaa aukot . Guttaviivan oltava ehdottomasti kuiva . '
+          'vesiohenteinen gutta –lämpökiinnittyville väreille- ei saa '
+          'höyryttää , kovettuu ja ei saa enää kankaasta pois . Irtoaa '
+          'kankaasta jos kangas vettyy liikaa . ( gutan pitää olla kuiva ! ) '
+          '2. Pingota silkki kehikkoon siten , että se on irti alustasta . '
+          'Silitä silkki ennen kehykseen pingottamista . Käytä nuppineuloja , '
+          'nastoja tai teippiä . Sumuta silkki ja tämän jälkeen voit vielä '
+          'kiristää kangasta . Pohjan voi myös käsitellä suolalla . Liota 25g '
+          'suolaa 1dl vettä ja laita liuos purkkiin . Levitä tasainen kerros '
+          'silkille tai maalaa vain halutut kohdat . Kun päälle maalataan , '
+          'väri ei leviä yhtä hyvin suolan päällä kuin puhtaalla kankaalla . '
+          'Pesutekniikka : - Voidaan pestä vielä hieman kosteaa väriä pois . '
+          'Saadaan työhön vaaleita kohtia tai läiskiä . Mustan rajausaineen '
+          'voi myös pestä pois ilman kiinnittämistä , jolloin kankaaseen '
+          'saadaan haalistunut ulkonäkö . Alkoholitekniikka : - Denaturoitua '
+          'alkoholilla ( esim. Sinol ) saadaan kankaalle läiskiä . Voi käyttää '
+          'myös alkoholi-vesiseosta . Rajaustekniikka : - Rajauksella saadaan '
+          'selvät kuvioiden rajat . Värin leviäminen pysähtyy rajalle . '
+          'Rajauksessa ei saa olla aukkoja muuten väri leviää viereiselle '
+          'alueelle . Pidä huoli että guttaus menee läpi kankaan ja että '
+          'rajausaineen on oltava kuivunut ennen maalauksen aloittamista . '
+          'Värillistä , työhön jätettävää guttaa ei kannata kuivattaa '
+          'hiustenkuivaajalla , koska aine-osaset eivät ehdi kiinnittyä '
+          'kankaaseen kunnolla ja rajaus voi murentua ensimmäisen pesun '
+          'jälkeen pois .']}
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+{'loss': 0.2538, 'learning_rate': 6.4e-06, 'epoch': 1.0}
+{'eval_loss': 0.18359056115150452, 'eval_f1': 0.7517999242137173, 'eval_roc_auc': 0.8442192860135692, 'eval_accuracy': 0.6397621070518267, 'eval_runtime': 40.9413, 'eval_samples_per_second': 28.748, 'eval_steps_per_second': 0.904, 'epoch': 1.0}
+{'loss': 0.1651, 'learning_rate': 4.8e-06, 'epoch': 2.0}
+{'eval_loss': 0.17019952833652496, 'eval_f1': 0.7830011282437006, 'eval_roc_auc': 0.8638662328368124, 'eval_accuracy': 0.6635514018691588, 'eval_runtime': 38.6385, 'eval_samples_per_second': 30.462, 'eval_steps_per_second': 0.958, 'epoch': 2.0}
+{'loss': 0.1297, 'learning_rate': 3.2e-06, 'epoch': 3.0}
+{'eval_loss': 0.17349576950073242, 'eval_f1': 0.7752394988946204, 'eval_roc_auc': 0.8651367617193056, 'eval_accuracy': 0.6525063721325404, 'eval_runtime': 37.2308, 'eval_samples_per_second': 31.614, 'eval_steps_per_second': 0.994, 'epoch': 3.0}
+{'loss': 0.1018, 'learning_rate': 1.6e-06, 'epoch': 4.0}
+{'eval_loss': 0.19044770300388336, 'eval_f1': 0.7694545454545455, 'eval_roc_auc': 0.86545678232233, 'eval_accuracy': 0.6448598130841121, 'eval_runtime': 37.0372, 'eval_samples_per_second': 31.779, 'eval_steps_per_second': 0.999, 'epoch': 4.0}
+{'loss': 0.0828, 'learning_rate': 0.0, 'epoch': 5.0}
+{'eval_loss': 0.19510918855667114, 'eval_f1': 0.7720320466132556, 'eval_roc_auc': 0.8665581095928394, 'eval_accuracy': 0.6440101954120646, 'eval_runtime': 41.357, 'eval_samples_per_second': 28.46, 'eval_steps_per_second': 0.895, 'epoch': 5.0}
+{'train_runtime': 4869.201, 'train_samples_per_second': 7.629, 'train_steps_per_second': 0.954, 'train_loss': 0.14664762926050356, 'epoch': 5.0}
+
+downsampled multilingual model

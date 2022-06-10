@@ -1,0 +1,180 @@
+Downloading and preparing dataset csv/default to /users/annieske/.cache/huggingface/datasets/csv/default-cc8b85a97c5acafb/0.0.0/433e0ccc46f9880962cc2b12065189766fbb2bee57a221866138fb9203c83519...
+Dataset csv downloaded and prepared to /users/annieske/.cache/huggingface/datasets/csv/default-cc8b85a97c5acafb/0.0.0/433e0ccc46f9880962cc2b12065189766fbb2bee57a221866138fb9203c83519. Subsequent calls will reuse this data.
+['IN', 'ID', 'IN', None, 'ID']
+[['IN'], ['ID'], ['IN'], ['NA'], ['ID']]
+[[0, 0, 1, 0, 0, 0, 0, 0], [0, 1, 0, 0, 0, 0, 0, 0], [0, 0, 1, 0, 0, 0, 0, 0],
+ [0, 0, 0, 0, 0, 1, 0, 0], [0, 1, 0, 0, 0, 0, 0, 0]]
+{'label': [[0, 0, 1, 0, 0, 0, 0, 0], [0, 1, 0, 0, 0, 0, 0, 0]],
+ 'text': ['VII armeijakunta oli aluksi ryhmitetty linjalle Pyhäjärvi - '
+          'Värtsilä . Se aloitti hyökkäyksensä muun Karjalan Armeijan tavoin '
+          '10. heinäkuuta 1941 . Armeijakunnan tavoitteena olisi ollut '
+          'Sortavala , mutta hyökkäys pysähtyi jo pian Matkaselälle ja '
+          'Hämekoskelle . Heikon hyökkäysmenestyksen takia armeijakunta sai '
+          'vahvennuksena 11. divisioonan . Tämäkään ei riittänyt , sillä '
+          'neuvostodivisioona piti asemansa . Elokuun puolivälissä päämaja '
+          'joutui perustamaan I armeijakunnan Sortavalan suunnalle . Yhdessä I '
+          'Armeijakunnan kanssa armeijakunta valtasi Sortavalan elokuun '
+          'loppupuoliskolla . Sortavalan taistelujen jälkeen armeijakunta '
+          'siirrettiin Itä-Karjalaan Vieljärvelle . Elokuun lopussa se eteni '
+          'Säämäjärvelle ja samalla siihen liitettiin 1. divisioona . Syyskuun '
+          'puolivälissä armeijakunta valtasi Prääsän ja Petroskoihin '
+          'armeijakunnan joukot saapuivat 1. lokakuuta . Lokakuun puolivälissä '
+          'VII armeijakuntaan kuuluivat Osasto Lagus , 1. , 11. ja 4. '
+          'divisioona . Lokakuun lopussa pääosa armeijakunnan joukoista '
+          'siirrettiin muualle ja uudelleen järjestettyn armeijakunnan '
+          'muodostivat lopulta vain 4. divisioona ja Ryhmä Oinonen . '
+          'Armeijakunta valtasi Kontupohjan 2. marraskuuta . Armeijakunnan '
+          'viimeiseksi hyökkäysvaiheen sotatoimeksi jäi Songunniemen valtaus , '
+          'jonka jälkeen armeijakunta siirrettiin reserviksi Äänislinnaan .',
+          'Hoto tekee hyvin hommia . Ainoa riski joutua jäähylle , on nämä '
+          'juurikin harrastamani känniörvellykset ... Toki voisi toivoa vähän '
+          'lievempiä tuomioita , viikko jostain älynväläyksestä pe/la-iltana '
+          'tuntuu joskus kohtuuttoman kovalta . Siis reittä vasten . - '
+          'Joiltakin henkilöiltä poistellaan tekstistä VAIN osia ja " '
+          'kohteliaasti " varotetaan . - Toiset saa kuukauden banaanit ihan '
+          'varottamatta . Jopa niin että ne banaanit tulee , mutta se viesti '
+          'jää ihan kaiken kansan pällisteltäväksi eikä siitä ole poistettu '
+          'mitään . ( Eli aikamoista palkkatappajameininkiä nurkan takaa ) '
+          'Joku tuossa minun mielestä mättää . Toisaaltaan jos on K-18 osio '
+          'niin kai sinne saa nyt pikkasen tuhmemmastikkin kirjottaa tai sanoo '
+          '? Samaa mieltä siitä että riidan haastaminen ja toisille '
+          'suoranainen vittuilu ansaitsee kyllä jäähyn . Jos meinaa '
+          'keskustella thaimaa aiheisesti ja seurata mitä on " menossa " niin '
+          'ei niitä vaihtoehtoja niin paljoa ole . Monopolissa monopoli '
+          'sanelee käskyt . Tietynlainen urputtaminen välillä on mielestäni '
+          'ookoo . Jos joku asia toimii epäkohtaisesti niin kyllä siitä täytyy '
+          'pystyä tai olla lupa sanoa . Jos urputusta ei ikinä kuulu niin '
+          'silloinhan mode kuvittelee että kaikki on aina hyvn vaikka niin ei '
+          'useimpien mielestä olisikaan . Tietty pelkomomentti pitää kanssa '
+          'suut supussa ja moni ei vaan uskalla sanoo . Paautetta kun saa niin '
+          'se auttaa myös kehittymään . Tietty järjestys pitää olla , ( mutta '
+          'ei ne raamit niin kireet välttämättä tarviis olla ) . Käsittääkseni '
+          'Farankin parit viimeaikaiset banaanit ovat tulleet ihan simppelisti '
+          'siitä , että alapääverbaliikka ja -neuvot eivät ole sallittuja '
+          'yleispuolen ketjuissa , niille on oma nightlife -osio jos et ole '
+          'vielä huomannut ? Eivätkä edelleenkään ole johtuneet kenestäkään '
+          'yhdestä tekijästä , esim. tapetilla olevasta Hotosta , vaan ihan '
+          'yksinkertaisesti siitä , että jutut eivät pysyneet oikeilla '
+          'alueilla joko tieten tahtoen tai esim. pienissä kaljapäissä . Hoto '
+          'yleensä jää ihmisten mieliin koska laittaa lukkoketjuihin pienen '
+          'saateviestin ja sarjakuvan , suurin osa törkkää vain lukkoon sen '
+          'enempää mainostamatta . Pelkomomentista on melko turha puhua , '
+          'tässä on ( melko samojen ) henkilöiden urputtamista monessa '
+          'ketjussa kaikkien nähtävillä vallan vapaasti eikä yksikään henkilö '
+          'ole saanut urputtamisesta monoa . Yleensä siihen vaaditaan kyllä '
+          'paljon muutakin ja tiukempiakin voitaisiin olla . Suurinta osaa '
+          'suolletusta paskeestahan ei edes kovin moni kerkiä näkemään koska '
+          "meillä on porukkaa jotakuinkin kellon ympäri ' hommissa ' . Osaa "
+          'kirjoituksia kun katsoo , niin pidän tätä hyvänä ns. suuren yleisön '
+          'osalta , mutta etenkin myös sen kirjoittajan osalta . '
+          'Moderointieroja Faranki otti myös esiin aiemmin , niitä toki tulee '
+          'aina , meitä on monenmoista porukkaa ilkeinä modeina , meistä '
+          'jokainen tekee erilaisia päätöksiä vaikka ohjenuora on kaikilla '
+          'samanlainen . Tarkastellaanpa niitä . Välillä siis editoidaan '
+          'viestejä , kyllä , poistetaan semmoinen pieni koukku sieltä , '
+          'otetaan pois aivan turha henkilökohtaisuus , poistetaan esim. '
+          'laittomuuden puolelle menevä pätkä tai sitten jotain vastaavaa . '
+          'Henkilö huomaa , että rääväsuuosuus on poistettu , hän : a ) ottaa '
+          'asian semmoisenaan b ) editoi sen poistetun tekstin takaisin siihen '
+          'ja/tai kirjoittaa uuden viestin / viestiketjun aiheesta - &gt ; se '
+          'poistetaan uudestaan , tällöin yleensä lähtee myös huomautus , että '
+          'nyt olisi jo syytä rauhoittua . Tullaan taas tienhaaraan , suurin '
+          'osa onneksi ymmärtää yskän , osa kuitenkin jatkaa ja kas , '
+          'banaanitaulukosta valitaan jotain historian perusteella yhden '
+          'päivän ja lopullisen väliltä . Hommahan menee portaittain aina '
+          'seuraavaan pykälään , toki osa on niin kovia suorittajia , että '
+          'ovat ponnistaneet heti ensimmäisen jälkeen pysyvään , taitaa joku '
+          'olla ensimmäiselläkin onnistunut , mutta yleensä nämä ovat '
+          'spammereita . Eli nuo portaat ovat semmoinen oppimisen '
+          'mahdollistava tekijä , aika lepsusti olemme kyllä noudattaneet '
+          "noita , alkuperäisen raamin perusteella ' muutama vakioasiakas ' "
+          'olisi jo kerännyt vähintään vuoden lepoaikoja , jopa pysyviä '
+          'toistuvilla ylityksillään . Myönnän että se hierontajuttu jonka '
+          'nakkasin sinne yleiseen osioon oli täyslaidallisen ampumista . En '
+          'kuitenkaan voinnu vastustaa kiusausta , kun tätönen suunitttelee '
+          'turistireissua HuoHiniin ukon kanssa , ilmeisestikkin kauniin '
+          'tietämättömänä mitä kaikkia palveluja sekin paikka tarjoaa , '
+          'ukkokin oli käynyt aikaismmin ja monta kertaa , YKSIN . Siinä '
+          'sitten pläjäytin " neuoa antavan " pöytään että varmasti mammalta '
+          'silmät aukee , mikäli ne jostain syystä oli ummessa . Ehkä se nyt '
+          'vaan oli osoitus kierosta huumorintajustani ... Toisaaltaan sen '
+          'julkaseminen K-18 osiossa pitäis mun mielestä olla ihan normikamaa '
+          'ja varmaan sen nyt aikaihmisen nahka kestää ? Eli enhän minä '
+          'pulmunen ole . Tuntuu kuitenkin siltä että näistä synneistä 2x1kk '
+          'plus 1x2vko on hiukka liikaa . Joku muutti sen tosen bannin vielä '
+          'kahdesta viikosta kovennetuks kuukaudeks . Mutta mitäs näistä . '
+          'Minä oon jo sanottavani sanonu . Jatketaan näillä ja bannia sitte '
+          'taas tulee jos se on tarpeellista . Eikö sitä voi sillai lokeroida '
+          ', että kun on halu ja tarve kirjoittaa pippeleistä , kiimasta ja '
+          'sen sellaisista , niin ottaa suoraan vaikka suoli24:n tai '
+          'vauvapalstat auki ja sinne tuuppaa sen tavaran alapäähommeleista ? '
+          'Eikö sitä voi sillai lokeroida , että kun on halu ja tarve '
+          'kirjoittaa pippeleistä , kiimasta ja sen sellaisista , niin ottaa '
+          'suoraan vaikka suoli24:n tai vauvapalstat auki ja sinne tuuppaa sen '
+          'tavaran alapäähommeleista ? Miks täällä sit on K-18 osio ja miks '
+          'toinen niistä on otsikoitu suuntaa antavaksi ? Jos minulta olisi '
+          'kysytty vuosi sitten niin olisin sanonut , että on aika siirtyä '
+          'syrjään . Nyt olen kuitenkin sitä mieltä , että ei ole tarvetta . '
+          'Hoton toiminnassa alkoi näkyä epämiellyttäviä diktaattoriamaisia '
+          'piirteitä . Siis huonon diktaattorin piirteitä . Sanoisin kuitenkin '
+          ', että mies on vähän rauhoittunut viime aikoina . Se sarjakuva on '
+          'kyllä hanurista ja alkoi v.tuttamaan jossain vaiheessa . Vähänhän '
+          'se on kuin provosointia lukottamisen jatkeeksi . Jos minulta olisi '
+          'kysytty vuosi sitten niin olisin sanonut , että on aika siirtyä '
+          'syrjään . Nyt olen kuitenkin sitä mieltä , että ei ole tarvetta . '
+          'Hoton toiminnassa alkoi näkyä epämiellyttäviä diktaattoriamaisia '
+          'piirteitä . Siis huonon diktaattorin piirteitä . Sanoisin kuitenkin '
+          ', että mies on vähän rauhoittunut viime aikoina . Se sarjakuva on '
+          'kyllä hanurista ja alkoi v.tuttamaan jossain vaiheessa . Vähänhän '
+          'se on kuin provosointia lukottamisen jatkeeksi . Herra tohtorin '
+          'toiminta on asiallista ,mutta en tosin ymmarra jos ja kun ketju '
+          'lukitaan , niin asiallista olisi ollut poistaa myos tuo kotkan '
+          'provo viesti ... ketjuhan meni jokseenkin asiallisissa merkeissa '
+          ',ennen tuota kotkan provo viestia ... ihan vaan jos faktoja tutkii '
+          ',niin kotkan viestihan on kuin suoraan Nixonin kaudelta ,puuttuu '
+          'vain maininta etta marihuanan kayttajan tunnistaa sperman '
+          'tahraamasta housun etumuksesta ... Aika hienosti mode-osasto reakoi '
+          'taas ! Isanisaran uudessa ketjussa meni tasan puut ja metsät '
+          'sekaisin - Hoto veti ketjun tauolle , hienosti toimittu . Ketjun '
+          'aloittajan tekemisistä ja tekemättä jättämisistä + kaikista '
+          'dissanneista / asioita auttaneissa , jne jne jne .... on ollut jo '
+          'varmaan aika tarpeeksi vääntöä forumilla . Hoto veti jarrusta - '
+          'katotaan nyt antaako porukat uuden ketjun elää omaa elämäänsä , vai '
+          ', alkaako sen kautta muut elää omaa elämäänsä . Meitä on moneksi , '
+          'kaikki ei oo asentajia , putkimiehiä , teknikoita , inssejä tai '
+          'tradenomeja .... annetaan tilaa , ei se o varmaan iteltä pois . '
+          'Aika hienosti mode-osasto reakoi taas ! Isanisaran uudessa ketjussa '
+          'meni tasan puut ja metsät sekaisin - Hoto veti ketjun tauolle , '
+          'hienosti toimittu . Ketjun aloittajan tekemisistä ja tekemättä '
+          'jättämisistä + kaikista dissanneista / asioita auttaneissa , jne '
+          'jne jne .... on ollut jo varmaan aika tarpeeksi vääntöä forumilla . '
+          'Hoto veti jarrusta - katotaan nyt antaako porukat uuden ketjun elää '
+          'omaa elämäänsä , vai , alkaako sen kautta muut elää omaa elämäänsä '
+          '. Meitä on moneksi , kaikki ei oo asentajia , putkimiehiä , '
+          'teknikoita , inssejä tai tradenomeja .... annetaan tilaa , ei se o '
+          'varmaan iteltä pois . Minusta Lasse joka on moderaattori alkoi '
+          'ensimmäiset OFF topic ja nälvimiset aivan turhaan']}
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+{'loss': 0.1842, 'learning_rate': 6.4e-06, 'epoch': 1.0}
+{'eval_loss': 0.12565799057483673, 'eval_f1': 0.819201435621355, 'eval_roc_auc': 0.8999763518305426, 'eval_accuracy': 0.773953488372093, 'eval_runtime': 33.4174, 'eval_samples_per_second': 32.169, 'eval_steps_per_second': 1.017, 'epoch': 1.0}
+{'loss': 0.11, 'learning_rate': 4.8e-06, 'epoch': 2.0}
+{'eval_loss': 0.1190023347735405, 'eval_f1': 0.824640287769784, 'eval_roc_auc': 0.9023913939058885, 'eval_accuracy': 0.7869767441860465, 'eval_runtime': 33.3803, 'eval_samples_per_second': 32.205, 'eval_steps_per_second': 1.019, 'epoch': 2.0}
+{'loss': 0.0789, 'learning_rate': 3.2e-06, 'epoch': 3.0}
+{'eval_loss': 0.11974453181028366, 'eval_f1': 0.8580413297394429, 'eval_roc_auc': 0.9220334133869454, 'eval_accuracy': 0.8223255813953488, 'eval_runtime': 33.4055, 'eval_samples_per_second': 32.18, 'eval_steps_per_second': 1.018, 'epoch': 3.0}
+{'loss': 0.0558, 'learning_rate': 1.6e-06, 'epoch': 4.0}
+{'eval_loss': 0.12880399823188782, 'eval_f1': 0.8515837104072399, 'eval_roc_auc': 0.9158146951709809, 'eval_accuracy': 0.8223255813953488, 'eval_runtime': 34.5248, 'eval_samples_per_second': 31.137, 'eval_steps_per_second': 0.985, 'epoch': 4.0}
+{'loss': 0.0401, 'learning_rate': 0.0, 'epoch': 5.0}
+{'eval_loss': 0.13813188672065735, 'eval_f1': 0.8539122568973315, 'eval_roc_auc': 0.9173092255938546, 'eval_accuracy': 0.8269767441860465, 'eval_runtime': 33.4667, 'eval_samples_per_second': 32.121, 'eval_steps_per_second': 1.016, 'epoch': 5.0}
+{'train_runtime': 4234.7179, 'train_samples_per_second': 8.565, 'train_steps_per_second': 1.224, 'train_loss': 0.0938011986080453, 'epoch': 5.0}
+F1: 0.8012333965844401

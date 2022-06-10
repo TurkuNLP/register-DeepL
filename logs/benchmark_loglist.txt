@@ -18,6 +18,14 @@ treshold 0.4, batch 8, epoch 5
 F1: 0.7505720823798626
 
 
+FIN MULTILINGUAL DATASET
+12073438
+--batch 7 --treshold 0.4 --epochs 5 --learning 8e-6
+F1: 0.8012333965844401
+=> okay so the finnish dataset is actually really good
+
+=> still need for optimizing?
+
 
 
 ENG (XLMR base)
@@ -26,7 +34,7 @@ epoch 3, learning rate= ??, batch 8,
 'eval_f1': 0.7406760415756833
 F1: 0.7331615120274914
 
-
+12074738 (XLMR-large)
 
 
 FRE
@@ -214,3 +222,14 @@ F1: 0.825593395252838
 rerun with the test and dev set correctly
 12020243
 F1: 0.8307905686546464
+
+
+
+
+
+multilingual master model 
+    --batch 7 \
+    --treshold 0.4 \
+    --epochs 5 \
+    --learning 8e-6 \
+12063020

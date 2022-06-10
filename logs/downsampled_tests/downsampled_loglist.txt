@@ -1,3 +1,6 @@
+THESE SHOULD BE OPTIMIZED!
+
+
 FINNISH 
 
 12042095
@@ -19,6 +22,18 @@ ENGLISH
 'eval_f1': 0.7287559483344664
 F1: 0.6975587516060844
 => same as with swedish
+
+
+
+FRENCH 
+12075865
+--batch 7 --treshold 0.4 --epochs 5 --learning 8e-6
+'eval_f1': 0.7463249151903507
+F1: 0.747078778741048
+
+
+
+
 
 
 MULTILINGUAL
@@ -48,3 +63,11 @@ FRENCH
 --batch 7 --treshold 0.4 --epochs 5 --learning 8e-6 
 'eval_f1': 0.7765401227551716
 F1: 0.7752345215759849
+
+
+
+
+
+MULTILINGUALS SAVED MODEL 12073502 (common dev set) 12073502
+--batch 8 --treshold 0.4 --epochs 5 --learning 8e-6 --multilingual 
+'eval_f1': 0.7720320466132556

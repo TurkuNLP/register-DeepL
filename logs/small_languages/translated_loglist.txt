@@ -13,7 +13,7 @@ ALL THE GOOD NUMBERS ARE FALSE BECAUSE THE TEST SET WAS SPLICED WRONG!!!!!! :(
 
 
 0.4 treshold seems to be the best for now
-what about using the test set as "dev" and not testing at all?
+what about using the test set as "dev" and not testing at all? will it learn better?
 
 
 
@@ -48,7 +48,12 @@ F1: 0.6666666666666666
 
 what about using the test set as "dev" and not testing at all?
 12061778
+F1: 0.6972222222222222
 
+
+12076034
+--batch 8 --treshold 0.4 --epochs 5 --learning 8e-6
+F1: 0.6648721399730821
 
 
 
@@ -64,6 +69,9 @@ F1: 0.6728110599078341
 --batch 8 --treshold 0.3 --epochs 5 --learning 8e-6
 F1: 0.6636363636363636
 
+12076049
+--batch 8 --treshold 0.4 --epochs 5 --learning 8e-6
+
 
 
 JAPANESE
@@ -78,6 +86,11 @@ F1: 0.6542056074766356
 --batch 8 --treshold 0.3 --epochs 5 --learning 8e-6
 F1: 0.6311111111111111
 
+12076056
+--batch 8 --treshold 0.4 --epochs 5 --learning 8e-6
+F1: 0.6926829268292684
+
+
 
 CHINESE
 F1: 0.817153011597456
@@ -90,6 +103,16 @@ F1: 0.5557206537890045
 12048131
 --batch 8 --treshold 0.3 --epochs 5 --learning 8e-6
 F1: 0.5356125356125356
+
+12073149
+--batch 8 --treshold 0.4 --epochs 5 --learning 8e-6
+F1: 0.6259314456035767
+=> this is interesting because the eval F1 kept going down but this was better :D
+
+
+
+
+
 
 
 
@@ -118,3 +141,32 @@ JAPANESE TEST SET
 12050240
 --batch 8 --treshold 0.3 --epochs 5 --learning 8e-6
 F1: 0.635593220338983
+
+
+BASED ON MODEL FROM 12058846
+
+
+
+
+
+
+
+
+
+
+MULTILINGUAL TRANSFER
+
+12077295 based on downsampled model  12073502
+
+SPANISH
+F1: 0.6804123711340205
+
+PORTUGUESE
+F1: 0.7010309278350515
+
+JAPANESE
+F1: 0.6321243523316062
+
+
+CHINESE
+F1: 0.6873065015479876

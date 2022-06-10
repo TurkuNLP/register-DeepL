@@ -1,0 +1,53 @@
+Namespace(batch=8, epochs=5, learning=8e-06, multilingual=False, test_set=['test_sets/jpn_test_modified.tsv'], train_set=['main_labels_only/ja_FINAL.modified.tsv.gz'], treshold=0.4)
+{'dev': Dataset({
+    features: ['text', 'label'],
+    num_rows: 1848
+}),
+ 'test': Dataset({
+    features: ['text', 'label'],
+    num_rows: 100
+}),
+ 'train': Dataset({
+    features: ['text', 'label'],
+    num_rows: 7392
+})}
+['OP', 'IN', None, 'IP', 'HI']
+[['OP'], ['IN'], ['NA'], ['IP'], ['HI']]
+[[0, 0, 0, 0, 0, 0, 1, 0], [0, 0, 1, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 1, 0, 0],
+ [0, 0, 0, 1, 0, 0, 0, 0], [1, 0, 0, 0, 0, 0, 0, 0]]
+{'label': [[0, 0, 0, 0, 0, 0, 1, 0], [0, 0, 1, 0, 0, 0, 0, 0]],
+ 'text': ['PANASONIC LUMIX DMC-TS2についての意見 ユーザーは、PANASONIC LUMIX '
+          'DMC-TS2を非常に使いやすいと評価しています平均して、競合他社よりも信頼性が高いと評価しています。PANASONIC LUMIX '
+          'DMC-TS2がお客様の問題を解決するソリューションであることを確認したい場合は、他のDiplofixユーザーのヘルプと支援を最大限に活用してください。 '
+          '意見の分布の平均点は7.97、標準偏差は1.85 高性能 '
+          'ユーザーは以下の質問をしました。116人のユーザーがこの製品について質問し、0～10の評価を与えました。 評価は、PANASONIC '
+          'LUMIX '
+          'DMC-TS2が、その領域において、技術的に最高のレベル、最高の品質、または最も幅広い選択肢を提供するものであるならば、10/10です。',
+          'アジュバントによる自己免疫（自己炎症）症候群」（ASIA）の一部としてのB型肝炎ワクチン後の自己免疫：93例の分析。出典抄録 '
+          '目的：本研究では、B型肝炎ワクチン接種後に免疫/自己免疫介在性疾患と診断された患者における臨床症状および人口統計学的症状を分析した。また、アジュバントによる自己免疫（自己炎症）症候群（ASIA）の基準との相関を明らかにすることを目的とした。患者および方法：我々は、米国の異なる施設から、B型肝炎ワクチン（HBVv）接種後に免疫介在性疾患と診断された患者114人の医療記録をレトロスペクティブに分析した。このコホート内のすべての患者は、法律相談を受けた。このうち、法律相談を申し込む前に疾患と診断された93/114名の患者を本研究に含めた。すべての医療記録について、人口統計学、病歴、ワクチン接種回数、接種前後の有害事象、疾患の臨床症状について評価した。さらに、利用可能な血液検査、画像診断の結果、治療とその結果も記録された。異なる免疫介在性疾患の徴候や症状は、関与する臓器やシステムに従って分類された。ASIA基準が全患者に適用された。結果：93名の患者の平均年齢は26.5 '
+          '15歳で、69.2％が女性、21％が自己免疫感受性と考えられた。HBVvの最終投与から症状発現までの平均潜伏期は43.2日であった。注目すべきは、47％の患者が有害事象を経験したにもかかわらず、予防接種プログラムを継続したことです。よく報告された症状は、神経・精神症状（70%）、疲労（42%）、粘膜・皮膚（30%）、筋骨格系（59%）、胃腸（50%）などであった。自己抗体価の上昇は、検査した血清の80%で確認された。このコホートでは、成人57/59人（96％）および小児23/34人（68％）を含む80/93人（86％）が、ASIAの必要な基準を満たした。結論HBVv感染後に免疫介在性疾患と診断された93名の患者において共通の臨床的特徴が認められ、これらの疾患には共通項があることが示唆された。また、自己免疫疾患の既往や免疫時の有害事象の出現などの危険因子は、免疫後遺症のリスクを予測するのに役立つと考えられる。ASIA基準は、予防接種後の事象を有する成人において非常に有用であることが判明した。ASIA基準の小児集団への適用については、さらなる検討が必要である。関連情報 '
+          '単語重み付けアルゴリズムを用いて検索した、選択した論文に密接に関連するPubMed引用のセットを計算した。関連記事は、最も関連性の高いものから低いものへとランク付けされて表示され、「リンク元」の引用が最初に表示される。']}
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+{'loss': 0.2711, 'learning_rate': 6.4e-06, 'epoch': 1.0}
+{'eval_loss': 0.20876546204090118, 'eval_f1': 0.6395939086294415, 'eval_roc_auc': 0.7835870791603404, 'eval_accuracy': 0.57, 'eval_runtime': 3.2875, 'eval_samples_per_second': 30.418, 'eval_steps_per_second': 1.217, 'epoch': 1.0}
+{'loss': 0.1863, 'learning_rate': 4.8e-06, 'epoch': 2.0}
+{'eval_loss': 0.22723567485809326, 'eval_f1': 0.6507177033492823, 'eval_roc_auc': 0.8028374030170914, 'eval_accuracy': 0.57, 'eval_runtime': 3.2075, 'eval_samples_per_second': 31.177, 'eval_steps_per_second': 1.247, 'epoch': 2.0}
+{'loss': 0.148, 'learning_rate': 3.2e-06, 'epoch': 3.0}
+{'eval_loss': 0.2035749852657318, 'eval_f1': 0.6926829268292684, 'eval_roc_auc': 0.8224220306166512, 'eval_accuracy': 0.61, 'eval_runtime': 3.199, 'eval_samples_per_second': 31.26, 'eval_steps_per_second': 1.25, 'epoch': 3.0}
+{'loss': 0.1186, 'learning_rate': 1.6e-06, 'epoch': 4.0}
+{'eval_loss': 0.2597227096557617, 'eval_f1': 0.6418604651162791, 'eval_roc_auc': 0.8041049713752422, 'eval_accuracy': 0.55, 'eval_runtime': 3.1969, 'eval_samples_per_second': 31.28, 'eval_steps_per_second': 1.251, 'epoch': 4.0}
+{'loss': 0.0968, 'learning_rate': 0.0, 'epoch': 5.0}
+{'eval_loss': 0.234178826212883, 'eval_f1': 0.6509433962264151, 'eval_roc_auc': 0.806257051719575, 'eval_accuracy': 0.59, 'eval_runtime': 3.2747, 'eval_samples_per_second': 30.537, 'eval_steps_per_second': 1.221, 'epoch': 5.0}
+{'train_runtime': 4051.3051, 'train_samples_per_second': 9.123, 'train_steps_per_second': 1.14, 'train_loss': 0.16417603761086733, 'epoch': 5.0}
+F1: 0.6926829268292684

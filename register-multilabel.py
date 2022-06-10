@@ -16,8 +16,8 @@ def arguments():
         description="A script for getting register labeling benchmarks",
         epilog="Made by Anni Eskelinen"
     )
-    parser.add_argument('train_set')
-    parser.add_argument('test_set')
+    parser.add_argument('--train_set', nargs="+", required=True)
+    parser.add_argument('--test_set', nargs="+", required=True)
     parser.add_argument('--treshold', type=float, default=0.5,
         help="The treshold which to use for predictions, used in evaluation"
     )
@@ -62,8 +62,8 @@ train = datasets.load_dataset(
 
 train.shuffle(seed=1234)
 
-# # this also shuffles by default
-# train, dev = train.train_test_split(test_size=0.2).values()
+# this also shuffles by default
+train, dev = train.train_test_split(test_size=0.2).values()
 
 test = datasets.load_dataset(
     "csv", 
@@ -76,7 +76,7 @@ test = datasets.load_dataset(
       "label":datasets.Value("string")})
     )
 
-dataset = datasets.DatasetDict({"train":train, "test":test}) # "dev":dev,
+dataset = datasets.DatasetDict({"train":train,"dev":dev, "test":test})
 pprint(dataset)
 
 # the data is fitted to these main labels
@@ -97,12 +97,12 @@ def binarize(dataset):
     dataset = dataset.map(lambda line: {'label': mlb.transform([line['label']])[0]})
     return dataset
 
-pprint(dataset['train']['label'][:5])
+# pprint(dataset['train']['label'][:5])
 dataset = dataset.map(split_labels)
-pprint(dataset['train']['label'][:5])
+# pprint(dataset['train']['label'][:5])
 dataset = binarize(dataset)
-pprint(dataset['train']['label'][:5])
-pprint(dataset['train'][:2])
+# pprint(dataset['train']['label'][:5])
+# pprint(dataset['train'][:2])
 
 # then use the XLMR tokenizer
 model_name = "xlm-roberta-large"
@@ -119,6 +119,7 @@ dataset = dataset.map(tokenize)
 
 num_labels = len(unique_labels)
 model = transformers.XLMRobertaForSequenceClassification.from_pretrained(model_name, num_labels=num_labels, problem_type="multi_label_classification")
+model.eval()
 
 trainer_args = transformers.TrainingArguments(
     "../multilabel/checkpoints", # change this to put the checkpoints somewhere else
@@ -215,7 +216,7 @@ trainer = MultilabelTrainer(
 trainer.train()
 
 if args.multilingual == True:
-    trainer.model.save_pretrained("Translated_multilingual")
+    trainer.model.save_pretrained("saved_models/downsampled_multilingual")
 else:
     eval_results = trainer.evaluate(dataset["test"])
     print('F1:', eval_results['eval_f1'])

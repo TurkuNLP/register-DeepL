@@ -1,0 +1,53 @@
+Namespace(batch=8, epochs=5, learning=8e-06, multilingual=False, test_set=['test_sets/chi_all_modified.tsv'], train_set=['main_labels_only/chi_FINAL.modified.tsv.gz'], treshold=0.4)
+{'dev': Dataset({
+    features: ['text', 'label'],
+    num_rows: 1852
+}),
+ 'test': Dataset({
+    features: ['text', 'label'],
+    num_rows: 312
+}),
+ 'train': Dataset({
+    features: ['text', 'label'],
+    num_rows: 7405
+})}
+['IN', 'ID', 'NA IN', 'SP', 'IN OP']
+[['IN'], ['ID'], ['NA', 'IN'], ['SP'], ['IN', 'OP']]
+[[0, 0, 1, 0, 0, 0, 0, 0], [0, 1, 0, 0, 0, 0, 0, 0], [0, 0, 1, 0, 0, 1, 0, 0],
+ [0, 0, 0, 0, 0, 0, 0, 1], [0, 0, 1, 0, 0, 0, 1, 0]]
+{'label': [[0, 0, 1, 0, 0, 0, 0, 0], [0, 1, 0, 0, 0, 0, 0, 0]],
+ 'text': ['建筑材料行业选择了100个我们认为能导致提高可持续性的建筑材料创新案例。每项创新都支持2030年议程中的一个目标。所有的创新都在这里以滚动方式呈现。',
+          '这是 "药丸 "避孕的一部分 -- 你吃的大多数药丸都是荷尔蒙药，但每个月你会有5天的 "糖丸"， -- '
+          '如果你跳过糖丸，你可以跳过那个月的月经。不过要先向你的医生咨询是否适合你。这是 "药丸 '
+          '"避孕的一部分--你服用的大多数药丸都是荷尔蒙型的，但每个月你会有5天的 '
+          '"糖丸"，--如果你不服用糖丸，你可以在当月不来月经。不过要先向你的医生咨询是否适合你。如果你正在服用避孕药，我也会跳过你的月经。如果你没有或者不想这样做。我会从家里带东西来，这也是那些最终无法找到你喜欢的品牌的事情之一，可能会非常恼火。而且作为奖励，在你使用它们之后，你的行李箱里会有更多空间来带东西回家。如果你在服用避孕药，我也会跳过你的月经。如果你没有或不想这样做，我会从家里带东西。我会从家里带东西，那是那些最终无法找到你喜欢的品牌的事情之一，可能会非常恼火。我曾用过炔诺酮（药片）--在月经到期前3-5天服用，药片会推迟月经--每天服用一次，一旦停止服用，月经通常会在1-3天后到来。我使用过炔诺酮（药片）--在月经到期前3-5天服用，药片会推迟月经--你每天坚持服用一次，一旦你停止服用药片，月经通常会在1-3天后到来。我打算在新西兰的时候做整个药片的事情，让你错过那可怕的一周。我有一个新的药片库存和所有的东西。有一天晚上我忘了吃药（别担心，我没有怀孕），但我的朋友确实提前来了，而且是报复性的。所以我建议，如果你打算吃药，并打算跳过糖周，那么在你每天忙于观光和通宵聚会的contiki行程中，你总是有可能忘记。因此，无论如何都要带一些护垫/卫生巾（在你的手提包里/在车上的包里都要有一个 '
+          '-- 你不想到处向你的新朋友要护垫）。我是个好女孩，而且准备得很充分 -- 我通常是那个分发卫生棉的人。带上Naprogesic -- '
+          '它是女孩在旅行中最好的朋友。它比panadol有效得多 -- '
+          '你不想因为你的月经朋友的痛苦而错过任何一个观光的时刻！！。当我在新西兰时，我打算做整个药片的事情，让你错过那可怕的一周。我有一个新的药丸库存和一切。有一天晚上我忘了吃药（别担心，我没有怀孕），但我的朋友确实提前来了，而且是报复性的。所以我建议，如果你打算吃药，并打算跳过糖周，那么在你每天忙于观光和通宵聚会的contiki行程中，你总是有可能忘记。因此，无论如何都要带一些护垫/卫生棉（在你的手提包里/在公共汽车上的包里随时都有一个--你不希望到处向你的新朋友要护垫）。我是个好女孩，准备得很充分--我通常是那个分发卫生棉的人*笑*!带上Naprogesic--它是女孩在旅行中最好的朋友。它比panadol有效得多--你不会想因为你的月子里的朋友很痛苦而错过任何一个观光的时刻！！。哦，是的--Naprogesic是一种救命药 '
+          ':D。我现在要带一袋药了，药片Naprogesic Neurofen Cold n Flu tablets (the good '
+          'ones not the herbal ones) Multivitamins Imodium ..... '
+          '现在想不出其他东西了--只是有这么多药，我最好带上包装，这样如果我在海关被拦住，我就可以解释了!哦，对了--Naprogesic是一个救命的东西：D。我现在要带一袋药了。']}
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+{'loss': 0.2725, 'learning_rate': 6.4e-06, 'epoch': 1.0}
+{'eval_loss': 0.24299411475658417, 'eval_f1': 0.6259314456035767, 'eval_roc_auc': 0.7800756611848595, 'eval_accuracy': 0.5064102564102564, 'eval_runtime': 10.0133, 'eval_samples_per_second': 31.159, 'eval_steps_per_second': 0.999, 'epoch': 1.0}
+{'loss': 0.1865, 'learning_rate': 4.8e-06, 'epoch': 2.0}
+{'eval_loss': 0.27661779522895813, 'eval_f1': 0.608946608946609, 'eval_roc_auc': 0.7766695470535002, 'eval_accuracy': 0.4967948717948718, 'eval_runtime': 9.7634, 'eval_samples_per_second': 31.956, 'eval_steps_per_second': 1.024, 'epoch': 2.0}
+{'loss': 0.1484, 'learning_rate': 3.2e-06, 'epoch': 3.0}
+{'eval_loss': 0.28707635402679443, 'eval_f1': 0.6063218390804598, 'eval_roc_auc': 0.7759734913690456, 'eval_accuracy': 0.4967948717948718, 'eval_runtime': 10.7433, 'eval_samples_per_second': 29.041, 'eval_steps_per_second': 0.931, 'epoch': 3.0}
+{'loss': 0.1183, 'learning_rate': 1.6e-06, 'epoch': 4.0}
+{'eval_loss': 0.3104712963104248, 'eval_f1': 0.5795454545454546, 'eval_roc_auc': 0.7622292833280034, 'eval_accuracy': 0.47435897435897434, 'eval_runtime': 10.18, 'eval_samples_per_second': 30.648, 'eval_steps_per_second': 0.982, 'epoch': 4.0}
+{'loss': 0.0968, 'learning_rate': 0.0, 'epoch': 5.0}
+{'eval_loss': 0.32886749505996704, 'eval_f1': 0.5800000000000001, 'eval_roc_auc': 0.7614590633526341, 'eval_accuracy': 0.46474358974358976, 'eval_runtime': 10.048, 'eval_samples_per_second': 31.051, 'eval_steps_per_second': 0.995, 'epoch': 5.0}
+{'train_runtime': 4111.3424, 'train_samples_per_second': 9.006, 'train_steps_per_second': 1.126, 'train_loss': 0.1645167126253923, 'epoch': 5.0}
+F1: 0.6259314456035767
