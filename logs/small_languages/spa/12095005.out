@@ -1,0 +1,42 @@
+learning rate: 5e-06 treshold: 0.4 batch: 8 epochs: 5
+Namespace(batch=8, epochs=5, learning=5e-06, multilingual=False, test_set=['test_sets/spa_test_modified.tsv'], train_set=['main_labels_only/es_FINAL.modified.tsv.gz'], treshold=0.4)
+Downloading and preparing dataset csv/default to /users/annieske/.cache/huggingface/datasets/csv/default-ded05e8b6d128e4e/0.0.0/433e0ccc46f9880962cc2b12065189766fbb2bee57a221866138fb9203c83519...
+Dataset csv downloaded and prepared to /users/annieske/.cache/huggingface/datasets/csv/default-ded05e8b6d128e4e/0.0.0/433e0ccc46f9880962cc2b12065189766fbb2bee57a221866138fb9203c83519. Subsequent calls will reuse this data.
+Downloading and preparing dataset csv/default to /users/annieske/.cache/huggingface/datasets/csv/default-8f7d72d41ce57dff/0.0.0/433e0ccc46f9880962cc2b12065189766fbb2bee57a221866138fb9203c83519...
+Dataset csv downloaded and prepared to /users/annieske/.cache/huggingface/datasets/csv/default-8f7d72d41ce57dff/0.0.0/433e0ccc46f9880962cc2b12065189766fbb2bee57a221866138fb9203c83519. Subsequent calls will reuse this data.
+{'dev': Dataset({
+    features: ['text', 'label'],
+    num_rows: 1851
+}),
+ 'test': Dataset({
+    features: ['text', 'label'],
+    num_rows: 99
+}),
+ 'train': Dataset({
+    features: ['text', 'label'],
+    num_rows: 7401
+})}
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+{'loss': 0.2918, 'learning_rate': 4.000000000000001e-06, 'epoch': 1.0}
+{'eval_loss': 0.1972574144601822, 'eval_f1': 0.6799999999999999, 'eval_roc_auc': 0.8115942028985507, 'eval_accuracy': 0.6060606060606061, 'eval_runtime': 3.0506, 'eval_samples_per_second': 32.452, 'eval_steps_per_second': 1.311, 'epoch': 1.0}
+{'loss': 0.1948, 'learning_rate': 3e-06, 'epoch': 2.0}
+{'eval_loss': 0.19989652931690216, 'eval_f1': 0.6698113207547169, 'eval_roc_auc': 0.8197783461210572, 'eval_accuracy': 0.5555555555555556, 'eval_runtime': 3.018, 'eval_samples_per_second': 32.803, 'eval_steps_per_second': 1.325, 'epoch': 2.0}
+{'loss': 0.1631, 'learning_rate': 2.0000000000000003e-06, 'epoch': 3.0}
+{'eval_loss': 0.2039230614900589, 'eval_f1': 0.6728971962616823, 'eval_roc_auc': 0.8239556692242115, 'eval_accuracy': 0.5858585858585859, 'eval_runtime': 3.0071, 'eval_samples_per_second': 32.922, 'eval_steps_per_second': 1.33, 'epoch': 3.0}
+{'loss': 0.1415, 'learning_rate': 1.0000000000000002e-06, 'epoch': 4.0}
+{'eval_loss': 0.22210106253623962, 'eval_f1': 0.6574074074074074, 'eval_roc_auc': 0.8168797953964194, 'eval_accuracy': 0.5555555555555556, 'eval_runtime': 3.0081, 'eval_samples_per_second': 32.912, 'eval_steps_per_second': 1.33, 'epoch': 4.0}
+{'loss': 0.1251, 'learning_rate': 0.0, 'epoch': 5.0}
+{'eval_loss': 0.23321005702018738, 'eval_f1': 0.6572769953051644, 'eval_roc_auc': 0.8134271099744246, 'eval_accuracy': 0.5555555555555556, 'eval_runtime': 3.0137, 'eval_samples_per_second': 32.85, 'eval_steps_per_second': 1.327, 'epoch': 5.0}
+{'train_runtime': 3921.4247, 'train_samples_per_second': 9.437, 'train_steps_per_second': 1.181, 'train_loss': 0.18325988736574902, 'epoch': 5.0}
+F1: 0.6701570680628272

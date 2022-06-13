@@ -19,8 +19,6 @@ what about using the test set as "dev" and not testing at all? will it learn bet
 
 PORTUGUESE
 
-F1: 0.8021425244527247
-F1: 0.8386698923200987
 
 12044723
 --batch 7 --treshold 0.4 --epochs 5 --learning 8e-6 
@@ -65,6 +63,7 @@ F1: 0.6912181303116146
 
 12077638
 --batch 7 --treshold 0.4 --epochs 5 --learning 1e-6
+F1: 0.6722925457102672
 
 12077641
 --batch 7 --treshold 0.5 --epochs 5 --learning 1e-6
@@ -72,10 +71,13 @@ F1: 0.6666666666666667
 
 12078275
 --batch 7 --treshold 0.4 --epochs 5 --learning 4e-6
-F1: 0.6722925457102672
+F1: 0.6656891495601173
+
+
+
+
 
 SPANISH
-F1: 0.8075641687391489
 
 12045641
 --batch 7 --treshold 0.4 --epochs 5 --learning 8e-6 
@@ -91,9 +93,30 @@ F1: 0.6636363636363636
 F1: 0.6965174129353234
 
 
+12078424
+learning rate: 4e-6 treshold: 0.3 batch: 8 epochs: 5
+F1: 0.6754385964912281
+
+12078425
+learning rate: 4e-6 treshold: 0.3 batch: 7 epochs: 5
+F1: 0.6548672566371682
+
+12095005
+learning rate: 5e-06 treshold: 0.4 batch: 8 epochs: 5
+F1: 0.6701570680628272
+
+12095013
+learning rate: 7e-5 treshold: 0.4 batch: 8 epochs: 5
+F1: 0.66
+
+12095015
+learning rate: 1e-5 treshold: 0.4 batch: 8 epochs: 5
+F1: 0.6701570680628272
+
+
+
 
 JAPANESE
-F1: 0.792918057100482
 
 12045673
 --batch 7 --treshold 0.4 --epochs 5 --learning 8e-6 
@@ -108,10 +131,32 @@ F1: 0.6311111111111111
 --batch 8 --treshold 0.4 --epochs 5 --learning 8e-6
 F1: 0.6926829268292684
 
+12078427
+learning rate: 4e-6 treshold: 0.3 batch: 7 epochs: 5
+F1: 0.6728971962616822
+
+12978428
+learning rate: 4e-6 treshold: 0.3 batch: 8 epochs: 5
+F1: 0.6666666666666666
+
+1e-5 => F1 0.0
+
+12095026
+learning rate: 4e-6 treshold: 0.4 batch: 8 epochs: 5
+F1: 0.6788990825688073
+
+12095027
+learning rate: 5e-6 treshold: 0.4 batch: 8 epochs: 5
+F1: 0.6788990825688073
+
+12095028
+learning rate: 7e-5 treshold: 0.4 batch: 8 epochs: 5
+F1: 0.6146341463414634
+
+
 
 
 CHINESE
-F1: 0.817153011597456
 
 12045680
 --batch 7 --treshold 0.4 --epochs 5 --learning 8e-6 
@@ -127,10 +172,21 @@ F1: 0.5356125356125356
 F1: 0.6259314456035767
 => this is interesting because the eval F1 kept going down but this was better :D
 
-TESTS WITH DIFFERENT THINGS
 12078321
+F1: 0.6277777777777778
+Namespace(batch=7, epochs=5, learning=4e-06, treshold=0.3)
 
 12078347
+F1: 0.6592489568845619
+learning rate: 4e-6 treshold: 0.3 batch: 8 epochs: 5
+
+12095099
+learning rate: 4e-6 treshold: 0.4 batch: 8 epochs: 5
+F1: 0.632375189107413
+
+
+
+
 
 
 
@@ -141,7 +197,6 @@ CHINESE TEST SET
 --batch 7 --treshold 0.4 --epochs 5 --learning 8e-6 
 'eval_f1': 0.9488701209769459
 F1: 0.5674157303370787
-
 
 
 SPANISH TEST SET

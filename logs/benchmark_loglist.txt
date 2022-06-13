@@ -35,7 +35,11 @@ epoch 3, learning rate= ??, batch 8,
 F1: 0.7331615120274914
 
 12074738 (XLMR-large)
-
+ --batch 7 \
+ --treshold 0.4 \
+ --epochs 5 \
+ --learning 8e-6
+F1: 0.7588725536098885
 
 FRE
 11869551

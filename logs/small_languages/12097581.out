@@ -1,5 +1,5 @@
-learning rate: 4e-6 treshold: 0.3
-Namespace(batch=7, epochs=5, learning=4e-06, multilingual=False, test_set=['test_sets/chi_all_modified.tsv'], train_set=['main_labels_only/chi_FINAL.modified.tsv.gz'], treshold=0.3)
+learning rate: 5e-6 treshold: 0.5 batch: 8 epochs: 5
+Namespace(batch=8, epochs=5, learning=5e-06, multilingual=False, test_set=['test_sets/chi_all_modified.tsv'], train_set=['main_labels_only/chi_FINAL.modified.tsv.gz'], treshold=0.5)
 {'dev': Dataset({
     features: ['text', 'label'],
     num_rows: 1852

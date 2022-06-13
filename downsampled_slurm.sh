@@ -2,7 +2,7 @@
 #SBATCH --job-name=downsampled
 #SBATCH --account=project_2000539 #2005092
 #SBATCH --partition=gpu
-#SBATCH --time=01:30:00 #1h 30 for multi
+#SBATCH --time=01:30:00 #1h 30 for multi, 30min for downsampled
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=1 # from 10 to 1
 #SBATCH --mem-per-cpu=8000
@@ -11,6 +11,13 @@
 #SBATCH --error=../logs/%j.err
 
 module load pytorch 
+
+BATCH=8
+LR=5e-6
+TR=0.4
+EPOCHS=5
+
+echo "learning rate: $LR treshold: $TR batch: $BATCH epochs: $EPOCHS"
 
 #downsampled main labels only
 
@@ -25,9 +32,9 @@ module load pytorch
 
 # FRENCH WAS NOT DOWNSAMPLED (just shuffled) SO NO NEED FOR THAT
 # running anyway because the dev set was taken out
-srun python3 register-multilabel.py --train_set main_labels_only/original_downsampled/fre_train.downsampled_modified.tsv --test_set multilingual-register-data-new/formatted/fre_test.formatted.tsv --batch 7 --treshold 0.4 --epochs 5 --learning 8e-6
+#srun python3 register-multilabel.py --train_set main_labels_only/original_downsampled/fre_train.downsampled_modified.tsv --test_set multilingual-register-data-new/formatted/fre_test.formatted.tsv --batch 7 --treshold 0.4 --epochs 5 --learning 8e-6
 
 
 # TRY MULTILINGUAL DOWNSAMPLED MODEL AS WELL
 
-#srun python3 register-multilabel.py --train_set main_labels_only/original_downsampled/all_downsampled.tsv.gz --test_set multilingual-register-data-new/formatted/fre_test.formatted.tsv --batch 8 --treshold 0.4 --epochs 5 --learning 8e-6 --multilingual
+srun python3 register-multilabel.py --train_set main_labels_only/original_downsampled/all_downsampled.tsv.gz --test_set multilingual-register-data-new/formatted/fre_test.formatted.tsv --batch $BATCH --treshold $TR --epochs $EPOCHS --learning $LR --multilingual

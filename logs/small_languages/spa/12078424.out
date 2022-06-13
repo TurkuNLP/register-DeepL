@@ -1,0 +1,117 @@
+train: main_labels_only/es_FINAL.modified.tsv.gz test: test_sets/spa_test_modified.tsv
+learning rate: 4e-6 treshold: 0.3 batch: 8 epochs: 5
+Namespace(batch=8, epochs=5, learning=4e-06, multilingual=False, test_set=['test_sets/spa_test_modified.tsv'], train_set=['main_labels_only/es_FINAL.modified.tsv.gz'], treshold=0.3)
+{'dev': Dataset({
+    features: ['text', 'label'],
+    num_rows: 1851
+}),
+ 'test': Dataset({
+    features: ['text', 'label'],
+    num_rows: 99
+}),
+ 'train': Dataset({
+    features: ['text', 'label'],
+    num_rows: 7401
+})}
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+{'loss': 0.2906, 'learning_rate': 3.2e-06, 'epoch': 1.0}
+{'eval_loss': 0.20862407982349396, 'eval_f1': 0.6756756756756757, 'eval_roc_auc': 0.8350383631713555, 'eval_accuracy': 0.5252525252525253, 'eval_runtime': 3.1606, 'eval_samples_per_second': 31.324, 'eval_steps_per_second': 1.266, 'epoch': 1.0}
+{'loss': 0.1939, 'learning_rate': 2.4e-06, 'epoch': 2.0}
+{'eval_loss': 0.19536378979682922, 'eval_f1': 0.6754385964912281, 'eval_roc_auc': 0.8419437340153453, 'eval_accuracy': 0.5151515151515151, 'eval_runtime': 3.036, 'eval_samples_per_second': 32.609, 'eval_steps_per_second': 1.318, 'epoch': 2.0}
+{'loss': 0.1631, 'learning_rate': 1.6e-06, 'epoch': 3.0}
+{'eval_loss': 0.20186923444271088, 'eval_f1': 0.6580086580086579, 'eval_roc_auc': 0.8341432225063938, 'eval_accuracy': 0.48484848484848486, 'eval_runtime': 3.0351, 'eval_samples_per_second': 32.619, 'eval_steps_per_second': 1.318, 'epoch': 3.0}
+{'loss': 0.1417, 'learning_rate': 8e-07, 'epoch': 4.0}
+{'eval_loss': 0.2095567137002945, 'eval_f1': 0.6608695652173913, 'eval_roc_auc': 0.8348678601875532, 'eval_accuracy': 0.5252525252525253, 'eval_runtime': 3.1194, 'eval_samples_per_second': 31.737, 'eval_steps_per_second': 1.282, 'epoch': 4.0}
+{'loss': 0.1281, 'learning_rate': 0.0, 'epoch': 5.0}
+{'eval_loss': 0.21236386895179749, 'eval_f1': 0.6580086580086579, 'eval_roc_auc': 0.8341432225063938, 'eval_accuracy': 0.5151515151515151, 'eval_runtime': 3.0411, 'eval_samples_per_second': 32.554, 'eval_steps_per_second': 1.315, 'epoch': 5.0}
+{'train_runtime': 4284.5485, 'train_samples_per_second': 8.637, 'train_steps_per_second': 1.081, 'train_loss': 0.183483932857637, 'epoch': 5.0}
+F1: 0.6754385964912281
+learning rate: 4e-6 treshold: 0.4 batch: 8 epochs: 5
+Namespace(batch=8, epochs=5, learning=4e-06, multilingual=False, test_set=['test_sets/spa_test_modified.tsv'], train_set=['main_labels_only/es_FINAL.modified.tsv.gz'], treshold=0.4)
+{'dev': Dataset({
+    features: ['text', 'label'],
+    num_rows: 1851
+}),
+ 'test': Dataset({
+    features: ['text', 'label'],
+    num_rows: 99
+}),
+ 'train': Dataset({
+    features: ['text', 'label'],
+    num_rows: 7401
+})}
+learning rate: 4e-6 treshold: 0.5 batch: 8 epochs: 5
+Namespace(batch=8, epochs=5, learning=4e-06, multilingual=False, test_set=['test_sets/spa_test_modified.tsv'], train_set=['main_labels_only/es_FINAL.modified.tsv.gz'], treshold=0.5)
+learning rate: 4e-6 treshold: 0.6 batch: 8 epochs: 5
+Namespace(batch=8, epochs=5, learning=4e-06, multilingual=False, test_set=['test_sets/spa_test_modified.tsv'], train_set=['main_labels_only/es_FINAL.modified.tsv.gz'], treshold=0.6)
+learning rate: 5e-6 treshold: 0.3 batch: 8 epochs: 5
+Namespace(batch=8, epochs=5, learning=5e-06, multilingual=False, test_set=['test_sets/spa_test_modified.tsv'], train_set=['main_labels_only/es_FINAL.modified.tsv.gz'], treshold=0.3)
+{'dev': Dataset({
+    features: ['text', 'label'],
+    num_rows: 1851
+}),
+ 'test': Dataset({
+    features: ['text', 'label'],
+    num_rows: 99
+}),
+ 'train': Dataset({
+    features: ['text', 'label'],
+    num_rows: 7401
+})}
+learning rate: 5e-6 treshold: 0.4 batch: 8 epochs: 5
+Namespace(batch=8, epochs=5, learning=5e-06, multilingual=False, test_set=['test_sets/spa_test_modified.tsv'], train_set=['main_labels_only/es_FINAL.modified.tsv.gz'], treshold=0.4)
+learning rate: 5e-6 treshold: 0.5 batch: 8 epochs: 5
+Namespace(batch=8, epochs=5, learning=5e-06, multilingual=False, test_set=['test_sets/spa_test_modified.tsv'], train_set=['main_labels_only/es_FINAL.modified.tsv.gz'], treshold=0.5)
+learning rate: 5e-6 treshold: 0.6 batch: 8 epochs: 5
+Namespace(batch=8, epochs=5, learning=5e-06, multilingual=False, test_set=['test_sets/spa_test_modified.tsv'], train_set=['main_labels_only/es_FINAL.modified.tsv.gz'], treshold=0.6)
+{'dev': Dataset({
+    features: ['text', 'label'],
+    num_rows: 1851
+}),
+ 'test': Dataset({
+    features: ['text', 'label'],
+    num_rows: 99
+}),
+ 'train': Dataset({
+    features: ['text', 'label'],
+    num_rows: 7401
+})}
+learning rate: 7e-5 treshold: 0.3 batch: 8 epochs: 5
+Namespace(batch=8, epochs=5, learning=7e-05, multilingual=False, test_set=['test_sets/spa_test_modified.tsv'], train_set=['main_labels_only/es_FINAL.modified.tsv.gz'], treshold=0.3)
+learning rate: 7e-5 treshold: 0.4 batch: 8 epochs: 5
+Namespace(batch=8, epochs=5, learning=7e-05, multilingual=False, test_set=['test_sets/spa_test_modified.tsv'], train_set=['main_labels_only/es_FINAL.modified.tsv.gz'], treshold=0.4)
+{'dev': Dataset({
+    features: ['text', 'label'],
+    num_rows: 1851
+}),
+ 'test': Dataset({
+    features: ['text', 'label'],
+    num_rows: 99
+}),
+ 'train': Dataset({
+    features: ['text', 'label'],
+    num_rows: 7401
+})}
+learning rate: 7e-5 treshold: 0.5 batch: 8 epochs: 5
+Namespace(batch=8, epochs=5, learning=7e-05, multilingual=False, test_set=['test_sets/spa_test_modified.tsv'], train_set=['main_labels_only/es_FINAL.modified.tsv.gz'], treshold=0.5)
+learning rate: 7e-5 treshold: 0.6 batch: 8 epochs: 5
+Namespace(batch=8, epochs=5, learning=7e-05, multilingual=False, test_set=['test_sets/spa_test_modified.tsv'], train_set=['main_labels_only/es_FINAL.modified.tsv.gz'], treshold=0.6)
+learning rate: 8e-6 treshold: 0.3 batch: 8 epochs: 5
+Namespace(batch=8, epochs=5, learning=8e-06, multilingual=False, test_set=['test_sets/spa_test_modified.tsv'], train_set=['main_labels_only/es_FINAL.modified.tsv.gz'], treshold=0.3)
+learning rate: 8e-6 treshold: 0.4 batch: 8 epochs: 5
+Namespace(batch=8, epochs=5, learning=8e-06, multilingual=False, test_set=['test_sets/spa_test_modified.tsv'], train_set=['main_labels_only/es_FINAL.modified.tsv.gz'], treshold=0.4)
+learning rate: 8e-6 treshold: 0.5 batch: 8 epochs: 5
+Namespace(batch=8, epochs=5, learning=8e-06, multilingual=False, test_set=['test_sets/spa_test_modified.tsv'], train_set=['main_labels_only/es_FINAL.modified.tsv.gz'], treshold=0.5)
+learning rate: 8e-6 treshold: 0.6 batch: 8 epochs: 5
+Namespace(batch=8, epochs=5, learning=8e-06, multilingual=False, test_set=['test_sets/spa_test_modified.tsv'], train_set=['main_labels_only/es_FINAL.modified.tsv.gz'], treshold=0.6)

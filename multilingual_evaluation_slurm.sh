@@ -14,7 +14,7 @@ module load pytorch
 
 # MULTI/CROSSLINGUAL (try on test set)
 
-# more loops to test all kings oflearning rates, epochs, tresholds ets.
+# more loops to test all kings oflearning rates, epochs, tresholds etc. ?
 
 # FOR TRANSFER/TRANSLATED TESTING
 FILES="test_sets/spa_test_modified.tsv test_sets/pt_test_modified.tsv test_sets/jpn_test_modified.tsv test_sets/chi_all_modified.tsv"
@@ -23,12 +23,15 @@ FILES="test_sets/spa_test_modified.tsv test_sets/pt_test_modified.tsv test_sets/
 #FILES="multilingual-register-data-new/formatted/en_test.formatted.tsv multilingual-register-data-new/formatted/fi_test.formatted.tsv multilingual-register-data-new/formatted/fre_test.formatted.tsv multilingual-register-data-new/formatted/swe_test.formatted.tsv"
 
 # FOR DOWNSAMPLED TESTING
+#FILES="multilingual-register-data-new/formatted/fre_test.formatted.tsv multilingual-register-data-new/formatted/en_test.formatted.tsv multilingual-register-data-new/formatted/swe_test.formatted.tsv multilingual-register-data-new/formatted/fi_test.formatted.tsv"
 
 
-
+TR=0.3
 
 for file in $FILES; do
-    srun python3 multilingual_evaluation.py --test_set $file --model saved_models/downsampled_multilingual
+    echo $file
+    echo $TR
+    srun python3 multilingual_evaluation.py --test_set $file --model saved_models/downsampled_multilingual --treshold $TR
 done
 
 
@@ -47,7 +50,4 @@ done
 # CHINESE
 #srun python3 multilingual_evaluation.py test_sets/chi_all_modified.tsv --batch 7 --treshold 0.4 --epochs 5 --learning 8e-6
 
-
-
-# ALL ORIGINAL DATASETS THE SAME WAY AS ABOVE?
 

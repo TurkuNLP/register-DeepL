@@ -71,3 +71,29 @@ F1: 0.7752345215759849
 MULTILINGUALS SAVED MODEL 12073502 (common dev set) 12073502
 --batch 8 --treshold 0.4 --epochs 5 --learning 8e-6 --multilingual 
 'eval_f1': 0.7720320466132556
+
+FRE
+F1: 0.7724620770128354
+
+ENG
+F1: 0.7160792337022227
+
+SWE
+F1: 0.7983128834355828
+
+FIN
+F1: 0.772528007793473
+
+
+
+MULTILINGUAL MODEL 12095656
+learning rate: 4e-6 treshold: 0.4 batch: 8 epochs: 5
+'eval_f1': 0.7749627421758568
+
+12095690
+learning rate: 7e-5 treshold: 0.4 batch: 8 epochs: 5
+0.0
+
+12095691
+learning rate: 5e-6 treshold: 0.4 batch: 8 epochs: 5
+'eval_f1': 0.7830882352941178

@@ -24,7 +24,6 @@ srun cat ../multilingual-register-data-new/formatted/en_train1.formatted.tsv ../
  --epochs 5 \
  --learning 8e-6
 
-/scratch/project_2005092/Anni/register-DeepL/multilingual-register-data-new/formatted/en_dev.formatted.tsv
 
 #SWEDISH
 #srun python3 register-benchmark-Fre_Swe.py monolingual_benchmark_files/Swe_train.tsv monolingual_benchmark_files/Swe_dev.tsv monolingual_benchmark_files/Swe_test.tsv --batch 7 --treshold 0.4 --epochs 6 --learning 1e-5

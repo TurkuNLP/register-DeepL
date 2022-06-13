@@ -62,7 +62,7 @@ train = datasets.load_dataset(
 
 train.shuffle(seed=1234)
 
-# this also shuffles by default
+# this also shuffles by default (should I set a seed? or not shuffle anymore?) shuffle=False or seed=1234
 train, dev = train.train_test_split(test_size=0.2).values()
 
 test = datasets.load_dataset(
