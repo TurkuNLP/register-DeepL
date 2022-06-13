@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH --job-name=downsampled
-#SBATCH --account=project_2000539 #2005092
+#SBATCH --account=project_2005092 #2000539
 #SBATCH --partition=gpu
 #SBATCH --time=01:30:00 #1h 30 for multi, 30min for downsampled
 #SBATCH --ntasks=1
@@ -13,7 +13,7 @@
 module load pytorch 
 
 BATCH=8
-LR=5e-6
+LR=8e-6
 TR=0.4
 EPOCHS=5
 

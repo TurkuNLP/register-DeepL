@@ -1,0 +1,31 @@
+learning rate: 5e-6 treshold: 0.3 batch: 8 epochs: 10
+Namespace(batch=8, epochs=10, learning=5e-06, multilingual=False, test_set=['test_sets/chi_all_modified.tsv'], train_set=['main_labels_only/chi_FINAL.modified.tsv.gz'], treshold=0.3)
+{'dev': Dataset({
+    features: ['text', 'label'],
+    num_rows: 1852
+}),
+ 'test': Dataset({
+    features: ['text', 'label'],
+    num_rows: 312
+}),
+ 'train': Dataset({
+    features: ['text', 'label'],
+    num_rows: 7405
+})}
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+{'loss': 0.288, 'learning_rate': 4.5e-06, 'epoch': 1.0}
+{'eval_loss': 0.24089603126049042, 'eval_f1': 0.6278409090909091, 'eval_roc_auc': 0.7911002850902558, 'eval_accuracy': 0.5, 'eval_runtime': 9.9024, 'eval_samples_per_second': 31.507, 'eval_steps_per_second': 1.01, 'epoch': 1.0}
+{'loss': 0.1957, 'learning_rate': 4.000000000000001e-06, 'epoch': 2.0}
+{'eval_loss': 0.26036837697029114, 'eval_f1': 0.5777777777777777, 'eval_roc_auc': 0.7653101632294806, 'eval_accuracy': 0.4423076923076923, 'eval_runtime': 9.8158, 'eval_samples_per_second': 31.785, 'eval_steps_per_second': 1.019, 'epoch': 2.0}
+{'loss': 0.1624, 'learning_rate': 3.5e-06, 'epoch': 3.0}

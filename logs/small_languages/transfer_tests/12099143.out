@@ -1,0 +1,112 @@
+test_sets/spa_test_modified.tsv
+0.2
+Namespace(model='saved_models/original_multilingual', test_set='test_sets/spa_test_modified.tsv', treshold=0.2)
+F1: 0.6885245901639344
+test_sets/spa_test_modified.tsv
+0.3
+Namespace(model='saved_models/original_multilingual', test_set='test_sets/spa_test_modified.tsv', treshold=0.3)
+F1: 0.6877828054298643
+test_sets/spa_test_modified.tsv
+0.4
+Namespace(model='saved_models/original_multilingual', test_set='test_sets/spa_test_modified.tsv', treshold=0.4)
+F1: 0.7081339712918661
+test_sets/spa_test_modified.tsv
+0.5
+Namespace(model='saved_models/original_multilingual', test_set='test_sets/spa_test_modified.tsv', treshold=0.5)
+F1: 0.71
+test_sets/spa_test_modified.tsv
+0.6
+Namespace(model='saved_models/original_multilingual', test_set='test_sets/spa_test_modified.tsv', treshold=0.6)
+F1: 0.6844919786096256
+test_sets/spa_test_modified.tsv
+0.7
+Namespace(model='saved_models/original_multilingual', test_set='test_sets/spa_test_modified.tsv', treshold=0.7)
+F1: 0.6666666666666667
+test_sets/spa_test_modified.tsv
+0.8
+Namespace(model='saved_models/original_multilingual', test_set='test_sets/spa_test_modified.tsv', treshold=0.8)
+F1: 0.6543209876543211
+test_sets/pt_test_modified.tsv
+0.2
+Namespace(model='saved_models/original_multilingual', test_set='test_sets/pt_test_modified.tsv', treshold=0.2)
+F1: 0.6561743341404358
+test_sets/pt_test_modified.tsv
+0.3
+Namespace(model='saved_models/original_multilingual', test_set='test_sets/pt_test_modified.tsv', treshold=0.3)
+F1: 0.6893840104849279
+test_sets/pt_test_modified.tsv
+0.4
+Namespace(model='saved_models/original_multilingual', test_set='test_sets/pt_test_modified.tsv', treshold=0.4)
+F1: 0.6941015089163236
+test_sets/pt_test_modified.tsv
+0.5
+Namespace(model='saved_models/original_multilingual', test_set='test_sets/pt_test_modified.tsv', treshold=0.5)
+F1: 0.6857142857142857
+test_sets/pt_test_modified.tsv
+0.6
+Namespace(model='saved_models/original_multilingual', test_set='test_sets/pt_test_modified.tsv', treshold=0.6)
+F1: 0.6757575757575758
+test_sets/pt_test_modified.tsv
+0.7
+Namespace(model='saved_models/original_multilingual', test_set='test_sets/pt_test_modified.tsv', treshold=0.7)
+F1: 0.6730462519936204
+test_sets/pt_test_modified.tsv
+0.8
+Namespace(model='saved_models/original_multilingual', test_set='test_sets/pt_test_modified.tsv', treshold=0.8)
+F1: 0.6455906821963394
+test_sets/jpn_test_modified.tsv
+0.2
+Namespace(model='saved_models/original_multilingual', test_set='test_sets/jpn_test_modified.tsv', treshold=0.2)
+F1: 0.6062992125984252
+test_sets/jpn_test_modified.tsv
+0.3
+Namespace(model='saved_models/original_multilingual', test_set='test_sets/jpn_test_modified.tsv', treshold=0.3)
+F1: 0.6343612334801763
+test_sets/jpn_test_modified.tsv
+0.4
+Namespace(model='saved_models/original_multilingual', test_set='test_sets/jpn_test_modified.tsv', treshold=0.4)
+F1: 0.6350710900473934
+test_sets/jpn_test_modified.tsv
+0.5
+Namespace(model='saved_models/original_multilingual', test_set='test_sets/jpn_test_modified.tsv', treshold=0.5)
+F1: 0.6224489795918366
+test_sets/jpn_test_modified.tsv
+0.6
+Namespace(model='saved_models/original_multilingual', test_set='test_sets/jpn_test_modified.tsv', treshold=0.6)
+F1: 0.6153846153846153
+test_sets/jpn_test_modified.tsv
+0.7
+Namespace(model='saved_models/original_multilingual', test_set='test_sets/jpn_test_modified.tsv', treshold=0.7)
+F1: 0.6206896551724137
+test_sets/jpn_test_modified.tsv
+0.8
+Namespace(model='saved_models/original_multilingual', test_set='test_sets/jpn_test_modified.tsv', treshold=0.8)
+F1: 0.5783132530120482
+test_sets/chi_all_modified.tsv
+0.2
+Namespace(model='saved_models/original_multilingual', test_set='test_sets/chi_all_modified.tsv', treshold=0.2)
+F1: 0.6297229219143577
+test_sets/chi_all_modified.tsv
+0.3
+Namespace(model='saved_models/original_multilingual', test_set='test_sets/chi_all_modified.tsv', treshold=0.3)
+F1: 0.6353591160220995
+test_sets/chi_all_modified.tsv
+0.4
+Namespace(model='saved_models/original_multilingual', test_set='test_sets/chi_all_modified.tsv', treshold=0.4)
+F1: 0.652046783625731
+test_sets/chi_all_modified.tsv
+0.5
+Namespace(model='saved_models/original_multilingual', test_set='test_sets/chi_all_modified.tsv', treshold=0.5)
+F1: 0.6533127889060093
+test_sets/chi_all_modified.tsv
+0.6
+Namespace(model='saved_models/original_multilingual', test_set='test_sets/chi_all_modified.tsv', treshold=0.6)
+F1: 0.629324546952224
+test_sets/chi_all_modified.tsv
+0.7
+Namespace(model='saved_models/original_multilingual', test_set='test_sets/chi_all_modified.tsv', treshold=0.7)
+F1: 0.597864768683274
+test_sets/chi_all_modified.tsv
+0.8
+Namespace(model='saved_models/original_multilingual', test_set='test_sets/chi_all_modified.tsv', treshold=0.8)
+F1: 0.5348837209302325

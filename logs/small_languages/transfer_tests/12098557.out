@@ -1,0 +1,16 @@
+test_sets/spa_test_modified.tsv
+0.3
+Namespace(model='saved_models/downsampled_multilingual', test_set='test_sets/spa_test_modified.tsv', treshold=0.3)
+F1: 0.6842105263157895
+test_sets/pt_test_modified.tsv
+0.3
+Namespace(model='saved_models/downsampled_multilingual', test_set='test_sets/pt_test_modified.tsv', treshold=0.3)
+F1: 0.6675159235668789
+test_sets/jpn_test_modified.tsv
+0.3
+Namespace(model='saved_models/downsampled_multilingual', test_set='test_sets/jpn_test_modified.tsv', treshold=0.3)
+F1: 0.6575342465753424
+test_sets/chi_all_modified.tsv
+0.3
+Namespace(model='saved_models/downsampled_multilingual', test_set='test_sets/chi_all_modified.tsv', treshold=0.3)
+F1: 0.6358695652173914

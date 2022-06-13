@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH --job-name=multilingual
-#SBATCH --account=project_2000539 #2005092
+#SBATCH --account=project_2005092 #2000539
 #SBATCH --partition=gpu
 #SBATCH --time=01:00:00
 #SBATCH --ntasks=1
@@ -26,12 +26,15 @@ FILES="test_sets/spa_test_modified.tsv test_sets/pt_test_modified.tsv test_sets/
 #FILES="multilingual-register-data-new/formatted/fre_test.formatted.tsv multilingual-register-data-new/formatted/en_test.formatted.tsv multilingual-register-data-new/formatted/swe_test.formatted.tsv multilingual-register-data-new/formatted/fi_test.formatted.tsv"
 
 
-TR=0.3
+TRS="0.2 0.3 0.4 0.5 0.6 0.7 0.8"
+
 
 for file in $FILES; do
+for tr in $TRS; do
     echo $file
-    echo $TR
-    srun python3 multilingual_evaluation.py --test_set $file --model saved_models/downsampled_multilingual --treshold $TR
+    echo $tr
+    srun python3 multilingual_evaluation.py --test_set $file --model saved_models/downsampled_multilingual --treshold $tr
+done
 done
 
 

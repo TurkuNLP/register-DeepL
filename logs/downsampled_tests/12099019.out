@@ -1,0 +1,33 @@
+learning rate: 8e-6 treshold: 0.4 batch: 8 epochs: 5
+Namespace(batch=8, epochs=5, learning=8e-06, multilingual=True, test_set=['multilingual-register-data-new/formatted/fre_test.formatted.tsv'], train_set=['main_labels_only/original_downsampled/all_downsampled.tsv.gz'], treshold=0.4)
+{'dev': Dataset({
+    features: ['text', 'label'],
+    num_rows: 1858
+}),
+ 'test': Dataset({
+    features: ['text', 'label'],
+    num_rows: 1177
+}),
+ 'train': Dataset({
+    features: ['text', 'label'],
+    num_rows: 7429
+})}
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+{'loss': 0.2579, 'learning_rate': 6.4e-06, 'epoch': 1.0}
+{'eval_loss': 0.18316292762756348, 'eval_f1': 0.7517347725520431, 'eval_roc_auc': 0.8397691070365684, 'eval_accuracy': 0.6304163126593033, 'eval_runtime': 36.7629, 'eval_samples_per_second': 32.016, 'eval_steps_per_second': 1.006, 'epoch': 1.0}
+{'loss': 0.1681, 'learning_rate': 4.8e-06, 'epoch': 2.0}
+{'eval_loss': 0.17657914757728577, 'eval_f1': 0.7608942781356575, 'eval_roc_auc': 0.8493352690323742, 'eval_accuracy': 0.6406117247238743, 'eval_runtime': 35.8863, 'eval_samples_per_second': 32.798, 'eval_steps_per_second': 1.031, 'epoch': 2.0}
+{'loss': 0.1334, 'learning_rate': 3.2e-06, 'epoch': 3.0}
+{'eval_loss': 0.18152888119220734, 'eval_f1': 0.774869109947644, 'eval_roc_auc': 0.8608020853679862, 'eval_accuracy': 0.6601529311809685, 'eval_runtime': 35.8588, 'eval_samples_per_second': 32.823, 'eval_steps_per_second': 1.032, 'epoch': 3.0}
+{'loss': 0.1036, 'learning_rate': 1.6e-06, 'epoch': 4.0}
