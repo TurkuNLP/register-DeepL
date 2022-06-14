@@ -1,0 +1,33 @@
+Downloading and preparing dataset csv/default to /users/annieske/.cache/huggingface/datasets/csv/default-a667a548d0ea1464/0.0.0/433e0ccc46f9880962cc2b12065189766fbb2bee57a221866138fb9203c83519...
+Dataset csv downloaded and prepared to /users/annieske/.cache/huggingface/datasets/csv/default-a667a548d0ea1464/0.0.0/433e0ccc46f9880962cc2b12065189766fbb2bee57a221866138fb9203c83519. Subsequent calls will reuse this data.
+['IN NA', 'LY', 'IP', 'IP', None]
+[['IN', 'NA'], ['LY'], ['IP'], ['IP'], ['NA']]
+[[0, 0, 1, 0, 0, 1, 0, 0], [0, 0, 0, 0, 1, 0, 0, 0], [0, 0, 0, 1, 0, 0, 0, 0],
+ [0, 0, 0, 1, 0, 0, 0, 0], [0, 0, 0, 0, 0, 1, 0, 0]]
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+{'loss': 0.3663, 'learning_rate': 6.4e-06, 'epoch': 1.0}
+{'eval_loss': 0.31840452551841736, 'eval_f1': 0.24133148404993063, 'eval_roc_auc': 0.5683548101588635, 'eval_accuracy': 0.1391941391941392, 'eval_runtime': 16.8672, 'eval_samples_per_second': 32.371, 'eval_steps_per_second': 1.067, 'epoch': 1.0}
+{'loss': 0.2617, 'learning_rate': 4.8e-06, 'epoch': 2.0}
+{'eval_loss': 0.23909488320350647, 'eval_f1': 0.6660973526900085, 'eval_roc_auc': 0.7919068120790268, 'eval_accuracy': 0.5769230769230769, 'eval_runtime': 16.8833, 'eval_samples_per_second': 32.34, 'eval_steps_per_second': 1.066, 'epoch': 2.0}
+{'loss': 0.1949, 'learning_rate': 3.2e-06, 'epoch': 3.0}
+{'eval_loss': 0.20411694049835205, 'eval_f1': 0.7131914893617021, 'eval_roc_auc': 0.8185190741213003, 'eval_accuracy': 0.6190476190476191, 'eval_runtime': 16.8978, 'eval_samples_per_second': 32.312, 'eval_steps_per_second': 1.065, 'epoch': 3.0}
+{'loss': 0.1536, 'learning_rate': 1.6e-06, 'epoch': 4.0}
+{'eval_loss': 0.19091050326824188, 'eval_f1': 0.7645611156685809, 'eval_roc_auc': 0.8566403144267263, 'eval_accuracy': 0.6648351648351648, 'eval_runtime': 16.921, 'eval_samples_per_second': 32.268, 'eval_steps_per_second': 1.064, 'epoch': 4.0}
+{'loss': 0.1309, 'learning_rate': 0.0, 'epoch': 5.0}
+{'eval_loss': 0.1906893253326416, 'eval_f1': 0.7638773819386909, 'eval_roc_auc': 0.8535620527744858, 'eval_accuracy': 0.6684981684981685, 'eval_runtime': 16.916, 'eval_samples_per_second': 32.277, 'eval_steps_per_second': 1.064, 'epoch': 5.0}
+{'train_runtime': 649.5729, 'train_samples_per_second': 6.997, 'train_steps_per_second': 1.001, 'train_loss': 0.2214789082453801, 'epoch': 5.0}
+F1: 0.7422166874221668
+
+THE REAL FRENCH CORPORA
+--batch 7 --treshold 0.4 --epochs 5 --learning 3e-6

@@ -1,0 +1,445 @@
+id 0	OP IP RV DS
+id 1	IN EN
+id 2	NA PB
+id 3	IN EN
+id 4	NA SR
+id 5	IN EN
+id 6	IP DS
+id 7	NA IN CB
+id 8	IP DS
+id 9	IP EB
+id 10	NA HA PB
+id 11	IP DS
+id 12	IN EN
+id 13	IP DS
+id 14	NA IP OA
+id 15	NA HI PB RE
+id 16	IN EN
+id 17	OP IP AV
+id 18	IN EN
+id 19	IN EN
+id 20	IN EN
+id 21	ID
+id 22	IP DS
+id 23	HI
+id 24	IN IP JD DS
+id 25	NA NE
+id 26	IN EN
+id 27	IP DS
+id 28	NA NE HA
+id 29	OP RS
+id 30	NA NE
+id 31	NA PB
+id 32	NA PB
+id 33	IP DS
+id 34	IP
+id 35	IN HI DT
+id 36	NA LY PB PO
+id 37	OP OB
+id 38	IP HI
+id 39	NA SR
+id 40	NA IP NE DS
+id 41	ID DF
+id 42	IN HI DT
+id 43	NA OP CB RV
+id 44	IN EN
+id 45	IN IP LT
+id 46	NA NE
+id 47	IP DS
+id 48	HI
+id 49	IN HI DT
+id 50	IP DS
+id 51	ID DF
+id 52	NA PB
+id 53	IP
+id 54	IP DS
+id 55	IN HI FA
+id 56	IN
+id 57	OP RV
+id 58	IN EN
+id 59	IP EB
+id 60	IP
+id 61	IN HI DT
+id 62	IN NA FA CB
+id 63	OP NA OB
+id 64	OP OB
+id 65	IN DT
+id 66	NA NE
+id 67	IN LT
+id 68	IP DS
+id 69	NA PB
+id 70	NA NE
+id 71	IN IB
+id 72	IP DS
+id 73	NA PB
+id 74	NA OP PB AV
+id 75	NA NE
+id 76	NA IN PB DP
+id 77	IN LT
+id 78	IN HI IB
+id 79	IN EN
+id 80	ID
+id 81	IP DS
+id 82	IN LT
+id 83	IN LT
+id 84	NA SR
+id 85	NA IP CB DS
+id 86	IN EN
+id 87	IN DT
+id 88	NA SR
+id 89	IN FA
+id 90	IN HI FA
+id 91	NA PB
+id 92	IN
+id 93	IN HI LT
+id 94	IN EN
+id 95	NA PB
+id 96	IN EN
+id 97	OP RV AV
+id 98	OP OB
+id 99	IP
+id 100	HI IN DT
+id 101	IP
+id 102	IN EN
+id 103	NA PB
+id 104	IP DS
+id 105	IN EN
+id 106	NA PB
+id 107	NA OP CB RV
+id 108	NA IP SR
+id 109	NA IP PB
+id 110	IN EN
+id 111	NA SR
+id 112	IN LT
+id 113	OP OB
+id 114	IN DP
+id 115	IN DT
+id 116	NA PB
+id 117	IP DS
+id 118	IN
+id 119	IP OP DS RV
+id 120	NA CB HA
+id 121	NA NE
+id 122	NA PB
+id 123	IP IN DS FA
+id 124	ID DF
+id 125	OP RS
+id 126	NA TB
+id 127	IN EN
+id 128	IN DT
+id 129	IP DS
+id 130	IN EN
+id 131	IP DS
+id 132	NA PB
+id 133	IP DS
+id 134	IP DS
+id 135	NA SR
+id 136	IP DS
+id 137	NA PB
+id 138	NA SP PB IT
+id 139	IN DT
+id 140	IN LT
+id 141	IP HI
+id 142	OP RV
+id 143	IN DT
+id 144	NA NE
+id 145	IP HI DS
+id 146	IN EN
+id 147	IN EN
+id 148	NA PB
+id 149	NA SR
+id 150	NA PB
+id 151	IN DT
+id 152	NA IP CB DS
+id 153	IN EN
+id 154	NA NE
+id 155	IP DS
+id 156	IN FA
+id 157	IN EN
+id 158	IN DT
+id 159	OP OB
+id 160	IN EN
+id 161	NA PB
+id 162	IP DS
+id 163	IN EN
+id 164	IP DS
+id 165	NA IP CB
+id 166	NA PB
+id 167	NA HI PB RE
+id 168	IN EN
+id 169	NA NE
+id 170	IP
+id 171	IP DS
+id 172	IP DS
+id 173	IN IB
+id 174	OP OB
+id 175	IN LT
+id 176	NA PB
+id 177	ID DF
+id 178	IN DT
+id 179	IP
+id 180	IN EN
+id 181	NA NE
+id 182	IP
+id 183	IN EN
+id 184	IN NA DT PB
+id 185	OP NA HA
+id 186	IN EN
+id 187	NA IN PB DP
+id 188	NA NE
+id 189	NA PB
+id 190	IP
+id 191	NA CB
+id 192	NA SR
+id 193	IP DS
+id 194	NA PB
+id 195	OP IP RV
+id 196	IN LT
+id 197	IP DS
+id 198	NA PB
+id 199	IP DS
+id 200	IP IN DS FA
+id 201	NA PB
+id 202	NA NE
+id 203	IP DS
+id 204	NA PB
+id 205	IP IN DS LT
+id 206	IN EN
+id 207	NA PB
+id 208	IP DS
+id 209	IN EN
+id 210	OP OB
+id 211	OP OB
+id 212	HI
+id 213	NA IN CB DP
+id 214	NA HA
+id 215	IP IN DS DT
+id 216	IN DT
+id 217	IN
+id 218	NA PB
+id 219	IP
+id 220	NA HI PB RE
+id 221	NA PB
+id 222	OP OB
+id 223	NA IN RP
+id 224	NA PB
+id 225	NA OA
+id 226	HI IP
+id 227	OP OB
+id 228	IP DS
+id 229	IP DS
+id 230	NA IP PB DS
+id 231	NA CB
+id 232	IN HI IB
+id 233	NA PB
+id 234	IN EN
+id 235	NA IP PB DS
+id 236	IP DS
+id 237	OP RV
+id 238	IP DS
+id 239	IP DS
+id 240	NA PB
+id 241	OP RS
+id 242	ID QA
+id 243	IP IN DS JD
+id 244	IP OP AV
+id 245	NA NE
+id 246	IN HI
+id 247	NA PB
+id 248	IP DS
+id 249	NA PB
+id 250	HI IN DT
+id 251	IP DS
+id 252	IN EN
+id 253	IN EN
+id 254	HI
+id 255	NA PB
+id 256	IN EN
+id 257	IP DS
+id 258	IN HI DT
+id 259	IN DT
+id 260	IP
+id 261	IP DS
+id 262	IN EN
+id 263	IN OP IB AV
+id 264	IN DT
+id 265	IP DS
+id 266	NA PB
+id 267	ID QA
+id 268	IP DS
+id 269	IP DS
+id 270	IP DS
+id 271	IP
+id 272	OP OB
+id 273	IN EN
+id 274	NA NE
+id 275	NA PB
+id 276	IP
+id 277	IP IN DS DP
+id 278	IN EN
+id 279	IP
+id 280	IN LY EN PO
+id 281	IP DS
+id 282	IN HI DT
+id 283	NA SR
+id 284	ID
+id 285	IN EN
+id 286	OP RV
+id 287	IP IN DT
+id 288	IN IP IB
+id 289	NA PB
+id 290	IN DT
+id 291	OP OB
+id 292	NA PB
+id 293	NA PB
+id 294	NA IP PB DS
+id 295	IN LT
+id 296	IN LT
+id 297	IN DT
+id 298	NA CB
+id 299	IN DP
+id 300	NA NE
+id 301	IP DS
+id 302	NA PB
+id 303	NA IN NE DP
+id 304	IP EB
+id 305	IP HI
+id 306	IN EN
+id 307	IN EN
+id 308	IP
+id 309	NA CB
+id 310	IN EN
+id 311	NA PB
+id 312	NA PB
+id 313	IN EN
+id 314	IN DT
+id 315	IN EN
+id 316	IN IB
+id 317	NA PB
+id 318	IN LT
+id 319	NA PB
+id 320	IP DS
+id 321	IP DS
+id 322	IN EN
+id 323	IN EN
+id 324	IN EN
+id 325	ID DF
+id 326	ID DF
+id 327	IN EN
+id 328	OP OB
+id 329	NA IP PB
+id 330	NA PB
+id 331	IP DS
+id 332	NA CB
+id 333	NA PB
+id 334	IP IN DS FA
+id 335	IN DP
+id 336	NA IP SR
+id 337	IN EN
+id 338	NA PB
+id 339	NA
+id 340	NA NE
+id 341	OP SP OB IT
+id 342	IP DS
+id 343	NA OP PB RV
+id 344	IN EN
+id 345	IP DS
+id 346	OP OB
+id 347	IN EN
+id 348	IP DS
+id 349	NA IP NE DS
+id 350	NA PB
+id 351	IP DS
+id 352	IN EN
+id 353	IP EB
+id 354	IP DS
+id 355	IP DS
+id 356	NA NE
+id 357	NA NE
+id 358	HI
+id 359	IN DT
+id 360	IP DS
+id 361	IN DT
+id 362	NA PB
+id 363	IN EN
+id 364	HI
+id 365	IN HI LT
+id 366	ID DF
+id 367	IP DS
+id 368	NA OP PB RV
+id 369	NA PB
+id 370	NA NE CB
+id 371	IP
+id 372	OP
+id 373	NA PB
+id 374	IN EN
+id 375	ID
+id 376	IN LT
+id 377	IN EN
+id 378	IP DS
+id 379	IN DT
+id 380	NA IP NE DS
+id 381	IP DS
+id 382	NA HA
+id 383	HI
+id 384	IP DS
+id 385	IP DS
+id 386	NA SR
+id 387	NA PB
+id 388	IN DT
+id 389	IP DS
+id 390	OP RV
+id 391	NA PB
+id 392	NA PB
+id 393	IP
+id 394	OP SP AV FS
+id 395	IP IN LT
+id 396	IN IP DS
+id 397	ID DF
+id 398	IN RP
+id 399	NA OA
+id 400	NA PB
+id 401	NA CB
+id 402	NA PB
+id 403	HI IP
+id 404	IN EN
+id 405	NA PB
+id 406	NA OA
+id 407	IP DS
+id 408	IN HI DT
+id 409	IN DT
+id 410	OP OB
+id 411	NA IP PB DS
+id 412	IP OP DS RV
+id 413	IP DS
+id 414	IN EN
+id 415	NA PB
+id 416	IN EN
+id 417	IN EN
+id 418	IP DS
+id 419	ID
+id 420	NA IP PB DS
+id 421	ID DF
+id 422	NA CB
+id 423	OP
+id 424	IP DS
+id 425	NA NE
+id 426	IN IB
+id 427	IN DT
+id 428	IP DS
+id 429	IN EN
+id 430	IP IN DS LT
+id 431	IN EN
+id 432	OP OB
+id 433	IN EN
+id 434	IP DS
+id 435	NA PB
+id 436	NA PB
+id 437	OP OB RV
+id 438	IN EN
+id 439	IN HI DT
+id 440	ID DF
+id 441	NA PB
+id 442	NA IN NE DT
+id 443	ID DF
+id 444	NA NE

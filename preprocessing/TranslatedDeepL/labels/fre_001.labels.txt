@@ -1,0 +1,402 @@
+id 0	IN
+id 1	IP DS
+id 2	IN EN
+id 3	OP RV
+id 4	IP EB
+id 5	NA NE
+id 6	IP DS
+id 7	NA NE
+id 8	NA NE
+id 9	IP DS
+id 10	NA PB
+id 11	NA OP PB RV
+id 12	NA IN HA RA
+id 13	IN DT
+id 14	IN EN
+id 15	NA PB
+id 16	IP
+id 17	IP DS
+id 18	IP DS
+id 19	NA OP CB RV
+id 20	IN LT
+id 21	NA PB
+id 22	IP DS
+id 23	IN DT LT
+id 24	IP DS
+id 25	IP DS
+id 26	HI
+id 27	IP
+id 28	IP DS
+id 29	IP DS
+id 30	IN DT
+id 31	IN CM
+id 32	ID DF
+id 33	NA NE
+id 34	IP DS
+id 35	IN LT
+id 36	IN IB
+id 37	IP DS
+id 38	NA NE
+id 39	NA NE
+id 40	HI OP RV
+id 41	IP DS
+id 42	IP DS
+id 43	IN DT
+id 44	IP IN JD
+id 45	NA NE
+id 46	ID DF
+id 47	ID DF
+id 48	IP
+id 49	IN DT
+id 50	OP AV
+id 51	IP OP DS RV
+id 52	IN EN
+id 53	NA IN OA LT
+id 54	IN LT
+id 55	OP IN OB DT
+id 56	IN EN
+id 57	HI
+id 58	IN IP DT
+id 59	ID QA
+id 60	IN LT
+id 61	IP DS
+id 62	ID DF
+id 63	IN EN
+id 64	OP IN OB DP
+id 65	NA IP NE
+id 66	IP DS
+id 67	NA IN HA CM
+id 68	IP DS
+id 69	NA HI PB RE
+id 70	IP DS
+id 71	OP RS
+id 72	ID OP DF RV
+id 73	ID DF
+id 74	IN EN
+id 75	IP DS
+id 76	OP AV
+id 77	NA IP PB
+id 78	ID DF
+id 79	IN EN
+id 80	NA NE
+id 81	IP DS
+id 82	OP OB
+id 83	IN EN
+id 84	IN DT
+id 85	IN ID CM DF
+id 86	HI
+id 87	HI
+id 88	IN DT
+id 89	IP HI
+id 90	ID
+id 91	NA SR
+id 92	IP DS
+id 93	IN DT
+id 94	IN IB
+id 95	IN DT LT
+id 96	ID QA
+id 97	OP OB
+id 98	NA IN OA DP
+id 99	NA CB
+id 100	ID DF
+id 101	OP
+id 102	IN RP
+id 103	OP OB
+id 104	IP DS
+id 105	IN DP
+id 106	NA NE
+id 107	IP DS
+id 108	IN RA
+id 109	ID OP DF
+id 110	IN RP
+id 111	OP RV
+id 112	IP EB
+id 113	NA NE
+id 114	IN EN
+id 115	IN DT
+id 116	IN DT
+id 117	IN DT
+id 118	ID DF
+id 119	OP ID RV DF
+id 120	IP
+id 121	IP
+id 122	IP OP RV
+id 123	NA NE
+id 124	IP IN DS LT
+id 125	OP RV
+id 126	IN IB
+id 127	IN IN LT
+id 128	NA CB
+id 129	NA OP PB RV
+id 130	IN LT
+id 131	OP RV
+id 132	OP RS
+id 133	HI
+id 134	IN HI FA
+id 135	NA OP PB RV
+id 136	IP DS
+id 137	NA NE
+id 138	IN RA
+id 139	IP
+id 140	IP OP DS RV
+id 141	ID DF
+id 142	IP DS
+id 143	IP DS
+id 144	OP OB
+id 145	ID DF
+id 146	ID DF
+id 147	IP DS
+id 148	IP DS
+id 149	IP IN DS
+id 150	ID
+id 151	IN
+id 152	IP DS
+id 153	IN RP
+id 154	IP DS
+id 155	IN DT
+id 156	IN NA DP OA
+id 157	IP
+id 158	ID DF
+id 159	NA CB
+id 160	NA IP HA
+id 161	IP DS
+id 162	NA
+id 163	NA HI PB
+id 164	IN NA DP OA
+id 165	OP AV
+id 166	NA NE
+id 167	NA CB
+id 168	NA NE
+id 169	IP
+id 170	NA NE
+id 171	IN EN
+id 172	ID
+id 173	ID
+id 174	IN IP DP
+id 175	IN EN
+id 176	IP OP DS RV
+id 177	ID
+id 178	IP DS
+id 179	IN DP
+id 180	NA CB
+id 181	IP
+id 182	ID DF
+id 183	IN DT
+id 184	IN
+id 185	NA NE
+id 186	IP DS
+id 187	IP
+id 188	NA NE
+id 189	ID DF
+id 190	HI
+id 191	ID DF
+id 192	IN EN
+id 193	IN HI DT
+id 194	IN RP
+id 195	NA NE
+id 196	HI
+id 197	IP DS
+id 198	IP DS
+id 199	NA IN HA DP
+id 200	IP DS
+id 201	NA
+id 202	IP
+id 203	NA CB
+id 204	IP DS
+id 205	OP OB
+id 206	IP
+id 207	OP RV
+id 208	NA IN FC DT
+id 209	NA SP OA IT
+id 210	IP DS
+id 211	IP DS
+id 212	IN OP DT AV
+id 213	IP DS
+id 214	NA SP PB IT
+id 215	NA OP OA
+id 216	IN DP
+id 217	IP HI DS
+id 218	NA PB
+id 219	NA NE
+id 220	ID
+id 221	IP
+id 222	NA NE
+id 223	OP OB
+id 224	OP RV
+id 225	IN DT
+id 226	OP RV
+id 227	IN IP DP
+id 228	IP DS
+id 229	OP IP AV
+id 230	NA IN HA DP
+id 231	NA SP SR IT
+id 232	IP DS
+id 233	HI
+id 234	IP
+id 235	NA PB
+id 236	IP DS
+id 237	IP DS
+id 238	OP AV
+id 239	NA OA
+id 240	NA SR
+id 241	ID DF
+id 242	IP DS
+id 243	NA NE
+id 244	IN HI IB RE
+id 245	IN DT
+id 246	IP DS
+id 247	NA PB
+id 248	OP OB
+id 249	NA PB
+id 250	ID DF
+id 251	NA SR
+id 252	IN DT LT
+id 253	SP IT
+id 254	IP
+id 255	IP DS
+id 256	HI
+id 257	IP DS
+id 258	NA CB
+id 259	IN IB
+id 260	IP DS
+id 261	IP DS
+id 262	OP OB
+id 263	IN CM
+id 264	IP DS
+id 265	IP OP DS AV
+id 266	IP DS
+id 267	IP
+id 268	IP DS
+id 269	NA NE
+id 270	OP IN RV RA
+id 271	IP OP RV
+id 272	IN OP DT AV
+id 273	NA NE
+id 274	IP DS
+id 275	OP RV
+id 276	NA OA
+id 277	IP DS
+id 278	SP IT
+id 279	OP OB
+id 280	NA IP CB
+id 281	IN DT
+id 282	NA FC
+id 283	NA HI PB RE
+id 284	HI IN RE
+id 285	NA NE
+id 286	IP DS
+id 287	IP DS
+id 288	NA NE
+id 289	ID
+id 290	IP
+id 291	IP DS
+id 292	IP DS
+id 293	IP EB
+id 294	NA SR
+id 295	IN OP DT RV
+id 296	IN LT
+id 297	IP HI DS
+id 298	ID DF
+id 299	NA OA
+id 300	HI
+id 301	NA PB
+id 302	NA CB
+id 303	IN DT
+id 304	NA CB
+id 305	IP DS
+id 306	NA OA
+id 307	NA NE
+id 308	OP RV
+id 309	NA NE
+id 310	IN EN
+id 311	NA NE
+id 312	ID DF
+id 313	NA PB
+id 314	IP
+id 315	IP DS
+id 316	ID QA
+id 317	NA NE
+id 318	OP RS
+id 319	NA PB
+id 320	IP NA CB
+id 321	NA PB
+id 322	IN DT
+id 323	NA PB
+id 324	OP RS
+id 325	IP OP AV
+id 326	IP DS
+id 327	HI OP AV
+id 328	IP DS
+id 329	IP
+id 330	IP DS
+id 331	IN RA
+id 332	IN DP
+id 333	IN IP LT DS
+id 334	IP OP RV
+id 335	IP OP DS RV
+id 336	IP DS
+id 337	IP OP DS RV
+id 338	IP NA DS FC
+id 339	IP DS
+id 340	IP OP DS RS
+id 341	ID DF
+id 342	IN DT
+id 343	IP DS
+id 344	IN RP
+id 345	IP DS
+id 346	IN RA
+id 347	OP
+id 348	NA OA
+id 349	NA NE
+id 350	IP HI DS
+id 351	IN OP DT AV
+id 352	NA OP PB RV
+id 353	IP IN DT
+id 354	IN DT
+id 355	IN DT
+id 356	NA IP NE
+id 357	IN DT
+id 358	NA FC
+id 359	IN LT
+id 360	ID DF
+id 361	IP
+id 362	IN LY DT SO
+id 363	OP RV
+id 364	IN DT
+id 365	IP DS
+id 366	NA SP CB IT
+id 367	IP DS
+id 368	IP DS
+id 369	NA NE
+id 370	ID DF
+id 371	IP OP RS
+id 372	IP DS
+id 373	ID DF
+id 374	HI IP DS
+id 375	IP DS
+id 376	ID DF
+id 377	IP DS
+id 378	IP
+id 379	IN DT
+id 380	IN DT
+id 381	ID DF
+id 382	IN DT
+id 383	NA CB
+id 384	NA HI OA
+id 385	IN HI DT
+id 386	NA NE
+id 387	ID QA
+id 388	NA PB
+id 389	IP DS
+id 390	IN RP
+id 391	NA OP CB RS
+id 392	IP OP DS AV
+id 393	NA PB
+id 394	ID OP RV
+id 395	NA SR
+id 396	NA NE
+id 397	IP DS
+id 398	NA NE
+id 399	IN DT
+id 400	IP DS
+id 401	OP

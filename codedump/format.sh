@@ -2,15 +2,13 @@
 
 sub='gz'
 
-for f in fre* ; do 
+for f in en* ; do 
 if [[ "$f" == *"$sub"* ]];
 then
     zcat $f |
-    python3 ../../codedump/formatSwe_Fre.py |
-    python3 ../../codedump/change_labeling_for_train.py > ../formatted/${f%.tsv.gz}.formatted.tsv
+    python3 ../../codedump/formatEn_FIN.py | gzip > ../formatted/${f%.tsv.gz}.formatted.tsv.gz
 else
     cat $f |
-    python3 ../../codedump/formatSwe_Fre.py |
-    python3 ../../codedump/change_labeling_for_train.py > ../formatted/${f%.tsv}.formatted.tsv
+    python3 ../../codedump/formatEn_FIN.py > ../formatted/${f%.tsv}.formatted.tsv
 fi;
 done

@@ -86,12 +86,9 @@ def binarize(dataset):
     dataset = dataset.map(lambda line: {'label': mlb.transform([line['label']])[0]})
     return dataset
 
-pprint(dataset['train']['label'][:5])
+
 dataset = dataset.map(split_labels)
-pprint(dataset['train']['label'][:5])
 dataset = binarize(dataset)
-pprint(dataset['train']['label'][:5])
-pprint(dataset['train'][:2])
 
 # then use the XLMR tokenizer
 model_name = "xlm-roberta-large"

@@ -1,0 +1,181 @@
+learning rate: 8e-6 treshold: 0.4 batch: 7 epochs: 5
+Namespace(batch=7, checkpoint='../multilabel/pt', epochs=5, learning=8e-06, multilingual=False, test_set=['test_sets/pt_test_modified.tsv'], train_set=['AfterDeepL/pt_FINAL.tsv.gz'], treshold=0.4)
+Downloading and preparing dataset csv/default to /users/annieske/.cache/huggingface/datasets/csv/default-e3763248b38745f0/0.0.0/433e0ccc46f9880962cc2b12065189766fbb2bee57a221866138fb9203c83519...
+Dataset csv downloaded and prepared to /users/annieske/.cache/huggingface/datasets/csv/default-e3763248b38745f0/0.0.0/433e0ccc46f9880962cc2b12065189766fbb2bee57a221866138fb9203c83519. Subsequent calls will reuse this data.
+{'dev': Dataset({
+    features: ['text', 'label'],
+    num_rows: 1851
+}),
+ 'test': Dataset({
+    features: ['text', 'label'],
+    num_rows: 332
+}),
+ 'train': Dataset({
+    features: ['text', 'label'],
+    num_rows: 7404
+})}
+['ID', 'IP', 'NA IN', 'IP DS', 'IP DS']
+[['ID'], ['IP'], ['NA', 'IN'], ['IP', 'DS'], ['IP', 'DS']]
+[[0, 1, 0, 0, 0, 0, 0, 0], [0, 0, 0, 1, 0, 0, 0, 0], [0, 0, 1, 0, 0, 1, 0, 0],
+ [0, 0, 0, 1, 0, 0, 0, 0], [0, 0, 0, 1, 0, 0, 0, 0]]
+{'label': [[0, 1, 0, 0, 0, 0, 0, 0], [0, 0, 0, 1, 0, 0, 0, 0]],
+ 'text': ['Páginas Quarta-feira, 23 de julho de 2008 Pergunta da Ashley - '
+          'versões em inglês de fontes primárias estrangeiras Alguém sabe de '
+          'algum livro coletado de fontes primárias (ou mesmo websites)? Sei '
+          'que existem alguns para os documentos e cartas do estado de '
+          'Henrique VIII e Elizabeth I e que as Cartas Lisle foram publicadas. '
+          'Existem versões em inglês para os vários embaixadores (espanhol, '
+          'veneziano, francês, etc.)? Atualmente estou preso nos EUA, mas '
+          'ainda gostaria de ver as fontes primárias. Quaisquer sugestões são '
+          'sempre apreciadas. Obrigado! 3 comentários: Você já olhou o '
+          'Calendário de Documentos Estatais em espanhol? E o Calendário de '
+          'Trabalhos Estaduais venezianos? Não precisamente fontes primárias, '
+          'mas geralmente aceitas como material primário. elas incluem a '
+          'correspondência do embaixador traduzida para o inglês e organizada '
+          'por data. Experimente uma grande biblioteca universitária. Ou o '
+          'Arquivo da Internet tem versões em PDF dos Documentos Estaduais em '
+          'espanhol para o reinado de Elizabeth. (Algumas vezes chamado '
+          'Calendário de Documentos Estaduais do Simancas). Ashley, se você '
+          'tem acesso a uma grande biblioteca universitária (e quando digo '
+          '"grande", quero dizer algo no nível da principal universidade de '
+          'seu estado), você deve ser capaz de encontrar literalmente um '
+          'caminhão carregado de material de fonte primária. Não estou certo '
+          'exatamente que tipo de pesquisa você está conduzindo, mas você deve '
+          'ser capaz de encontrar TODOS os vários "Calendários", muitos dos '
+          'quais se estendem até o início do período medieval e avançam até o '
+          'presente. Estes incluem os vários Calendários de Documentos '
+          'Estatais (separados em Nacionais e Estrangeiros, e às vezes em '
+          'nações específicas, isto é, Espanha, Veneza, etc.), Calendários de '
+          'Rolos de Fecho, Rolos de Patentes, Rolos Finos e o Tesouro, mais as '
+          'Atas do Conselho Privado. [Para aqueles que talvez não saibam, um '
+          '"Calendário" é na verdade apenas uma versão impressa muito resumida '
+          'de documentos que foram originalmente escritos à mão, uma espécie '
+          'de resumo com apenas os documentos mais importantes impressos na '
+          'íntegra]. Você também deve ser capaz de encontrar os Debates do '
+          "Parlamento em forma impressa, conforme publicados pela Hansard's, "
+          'estendendo-se a centenas de volumes, mas estes começam apenas no '
+          'período final do Tudor. Depois há os vários volumes publicados pela '
+          'Comissão de Manuscritos Históricos. Estes são semelhantes aos '
+          '"Calendários" estatais, mas pertencem aos papéis e documentos de '
+          'particulares, tais como o Duque de Isto ou o Conde de Aquilo. '
+          'Depois há os documentos publicados pelas várias sociedades '
+          'antiquárias, incluindo a Camden Society, a Parker Society, a '
+          'Catholic Record Society, e muitas outras. Essas coleções às vezes '
+          'têm volumes indexados porque os próprios volumes tendem a saltar no '
+          'tempo e para diferentes tópicos não relacionados. Há literalmente '
+          'centenas, se não milhares, de volumes publicados por essas várias '
+          'sociedades e eles fornecem um corpo muito rico de material de fonte '
+          "primária. A maioria das várias Crônicas (Greyfriars, Grafton's, "
+          "Fabyan's, Holinshed's, etc.) pode ser encontrada na forma impressa "
+          'moderna. John Strype publicou, famoso, vários volumes de material '
+          'de fonte primária no final do século 18, mas a idade desses livros '
+          'às vezes significa que eles estão alojados na área de Colecções '
+          'Especiais da biblioteca. Mas você ainda pode vê-los lá. E também há '
+          'muitos recursos on-line de alta qualidade. Por exemplo, eu uso com '
+          'freqüência a versão online gratuita de "Actes and Monuments" de '
+          'John Foxe como é mantida pela Universidade de Sheffield '
+          '(http://www.hrionline.ac.uk/johnfoxe/). Também uso freqüentemente a '
+          'Early English Books Online (http://eebo.chadwyck.com/home), que é '
+          'literalmente o que o nome implica: dezenas de milhares de livros, '
+          'todos publicados antes de 1800, fotografados página por página e '
+          'tornados acessíveis on-line. Mas infelizmente, a EEBO é apenas por '
+          'assinatura e é inacessível para usuários individuais. Mas '
+          'novamente, uma grande biblioteca universitária geralmente terá uma '
+          'assinatura, portanto você deve ser capaz de acessá-la através dos '
+          'computadores da biblioteca. Lara tem uma série de bons recursos '
+          'neste site; eu tenho alguns no meu e estou adicionando mais, pois '
+          'tenho tempo. Outros têm sites similares com boas fontes primárias '
+          'postadas. Portanto, há MUITAS coisas prontamente disponíveis. '
+          'Talvez se a Lara encaminhar meu endereço de e-mail para você, você '
+          'possa entrar em contato comigo, me dizer onde você está localizado '
+          'e qual é seu tópico de pesquisa preciso, e eu posso oferecer alguma '
+          'assistência mais específica. Estou sempre mais do que feliz em '
+          'ajudar.',
+          'Um Lugar no País marca o retorno bem-vindo deste amado escritor. '
+          'Como um americano A Year in Provence ou Under the Tuscan Sun , este '
+          'memoir vencedor fala do sonho universal da fuga, o anseio pelo que '
+          'Mary Lennox no The Secret Garden chamou de "um pouco de terra". Um '
+          'Lugar no País descreve a transformação de Cunningham de habitante '
+          'urbano em sofisticado país e leva o leitor dos espaços apertados de '
+          'sua juventude do Bronx para o verde ondulante da fazenda no norte '
+          'do estado de Nova York, na qual ela eventualmente se instala. As '
+          'negociações de Cunningham com a terra, a aristocracia local '
+          '(aristocratas ingleses, um swami e seus seguidores, produtores de '
+          'leite, entre outros), e a vida selvagem (holsteins, veados, '
+          'galinhas, gansos, cobras e porcos) estão relacionadas com a '
+          'acuidade, a graça novelista e o humor irônico. Ao longo do caminho, '
+          'nós nos divertimos com alguns dos escritos mais evocativos sobre o '
+          'lugar na memória recente. Um Lugar no País é um livro imensamente '
+          'satisfatório que captura imediatamente os sonhos rústicos de cada '
+          'criança da cidade e a passagem pungente da vida pastoral antiquada. '
+          '1. Em UM LUGAR NO PAÍS, o país e a vida campestre mantém diferentes '
+          'associações para Cunningham e sua família e vizinhos. Que '
+          'significado o país tem para Cunningham? Que tal para seu marido e '
+          'suas filhas? Os Bowerses? Os Hodgsons? Os Swami e seus seguidores? '
+          '2. Cunningham, neta de uma imigrante russa, fala de sua mudança '
+          'para o país como um retorno ao lar e como um empreendimento em uma '
+          'nova terra. Como a mudança de Cunningham para o país ecoa a '
+          'imigração e a aculturação de sua avó para a América e sinaliza um '
+          'retorno às suas "raízes"? Discuta os conflitos culturais entre a '
+          'cidade e o povo do campo neste livro. Como eles refletem os '
+          'confrontos entre imigrantes e nativos americanos? 3. As casas, '
+          'tanto quanto as pessoas, são personagens neste livro de memórias. '
+          'Cite exemplos do livro de como Cunningham anthropormorphizes suas '
+          'várias casas, especialmente Willowby? Além disso, como as casas '
+          'deste livro refletem as ambições de seus proprietários? O que a '
+          'propriedade de Cunningham da Pousada diz sobre suas ambições e '
+          'aspirações? Que tal os dentistas (a "dentocracia") que compram '
+          'castelos baroniais no Parque Tuxedo? 4. De muitas maneiras, Um '
+          'LUGAR NO PAÍS é uma história de amor. Discuta como diferentes tipos '
+          'de amor são ilustrados neste livro, desde o amor romântico ao amor '
+          'materno até o amor de um dono de casa, e as circunstâncias sob as '
+          'quais ela se apaixona e se apaixona durante o curso do livro. (Como '
+          'as casas, Cunningham supera certas relações neste livro.) O que '
+          'Cunningham poderia estar tentando dizer, ainda que implicitamente, '
+          'sobre a natureza do próprio amor? 5. Em certo momento (página 107), '
+          'Cunningham diz que nunca quer se tornar uma prisioneira de sua '
+          'casa, como seus vizinhos do Tuxedo Park fizeram. Será que ela tem '
+          'sucesso nisso? Como é diferente sua situação em Willowby, se é que '
+          'é diferente? Os Bowerses também podem ser chamados de '
+          '"prisioneiros" de sua casa? (Pense nas experiências e dificuldades '
+          'de Kelly e Nate na fazenda de laticínios). 6. Um LUGAR NO PAÍS é, '
+          'entre outras coisas, uma história sobre classe, e como o dinheiro '
+          'pode comprar um proprietário de casa, tanto em termos sociais '
+          'quanto de privacidade. Para Cunningham, "um lugar no país" '
+          'significa solidão, liberdade e paz. Para seus vizinhos que vivem da '
+          'terra, o país significa algo diferente, seu sustento, por exemplo. '
+          'Contraste a experiência dos Bowerses com a de Cunningham. De que '
+          'forma suas experiências e percepções do país são diferentes das '
+          'dela? Por quê? Por que sua saída do país é um acontecimento tão '
+          'significativo e devastador na vida de Cunningham? 7. Cunningham '
+          'admite alegremente sua tendência a superromantizar a vida no campo. '
+          'Será que ela ainda é uma romântica no final do livro? Qual de suas '
+          'opiniões muda (e quais permanecem) ao final do livro? Você acha que '
+          'os sonhos e o romantismo de Cunningham acompanham a realidade de '
+          'sua vida em Willowby? 8. Contraste Albin e Jeanie (o caseiro do '
+          'Tuxedo Park e sua esposa) com Cecil Green e Stewart Lee da '
+          'Willowby. Como eles são']}
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+{'loss': 0.2519, 'learning_rate': 6.4e-06, 'epoch': 1.0}
+{'eval_loss': 0.21631337702274323, 'eval_f1': 0.6927374301675978, 'eval_roc_auc': 0.817971731584297, 'eval_accuracy': 0.6024096385542169, 'eval_runtime': 10.2648, 'eval_samples_per_second': 32.344, 'eval_steps_per_second': 1.072, 'epoch': 1.0}
+{'loss': 0.1694, 'learning_rate': 4.8e-06, 'epoch': 2.0}
+{'eval_loss': 0.22540393471717834, 'eval_f1': 0.6675786593707251, 'eval_roc_auc': 0.8083323744318508, 'eval_accuracy': 0.5662650602409639, 'eval_runtime': 10.2759, 'eval_samples_per_second': 32.309, 'eval_steps_per_second': 1.07, 'epoch': 2.0}
+{'loss': 0.1324, 'learning_rate': 3.2e-06, 'epoch': 3.0}
+{'eval_loss': 0.24596980214118958, 'eval_f1': 0.673103448275862, 'eval_roc_auc': 0.8096412749554109, 'eval_accuracy': 0.572289156626506, 'eval_runtime': 10.2814, 'eval_samples_per_second': 32.291, 'eval_steps_per_second': 1.07, 'epoch': 3.0}
+{'loss': 0.1024, 'learning_rate': 1.6e-06, 'epoch': 4.0}
+{'eval_loss': 0.2654341757297516, 'eval_f1': 0.6772908366533864, 'eval_roc_auc': 0.8210426135818806, 'eval_accuracy': 0.5512048192771084, 'eval_runtime': 10.2693, 'eval_samples_per_second': 32.33, 'eval_steps_per_second': 1.071, 'epoch': 4.0}
+{'loss': 0.0815, 'learning_rate': 0.0, 'epoch': 5.0}
+{'eval_loss': 0.2798401713371277, 'eval_f1': 0.6746987951807228, 'eval_roc_auc': 0.8175761847227817, 'eval_accuracy': 0.5542168674698795, 'eval_runtime': 10.689, 'eval_samples_per_second': 31.06, 'eval_steps_per_second': 1.029, 'epoch': 5.0}
+{'train_runtime': 5553.3763, 'train_samples_per_second': 6.666, 'train_steps_per_second': 0.953, 'train_loss': 0.1475242283033288, 'epoch': 5.0}
+F1: 0.6927374301675978

@@ -31,6 +31,8 @@ def arguments():
         help="The learning rate for the model"
     )
     parser.add_argument('--multilingual', action='store_true', default=False)
+    parser.add_argument('--saved', default="saved_models/all_multilingual")
+    parser.add_argument('--checkpoint', default="../multilabel/checkpoints")
     args = parser.parse_args()
 
     return args 
@@ -63,7 +65,7 @@ train = datasets.load_dataset(
 train.shuffle(seed=1234)
 
 # this also shuffles by default (should I set a seed? or not shuffle anymore?) shuffle=False or seed=1234
-train, dev = train.train_test_split(test_size=0.2, shuffle=False).values()
+train, dev = train.train_test_split(test_size=0.2).values()
 
 test = datasets.load_dataset(
     "csv", 
@@ -80,6 +82,8 @@ dataset = datasets.DatasetDict({"train":train,"dev":dev, "test":test})
 pprint(dataset)
 
 # the data is fitted to these main labels
+# if there are other labels the fitting just ignores them
+# => no need to change the test set to only include main labels
 unique_labels = ["IN", "NA", "HI", "LY", "IP", "SP", "ID", "OP"]
 
 def split_labels(dataset):
@@ -97,12 +101,12 @@ def binarize(dataset):
     dataset = dataset.map(lambda line: {'label': mlb.transform([line['label']])[0]})
     return dataset
 
-# pprint(dataset['train']['label'][:5])
+#pprint(dataset['train']['label'][:5])
 dataset = dataset.map(split_labels)
-# pprint(dataset['train']['label'][:5])
+#pprint(dataset['train']['label'][:5])
 dataset = binarize(dataset)
-# pprint(dataset['train']['label'][:5])
-# pprint(dataset['train'][:2])
+#pprint(dataset['train']['label'][:5])
+#pprint(dataset['train'][:2])
 
 # then use the XLMR tokenizer
 model_name = "xlm-roberta-large"
@@ -122,7 +126,7 @@ model = transformers.XLMRobertaForSequenceClassification.from_pretrained(model_n
 model.eval()
 
 trainer_args = transformers.TrainingArguments(
-    "../multilabel/checkpoints", # change this to put the checkpoints somewhere else
+    args.checkpoint, # change this to put the checkpoints somewhere else
     evaluation_strategy="epoch",
     logging_strategy="epoch",  # number of epochs = how many times the model has seen the whole training data
     save_strategy="epoch",
@@ -206,7 +210,7 @@ trainer = MultilabelTrainer(
     model=model,
     args=trainer_args,
     train_dataset=dataset["train"],
-    eval_dataset=dataset["test"],
+    eval_dataset=dataset["dev"],
     compute_metrics=compute_metrics,
     data_collator=data_collator,
     tokenizer = tokenizer,
@@ -216,7 +220,7 @@ trainer = MultilabelTrainer(
 trainer.train()
 
 if args.multilingual == True:
-    trainer.model.save_pretrained("saved_models/downsampled_multilingual")
+    trainer.model.save_pretrained(args.saved)
 else:
     eval_results = trainer.evaluate(dataset["test"])
     print('F1:', eval_results['eval_f1'])

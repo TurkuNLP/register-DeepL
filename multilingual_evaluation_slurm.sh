@@ -17,16 +17,14 @@ module load pytorch
 # more loops to test all kings oflearning rates, epochs, tresholds etc. ?
 
 # FOR TRANSFER/TRANSLATED TESTING
-FILES="test_sets/spa_test_modified.tsv test_sets/pt_test_modified.tsv test_sets/jpn_test_modified.tsv test_sets/chi_all_modified.tsv"
+FILES="test_sets/spa_test.tsv test_sets/pt_test_modified.tsv.gz test_sets/jpn_test.tsv test_sets/chi_all.tsv"
 
-# FOR ORIGINAL MULTILINGUAL TESTING
-#FILES="multilingual-register-data-new/formatted/en_test.formatted.tsv multilingual-register-data-new/formatted/fi_test.formatted.tsv multilingual-register-data-new/formatted/fre_test.formatted.tsv multilingual-register-data-new/formatted/swe_test.formatted.tsv"
-
-# FOR DOWNSAMPLED TESTING
-#FILES="multilingual-register-data-new/formatted/fre_test.formatted.tsv multilingual-register-data-new/formatted/en_test.formatted.tsv multilingual-register-data-new/formatted/swe_test.formatted.tsv multilingual-register-data-new/formatted/fi_test.formatted.tsv"
+# FOR ORIGINAL MULTILINGUAL TESTING/ DOWNSAMLED TESTING
+#FILES="multilingual-register-data-new/formatted/en_test.formatted.tsv.gz multilingual-register-data-new/formatted/fi_test.formatted.tsv multilingual-register-data-new/formatted/fre_test.formatted.tsv multilingual-register-data-new/formatted/swe_test.formatted.tsv"
 
 
-TRS="0.2 0.3 0.4 0.5 0.6 0.7 0.8"
+
+TRS=0.4 #"0.2 0.3 0.4 0.5 0.6 0.7 0.8"
 
 
 for file in $FILES; do

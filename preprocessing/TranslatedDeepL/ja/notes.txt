@@ -1,0 +1,15 @@
+It seems that when translating to japanese DeepL does not translate song lyrics well,
+ it just keeps them in english. That is quite interesting and I do not know whether
+ that is intentional or song lyrics are just hard to translate in the format they are now.
+
+ Anyway this might either help or ruin the results, probably would be best to have
+ actual japanese song lyrics for the lyrical register data.
+ (the same might apply for the other small languages as well) 
+
+ TLDR: translating using DeepL is not a good idea for the lyrical register.
+  (atleast for ja and chi, for spanish it seems to work okay)
+
+
+
+ It would seem that there are some problems with movie information or concert information
+  from fre to ja.
