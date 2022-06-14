@@ -17,7 +17,7 @@ module load pytorch
 # more loops to test all kings oflearning rates, epochs, tresholds etc. ?
 
 # FOR TRANSFER/TRANSLATED TESTING
-FILES="test_sets/spa_test.tsv test_sets/pt_test_modified.tsv.gz test_sets/jpn_test.tsv test_sets/chi_all.tsv"
+FILES="test_sets/spa_test.tsv test_sets/pt_test_modified.tsv test_sets/jpn_test.tsv test_sets/chi_all.tsv"
 
 # FOR ORIGINAL MULTILINGUAL TESTING/ DOWNSAMLED TESTING
 #FILES="multilingual-register-data-new/formatted/en_test.formatted.tsv.gz multilingual-register-data-new/formatted/fi_test.formatted.tsv multilingual-register-data-new/formatted/fre_test.formatted.tsv multilingual-register-data-new/formatted/swe_test.formatted.tsv"

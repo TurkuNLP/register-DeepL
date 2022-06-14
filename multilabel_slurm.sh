@@ -45,7 +45,7 @@ module load pytorch
 
 
 EPOCHS=5
-LR=8e-6    # "1e-5 4e-6 5e-6 7e-5 8e-6"
+LR=5e-6    # "1e-5 4e-6 5e-6 7e-5 8e-6"
 TR=0.4    # "0.3 0.4 0.5 0.6"
 BATCH=8
 
@@ -63,7 +63,7 @@ echo "learning rate: $LR treshold: $TR batch: $BATCH epochs: $EPOCHS"
 #srun python3 register-multilabel.py --train_set AfterDeepL/ja_FINAL.tsv.gz --test_set test_sets/jpn_test.tsv --batch $BATCH --treshold $TR --epochs $EPOCHS --learning $LR --checkpoint ../multilabel/jpn
 
 #CHINESE
-#srun python3 register-multilabel.py --train_set AfterDeepL/chi_FINAL.tsv.gz --test_set test_sets/chi_all.tsv --batch $BATCH --treshold $TR --epochs $EPOCHS --learning $LR --checkpoint ../multilabel/chi
+srun python3 register-multilabel.py --train_set AfterDeepL/chi_FINAL.tsv.gz --test_set test_sets/chi_all.tsv --batch $BATCH --treshold $TR --epochs $EPOCHS --learning $LR --checkpoint ../multilabel/chi
 
 
 
@@ -79,12 +79,12 @@ echo "learning rate: $LR treshold: $TR batch: $BATCH epochs: $EPOCHS"
 
 # MULTI/CROSSLINGUAL (all translated files and original downsampled as train and dev)
 
-srun python3 register-multilabel.py --train_set AfterDeepL/chi_FINAL.tsv.gz \
- AfterDeepL/ja_FINAL.tsv.gz AfterDeepL/es_FINAL.tsv.gz AfterDeepL/pt_FINAL.tsv.gz \
- downsampled/all_downsampled.tsv.gz \
- --test_set test_sets/chi_all.tsv \
- --batch $BATCH --treshold $TR --epochs $EPOCHS \
- --learning $LR --multilingual --checkpoint ../multilabel/all --saved saved_models/all_multilingual
+# srun python3 register-multilabel.py --train_set AfterDeepL/chi_FINAL.tsv.gz \
+#  AfterDeepL/ja_FINAL.tsv.gz AfterDeepL/es_FINAL.tsv.gz AfterDeepL/pt_FINAL.tsv.gz \
+#  downsampled/all_downsampled.tsv.gz \
+#  --test_set test_sets/chi_all.tsv \
+#  --batch $BATCH --treshold $TR --epochs $EPOCHS \
+#  --learning $LR --multilingual --checkpoint ../multilabel/all --saved saved_models/all_multilingual
 
 
 # this will take a long time, set to 5/6 hours + 1/2 hours because of original downsampled

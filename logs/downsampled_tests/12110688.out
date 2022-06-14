@@ -29,3 +29,11 @@ To disable this warning, you can either:
 {'loss': 0.2483, 'learning_rate': 6.4e-06, 'epoch': 1.0}
 {'eval_loss': 0.18259687721729279, 'eval_f1': 0.7445972495088409, 'eval_roc_auc': 0.8455313074597127, 'eval_accuracy': 0.635091496232508, 'eval_runtime': 58.416, 'eval_samples_per_second': 31.806, 'eval_steps_per_second': 1.01, 'epoch': 1.0}
 {'loss': 0.1616, 'learning_rate': 4.8e-06, 'epoch': 2.0}
+{'eval_loss': 0.1679403930902481, 'eval_f1': 0.750728862973761, 'eval_roc_auc': 0.8519090020773991, 'eval_accuracy': 0.6367061356297093, 'eval_runtime': 60.0538, 'eval_samples_per_second': 30.939, 'eval_steps_per_second': 0.982, 'epoch': 2.0}
+{'loss': 0.1276, 'learning_rate': 3.2e-06, 'epoch': 3.0}
+{'eval_loss': 0.16631074249744415, 'eval_f1': 0.7686369119420988, 'eval_roc_auc': 0.8641796122699563, 'eval_accuracy': 0.6566200215285253, 'eval_runtime': 63.9356, 'eval_samples_per_second': 29.061, 'eval_steps_per_second': 0.923, 'epoch': 3.0}
+{'loss': 0.1003, 'learning_rate': 1.6e-06, 'epoch': 4.0}
+{'eval_loss': 0.17824982106685638, 'eval_f1': 0.7721671901425464, 'eval_roc_auc': 0.8658106733607585, 'eval_accuracy': 0.667384284176534, 'eval_runtime': 58.3408, 'eval_samples_per_second': 31.847, 'eval_steps_per_second': 1.011, 'epoch': 4.0}
+{'loss': 0.0825, 'learning_rate': 0.0, 'epoch': 5.0}
+{'eval_loss': 0.18281011283397675, 'eval_f1': 0.7729007633587787, 'eval_roc_auc': 0.8698814119459236, 'eval_accuracy': 0.6641550053821313, 'eval_runtime': 58.3698, 'eval_samples_per_second': 31.832, 'eval_steps_per_second': 1.011, 'epoch': 5.0}
+{'train_runtime': 4391.269, 'train_samples_per_second': 8.459, 'train_steps_per_second': 1.058, 'train_loss': 0.14405910955948517, 'epoch': 5.0}
