@@ -1,0 +1,317 @@
+id 0	NA OP
+id 1	ID
+id 2	OP
+id 3	OP
+id 4	IN
+id 5	NA OP
+id 6	OP
+id 7	IN IP
+id 8	IN
+id 9	IN
+id 10	OP IP
+id 11	OP
+id 12	HI
+id 13	ID
+id 14	LY
+id 15	IN
+id 16	NA
+id 17	OP
+id 18	ID
+id 19	NA IN
+id 20	IP
+id 21	ID
+id 22	NA
+id 23	OP IP
+id 24	OP
+id 25	NA IN
+id 26	NA IN
+id 27	HI
+id 28	IN OP
+id 29	ID
+id 30	ID
+id 31	HI
+id 32	OP
+id 33	HI
+id 34	NA IN
+id 35	OP HI
+id 36	ID
+id 37	NA OP
+id 38	HI
+id 39	IN
+id 40	ID
+id 41	LY
+id 42	OP
+id 43	IN OP
+id 44	IN OP
+id 45	IP
+id 46	IP
+id 47	IP
+id 48	IN ID
+id 49	NA
+id 50	SP
+id 51	OP
+id 52	IN HI
+id 53	IP
+id 54	NA
+id 55	NA
+id 56	IN
+id 57	IN
+id 58	NA
+id 59	ID
+id 60	IN
+id 61	OP
+id 62	IN OP
+id 63	NA
+id 64	LY
+id 65	NA IN
+id 66	IN
+id 67	IN
+id 68	OP
+id 69	ID
+id 70	LY
+id 71	OP
+id 72	ID
+id 73	IN ID
+id 74	NA IN
+id 75	HI
+id 76	ID
+id 77	NA
+id 78	NA
+id 79	IN HI
+id 80	NA
+id 81	NA IN
+id 82	IP
+id 83	OP
+id 84	OP
+id 85	ID
+id 86	HI
+id 87	IN IP
+id 88	IN
+id 89	NA OP
+id 90	NA IN
+id 91	OP
+id 92	IP
+id 93	LY
+id 94	IN
+id 95	ID
+id 96	IN ID
+id 97	IN OP
+id 98	IN
+id 99	IN
+id 100	OP
+id 101	OP
+id 102	NA IN
+id 103	IN IP
+id 104	NA IN
+id 105	NA
+id 106	OP
+id 107	OP
+id 108	ID
+id 109	NA OP
+id 110	IP
+id 111	ID
+id 112	IP
+id 113	IN
+id 114	OP
+id 115	IN IP
+id 116	SP
+id 117	NA
+id 118	IN
+id 119	IN IP
+id 120	IN OP
+id 121	OP
+id 122	NA IN
+id 123	IN
+id 124	NA IN
+id 125	NA
+id 126	NA OP
+id 127	HI
+id 128	OP HI
+id 129	IN OP
+id 130	NA OP
+id 131	ID
+id 132	IP
+id 133	IN
+id 134	NA IN
+id 135	IP
+id 136	SP
+id 137	IN
+id 138	ID
+id 139	IN
+id 140	OP
+id 141	NA OP
+id 142	SP
+id 143	NA
+id 144	LY
+id 145	IN
+id 146	OP IP
+id 147	NA IP
+id 148	IN OP
+id 149	OP
+id 150	NA ID
+id 151	IN
+id 152	ID
+id 153	NA IN
+id 154	NA OP
+id 155	IP
+id 156	IN IP
+id 157	SP
+id 158	NA
+id 159	ID
+id 160	OP
+id 161	ID
+id 162	NA
+id 163	HI
+id 164	HI
+id 165	IP
+id 166	ID
+id 167	SP
+id 168	IN OP
+id 169	OP IP
+id 170	IP
+id 171	NA IN
+id 172	ID
+id 173	IP
+id 174	OP IP
+id 175	NA OP
+id 176	NA OP
+id 177	HI
+id 178	NA OP
+id 179	NA IN
+id 180	HI
+id 181	NA IP
+id 182	NA OP
+id 183	IN
+id 184	NA
+id 185	NA IN
+id 186	NA IN
+id 187	IN IP
+id 188	NA
+id 189	IP
+id 190	NA IN
+id 191	OP
+id 192	NA IN
+id 193	ID
+id 194	HI
+id 195	IN
+id 196	NA
+id 197	OP ID
+id 198	HI
+id 199	IN SP
+id 200	IN
+id 201	IN
+id 202	IN
+id 203	SP
+id 204	IN OP
+id 205	ID
+id 206	NA
+id 207	NA
+id 208	IN
+id 209	ID
+id 210	NA
+id 211	IN
+id 212	SP
+id 213	ID
+id 214	IN OP
+id 215	HI
+id 216	NA OP
+id 217	NA IN
+id 218	IP
+id 219	IP
+id 220	HI
+id 221	ID
+id 222	NA
+id 223	IN OP
+id 224	NA IN
+id 225	IN HI
+id 226	NA
+id 227	HI
+id 228	NA
+id 229	IN
+id 230	HI
+id 231	SP
+id 232	NA OP
+id 233	OP IP
+id 234	OP
+id 235	ID
+id 236	SP
+id 237	ID
+id 238	NA IN
+id 239	HI
+id 240	HI
+id 241	NA IN
+id 242	OP ID
+id 243	IP
+id 244	NA
+id 245	OP
+id 246	OP
+id 247	NA IN
+id 248	OP
+id 249	ID
+id 250	IN
+id 251	ID
+id 252	NA OP
+id 253	OP
+id 254	IN
+id 255	SP
+id 256	ID
+id 257	IN OP
+id 258	SP
+id 259	IP
+id 260	NA
+id 261	IN OP
+id 262	HI
+id 263	SP
+id 264	NA IN
+id 265	IN
+id 266	NA OP
+id 267	NA
+id 268	IN IP
+id 269	IN
+id 270	HI
+id 271	IN HI
+id 272	NA IN
+id 273	IN
+id 274	ID
+id 275	OP
+id 276	NA IN
+id 277	OP
+id 278	LY
+id 279	NA
+id 280	OP
+id 281	IN
+id 282	IP
+id 283	ID
+id 284	OP
+id 285	IP
+id 286	IN
+id 287	IP
+id 288	IN
+id 289	NA IN
+id 290	SP
+id 291	NA OP
+id 292	SP
+id 293	OP
+id 294	OP ID
+id 295	NA SP
+id 296	IN OP
+id 297	ID
+id 298	IN
+id 299	NA OP
+id 300	NA
+id 301	IP
+id 302	IP
+id 303	IN SP
+id 304	OP
+id 305	NA
+id 306	ID
+id 307	NA IN
+id 308	NA OP
+id 309	IN
+id 310	NA
+id 311	LY
+id 312	IP
+id 313	SP
+id 314	NA LY
+id 315	OP
+id 316	OP

@@ -1,6 +1,7 @@
 import sys
 
 #cat test_sets/spa_test.tsv | python3 change_labeling_for_test.py > test_sets/spa_test_modified.tsv
+#cat test_sets/spa_test.tsv | python3 codedump/unnecessary-unused/change_labeling_for_test.py > test_sets/main_labels_only/spa_test_modified.tsv
 
 
 # delete the sublabels altogether since they are unnecessary for now at least -Veronika
@@ -27,7 +28,7 @@ def change_labels(data):
             #delete the mistake
             indeces_delete.append(i)
 
-    # remove the faulty lines THERE WAS ONE IN SPA WITH MT AS LABEL???
+    # remove the faulty lines  (MT machine translation removed)
     for i in sorted(indeces_delete, reverse=True):
         data.pop(i)
 

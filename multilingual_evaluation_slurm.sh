@@ -2,7 +2,7 @@
 #SBATCH --job-name=multilingual
 #SBATCH --account=project_2005092 #2000539
 #SBATCH --partition=gpu
-#SBATCH --time=01:00:00
+#SBATCH --time=00:20:00
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=1
 #SBATCH --mem-per-cpu=8000
@@ -31,7 +31,7 @@ for file in $FILES; do
 for tr in $TRS; do
     echo $file
     echo $tr
-    srun python3 multilingual_evaluation.py --test_set $file --model saved_models/downsampled_multilingual --treshold $tr
+    srun python3 multilingual_evaluation.py --test_set $file --model saved_models/all_multilingual --treshold $tr
 done
 done
 

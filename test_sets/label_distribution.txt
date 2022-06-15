@@ -1,0 +1,8 @@
+chi_all.tsv
+{'IP ds': 88, 'NA': 47, 'IN': 24, 'NA ne': 21, 'IN lt': 14, 'IP': 14, 'OP rv': 13, 'IN dtp': 12, 'NA nb': 9, 'HI': 8, 'NA sr': 7, 'OP av': 6, 'MT': 5, 'IN ra': 5, 'OP ob': 5, 'ID': 5, 'OP': 3, 'IP NA ds': 3, 'NA OP av ne': 2, 'IN IP lt': 2, 'NA OP': 2, 'IP ed': 2, 'IN fi': 2, 'IN NA OP av dtp ne': 1, 'IP OP ds': 1, 'IN OP fi rv': 1, 'HI IN NA': 1, 'IN IP OP ds fi': 1, 'ID IN dtp': 1, 'LY NA OP': 1, 'ID OP rv': 1, 'HI IN IP ds fi lt': 1, 'LY NA': 1, 'IN IP ra': 1, 'ID IP ds': 1, 'IN en': 1, 'HI NA nb': 1, 'HI IP ds': 1, 'LY': 1, 'SP': 1, 'IN NA': 1}
+jpn_test.tsv
+{'IP': 32, 'NA nb': 30, 'IN dtp': 8, 'HI': 8, 'IN': 5, 'ID': 4, 'NA ne': 3, 'NA OP av nb': 2, 'HI MT': 2, 'OP av': 1, 'SP it': 1, 'NA OP nb rv': 1, 'IP MT': 1, 'IN lt': 1, 'IN MT lt': 1}
+pt_test_modified.tsv
+{'IP': 101, 'NA': 97, 'IN': 47, 'HI': 24, 'OP': 23, 'ID': 6, 'IP NA': 5, 'IN NA': 5, 'ID NA': 4, 'ID IP': 3, 'HI OP': 3, 'HI IN': 3, 'LY': 3, 'IP OP': 2, 'ID OP': 2, 'ID IP NA': 1, 'LY NA': 1, 'HI IP': 1, 'HI ID': 1}
+spa_test.tsv
+{'IP': 27, 'NA ne': 15, 'IN dtp': 14, 'IN': 7, 'NA nb': 6, 'NA': 6, 'HI': 5, 'NA sr': 4, 'IN lt': 3, 'ID': 3, 'OP rv': 3, 'IP NA nb': 1, 'HI IP': 1, 'OP av': 1, 'HI re': 1, 'ID OP rs': 1, 'MT': 1, 'IN ra': 1}

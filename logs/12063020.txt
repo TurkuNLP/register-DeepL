@@ -1,0 +1,157 @@
+Namespace(batch=8, dev_sets=['multilingual-register-data-new/formatted/en_dev.formatted.tsv', 'multilingual-register-data-new/formatted/fi_dev.formatted.tsv', 'multilingual-register-data-new/formatted/fre_dev.formatted.tsv', 'multilingual-register-data-new/formatted/swe_dev.formatted.tsv'], epochs=3, learning=8e-06, train_sets=['multilingual-register-data-new/formatted/en_train1.formatted.tsv', 'multilingual-register-data-new/formatted/en_train2.formatted.tsv', 'multilingual-register-data-new/formatted/en_train3.formatted.tsv', 'multilingual-register-data-new/formatted/en_train4.formatted.tsv', 'multilingual-register-data-new/formatted/fi_train.formatted.tsv', 'multilingual-register-data-new/formatted/fre_train.formatted.tsv', 'multilingual-register-data-new/formatted/swe_train.formatted.tsv'], treshold=0.5)
+Downloading and preparing dataset csv/default to /users/annieske/.cache/huggingface/datasets/csv/default-e402b087609b06cc/0.0.0/433e0ccc46f9880962cc2b12065189766fbb2bee57a221866138fb9203c83519...
+Dataset csv downloaded and prepared to /users/annieske/.cache/huggingface/datasets/csv/default-e402b087609b06cc/0.0.0/433e0ccc46f9880962cc2b12065189766fbb2bee57a221866138fb9203c83519. Subsequent calls will reuse this data.
+{'dev': Dataset({
+    features: ['text', 'label'],
+    num_rows: 7430
+}),
+ 'train': Dataset({
+    features: ['text', 'label'],
+    num_rows: 44609
+})}
+['IN', 'IN', None, 'OP', None]
+[['IN'], ['IN'], ['NA'], ['OP'], ['NA']]
+[[0, 0, 1, 0, 0, 0, 0, 0], [0, 0, 1, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 1, 0, 0],
+ [0, 0, 0, 0, 0, 0, 1, 0], [0, 0, 0, 0, 0, 1, 0, 0]]
+{'label': [[0, 0, 1, 0, 0, 0, 0, 0], [0, 0, 1, 0, 0, 0, 0, 0]],
+ 'text': ['Bringing Down the Barriers: The Labour Market and Women with '
+          'Disabilities in Ontario by Gail Fawcett Section 3: Social attitudes '
+          'Focus group participants in all groups mentioned negative social '
+          'attitudes and lack of public awareness as two of the top three '
+          'barriers that they faced when trying to enter or stay in the paid '
+          'labour market. The problem begins with a lack of awareness about '
+          'disabilities and disability issues. One factor that was brought up '
+          'repeatedly was the negative impact of highly visible disabilities. '
+          'Some participants noted that people often have a fear of being '
+          'around persons with highly visible disabilities. "People just don?t '
+          'want to look at us. They don?t want us around as reminders that '
+          'this could be them at some point in the future." As well, some '
+          'highly visible disabilities can mask the true potential and '
+          'capabilities of persons with disabilities. As a result, negative '
+          'judgements are placed upon individuals because their speech or '
+          'appearance is not "normal." "People think I?m drunk because of the '
+          'way my eyes look." "People look at my disability and they hear my '
+          'speech. I can?t leave those things in the waiting room when I go '
+          'for an interview. Whenever I have actually got a job, I always had '
+          'positive feedback. But they were all short-term jobs. Attitude is '
+          'my biggest barrier." Women with learning disabilities commented '
+          'that they were typically treated like children and not given credit '
+          'when they had performed well on the job because attitudes in their '
+          'workplace were such that no one believed that they could have '
+          'actually done the job on their own. "When people asked: ?Did you do '
+          'that? Who helped you?? It really hurt. You wonder if you should '
+          'tell anyone that you have a learning disability. If they know, they '
+          'might be able to give you the supports on the job. But if you do '
+          'tell them, they never take your abilities seriously again." Women '
+          'with developmental disabilities face enormous attitudinal barriers. '
+          'They also feel that they are "treated like children" or aren?t '
+          '"trusted." However, when given the opportunity and the right job, '
+          'these women are quite capable of working in the paid labour market '
+          'and living independently. "I used to work in a sheltered workshop. '
+          'I never thought I would ever have a real job. Then I began what was '
+          'supposed to be a two-month contract. But they renewed and renewed ? '
+          'it?s nine years later and I?m still employed." Those who don?t have '
+          'a visible disability also experience negative attitudes. When it '
+          'came to matters involving the labour market and social services, '
+          'many of the focus group participants voiced the belief that while '
+          'social attitudes toward persons with disabilities improved over the '
+          '1980s, they have deteriorated over the course of the 1990s. "It '
+          'breaks my heart that society has devolved into a very hateful '
+          'society. I?m concerned about the future for all of us." "When '
+          'employment gets tight, prejudices surface." Women in our focus '
+          'groups also noted that public attitudes and their own situation had '
+          'an impact on their self-esteem. This can often lead to low '
+          'self-esteem, lack of confidence and poor performance in job '
+          'interviews. "I had to fight to get homecare to come in twice a week '
+          'to help me have a bath. Do you know what it?s like going for a job '
+          'interview a few days after your last bath?" While both women and '
+          'men with disabilities face these attitudinal barriers, women also '
+          'fight gender bias. Although women with disabilities have a high '
+          'degree of financial responsibility within their households, they '
+          'report that employers often still believe that they are being taken '
+          'care of by someone else and don?t really need to work for pay. '
+          'Sexism interacts with disability in other ways. One woman who '
+          'required a special seat to sit in her wheelchair had her request to '
+          'a local service club turned down because "they said that they only '
+          'provide assistance to men." Visible minority women with '
+          'disabilities often feel that they have an additional mark against '
+          'them. Several in our focus groups mentioned that they felt racial '
+          'discrimination compounded the challenges of being female and having '
+          'a disability. However, they were reluctant to attribute past '
+          'negative experiences solely to racial discrimination. Some felt '
+          'that they had so many factors working against them that they '
+          'couldn?t be sure how much of their situation could be attributed to '
+          'their race. "Is it because of my language, my race, my disability, '
+          'or because I?m a woman? Why am I not being hired?" One of the most '
+          'illustrative examples of the complex interplay of attitudes toward '
+          'race, disability, and gender can be found in ERDCO?s 1996 study, '
+          'entitled Including Us . . . Ethno Racial People with Disabilities '
+          'speak out on issues of race and disability : One woman?s horrifying '
+          'story illustrates the multiple oppressions which women are often '
+          'subjected to. As a Muslim woman, she adhered to certain norms of '
+          'modesty and covered her hair. Some of her female co-workers wanted '
+          'to see her without her hijab (head covering) and she showed them a '
+          'picture of herself which she carried in her purse. Her co-workers '
+          'later took the picture out of her bag and photocopied it on top a '
+          'likeness of a naked woman. They wrote "I love sex" on the picture '
+          'and stuck it on the back of her wheelchair. The woman spent part of '
+          'the day moving about in a public space and no one warned her of its '
+          'existence. It was only when she was going home that someone told '
+          'her about the picture. "I felt humiliated. They tormented me as a '
+          'minority woman, they violated my religious beliefs and they mocked '
+          'my disability. Through this single obscene act they managed to '
+          'attack me on several levels." 34 Finally, focus group participants '
+          'called for more public education regarding disability. By '
+          'increasing awareness and understanding of disability, it is hoped '
+          'that other, more tangible, barriers might fall. Attitudes and '
+          'awareness were mentioned in almost every focus group as an area '
+          'needing improvement: "Attitude is the biggest barrier. People have '
+          'to be retrained to know that we have grown with the times and that '
+          'we can do things." "Just to show you what we?re up against, a dear '
+          'friend of mine who is blind went to a restaurant with a group of '
+          'people, and the maitre d? asked: ?Smoking section or non-smoking '
+          'section?? She answered: ?Non-smoking please.? He then asked: ?What '
+          'about the (guide) dog?? She answered: ?Oh, I guess you could put '
+          'him in the smoking section!? " ',
+          'If you’ve always wanted to live the The Devil Wears Prada dream and '
+          'work for a magazine, fret no more. Tonight is the Blue & White’s '
+          'meeting, your opportunity to make all your dreams come true. We’ll '
+          'be pitching content for next semester and start assigning writers '
+          'and researchers. As always, it’ll take place at 8pm in the basement '
+          'of St. Paul’s Chapel. Make sure to stop by!<p> Do you like to draw? '
+          'The Blue & White happens to greatly appreciate drawings, and we put '
+          'lots of them into our magazine. Every illustration in The Blue & '
+          'White is hand-drawn, and we pride ourselves on the lovely azure '
+          'artwork that adorns our pages. You can find examples of past '
+          'illustrations on Bwog , on the magazine’s shiny new archives page , '
+          'or around campus in the recently-released Autumn issue.\xa0We are '
+          'currently seeking illustrators for our December issue, and we '
+          'encourage all who are interested to email us at '
+          'editors@theblueandwhite .org.Whether you’re an art major or simply '
+          'enjoy doodling in the margins of your lecture notes, we’d be happy '
+          'to have you! ']}
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+{'loss': 0.1818, 'learning_rate': 5.333333333333333e-06, 'epoch': 1.0}
+{'eval_loss': 0.15820136666297913, 'eval_f1': 0.7605704592573977, 'eval_roc_auc': 0.8490032015322542, 'eval_accuracy': 0.6667563930013459, 'eval_runtime': 279.4658, 'eval_samples_per_second': 26.586, 'eval_steps_per_second': 0.834, 'epoch': 1.0}
+{'loss': 0.1389, 'learning_rate': 2.6666666666666664e-06, 'epoch': 2.0}
+{'eval_loss': 0.158248633146286, 'eval_f1': 0.7710242503584563, 'eval_roc_auc': 0.8569537242907169, 'eval_accuracy': 0.6826379542395693, 'eval_runtime': 291.6813, 'eval_samples_per_second': 25.473, 'eval_steps_per_second': 0.799, 'epoch': 2.0}
+{'loss': 0.1133, 'learning_rate': 0.0, 'epoch': 3.0}
+{'eval_loss': 0.16382843255996704, 'eval_f1': 0.7743250756780132, 'eval_roc_auc': 0.8613316307762263, 'eval_accuracy': 0.6846567967698519, 'eval_runtime': 269.9812, 'eval_samples_per_second': 27.52, 'eval_steps_per_second': 0.863, 'epoch': 3.0}
+{'train_runtime': 15716.8916, 'train_samples_per_second': 8.515, 'train_steps_per_second': 1.065, 'train_loss': 0.14463585720252636, 'epoch': 3.0}
+
+MULTILINGUAL ORIGINAL MODEL
+    --batch 7 \
+    --treshold 0.4 \
+    --epochs 5 \
+    --learning 8e-6 \

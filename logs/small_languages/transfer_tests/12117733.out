@@ -1,0 +1,16 @@
+test_sets/spa_test.tsv
+0.4
+Namespace(model='saved_models/all_multilingual', test_set='test_sets/spa_test.tsv', treshold=0.4)
+F1: 0.7048458149779736
+test_sets/pt_test_modified.tsv
+0.4
+Namespace(model='saved_models/all_multilingual', test_set='test_sets/pt_test_modified.tsv', treshold=0.4)
+F1: 0.6813471502590673
+test_sets/jpn_test.tsv
+0.4
+Namespace(model='saved_models/all_multilingual', test_set='test_sets/jpn_test.tsv', treshold=0.4)
+F1: 0.6905829596412557
+test_sets/chi_all.tsv
+0.4
+Namespace(model='saved_models/all_multilingual', test_set='test_sets/chi_all.tsv', treshold=0.4)
+F1: 0.6404494382022472

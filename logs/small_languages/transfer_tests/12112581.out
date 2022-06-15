@@ -1,0 +1,30 @@
+test_sets/spa_test.tsv
+0.4
+Namespace(model='saved_models/downsampled_multilingual', test_set='test_sets/spa_test.tsv', treshold=0.4)
+F1: 0.6944444444444445
+test_sets/pt_test_modified.tsv
+0.4
+Namespace(model='saved_models/downsampled_multilingual', test_set='test_sets/pt_test_modified.tsv', treshold=0.4)
+Downloading and preparing dataset csv/default to /users/annieske/.cache/huggingface/datasets/csv/default-801ce6abffcdc608/0.0.0/433e0ccc46f9880962cc2b12065189766fbb2bee57a221866138fb9203c83519...
+Dataset csv downloaded and prepared to /users/annieske/.cache/huggingface/datasets/csv/default-801ce6abffcdc608/0.0.0/433e0ccc46f9880962cc2b12065189766fbb2bee57a221866138fb9203c83519. Subsequent calls will reuse this data.
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+F1: 0.6986301369863013
+test_sets/jpn_test.tsv
+0.4
+Namespace(model='saved_models/downsampled_multilingual', test_set='test_sets/jpn_test.tsv', treshold=0.4)
+F1: 0.6728971962616822
+test_sets/chi_all.tsv
+0.4
+Namespace(model='saved_models/downsampled_multilingual', test_set='test_sets/chi_all.tsv', treshold=0.4)
+F1: 0.6888567293777136

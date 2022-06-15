@@ -1,6 +1,6 @@
 import sys
 
-
+indeces_delete = [] # indeces marked for deletion in the data
 # delete the sublabels altogether since they are unnecessary for now at least -Veronika
 
 def change_labels(data):
@@ -23,7 +23,15 @@ def change_labels(data):
         # check the right shape
         assert len(data[i]) == 2
 
-    
+        if data[i][0] == "":
+            #delete the mistake
+            indeces_delete.append(i)
+
+    # remove the faulty lines  (MT machine translation removed,also DF from fi data)
+    for i in sorted(indeces_delete, reverse=True):
+        data.pop(i)
+
+
     # print to command line to save to files
     final = []
     for i in range(len(data)):

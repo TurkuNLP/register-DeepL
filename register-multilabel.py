@@ -33,6 +33,7 @@ def arguments():
     parser.add_argument('--multilingual', action='store_true', default=False)
     parser.add_argument('--saved', default="saved_models/all_multilingual")
     parser.add_argument('--checkpoint', default="../multilabel/checkpoints")
+    parser.add_argument('--lang')
     args = parser.parse_args()
 
     return args 
@@ -219,8 +220,41 @@ trainer = MultilabelTrainer(
 
 trainer.train()
 
+# plot to see how the loss and evaluation go
+import matplotlib.pyplot as plt
+
+def plot(logs, keys, labels, filename):
+    values = sum([logs[k] for k in keys], [])
+    plt.ylim(max(min(values)-0.1, 0.0), min(max(values)+0.1, 1.0))
+    for key, label in zip(keys, labels):    
+        plt.plot(logs["epoch"], logs[key], label=label)
+    plt.legend()
+    plt.show()
+    plt.savefig(filename) # set file name where to save the plots
+
+plot(training_logs.logs, ["loss", "eval_loss"], ["Training loss", "Evaluation loss"], "logs/small_languages/"+ args.lang +"_loss.jpg")
+plot(training_logs.logs, ["eval_f1"], ["Evaluation F1-score"], "logs/small_languages/"+ args.lang +"_f1.jpg")
+
+
+
+
+
 if args.multilingual == True:
     trainer.model.save_pretrained(args.saved)
 else:
     eval_results = trainer.evaluate(dataset["test"])
     print('F1:', eval_results['eval_f1'])
+
+    # see how the labels are predicted
+    test_pred = trainer.predict(dataset['test'])
+    trues = test_pred.label_ids
+    predictions = test_pred.predictions
+
+    sigmoid = torch.nn.Sigmoid()
+    probs = sigmoid(torch.Tensor(predictions))
+    # next, use threshold to turn them into integer predictions
+    preds = np.zeros(probs.shape)
+    preds[np.where(probs >= args.treshold)] = 1
+
+    from sklearn.metrics import classification_report
+    print(classification_report(trues, preds, target_names=unique_labels))
