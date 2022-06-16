@@ -15,7 +15,7 @@ document = docx.Document(new)
 
 # get the labels from a tsv file
 fname = sys.argv[1] # use argv to get the file 
-fname = ".././labels/" +  fname+ '.labels.txt'
+fname = "./labels/" +  fname+ '.labels.txt'
 
 
 with open (fname) as f:

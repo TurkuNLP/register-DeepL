@@ -1,0 +1,58 @@
+learning rate: 5e-6 treshold: 0.3 batch: 8 epochs: 5
+Namespace(batch=8, checkpoint='../multilabel/chi', epochs=5, lang='chi', learning=5e-06, multilingual=False, saved='saved_models/all_multilingual', test_set=['test_sets/chi_all.tsv'], train_set=['AfterDeepL/main_labels_only/chi_FINAL.modified.tsv.gz'], treshold=0.3)
+Downloading and preparing dataset csv/default to /users/annieske/.cache/huggingface/datasets/csv/default-f55a10cee2fae392/0.0.0/433e0ccc46f9880962cc2b12065189766fbb2bee57a221866138fb9203c83519...
+Dataset csv downloaded and prepared to /users/annieske/.cache/huggingface/datasets/csv/default-f55a10cee2fae392/0.0.0/433e0ccc46f9880962cc2b12065189766fbb2bee57a221866138fb9203c83519. Subsequent calls will reuse this data.
+Downloading and preparing dataset csv/default to /users/annieske/.cache/huggingface/datasets/csv/default-4f49f1f04a94d16d/0.0.0/433e0ccc46f9880962cc2b12065189766fbb2bee57a221866138fb9203c83519...
+Dataset csv downloaded and prepared to /users/annieske/.cache/huggingface/datasets/csv/default-4f49f1f04a94d16d/0.0.0/433e0ccc46f9880962cc2b12065189766fbb2bee57a221866138fb9203c83519. Subsequent calls will reuse this data.
+{'dev': Dataset({
+    features: ['text', 'label'],
+    num_rows: 1752
+}),
+ 'test': Dataset({
+    features: ['text', 'label'],
+    num_rows: 317
+}),
+ 'train': Dataset({
+    features: ['text', 'label'],
+    num_rows: 7004
+})}
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+{'loss': 0.2842, 'learning_rate': 4.000000000000001e-06, 'epoch': 1.0}
+{'eval_loss': 0.21097257733345032, 'eval_f1': 0.7179487179487181, 'eval_roc_auc': 0.8450060998634792, 'eval_accuracy': 0.553082191780822, 'eval_runtime': 53.7027, 'eval_samples_per_second': 32.624, 'eval_steps_per_second': 1.024, 'epoch': 1.0}
+{'loss': 0.1933, 'learning_rate': 3e-06, 'epoch': 2.0}
+{'eval_loss': 0.19263440370559692, 'eval_f1': 0.7406902815622162, 'eval_roc_auc': 0.8636351313407112, 'eval_accuracy': 0.5605022831050228, 'eval_runtime': 53.6319, 'eval_samples_per_second': 32.667, 'eval_steps_per_second': 1.026, 'epoch': 2.0}
+{'loss': 0.161, 'learning_rate': 2.0000000000000003e-06, 'epoch': 3.0}
+{'eval_loss': 0.18222808837890625, 'eval_f1': 0.7529843893480257, 'eval_roc_auc': 0.8681896960718817, 'eval_accuracy': 0.5976027397260274, 'eval_runtime': 53.5553, 'eval_samples_per_second': 32.714, 'eval_steps_per_second': 1.027, 'epoch': 3.0}
+{'loss': 0.1372, 'learning_rate': 1.0000000000000002e-06, 'epoch': 4.0}
+{'eval_loss': 0.1912316381931305, 'eval_f1': 0.7549295774647887, 'eval_roc_auc': 0.8631626339791443, 'eval_accuracy': 0.6084474885844748, 'eval_runtime': 53.5536, 'eval_samples_per_second': 32.715, 'eval_steps_per_second': 1.027, 'epoch': 4.0}
+{'loss': 0.1223, 'learning_rate': 0.0, 'epoch': 5.0}
+{'eval_loss': 0.1918158382177353, 'eval_f1': 0.7558652729384437, 'eval_roc_auc': 0.866649964659521, 'eval_accuracy': 0.6067351598173516, 'eval_runtime': 54.5035, 'eval_samples_per_second': 32.145, 'eval_steps_per_second': 1.009, 'epoch': 5.0}
+{'train_runtime': 4125.6119, 'train_samples_per_second': 8.488, 'train_steps_per_second': 1.062, 'train_loss': 0.17959592984691602, 'epoch': 5.0}
+F1: 0.6366120218579235
+              precision    recall  f1-score   support
+
+          IN       0.23      0.42      0.29        12
+          NA       0.54      0.88      0.67         8
+          HI       0.44      0.88      0.59        68
+          LY       0.85      0.58      0.69       115
+          IP       0.40      0.67      0.50         3
+          SP       0.77      0.82      0.80        97
+          ID       0.38      0.32      0.35        37
+          OP       0.00      0.00      0.00         1
+
+   micro avg       0.60      0.68      0.64       341
+   macro avg       0.45      0.57      0.49       341
+weighted avg       0.66      0.68      0.65       341
+ samples avg       0.62      0.70      0.64       341
+

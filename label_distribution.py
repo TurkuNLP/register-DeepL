@@ -19,7 +19,21 @@ for i in range(len(data)):
 # sort so that biggest labels are at the start (descending order)
 sorted_dict = dict(sorted(labels.items(), key=lambda item: item[1], reverse=True))
 
-print(len(data))
+print("amount of examples:", len(data)) # amount of lines/examples as a whole
+print("amount of labels:", len(sorted_dict)) # amount of labels
+
+hybrid=0
+single=0
+for key in sorted_dict:
+        length =len(key.split())
+        if length > 1:
+                hybrid = hybrid + sorted_dict[key]
+        else:
+                single = single + sorted_dict[key]
+print("hybrid labelled examples:", hybrid, round(hybrid / len(data), 2), "%") # amount of hybrid labels
+print("single labelled examples:", single, round(single / len(data), 2), "%") # amount of single labels
+
+
 print(sorted_dict) # either print the amount of lines per label
 
 # or make a list with the percentages
