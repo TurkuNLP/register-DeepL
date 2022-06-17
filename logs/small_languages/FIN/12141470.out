@@ -1,0 +1,54 @@
+learning rate: 8e-6 treshold: 0.4 batch: 8 epochs: 5
+Namespace(batch=8, checkpoint='../multilabel/fin', epochs=5, lang='fintransfer', learning=8e-06, multilingual=False, saved='saved_models/all_multilingual', test_set=['old-datasets/multilingual-register-data-new/main_labels_only/fi_test.tsv'], train_set=['downsampled/main_labels_only/en_train.downsampled_modified.tsv', 'downsampled/main_labels_only/fre_train.downsampled_modified.tsv', 'downsampled/main_labels_only/swe_train.downsampled_modified.tsv'], treshold=0.4)
+{'dev': Dataset({
+    features: ['text', 'label'],
+    num_rows: 1299
+}),
+ 'test': Dataset({
+    features: ['text', 'label'],
+    num_rows: 1498
+}),
+ 'train': Dataset({
+    features: ['text', 'label'],
+    num_rows: 5195
+})}
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+{'loss': 0.2961, 'learning_rate': 6.4e-06, 'epoch': 1.0}
+{'eval_loss': 0.2050192505121231, 'eval_f1': 0.6946972074050831, 'eval_roc_auc': 0.8268164524402171, 'eval_accuracy': 0.5961281708945261, 'eval_runtime': 46.8264, 'eval_samples_per_second': 31.991, 'eval_steps_per_second': 1.004, 'epoch': 1.0}
+{'loss': 0.196, 'learning_rate': 4.8e-06, 'epoch': 2.0}
+{'eval_loss': 0.19784995913505554, 'eval_f1': 0.7172081829121539, 'eval_roc_auc': 0.8512680388833939, 'eval_accuracy': 0.6188251001335113, 'eval_runtime': 46.5141, 'eval_samples_per_second': 32.205, 'eval_steps_per_second': 1.01, 'epoch': 2.0}
+{'loss': 0.1558, 'learning_rate': 3.2e-06, 'epoch': 3.0}
+{'eval_loss': 0.19464367628097534, 'eval_f1': 0.7276582853680702, 'eval_roc_auc': 0.8556589849559211, 'eval_accuracy': 0.6361815754339119, 'eval_runtime': 48.0023, 'eval_samples_per_second': 31.207, 'eval_steps_per_second': 0.979, 'epoch': 3.0}
+{'loss': 0.1264, 'learning_rate': 1.6e-06, 'epoch': 4.0}
+{'eval_loss': 0.21501414477825165, 'eval_f1': 0.7143286272153799, 'eval_roc_auc': 0.8499325090868854, 'eval_accuracy': 0.6181575433911882, 'eval_runtime': 46.7036, 'eval_samples_per_second': 32.075, 'eval_steps_per_second': 1.006, 'epoch': 4.0}
+{'loss': 0.1047, 'learning_rate': 0.0, 'epoch': 5.0}
+{'eval_loss': 0.21843276917934418, 'eval_f1': 0.7257485029940121, 'eval_roc_auc': 0.8578013713149393, 'eval_accuracy': 0.6255006675567423, 'eval_runtime': 46.5531, 'eval_samples_per_second': 32.178, 'eval_steps_per_second': 1.01, 'epoch': 5.0}
+{'train_runtime': 3001.5433, 'train_samples_per_second': 8.654, 'train_steps_per_second': 1.083, 'train_loss': 0.17578369844876804, 'epoch': 5.0}
+F1: 0.7276582853680702
+              precision    recall  f1-score   support
+
+          IN       0.76      0.54      0.63       103
+          NA       0.91      0.65      0.76       209
+          HI       0.61      0.71      0.66       320
+          LY       0.10      0.83      0.18        18
+          IP       0.33      0.80      0.47         5
+          SP       0.82      0.88      0.85       661
+          ID       0.70      0.71      0.70       246
+          OP       0.67      0.67      0.67        15
+
+   micro avg       0.70      0.76      0.73      1577
+   macro avg       0.61      0.72      0.61      1577
+weighted avg       0.75      0.76      0.75      1577
+ samples avg       0.73      0.78      0.74      1577
+

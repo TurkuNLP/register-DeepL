@@ -234,6 +234,7 @@ def plot(logs, keys, labels, filename):
 
 plot(training_logs.logs, ["loss", "eval_loss"], ["Training loss", "Evaluation loss"], "logs/small_languages/"+ args.lang +"_loss.jpg")
 plot(training_logs.logs, ["eval_f1"], ["Evaluation F1-score"], "logs/small_languages/"+ args.lang +"_f1.jpg")
+# this second plot has the same legends that are in the loss so I should somehow reset the legend before making the second plot
 
 
 

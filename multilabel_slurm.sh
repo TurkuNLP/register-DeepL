@@ -44,10 +44,10 @@ module load pytorch
 # done
 
 
-EPOCHS=5
-LR=8e-6    # "1e-5 4e-6 5e-6 7e-5 8e-6"
-TR=0.4    # "0.3 0.4 0.5 0.6"
-BATCH=8
+EPOCHS=3 #5
+LR=5e-6    # "1e-5 4e-6 5e-6 7e-5 8e-6"
+TR=0.3    # "0.3 0.4 0.5 0.6"
+BATCH=7
 
 
 echo "learning rate: $LR treshold: $TR batch: $BATCH epochs: $EPOCHS"
@@ -63,14 +63,16 @@ echo "learning rate: $LR treshold: $TR batch: $BATCH epochs: $EPOCHS"
 #srun python3 register-multilabel.py --train_set AfterDeepL/main_labels_only/ja_FINAL.modified.tsv.gz --test_set test_sets/jpn_test.tsv --batch $BATCH --treshold $TR --epochs $EPOCHS --learning $LR --checkpoint ../multilabel/jpn --lang jpn
 
 #CHINESE
-#srun python3 register-multilabel.py --train_set AfterDeepL/main_labels_only/chi_FINAL.modified.tsv.gz --test_set test_sets/chi_all.tsv --batch $BATCH --treshold $TR --epochs $EPOCHS --learning $LR --checkpoint ../multilabel/chi --lang chi
+srun python3 register-multilabel.py --train_set AfterDeepL/main_labels_only/chi_FINAL.modified.tsv.gz --test_set test_sets/chi_all.tsv --batch $BATCH --treshold $TR --epochs $EPOCHS --learning $LR --checkpoint ../multilabel/chi --lang chi
 
 
 #FINNISH TEST
-srun python3 register-multilabel.py --train_set AfterDeepL/main_labels_only/FIN_FINAL.modified.tsv.gz --test_set old-datasets/multilingual-register-data-new/main_labels_only/fi_test.tsv \
---batch $BATCH --treshold $TR --epochs $EPOCHS --learning $LR --checkpoint ../multilabel/fin --lang fin
+# srun python3 register-multilabel.py --train_set AfterDeepL/main_labels_only/FIN_FINAL.modified.tsv.gz --test_set old-datasets/multilingual-register-data-new/main_labels_only/fi_test.tsv \
+# --batch $BATCH --treshold $TR --epochs $EPOCHS --learning $LR --checkpoint ../multilabel/fin --lang fin
 
-
+# transfer test for finnish with eng, fre, swe downsampled sets (= same as translated)
+# srun python3 register-multilabel.py --train_set downsampled/main_labels_only/en_train.downsampled_modified.tsv downsampled/main_labels_only/fre_train.downsampled_modified.tsv downsampled/main_labels_only/swe_train.downsampled_modified.tsv --test_set old-datasets/multilingual-register-data-new/main_labels_only/fi_test.tsv \
+# --batch $BATCH --treshold $TR --epochs $EPOCHS --learning $LR --checkpoint ../multilabel/fin --lang fintransfer
 
 
 
