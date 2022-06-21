@@ -1,3 +1,63 @@
+en_dev.formatted.modified.tsv.gz
+amount of examples: 4786
+amount of labels: 30
+hybrid labelled examples: 571 0.12 %
+single labelled examples: 4215 0.88 %
+{'NA': 1766, 'IN': 934, 'OP': 784, 'ID': 327, 'NA IN': 178, 'NA OP': 160, 'HI': 148, 'IP': 134, 'IN OP': 68, 'LY': 63, 'SP': 59, 'IN IP': 44, 'IN HI': 35, 'OP HI': 16, 'OP IP': 15, 'NA IP': 11, 'NA SP': 8, 'OP ID': 7, 'IN ID': 7, 'NA ID': 4, 'OP SP': 4, 'IN SP': 4, 'IN LY': 2, 'ID HI': 2, 'HI IP': 1, 'NA LY': 1, 'HI LY': 1, 'IP LY': 1, 'ID IP': 1, 'ID SP': 1}
+{'NA': 36.9, 'IN': 19.52, 'OP': 16.38, 'ID': 6.83, 'NA IN': 3.72, 'NA OP': 3.34, 'HI': 3.09, 'IP': 2.8, 'IN OP': 1.42, 'LY': 1.32, 'SP': 1.23, 'IN IP': 0.92, 'IN HI': 0.73, 'OP HI': 0.33, 'OP IP': 0.31, 'NA IP': 0.23, 'NA SP': 0.17, 'OP ID': 0.15, 'IN ID': 0.15, 'NA ID': 0.08, 'OP SP': 0.08, 'IN SP': 0.08, 'IN LY': 0.04, 'ID HI': 0.04, 'HI IP': 0.02, 'NA LY': 0.02, 'HI LY': 0.02, 'IP LY': 0.02, 'ID IP': 0.02, 'ID SP': 0.02}
+en_dev.formatted.tsv.gz_modified.tsv
+amount of examples: 0
+amount of labels: 0
+en_test.formatted.modified.tsv.gz
+amount of examples: 9569
+amount of labels: 30
+hybrid labelled examples: 1141 0.12 %
+single labelled examples: 8428 0.88 %
+{'NA': 3532, 'IN': 1861, 'OP': 1573, 'ID': 654, 'NA IN': 358, 'NA OP': 328, 'HI': 300, 'IP': 264, 'IN OP': 145, 'LY': 129, 'SP': 115, 'IN IP': 87, 'IN HI': 69, 'OP IP': 33, 'OP HI': 31, 'NA SP': 18, 'NA IP': 16, 'OP ID': 15, 'IN ID': 8, 'IN SP': 8, 'NA HI': 5, 'NA ID': 4, 'NA LY': 3, 'ID HI': 3, 'HI IP': 2, 'ID SP': 2, 'OP LY': 2, 'OP SP': 2, 'IN LY': 1, 'HI SP': 1}
+{'NA': 36.91, 'IN': 19.45, 'OP': 16.44, 'ID': 6.83, 'NA IN': 3.74, 'NA OP': 3.43, 'HI': 3.14, 'IP': 2.76, 'IN OP': 1.52, 'LY': 1.35, 'SP': 1.2, 'IN IP': 0.91, 'IN HI': 0.72, 'OP IP': 0.34, 'OP HI': 0.32, 'NA SP': 0.19, 'NA IP': 0.17, 'OP ID': 0.16, 'IN ID': 0.08, 'IN SP': 0.08, 'NA HI': 0.05, 'NA ID': 0.04, 'NA LY': 0.03, 'ID HI': 0.03, 'HI IP': 0.02, 'ID SP': 0.02, 'OP LY': 0.02, 'OP SP': 0.02, 'IN LY': 0.01, 'HI SP': 0.01}
+en_test.formatted.tsv.gz_modified.tsv
+amount of examples: 0
+amount of labels: 0
+en_train1.formatted.modified.tsv.gz
+amount of examples: 8606
+amount of labels: 30
+hybrid labelled examples: 984 0.11 %
+single labelled examples: 7622 0.89 %
+{'NA': 3145, 'IN': 1730, 'OP': 1386, 'ID': 621, 'NA IN': 322, 'NA OP': 282, 'HI': 277, 'IP': 242, 'LY': 118, 'IN OP': 112, 'SP': 103, 'IN IP': 83, 'IN HI': 55, 'OP IP': 24, 'OP HI': 22, 'OP ID': 15, 'NA SP': 15, 'NA IP': 14, 'IN ID': 9, 'IN SP': 8, 'OP SP': 4, 'NA ID': 4, 'OP LY': 4, 'NA HI': 3, 'ID HI': 2, 'NA LY': 2, 'ID SP': 1, 'HI LY': 1, 'HI IP': 1, 'IN LY': 1}
+{'NA': 36.54, 'IN': 20.1, 'OP': 16.11, 'ID': 7.22, 'NA IN': 3.74, 'NA OP': 3.28, 'HI': 3.22, 'IP': 2.81, 'LY': 1.37, 'IN OP': 1.3, 'SP': 1.2, 'IN IP': 0.96, 'IN HI': 0.64, 'OP IP': 0.28, 'OP HI': 0.26, 'OP ID': 0.17, 'NA SP': 0.17, 'NA IP': 0.16, 'IN ID': 0.1, 'IN SP': 0.09, 'OP SP': 0.05, 'NA ID': 0.05, 'OP LY': 0.05, 'NA HI': 0.03, 'ID HI': 0.02, 'NA LY': 0.02, 'ID SP': 0.01, 'HI LY': 0.01, 'HI IP': 0.01, 'IN LY': 0.01}
+en_train1.formatted.tsv.gz_modified.tsv
+amount of examples: 0
+amount of labels: 0
+en_train2.formatted.modified.tsv.gz
+amount of examples: 8626
+amount of labels: 30
+hybrid labelled examples: 1010 0.12 %
+single labelled examples: 7616 0.88 %
+{'NA': 3275, 'IN': 1612, 'OP': 1403, 'ID': 604, 'NA IN': 313, 'NA OP': 301, 'HI': 285, 'IP': 227, 'IN OP': 135, 'LY': 124, 'SP': 86, 'IN IP': 65, 'IN HI': 56, 'OP HI': 29, 'OP IP': 29, 'NA IP': 17, 'OP ID': 16, 'NA SP': 14, 'IN SP': 6, 'OP SP': 5, 'NA ID': 5, 'ID HI': 3, 'NA HI': 3, 'IN ID': 3, 'ID IP': 2, 'OP LY': 2, 'IN LY': 2, 'NA LY': 2, 'HI IP': 1, 'HI SP': 1}
+{'NA': 37.97, 'IN': 18.69, 'OP': 16.26, 'ID': 7.0, 'NA IN': 3.63, 'NA OP': 3.49, 'HI': 3.3, 'IP': 2.63, 'IN OP': 1.57, 'LY': 1.44, 'SP': 1.0, 'IN IP': 0.75, 'IN HI': 0.65, 'OP HI': 0.34, 'OP IP': 0.34, 'NA IP': 0.2, 'OP ID': 0.19, 'NA SP': 0.16, 'IN SP': 0.07, 'OP SP': 0.06, 'NA ID': 0.06, 'ID HI': 0.03, 'NA HI': 0.03, 'IN ID': 0.03, 'ID IP': 0.02, 'OP LY': 0.02, 'IN LY': 0.02, 'NA LY': 0.02, 'HI IP': 0.01, 'HI SP': 0.01}
+en_train2.formatted.tsv.gz_modified.tsv
+amount of examples: 0
+amount of labels: 0
+en_train3.formatted.modified.tsv.gz
+amount of examples: 8597
+amount of labels: 30
+hybrid labelled examples: 1033 0.12 %
+single labelled examples: 7564 0.88 %
+{'NA': 3127, 'IN': 1695, 'OP': 1407, 'ID': 585, 'NA IN': 320, 'NA OP': 287, 'HI': 275, 'IP': 252, 'IN OP': 122, 'SP': 113, 'LY': 110, 'IN IP': 80, 'IN HI': 67, 'OP HI': 37, 'OP IP': 31, 'NA SP': 19, 'OP ID': 19, 'NA IP': 15, 'IN ID': 6, 'IN SP': 6, 'NA ID': 6, 'NA LY': 5, 'OP LY': 3, 'OP SP': 2, 'NA HI': 2, 'HI IP': 2, 'ID HI': 1, 'IN LY': 1, 'IP SP': 1, 'ID SP': 1}
+{'NA': 36.37, 'IN': 19.72, 'OP': 16.37, 'ID': 6.8, 'NA IN': 3.72, 'NA OP': 3.34, 'HI': 3.2, 'IP': 2.93, 'IN OP': 1.42, 'SP': 1.31, 'LY': 1.28, 'IN IP': 0.93, 'IN HI': 0.78, 'OP HI': 0.43, 'OP IP': 0.36, 'NA SP': 0.22, 'OP ID': 0.22, 'NA IP': 0.17, 'IN ID': 0.07, 'IN SP': 0.07, 'NA ID': 0.07, 'NA LY': 0.06, 'OP LY': 0.03, 'OP SP': 0.02, 'NA HI': 0.02, 'HI IP': 0.02, 'ID HI': 0.01, 'IN LY': 0.01, 'IP SP': 0.01, 'ID SP': 0.01}
+en_train3.formatted.tsv.gz_modified.tsv
+amount of examples: 0
+amount of labels: 0
+en_train4.formatted.modified.tsv.gz
+amount of examples: 7669
+amount of labels: 30
+hybrid labelled examples: 947 0.12 %
+single labelled examples: 6722 0.88 %
+{'NA': 2822, 'IN': 1485, 'OP': 1310, 'ID': 483, 'NA IN': 295, 'NA OP': 265, 'IP': 211, 'HI': 208, 'IN OP': 133, 'SP': 107, 'LY': 96, 'IN HI': 69, 'IN IP': 68, 'OP HI': 22, 'OP IP': 21, 'NA IP': 12, 'NA SP': 12, 'IN ID': 11, 'OP ID': 9, 'IN SP': 6, 'NA ID': 4, 'HI IP': 4, 'ID HI': 3, 'OP SP': 3, 'NA HI': 3, 'IN LY': 2, 'NA LY': 2, 'HI LY': 1, 'ID SP': 1, 'OP LY': 1}
+{'NA': 36.8, 'IN': 19.36, 'OP': 17.08, 'ID': 6.3, 'NA IN': 3.85, 'NA OP': 3.46, 'IP': 2.75, 'HI': 2.71, 'IN OP': 1.73, 'SP': 1.4, 'LY': 1.25, 'IN HI': 0.9, 'IN IP': 0.89, 'OP HI': 0.29, 'OP IP': 0.27, 'NA IP': 0.16, 'NA SP': 0.16, 'IN ID': 0.14, 'OP ID': 0.12, 'IN SP': 0.08, 'NA ID': 0.05, 'HI IP': 0.05, 'ID HI': 0.04, 'OP SP': 0.04, 'NA HI': 0.04, 'IN LY': 0.03, 'NA LY': 0.03, 'HI LY': 0.01, 'ID SP': 0.01, 'OP LY': 0.01}
+en_train4.formatted.tsv.gz_modified.tsv
+amount of examples: 0
+amount of labels: 0
 fi_dev.formatted_modified.tsv
 amount of examples: 853
 amount of labels: 19
@@ -19,3 +79,52 @@ hybrid labelled examples: 292 0.05 %
 single labelled examples: 5228 0.95 %
 {'NA': 2414, 'IN': 984, 'OP': 829, 'ID': 659, 'HI': 269, 'NA OP': 49, 'SP': 44, 'NA IP': 35, 'NA HI': 35, 'IN HI': 33, 'ID NA': 28, 'IN NA': 26, 'LY': 17, 'IN IP': 15, 'IP': 12, 'HI IN': 12, 'NA IN': 10, 'IN OP': 7, 'NA NA': 6, 'OP NA': 6, 'ID OP': 6, 'NA SP': 4, 'IN IN': 4, 'OP IN': 4, 'NA ID': 3, 'ID HI': 2, 'ID IN': 2, 'NA LY': 1, 'IN SP': 1, 'IP HI': 1, 'LY OP': 1, 'OP ID': 1}
 {'NA': 43.73, 'IN': 17.83, 'OP': 15.02, 'ID': 11.94, 'HI': 4.87, 'NA OP': 0.89, 'SP': 0.8, 'NA IP': 0.63, 'NA HI': 0.63, 'IN HI': 0.6, 'ID NA': 0.51, 'IN NA': 0.47, 'LY': 0.31, 'IN IP': 0.27, 'IP': 0.22, 'HI IN': 0.22, 'NA IN': 0.18, 'IN OP': 0.13, 'NA NA': 0.11, 'OP NA': 0.11, 'ID OP': 0.11, 'NA SP': 0.07, 'IN IN': 0.07, 'OP IN': 0.07, 'NA ID': 0.05, 'ID HI': 0.04, 'ID IN': 0.04, 'NA LY': 0.02, 'IN SP': 0.02, 'IP HI': 0.02, 'LY OP': 0.02, 'OP ID': 0.02}
+fre_dev.formatted_modified.tsv
+amount of examples: 789
+amount of labels: 39
+hybrid labelled examples: 145 0.18 %
+single labelled examples: 644 0.82 %
+{'IP': 200, 'NA': 153, 'IN': 134, 'ID': 65, 'OP': 51, 'HI': 34, 'NA IP': 19, 'NA OP': 13, 'IN NA': 11, 'IN HI': 11, 'IP OP': 10, 'IN IP': 10, 'IP HI': 6, 'NA IN': 6, 'IN OP': 6, 'IP NA': 5, 'IP IN': 5, 'NA HI': 5, 'LY': 5, 'OP IP': 5, 'NA SP': 4, 'ID IP': 3, 'HI IP': 3, 'OP ID': 2, 'ID HI': 2, 'IN SP': 2, 'SP': 2, 'HI IN': 2, 'OP NA': 2, 'ID NA': 2, 'OP IN': 2, 'NA LY': 2, 'SP ID': 1, 'IN ID': 1, 'ID LY': 1, 'SP OP': 1, 'OP LY': 1, 'NA NA': 1, 'SP IP': 1}
+{'IP': 25.35, 'NA': 19.39, 'IN': 16.98, 'ID': 8.24, 'OP': 6.46, 'HI': 4.31, 'NA IP': 2.41, 'NA OP': 1.65, 'IN NA': 1.39, 'IN HI': 1.39, 'IP OP': 1.27, 'IN IP': 1.27, 'IP HI': 0.76, 'NA IN': 0.76, 'IN OP': 0.76, 'IP NA': 0.63, 'IP IN': 0.63, 'NA HI': 0.63, 'LY': 0.63, 'OP IP': 0.63, 'NA SP': 0.51, 'ID IP': 0.38, 'HI IP': 0.38, 'OP ID': 0.25, 'ID HI': 0.25, 'IN SP': 0.25, 'SP': 0.25, 'HI IN': 0.25, 'OP NA': 0.25, 'ID NA': 0.25, 'OP IN': 0.25, 'NA LY': 0.25, 'SP ID': 0.13, 'IN ID': 0.13, 'ID LY': 0.13, 'SP OP': 0.13, 'OP LY': 0.13, 'NA NA': 0.13, 'SP IP': 0.13}
+fre_test.formatted_modified.tsv
+amount of examples: 1177
+amount of labels: 39
+hybrid labelled examples: 196 0.17 %
+single labelled examples: 981 0.83 %
+{'IP': 283, 'IN': 242, 'NA': 223, 'ID': 109, 'OP': 78, 'HI': 30, 'NA IP': 28, 'NA OP': 22, 'IN IP': 14, 'IP IN': 13, 'IN HI': 12, 'IN NA': 12, 'OP IP': 11, 'NA HI': 11, 'IP OP': 10, 'IN OP': 9, 'LY': 9, 'NA IN': 8, 'SP': 7, 'IP HI': 5, 'IP NA': 5, 'NA SP': 4, 'ID IP': 4, 'HI NA': 3, 'OP NA': 3, 'NA LY': 3, 'OP HI': 3, 'ID OP': 2, 'HI IP': 2, 'ID NA': 2, 'OP IN': 2, 'SP IN': 1, 'LY NA': 1, 'SP OP': 1, 'OP SP': 1, 'ID HI': 1, 'IN SP': 1, 'HI ID': 1, 'OP ID': 1}
+{'IP': 24.04, 'IN': 20.56, 'NA': 18.95, 'ID': 9.26, 'OP': 6.63, 'HI': 2.55, 'NA IP': 2.38, 'NA OP': 1.87, 'IN IP': 1.19, 'IP IN': 1.1, 'IN HI': 1.02, 'IN NA': 1.02, 'OP IP': 0.93, 'NA HI': 0.93, 'IP OP': 0.85, 'IN OP': 0.76, 'LY': 0.76, 'NA IN': 0.68, 'SP': 0.59, 'IP HI': 0.42, 'IP NA': 0.42, 'NA SP': 0.34, 'ID IP': 0.34, 'HI NA': 0.25, 'OP NA': 0.25, 'NA LY': 0.25, 'OP HI': 0.25, 'ID OP': 0.17, 'HI IP': 0.17, 'ID NA': 0.17, 'OP IN': 0.17, 'SP IN': 0.08, 'LY NA': 0.08, 'SP OP': 0.08, 'OP SP': 0.08, 'ID HI': 0.08, 'IN SP': 0.08, 'HI ID': 0.08, 'OP ID': 0.08}
+fre_train.formatted_modified.tsv
+amount of examples: 1924
+amount of labels: 48
+hybrid labelled examples: 330 0.17 %
+single labelled examples: 1594 0.83 %
+{'IP': 484, 'NA': 366, 'IN': 351, 'OP': 162, 'ID': 157, 'HI': 49, 'IP OP': 35, 'NA IP': 34, 'NA OP': 29, 'IN IP': 25, 'NA IN': 20, 'IN HI': 20, 'IN NA': 18, 'IP HI': 17, 'SP': 16, 'NA HI': 16, 'IN OP': 15, 'NA SP': 11, 'IP IN': 11, 'OP IP': 10, 'LY': 9, 'OP NA': 6, 'HI IN': 5, 'NA LY': 5, 'IP NA': 5, 'OP IN': 5, 'HI OP': 5, 'ID HI': 4, 'ID OP': 4, 'HI IP': 3, 'NA ID': 3, 'IN LY': 3, 'IN IN': 2, 'ID IP': 2, 'OP ID': 2, 'IP ID': 2, 'SP OP': 2, 'HI NA': 1, 'OP LY': 1, 'HI ID': 1, 'IN ID': 1, 'LY IN': 1, 'OP HI': 1, 'ID IN': 1, 'SP NA': 1, 'ID NA': 1, 'IN SP': 1, 'SP IN': 1}
+{'IP': 25.16, 'NA': 19.02, 'IN': 18.24, 'OP': 8.42, 'ID': 8.16, 'HI': 2.55, 'IP OP': 1.82, 'NA IP': 1.77, 'NA OP': 1.51, 'IN IP': 1.3, 'NA IN': 1.04, 'IN HI': 1.04, 'IN NA': 0.94, 'IP HI': 0.88, 'SP': 0.83, 'NA HI': 0.83, 'IN OP': 0.78, 'NA SP': 0.57, 'IP IN': 0.57, 'OP IP': 0.52, 'LY': 0.47, 'OP NA': 0.31, 'HI IN': 0.26, 'NA LY': 0.26, 'IP NA': 0.26, 'OP IN': 0.26, 'HI OP': 0.26, 'ID HI': 0.21, 'ID OP': 0.21, 'HI IP': 0.16, 'NA ID': 0.16, 'IN LY': 0.16, 'IN IN': 0.1, 'ID IP': 0.1, 'OP ID': 0.1, 'IP ID': 0.1, 'SP OP': 0.1, 'HI NA': 0.05, 'OP LY': 0.05, 'HI ID': 0.05, 'IN ID': 0.05, 'LY IN': 0.05, 'OP HI': 0.05, 'ID IN': 0.05, 'SP NA': 0.05, 'ID NA': 0.05, 'IN SP': 0.05, 'SP IN': 0.05}
+swe_dev.formatted_modified.tsv
+amount of examples: 780
+amount of labels: 31
+hybrid labelled examples: 138 0.18 %
+single labelled examples: 642 0.82 %
+{'NA': 191, 'IP': 177, 'IN': 176, 'OP': 55, 'NA IP': 31, 'ID': 22, 'HI': 18, 'IP OP': 13, 'NA OP': 13, 'IP IN': 9, 'IN IP': 9, 'IN HI': 8, 'IP HI': 7, 'NA HI': 7, 'IN OP': 6, 'NA IN': 6, 'IP NA': 5, 'HI IN': 4, 'OP IP': 4, 'IN NA': 3, 'NA SP': 3, 'LY': 2, 'OP NA': 2, 'HI IP': 2, 'OP SP': 1, 'SP NA': 1, 'IP ID': 1, 'LY HI': 1, 'OP HI': 1, 'SP': 1, 'HI NA': 1}
+{'NA': 24.49, 'IP': 22.69, 'IN': 22.56, 'OP': 7.05, 'NA IP': 3.97, 'ID': 2.82, 'HI': 2.31, 'IP OP': 1.67, 'NA OP': 1.67, 'IP IN': 1.15, 'IN IP': 1.15, 'IN HI': 1.03, 'IP HI': 0.9, 'NA HI': 0.9, 'IN OP': 0.77, 'NA IN': 0.77, 'IP NA': 0.64, 'HI IN': 0.51, 'OP IP': 0.51, 'IN NA': 0.38, 'NA SP': 0.38, 'LY': 0.26, 'OP NA': 0.26, 'HI IP': 0.26, 'OP SP': 0.13, 'SP NA': 0.13, 'IP ID': 0.13, 'LY HI': 0.13, 'OP HI': 0.13, 'SP': 0.13, 'HI NA': 0.13}
+swe_test.formatted_modified.tsv
+amount of examples: 1177
+amount of labels: 39
+hybrid labelled examples: 218 0.19 %
+single labelled examples: 959 0.81 %
+{'NA': 275, 'IP': 273, 'IN': 242, 'OP': 82, 'NA IP': 47, 'ID': 45, 'HI': 31, 'NA OP': 21, 'IN IP': 18, 'IP IN': 16, 'IP OP': 15, 'IN NA': 12, 'NA HI': 12, 'IN HI': 12, 'IP HI': 10, 'LY': 9, 'OP IP': 7, 'IP NA': 7, 'NA IN': 5, 'IN OP': 5, 'OP HI': 3, 'IN LY': 3, 'OP NA': 3, 'NA SP': 3, 'HI IN': 3, 'SP': 2, 'NA LY': 2, 'HI NA': 2, 'ID HI': 2, 'IP LY': 1, 'NA ID': 1, 'IP ID': 1, 'SP NA': 1, 'OP IN': 1, 'HI SP': 1, 'HI IP': 1, 'IN IN': 1, 'ID OP': 1, 'ID NA': 1}
+{'NA': 23.36, 'IP': 23.19, 'IN': 20.56, 'OP': 6.97, 'NA IP': 3.99, 'ID': 3.82, 'HI': 2.63, 'NA OP': 1.78, 'IN IP': 1.53, 'IP IN': 1.36, 'IP OP': 1.27, 'IN NA': 1.02, 'NA HI': 1.02, 'IN HI': 1.02, 'IP HI': 0.85, 'LY': 0.76, 'OP IP': 0.59, 'IP NA': 0.59, 'NA IN': 0.42, 'IN OP': 0.42, 'OP HI': 0.25, 'IN LY': 0.25, 'OP NA': 0.25, 'NA SP': 0.25, 'HI IN': 0.25, 'SP': 0.17, 'NA LY': 0.17, 'HI NA': 0.17, 'ID HI': 0.17, 'IP LY': 0.08, 'NA ID': 0.08, 'IP ID': 0.08, 'SP NA': 0.08, 'OP IN': 0.08, 'HI SP': 0.08, 'HI IP': 0.08, 'IN IN': 0.08, 'ID OP': 0.08, 'ID NA': 0.08}
+swe_train.formatted_modified.tsv
+amount of examples: 1933
+amount of labels: 37
+hybrid labelled examples: 327 0.17 %
+single labelled examples: 1606 0.83 %
+{'NA': 485, 'IN': 450, 'IP': 441, 'OP': 125, 'NA IP': 55, 'ID': 51, 'HI': 46, 'IN HI': 40, 'NA OP': 35, 'IP IN': 28, 'IN IP': 21, 'IP OP': 20, 'OP IP': 18, 'NA IN': 16, 'IP HI': 15, 'NA HI': 10, 'IN OP': 10, 'HI IN': 7, 'IN NA': 7, 'IP NA': 7, 'HI IP': 6, 'LY': 5, 'OP IN': 5, 'NA SP': 4, 'ID OP': 4, 'OP NA': 4, 'SP': 3, 'NA LY': 2, 'IN ID': 2, 'SP IN': 2, 'OP SP': 2, 'HI NA': 2, 'IP ID': 1, 'IN LY': 1, 'OP HI': 1, 'OP LY': 1, 'ID HI': 1}
+{'NA': 25.09, 'IN': 23.28, 'IP': 22.81, 'OP': 6.47, 'NA IP': 2.85, 'ID': 2.64, 'HI': 2.38, 'IN HI': 2.07, 'NA OP': 1.81, 'IP IN': 1.45, 'IN IP': 1.09, 'IP OP': 1.03, 'OP IP': 0.93, 'NA IN': 0.83, 'IP HI': 0.78, 'NA HI': 0.52, 'IN OP': 0.52, 'HI IN': 0.36, 'IN NA': 0.36, 'IP NA': 0.36, 'HI IP': 0.31, 'LY': 0.26, 'OP IN': 0.26, 'NA SP': 0.21, 'ID OP': 0.21, 'OP NA': 0.21, 'SP': 0.16, 'NA LY': 0.1, 'IN ID': 0.1, 'SP IN': 0.1, 'OP SP': 0.1, 'HI NA': 0.1, 'IP ID': 0.05, 'IN LY': 0.05, 'OP HI': 0.05, 'OP LY': 0.05, 'ID HI': 0.05}
+All files
+amount of examples: 10131
+amount of labels: 57
+hybrid labelled examples: 1463 0.14 %
+single labelled examples: 8668 0.86 %
+{'NA': 2703, 'IN': 2025, 'IP': 1864, 'OP': 913, 'ID': 745, 'HI': 324, 'NA IP': 224, 'NA OP': 143, 'IN HI': 119, 'IN IP': 104, 'IP OP': 103, 'IP IN': 83, 'IN NA': 72, 'NA IN': 71, 'NA HI': 68, 'IP HI': 60, 'OP IP': 56, 'IN OP': 52, 'SP': 50, 'LY': 44, 'IP NA': 34, 'HI IN': 30, 'NA SP': 30, 'OP NA': 20, 'OP IN': 18, 'HI IP': 17, 'ID OP': 16, 'ID NA': 15, 'NA LY': 15, 'ID HI': 12, 'HI NA': 10, 'ID IP': 9, 'OP HI': 9, 'IN LY': 7, 'IN IN': 6, 'OP ID': 6, 'HI OP': 6, 'IP ID': 5, 'IN SP': 4, 'IN ID': 4, 'SP OP': 4, 'SP IN': 4, 'OP SP': 4, 'NA ID': 4, 'OP LY': 3, 'SP NA': 3, 'ID IN': 2, 'HI ID': 2, 'SP ID': 1, 'ID LY': 1, 'NA NA': 1, 'SP IP': 1, 'LY NA': 1, 'LY IN': 1, 'LY HI': 1, 'IP LY': 1, 'HI SP': 1}
+{'NA': 26.68, 'IN': 19.99, 'IP': 18.4, 'OP': 9.01, 'ID': 7.35, 'HI': 3.2, 'NA IP': 2.21, 'NA OP': 1.41, 'IN HI': 1.17, 'IN IP': 1.03, 'IP OP': 1.02, 'IP IN': 0.82, 'IN NA': 0.71, 'NA IN': 0.7, 'NA HI': 0.67, 'IP HI': 0.59, 'OP IP': 0.55, 'IN OP': 0.51, 'SP': 0.49, 'LY': 0.43, 'IP NA': 0.34, 'HI IN': 0.3, 'NA SP': 0.3, 'OP NA': 0.2, 'OP IN': 0.18, 'HI IP': 0.17, 'ID OP': 0.16, 'ID NA': 0.15, 'NA LY': 0.15, 'ID HI': 0.12, 'HI NA': 0.1, 'ID IP': 0.09, 'OP HI': 0.09, 'IN LY': 0.07, 'IN IN': 0.06, 'OP ID': 0.06, 'HI OP': 0.06, 'IP ID': 0.05, 'IN SP': 0.04, 'IN ID': 0.04, 'SP OP': 0.04, 'SP IN': 0.04, 'OP SP': 0.04, 'NA ID': 0.04, 'OP LY': 0.03, 'SP NA': 0.03, 'ID IN': 0.02, 'HI ID': 0.02, 'SP ID': 0.01, 'ID LY': 0.01, 'NA NA': 0.01, 'SP IP': 0.01, 'LY NA': 0.01, 'LY IN': 0.01, 'LY HI': 0.01, 'IP LY': 0.01, 'HI SP': 0.01}

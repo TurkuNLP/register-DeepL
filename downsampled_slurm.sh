@@ -15,7 +15,7 @@ module load pytorch
 BATCH=8
 LR=8e-6
 TR=0.4
-EPOCHS=5
+EPOCHS=3
 
 echo "learning rate: $LR treshold: $TR batch: $BATCH epochs: $EPOCHS"
 
@@ -40,7 +40,7 @@ echo "learning rate: $LR treshold: $TR batch: $BATCH epochs: $EPOCHS"
 #this does not work??
 #srun python3 register-multilabel.py --train_set downsampled/en_train.downsampled.tsv downsampled/fi_train.downsampled.tsv downsampled/swe_train.downsampled.tsv downsampled/fre_train.downsampled.tsv --test_set multilingual-register-data-new/formatted/fre_test.formatted.tsv --batch $BATCH --treshold $TR --epochs $EPOCHS --learning $LR --multilingual --checkpoint ../multilabel/downsampled --saved saved_models/downsampled_multilingual
 # this works
-srun python3 register-multilabel.py --train_set downsampled/main_labels_only/all_downsampled.tsv.gz --test_set old-datasets/multilingual-register-data-new/main_labels_only/fi_test.tsv --batch $BATCH --treshold $TR --epochs $EPOCHS --learning $LR --checkpoint ../multilabel/downsampled #--multilingual --saved saved_models/downsampled_multilingual
+srun python3 register-multilabel.py --train_set downsampled/main_labels_only/all_downsampled.tsv.gz --test_set old-datasets/multilingual-register-data-new/main_labels_only/swe_test.formatted_modified.tsv --batch $BATCH --treshold $TR --epochs $EPOCHS --learning $LR --checkpoint ../multilabel/downsampled --lang downsampledSWE #--multilingual --saved saved_models/downsampled_multilingual
 
 # TEST TO SEE HOW THE TRANSFER EVAL GOES
 

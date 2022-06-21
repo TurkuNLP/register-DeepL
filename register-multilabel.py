@@ -33,7 +33,7 @@ def arguments():
     parser.add_argument('--multilingual', action='store_true', default=False)
     parser.add_argument('--saved', default="saved_models/all_multilingual")
     parser.add_argument('--checkpoint', default="../multilabel/checkpoints")
-    parser.add_argument('--lang')
+    parser.add_argument('--lang', default="")
     args = parser.parse_args()
 
     return args 
@@ -110,7 +110,7 @@ dataset = binarize(dataset)
 #pprint(dataset['train'][:2])
 
 # then use the XLMR tokenizer
-model_name = "xlm-roberta-large"
+model_name = "xlm-roberta-large" # change to 'sentence-transformers/distiluse-base-multilingual-cased-v2'
 tokenizer = transformers.AutoTokenizer.from_pretrained(model_name)
 
 def tokenize(example):
@@ -124,7 +124,7 @@ dataset = dataset.map(tokenize)
 
 num_labels = len(unique_labels)
 model = transformers.XLMRobertaForSequenceClassification.from_pretrained(model_name, num_labels=num_labels, problem_type="multi_label_classification")
-model.eval()
+# model.eval() gives better results in some cases it seems???
 
 trainer_args = transformers.TrainingArguments(
     args.checkpoint, # change this to put the checkpoints somewhere else
@@ -233,8 +233,10 @@ def plot(logs, keys, labels, filename):
     plt.savefig(filename) # set file name where to save the plots
 
 plot(training_logs.logs, ["loss", "eval_loss"], ["Training loss", "Evaluation loss"], "logs/small_languages/"+ args.lang +"_loss.jpg")
-plot(training_logs.logs, ["eval_f1"], ["Evaluation F1-score"], "logs/small_languages/"+ args.lang +"_f1.jpg")
 # this second plot has the same legends that are in the loss so I should somehow reset the legend before making the second plot
+# apparently not possible since I do not use an axis or figures?
+#plt.get_legend().remove()
+plot(training_logs.logs, ["eval_f1"], ["Evaluation F1-score"], "logs/small_languages/"+ args.lang +"_f1.jpg")
 
 
 

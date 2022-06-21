@@ -12,5 +12,5 @@ do
     labeldocdame=${f%.docx};
     # here add whatever the file name is after translation, preferably the language to which it was translated to
     # e.g. /ja.tsv.gz or ${f%_*}_ja.tsv.gz
-    echo $dir | python3 ../codedump/fromdocx.py $labeldocdame | gzip >> ../AfterDeepL/FIN_FINAL.tsv.gz
+    echo $dir | python3 ../../codedump/fromdocx.py $labeldocdame | gzip >> ../../AfterDeepL/SWE_FINAL.tsv.gz
 done
