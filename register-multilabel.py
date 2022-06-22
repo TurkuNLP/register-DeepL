@@ -18,6 +18,8 @@ def arguments():
     )
     parser.add_argument('--train_set', nargs="+", required=True)
     parser.add_argument('--test_set', nargs="+", required=True)
+    parser.add_argument('--full', action='store_true', default=False)
+    parser.add_argument('--model', default="xlm-roberta-large")
     parser.add_argument('--treshold', type=float, default=0.5,
         help="The treshold which to use for predictions, used in evaluation"
     )
@@ -41,8 +43,12 @@ def arguments():
 args = arguments()
 pprint(args)
 
-# manual list of the main labels
-unique_labels = ["IN", "NA", "HI", "LY", "IP", "SP", "ID", "OP"]
+# the data is fitted to these main labels
+if(args.full == False):
+    unique_labels = ["IN", "NA", "HI", "LY", "IP", "SP", "ID", "OP"]
+else:
+    unique_labels = ['HI', 'ID', 'IN', 'IP', 'LY', 'NA', 'OP', 'SP', 'av', 'ds', 'dtp', 'ed', 'en', 'fi', 'it', 'lt', 'nb', 'ne', 'ob', 'ra', 're', 'rs', 'rv', 'sr']
+
 
 # it is possible to load zipped csv files like this according to documentation:
 # https://huggingface.co/docs/datasets/loading#csv
@@ -82,10 +88,77 @@ test = datasets.load_dataset(
 dataset = datasets.DatasetDict({"train":train,"dev":dev, "test":test})
 pprint(dataset)
 
-# the data is fitted to these main labels
-# if there are other labels the fitting just ignores them
-# => no need to change the test set to only include main labels
-unique_labels = ["IN", "NA", "HI", "LY", "IP", "SP", "ID", "OP"]
+
+#register scheme mapping:
+sub_register_map = {
+    'NA': 'NA',
+    'NE': 'ne',
+    'SR': 'sr',
+    'PB': 'nb',
+    'HA': 'NA',
+    'FC': 'NA',
+    'TB': 'nb',
+    'CB': 'nb',
+    'OA': 'NA',
+    'OP': 'OP',
+    'OB': 'ob',
+    'RV': 'rv',
+    'RS': 'rs',
+    'AV': 'av',
+    'IN': 'IN',
+    'JD': 'IN',
+    'FA': 'fi',
+    'DT': 'dtp',
+    'IB': 'IN',
+    'DP': 'dtp',
+    'RA': 'ra',
+    'LT': 'lt',
+    'CM': 'IN',
+    'EN': 'en',
+    'RP': 'IN',
+    'ID': 'ID',
+    'DF': 'ID',
+    'QA': 'ID',
+    'HI': 'HI',
+    'RE': 're',
+    'IP': 'IP',
+    'DS': 'ds',
+    'EB': 'ed',
+    'ED': 'ed',
+    'LY': 'LY',
+    'PO': 'LY',
+    'SO': 'LY',
+    'SP': 'SP',
+    'IT': 'it',
+    'FS': 'SP',
+    'TV': 'SP',
+    'OS': 'OS',
+    'IG': 'IP',
+    'MT': 'MT',
+    'HT': 'HI',
+    'FI': 'fi',
+    'OI': 'IN',
+    'TR': 'IN',
+    'AD': 'OP',
+    'LE': 'OP',
+    'OO': 'OP',
+    'MA': 'NA',
+    'ON': 'NA',
+    'SS': 'NA',
+    'OE': 'IP',
+    'PA': 'IP',
+    'OF': 'ID',
+    'RR': 'ID',
+    'FH': 'HI',
+    'OH': 'HI',
+    'TS': 'HI',
+    'OL': 'LY',
+    'PR': 'LY',
+    'SL': 'LY',
+    'TA': 'SP',
+    'OTHER': 'OS'
+}
+
 
 def split_labels(dataset):
     # NA ends up as None because NA means that there is nothing (not available)
@@ -94,6 +167,8 @@ def split_labels(dataset):
         dataset['label'] = np.array('NA')
     else:
         dataset['label'] = np.array(dataset['label'].split())
+        mapped = [sub_register_map[l] if l not in unique_labels else l for l in dataset['label']] # added for full 
+        dataset['label'] = np.array(sorted(list(set(mapped)))) # added for full
     return dataset
 
 def binarize(dataset):
@@ -109,8 +184,8 @@ dataset = binarize(dataset)
 #pprint(dataset['train']['label'][:5])
 #pprint(dataset['train'][:2])
 
-# then use the XLMR tokenizer
-model_name = "xlm-roberta-large" # change to 'sentence-transformers/distiluse-base-multilingual-cased-v2'
+# then use the tokenizer
+model_name = args.model
 tokenizer = transformers.AutoTokenizer.from_pretrained(model_name)
 
 def tokenize(example):
@@ -123,8 +198,10 @@ def tokenize(example):
 dataset = dataset.map(tokenize)
 
 num_labels = len(unique_labels)
-model = transformers.XLMRobertaForSequenceClassification.from_pretrained(model_name, num_labels=num_labels, problem_type="multi_label_classification")
-# model.eval() gives better results in some cases it seems???
+model = transformers.AutoModelForSequenceClassification.from_pretrained(model_name, num_labels=num_labels, problem_type="multi_label_classification")
+# these are in eval mode already and it says to change it to train but is that really necessary? it has worked with eval on but I should try stuff
+#model.train()
+# model.eval() 
 
 trainer_args = transformers.TrainingArguments(
     args.checkpoint, # change this to put the checkpoints somewhere else
@@ -245,6 +322,7 @@ plot(training_logs.logs, ["eval_f1"], ["Evaluation F1-score"], "logs/small_langu
 if args.multilingual == True:
     trainer.model.save_pretrained(args.saved)
 else:
+    model.eval()
     eval_results = trainer.evaluate(dataset["test"])
     print('F1:', eval_results['eval_f1'])
 

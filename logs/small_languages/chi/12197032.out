@@ -1,0 +1,55 @@
+learning rate: 5e-6 treshold: 0.3 batch: 8 epochs: 5
+Namespace(batch=8, checkpoint='../multilabel/chi', epochs=5, full=False, lang='chi', learning=5e-06, model='hfl/chinese-macbert-base', multilingual=False, saved='saved_models/all_multilingual', test_set=['test_sets/main_labels_only/chi_all_modified.tsv'], train_set=['AfterDeepL/main_labels_only/chi_FINAL.modified.tsv.gz'], treshold=0.3)
+{'dev': Dataset({
+    features: ['text', 'label'],
+    num_rows: 1752
+}),
+ 'test': Dataset({
+    features: ['text', 'label'],
+    num_rows: 312
+}),
+ 'train': Dataset({
+    features: ['text', 'label'],
+    num_rows: 7004
+})}
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+{'loss': 0.3333, 'learning_rate': 4.000000000000001e-06, 'epoch': 1.0}
+{'eval_loss': 0.2764770984649658, 'eval_f1': 0.6230529595015576, 'eval_roc_auc': 0.7754825418449252, 'eval_accuracy': 0.4526255707762557, 'eval_runtime': 17.4488, 'eval_samples_per_second': 100.408, 'eval_steps_per_second': 3.152, 'epoch': 1.0}
+{'loss': 0.2503, 'learning_rate': 3e-06, 'epoch': 2.0}
+{'eval_loss': 0.245326966047287, 'eval_f1': 0.6721763085399449, 'eval_roc_auc': 0.8134549751764111, 'eval_accuracy': 0.4971461187214612, 'eval_runtime': 17.4301, 'eval_samples_per_second': 100.516, 'eval_steps_per_second': 3.155, 'epoch': 2.0}
+{'loss': 0.2196, 'learning_rate': 2.0000000000000003e-06, 'epoch': 3.0}
+{'eval_loss': 0.2407224178314209, 'eval_f1': 0.6739382687398467, 'eval_roc_auc': 0.8120885604106217, 'eval_accuracy': 0.5045662100456622, 'eval_runtime': 17.3886, 'eval_samples_per_second': 100.756, 'eval_steps_per_second': 3.163, 'epoch': 3.0}
+{'loss': 0.2002, 'learning_rate': 1.0000000000000002e-06, 'epoch': 4.0}
+{'eval_loss': 0.23366135358810425, 'eval_f1': 0.6814404432132964, 'eval_roc_auc': 0.8178043325520653, 'eval_accuracy': 0.5125570776255708, 'eval_runtime': 17.4032, 'eval_samples_per_second': 100.671, 'eval_steps_per_second': 3.16, 'epoch': 4.0}
+{'loss': 0.1887, 'learning_rate': 0.0, 'epoch': 5.0}
+{'eval_loss': 0.2327091097831726, 'eval_f1': 0.6825688073394496, 'eval_roc_auc': 0.8199689995655649, 'eval_accuracy': 0.5062785388127854, 'eval_runtime': 17.4019, 'eval_samples_per_second': 100.678, 'eval_steps_per_second': 3.161, 'epoch': 5.0}
+{'train_runtime': 1273.1739, 'train_samples_per_second': 27.506, 'train_steps_per_second': 3.44, 'train_loss': 0.23841369489556577, 'epoch': 5.0}
+F1: 0.6694444444444444
+              precision    recall  f1-score   support
+
+          IN       0.29      0.50      0.36        12
+          NA       0.36      0.50      0.42         8
+          HI       0.55      0.90      0.69        68
+          LY       0.81      0.69      0.75       115
+          IP       0.33      0.33      0.33         3
+          SP       0.77      0.81      0.79        97
+          ID       0.32      0.30      0.31        37
+          OP       0.00      0.00      0.00         1
+
+   micro avg       0.64      0.71      0.67       341
+   macro avg       0.43      0.50      0.46       341
+weighted avg       0.66      0.71      0.67       341
+ samples avg       0.67      0.73      0.68       341
+
+END: ke 22.6.2022 10.57.53 +0300

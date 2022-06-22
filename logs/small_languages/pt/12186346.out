@@ -1,0 +1,55 @@
+learning rate: 8e-6 treshold: 0.4 batch: 7 epochs: 5
+Namespace(batch=7, checkpoint='../multilabel/pt', epochs=5, full=False, lang='pt', learning=8e-06, model='sentence-transformers/paraphrase-xlm-r-multilingual-v1', multilingual=False, saved='saved_models/all_multilingual', test_set=['test_sets/main_labels_only/pt_test_modified.tsv'], train_set=['AfterDeepL/main_labels_only/pt_FINAL.modified.tsv.gz'], treshold=0.4)
+{'dev': Dataset({
+    features: ['text', 'label'],
+    num_rows: 1751
+}),
+ 'test': Dataset({
+    features: ['text', 'label'],
+    num_rows: 332
+}),
+ 'train': Dataset({
+    features: ['text', 'label'],
+    num_rows: 7003
+})}
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+{'loss': 0.3476, 'learning_rate': 6.4e-06, 'epoch': 1.0}
+{'eval_loss': 0.28590506315231323, 'eval_f1': 0.5582922824302136, 'eval_roc_auc': 0.7198346435348333, 'eval_accuracy': 0.3986293546544831, 'eval_runtime': 17.5524, 'eval_samples_per_second': 99.758, 'eval_steps_per_second': 3.133, 'epoch': 1.0}
+{'loss': 0.2731, 'learning_rate': 4.8e-06, 'epoch': 2.0}
+{'eval_loss': 0.2650076448917389, 'eval_f1': 0.6060921634990887, 'eval_roc_auc': 0.7521835185687179, 'eval_accuracy': 0.47001713306681897, 'eval_runtime': 17.451, 'eval_samples_per_second': 100.338, 'eval_steps_per_second': 3.152, 'epoch': 2.0}
+{'loss': 0.2416, 'learning_rate': 3.2e-06, 'epoch': 3.0}
+{'eval_loss': 0.2509545087814331, 'eval_f1': 0.6374064837905237, 'eval_roc_auc': 0.7769124423963134, 'eval_accuracy': 0.5014277555682467, 'eval_runtime': 17.4478, 'eval_samples_per_second': 100.356, 'eval_steps_per_second': 3.152, 'epoch': 3.0}
+{'loss': 0.2184, 'learning_rate': 1.6e-06, 'epoch': 4.0}
+{'eval_loss': 0.2413293719291687, 'eval_f1': 0.653960396039604, 'eval_roc_auc': 0.7876579018704256, 'eval_accuracy': 0.5197030268418047, 'eval_runtime': 17.4622, 'eval_samples_per_second': 100.274, 'eval_steps_per_second': 3.15, 'epoch': 4.0}
+{'loss': 0.2027, 'learning_rate': 0.0, 'epoch': 5.0}
+{'eval_loss': 0.24179162085056305, 'eval_f1': 0.6579466929911154, 'eval_roc_auc': 0.7905042016806723, 'eval_accuracy': 0.5271273557966876, 'eval_runtime': 17.4543, 'eval_samples_per_second': 100.319, 'eval_steps_per_second': 3.151, 'epoch': 5.0}
+{'train_runtime': 1366.2441, 'train_samples_per_second': 25.629, 'train_steps_per_second': 3.663, 'train_loss': 0.2566959255344265, 'epoch': 5.0}
+F1: 0.627939142461964
+              precision    recall  f1-score   support
+
+          IN       0.64      0.28      0.39        32
+          NA       0.29      0.12      0.17        17
+          HI       0.39      0.51      0.44        55
+          LY       0.70      0.77      0.73       113
+          IP       0.00      0.00      0.00         4
+          SP       0.79      0.78      0.79       113
+          ID       0.43      0.43      0.43        30
+          OP       0.00      0.00      0.00         0
+
+   micro avg       0.63      0.62      0.63       364
+   macro avg       0.40      0.36      0.37       364
+weighted avg       0.63      0.62      0.62       364
+ samples avg       0.64      0.65      0.63       364
+
+END: ti 21.6.2022 15.25.13 +0300

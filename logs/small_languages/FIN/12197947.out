@@ -1,0 +1,55 @@
+learning rate: 5e-6 treshold: 0.3 batch: 8 epochs: 5
+Namespace(batch=8, checkpoint='../multilabel/fin', epochs=5, full=False, lang='fin', learning=5e-06, model='TurkuNLP/bert-large-finnish-cased-v1', multilingual=False, saved='saved_models/all_multilingual', test_set=['old-datasets/multilingual-register-data-new/main_labels_only/fi_test.tsv'], train_set=['AfterDeepL/main_labels_only/FIN_FINAL.modified.tsv.gz'], treshold=0.3)
+{'dev': Dataset({
+    features: ['text', 'label'],
+    num_rows: 1294
+}),
+ 'test': Dataset({
+    features: ['text', 'label'],
+    num_rows: 1498
+}),
+ 'train': Dataset({
+    features: ['text', 'label'],
+    num_rows: 5176
+})}
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+{'loss': 0.3163, 'learning_rate': 4.000000000000001e-06, 'epoch': 1.0}
+{'eval_loss': 0.23128624260425568, 'eval_f1': 0.6887456037514654, 'eval_roc_auc': 0.8309724881604069, 'eval_accuracy': 0.46213292117465227, 'eval_runtime': 40.1994, 'eval_samples_per_second': 32.19, 'eval_steps_per_second': 1.02, 'epoch': 1.0}
+{'loss': 0.217, 'learning_rate': 3e-06, 'epoch': 2.0}
+{'eval_loss': 0.2040097713470459, 'eval_f1': 0.7286684381458518, 'eval_roc_auc': 0.8542198736543255, 'eval_accuracy': 0.527047913446677, 'eval_runtime': 39.9845, 'eval_samples_per_second': 32.363, 'eval_steps_per_second': 1.025, 'epoch': 2.0}
+{'loss': 0.1763, 'learning_rate': 2.0000000000000003e-06, 'epoch': 3.0}
+{'eval_loss': 0.19956821203231812, 'eval_f1': 0.7344205008736168, 'eval_roc_auc': 0.8615201849493647, 'eval_accuracy': 0.5278207109737248, 'eval_runtime': 39.9048, 'eval_samples_per_second': 32.427, 'eval_steps_per_second': 1.027, 'epoch': 3.0}
+{'loss': 0.1474, 'learning_rate': 1.0000000000000002e-06, 'epoch': 4.0}
+{'eval_loss': 0.20469146966934204, 'eval_f1': 0.734889287851586, 'eval_roc_auc': 0.8545715086552653, 'eval_accuracy': 0.5510046367851623, 'eval_runtime': 40.0246, 'eval_samples_per_second': 32.33, 'eval_steps_per_second': 1.024, 'epoch': 4.0}
+{'loss': 0.1288, 'learning_rate': 0.0, 'epoch': 5.0}
+{'eval_loss': 0.20654073357582092, 'eval_f1': 0.7375, 'eval_roc_auc': 0.8576112955322314, 'eval_accuracy': 0.5540958268933539, 'eval_runtime': 39.9261, 'eval_samples_per_second': 32.41, 'eval_steps_per_second': 1.027, 'epoch': 5.0}
+{'train_runtime': 2862.1246, 'train_samples_per_second': 9.042, 'train_steps_per_second': 1.13, 'train_loss': 0.1971684734456506, 'epoch': 5.0}
+F1: 0.706711787930062
+              precision    recall  f1-score   support
+
+          IN       0.77      0.57      0.66       103
+          NA       0.78      0.71      0.74       209
+          HI       0.52      0.82      0.64       320
+          LY       0.11      0.94      0.20        18
+          IP       0.50      0.40      0.44         5
+          SP       0.78      0.90      0.84       661
+          ID       0.61      0.67      0.64       246
+          OP       0.56      0.33      0.42        15
+
+   micro avg       0.64      0.79      0.71      1577
+   macro avg       0.58      0.67      0.57      1577
+weighted avg       0.69      0.79      0.73      1577
+ samples avg       0.69      0.80      0.72      1577
+
+END: ke 22.6.2022 11.45.48 +0300
