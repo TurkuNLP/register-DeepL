@@ -1,7 +1,7 @@
 id 0	OP RS
 id 1	SP IT
 id 2	IN OP DT RV
-id 3	IP DS
+id 3	IN IP DT DS
 id 4	NA SR
 id 5	NA OP NE OB
 id 6	ID QA
@@ -204,9 +204,9 @@ id 202	IN IP DT DS
 id 203	IP DS
 id 204	OP OB
 id 205	ID QA
-id 206	IP DS
+id 206	IN IP DT DS
 id 207	HI HT
-id 208	NA DP SR
+id 208	NA SP SR IT
 id 209	IN HI
 id 210	NA SP SR IT
 id 211	OP OB
@@ -277,7 +277,7 @@ id 275	NA OP PB OB
 id 276	ID QA
 id 277	HI HT
 id 278	OP AV
-id 279	IP DS
+id 279	IN IP DT DS
 id 280	IN SP IT
 id 281	IN EN
 id 282	IN DT

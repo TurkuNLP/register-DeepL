@@ -56,7 +56,7 @@ id 54	OP HI AV HT
 id 55	ID QA
 id 56	OP AV
 id 57	ID QA
-id 58	OP RV
+id 58	OP OB
 id 59	ID DF
 id 60	ID QA
 id 61	HI HT
@@ -114,7 +114,7 @@ id 112	IN HI
 id 113	NA
 id 114	ID DF
 id 115	SP IT
-id 116	NA NE
+id 116	IN HI DT HT
 id 117	OP RV
 id 118	LY SL
 id 119	NA SR
@@ -177,7 +177,7 @@ id 175	NA SR
 id 176	IN EN
 id 177	NA IN
 id 178	NA OP NE OB
-id 179	NA HA NE
+id 179	NA NE
 id 180	NA IP NE
 id 181	LY SL
 id 182	SP IT
@@ -227,7 +227,7 @@ id 225	HI HT
 id 226	NA OP PB OB
 id 227	NA NE
 id 228	IN LY
-id 229	OP IP OB ED
+id 229	IN IB
 id 230	OP HI AV HT
 id 231	IN
 id 232	SP
@@ -268,7 +268,7 @@ id 266	OP RS
 id 267	NA IN NE
 id 268	IN OP RV
 id 269	HI HT
-id 270	NA NE
+id 270	IN SP IT
 id 271	SP IT
 id 272	IN OP
 id 273	IP DS

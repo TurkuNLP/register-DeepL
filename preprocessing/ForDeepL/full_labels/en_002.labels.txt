@@ -46,7 +46,7 @@ id 44	IN OP
 id 45	IP DS
 id 46	IP DS
 id 47	IP DS
-id 48	ID DF
+id 48	IN ID DF
 id 49	NA NE
 id 50	SP
 id 51	OP AV OB
@@ -160,7 +160,7 @@ id 158	NA NE
 id 159	ID QA
 id 160	OP OB
 id 161	ID DF
-id 162	NA IN NE
+id 162	NA NE
 id 163	HI HT
 id 164	HI TS
 id 165	IP DS
@@ -172,7 +172,7 @@ id 170	IP DS
 id 171	NA IN NE
 id 172	ID DF
 id 173	IP DS
-id 174	IP DS
+id 174	OP IP DS
 id 175	NA OP
 id 176	NA OP
 id 177	HI HT
@@ -270,7 +270,7 @@ id 268	IN IP DT DS
 id 269	IN
 id 270	HI HT
 id 271	IN HI IB HT
-id 272	NA NE
+id 272	NA IN NE
 id 273	IN DT
 id 274	ID DF
 id 275	OP AV

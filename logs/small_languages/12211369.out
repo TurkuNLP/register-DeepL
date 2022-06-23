@@ -1,0 +1,3 @@
+learning rate: 2e-5 treshold: 0.4 batch: 8 epochs: 5
+Namespace(batch=8, checkpoint='../multilabel/fin', epochs=5, full=False, lang='fintransfer', learning=2e-05, model='xlm-roberta-large', multilingual=False, saved='saved_models/all_multilingual', test_set=['old-datasets/multilingual-register-data-new/main_labels_only/fi_test.tsv'], train_set=['downsampled/main_labels_only/en_train.downsampled_modified.tsv', 'downsampled/main_labels_only/fre_train.downsampled_modified.tsv', 'downsampled/main_labels_only/swe_train.downsampled_modified.tsv'], treshold=0.4)
+END: to 23.6.2022 15.05.39 +0300

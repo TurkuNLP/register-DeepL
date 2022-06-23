@@ -26,7 +26,7 @@ id 24	IP PA
 id 25	IN OP DT RV
 id 26	NA NE
 id 27	IN IB
-id 28	OP RS
+id 28	OP HI RS HT
 id 29	ID QA
 id 30	IN IB
 id 31	NA NE
@@ -49,7 +49,7 @@ id 47	IP DS
 id 48	IN HI DT HT
 id 49	IN HI FH
 id 50	OP RS
-id 51	ID DF
+id 51	ID DF QA
 id 52	HI RE
 id 53	IP DS
 id 54	OP IP OB

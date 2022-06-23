@@ -66,6 +66,39 @@ def make_docx(data):
             char_count = 0
             id_count = 0
             doc = docx.Document()
+
+            
+
+            # add the current line as well so we don't skip it!!!! IMPORTANT SO NO LINES GO MISSING WHEN MAKING THE DOCX :D
+
+            # append the id to the labels
+            line = [ids[id_count], data[i][0]]
+            labels.append(line)
+
+            char_count = char_count + len(texts[i]) + len(ids[id_count]) + len("\n")
+
+            # make id that is colored and bolded in the document
+            parapgraph = doc.add_paragraph()
+            run = parapgraph.add_run(ids[id_count]) # add the id (could be ids[i])
+            run.bold = True
+            font = run.font
+            font.color.rgb = docx.shared.RGBColor(255, 0, 0) # color red
+
+            # # make a new line (new empty paragraph)
+            # doc.add_paragraph("")
+            #parapgraph.add_run("\n")
+
+            # check that the characters are valid because en data has something invalid
+            cleaned_string = ''.join(c for c in texts[i] if valid_xml_char_ordinal(c))
+
+            # then we add the text to the doc
+            p = doc.add_paragraph()
+            run = p.add_run(cleaned_string)
+            run.bold = False
+            run.font.color.rgb = None
+            #p.add_run(cleaned_string)
+            
+            id_count = id_count + 1
         else:
             # append the id to the labels
             line = [ids[id_count], data[i][0]]

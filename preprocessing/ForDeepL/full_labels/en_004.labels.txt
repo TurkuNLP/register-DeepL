@@ -68,7 +68,7 @@ id 66	NA SP
 id 67	NA IN NE
 id 68	LY SL
 id 69	NA OP NE OB
-id 70	IP DS
+id 70	IN IP DS
 id 71	NA OP NE OB
 id 72	LY SL
 id 73	NA IN NE
@@ -212,7 +212,7 @@ id 210	ID DF
 id 211	IP DS
 id 212	ID DF
 id 213	IP DS
-id 214	IN IB
+id 214	IN RA
 id 215	IP DS
 id 216	NA IN PB
 id 217	NA IN NE
@@ -256,7 +256,7 @@ id 254	HI HT
 id 255	IN DT
 id 256	NA OP OB
 id 257	OP OB
-id 258	IN OI
+id 258	IN IP PA
 id 259	OP OB RV
 id 260	OP OB
 id 261	OP OB

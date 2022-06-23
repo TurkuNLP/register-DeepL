@@ -198,7 +198,7 @@ def tokenize(example):
 dataset = dataset.map(tokenize)
 
 num_labels = len(unique_labels)
-model = transformers.AutoModelForSequenceClassification.from_pretrained(model_name, num_labels=num_labels, problem_type="multi_label_classification")
+model = transformers.AutoModelForSequenceClassification.from_pretrained(model_name, num_labels=num_labels, problem_type="multi_label_classification", cache_dir="../new_cache_dir/")
 # these are in eval mode already and it says to change it to train but is that really necessary? it has worked with eval on but I should try stuff
 #model.train()
 # model.eval() 

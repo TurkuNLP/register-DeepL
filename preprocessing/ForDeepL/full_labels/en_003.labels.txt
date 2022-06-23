@@ -28,7 +28,7 @@ id 26	IP DS
 id 27	NA NE
 id 28	HI RE
 id 29	NA PB
-id 30	NA NE
+id 30	IN FI
 id 31	IP
 id 32	NA
 id 33	IN DT
