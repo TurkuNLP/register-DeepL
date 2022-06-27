@@ -28,3 +28,32 @@ huggingface/tokenizers: The current process just got forked, after parallelism h
 To disable this warning, you can either:
 	- Avoid using `tokenizers` before the fork if possible
 	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+{'loss': 0.2748, 'learning_rate': 1.6000000000000003e-05, 'epoch': 1.0}
+{'eval_loss': 0.21881139278411865, 'eval_f1': 0.7090909090909091, 'eval_roc_auc': 0.82502428765391, 'eval_accuracy': 0.5511932255581217, 'eval_runtime': 39.9586, 'eval_samples_per_second': 32.509, 'eval_steps_per_second': 1.026, 'epoch': 1.0}
+{'loss': 0.1852, 'learning_rate': 1.2e-05, 'epoch': 2.0}
+{'eval_loss': 0.20942388474941254, 'eval_f1': 0.7254839733417962, 'eval_roc_auc': 0.8316467495199641, 'eval_accuracy': 0.5619707467282525, 'eval_runtime': 39.9244, 'eval_samples_per_second': 32.536, 'eval_steps_per_second': 1.027, 'epoch': 2.0}
+{'loss': 0.1375, 'learning_rate': 8.000000000000001e-06, 'epoch': 3.0}
+{'eval_loss': 0.2151026725769043, 'eval_f1': 0.7401915353722583, 'eval_roc_auc': 0.8469193853169592, 'eval_accuracy': 0.5719784449576597, 'eval_runtime': 39.9298, 'eval_samples_per_second': 32.532, 'eval_steps_per_second': 1.027, 'epoch': 3.0}
+{'loss': 0.0975, 'learning_rate': 4.000000000000001e-06, 'epoch': 4.0}
+{'eval_loss': 0.22593048214912415, 'eval_f1': 0.746268656716418, 'eval_roc_auc': 0.8542014465023661, 'eval_accuracy': 0.5781370284834488, 'eval_runtime': 39.9282, 'eval_samples_per_second': 32.533, 'eval_steps_per_second': 1.027, 'epoch': 4.0}
+{'loss': 0.0679, 'learning_rate': 0.0, 'epoch': 5.0}
+{'eval_loss': 0.2344866394996643, 'eval_f1': 0.7492354740061161, 'eval_roc_auc': 0.8549419340849589, 'eval_accuracy': 0.5804464973056197, 'eval_runtime': 39.9172, 'eval_samples_per_second': 32.542, 'eval_steps_per_second': 1.027, 'epoch': 5.0}
+{'train_runtime': 2936.1085, 'train_samples_per_second': 8.847, 'train_steps_per_second': 1.107, 'train_loss': 0.1525681398831881, 'epoch': 5.0}
+F1: 0.6678944137507674
+              precision    recall  f1-score   support
+
+          IN       0.84      0.42      0.56       103
+          NA       0.95      0.42      0.58       209
+          HI       0.67      0.65      0.66       320
+          LY       0.07      0.94      0.13        18
+          IP       0.33      0.80      0.47         5
+          SP       0.80      0.75      0.78       661
+          ID       0.64      0.90      0.75       246
+          OP       0.80      0.53      0.64        15
+
+   micro avg       0.65      0.69      0.67      1577
+   macro avg       0.64      0.68      0.57      1577
+weighted avg       0.76      0.69      0.70      1577
+ samples avg       0.67      0.71      0.68      1577
+
+END: to 23.6.2022 16.33.25 +0300

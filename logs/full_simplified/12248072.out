@@ -1,0 +1,72 @@
+learning rate: 8e-6 treshold: 0.4 batch: 8 epochs: 5
+test_sets/jpn_test.tsv
+Namespace(batch=8, checkpoint='../multilabel/downsampled', epochs=5, full=True, lang='downsampled_pt', learning=8e-06, model='xlm-roberta-large', multilingual=False, saved='saved_models/all_multilingual', test_set=['test_sets/jpn_test.tsv'], train_set=['downsampled/full_labels/all_downsampled_full.tsv.gz'], treshold=0.4)
+{'dev': Dataset({
+    features: ['text', 'label'],
+    num_rows: 1818
+}),
+ 'test': Dataset({
+    features: ['text', 'label'],
+    num_rows: 100
+}),
+ 'train': Dataset({
+    features: ['text', 'label'],
+    num_rows: 7269
+})}
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+{'loss': 0.1688, 'learning_rate': 6.4e-06, 'epoch': 1.0}
+{'eval_loss': 0.11745047569274902, 'eval_f1': 0.7042636317309325, 'eval_roc_auc': 0.8263151369831977, 'eval_accuracy': 0.5121012101210121, 'eval_runtime': 57.4723, 'eval_samples_per_second': 31.633, 'eval_steps_per_second': 0.992, 'epoch': 1.0}
+{'loss': 0.0999, 'learning_rate': 4.8e-06, 'epoch': 2.0}
+{'eval_loss': 0.10156842321157455, 'eval_f1': 0.7348295926849543, 'eval_roc_auc': 0.848580084129453, 'eval_accuracy': 0.5495049504950495, 'eval_runtime': 57.2393, 'eval_samples_per_second': 31.761, 'eval_steps_per_second': 0.996, 'epoch': 2.0}
+{'loss': 0.0774, 'learning_rate': 3.2e-06, 'epoch': 3.0}
+{'eval_loss': 0.09966187179088593, 'eval_f1': 0.740232139937878, 'eval_roc_auc': 0.8567202883964283, 'eval_accuracy': 0.566006600660066, 'eval_runtime': 57.1634, 'eval_samples_per_second': 31.804, 'eval_steps_per_second': 0.997, 'epoch': 3.0}
+{'loss': 0.064, 'learning_rate': 1.6e-06, 'epoch': 4.0}
+{'eval_loss': 0.09854276478290558, 'eval_f1': 0.7489444624878208, 'eval_roc_auc': 0.8635243424634192, 'eval_accuracy': 0.5814081408140814, 'eval_runtime': 57.1466, 'eval_samples_per_second': 31.813, 'eval_steps_per_second': 0.997, 'epoch': 4.0}
+{'loss': 0.0549, 'learning_rate': 0.0, 'epoch': 5.0}
+{'eval_loss': 0.099367156624794, 'eval_f1': 0.750120831319478, 'eval_roc_auc': 0.8667489059405655, 'eval_accuracy': 0.5841584158415841, 'eval_runtime': 58.3403, 'eval_samples_per_second': 31.162, 'eval_steps_per_second': 0.977, 'epoch': 5.0}
+{'train_runtime': 4157.0169, 'train_samples_per_second': 8.743, 'train_steps_per_second': 1.093, 'train_loss': 0.09301210829395928, 'epoch': 5.0}
+F1: 0.5064935064935064
+              precision    recall  f1-score   support
+
+          HI       0.60      0.60      0.60        10
+          ID       0.57      1.00      0.73         4
+          IN       0.40      0.80      0.53        15
+          IP       0.82      0.94      0.87        33
+          LY       0.00      0.00      0.00         0
+          NA       0.87      0.56      0.68        36
+          OP       0.00      0.00      0.00         4
+          SP       1.00      1.00      1.00         1
+          av       0.00      0.00      0.00         3
+          ds       0.00      0.00      0.00         0
+         dtp       0.00      0.00      0.00         8
+          ed       0.00      0.00      0.00         0
+          en       0.00      0.00      0.00         0
+          fi       0.00      0.00      0.00         0
+          it       1.00      1.00      1.00         1
+          lt       0.67      1.00      0.80         2
+          nb       0.00      0.00      0.00        33
+          ne       1.00      0.33      0.50         3
+          ob       0.00      0.00      0.00         0
+          ra       0.00      0.00      0.00         0
+          re       0.00      0.00      0.00         0
+          rs       0.00      0.00      0.00         0
+          rv       0.00      0.00      0.00         1
+          sr       0.00      0.00      0.00         0
+
+   micro avg       0.51      0.51      0.51       154
+   macro avg       0.29      0.30      0.28       154
+weighted avg       0.51      0.51      0.49       154
+ samples avg       0.54      0.61      0.53       154
+
+END: ma 27.6.2022 11.13.44 +0300

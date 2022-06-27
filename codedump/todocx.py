@@ -1,21 +1,13 @@
 import docx
 import sys
 
-
-# ASK ABOUT THE LANGUAGES, SHOULD ONE DOCUMENT ONLY HAVE THAT SPECIFIC LANGUAGE?
-# as of now the script does that but then there is most likely gonna be a file that has less characters
-# if we want to min max and mixmatch languages in the files then we just need to cat everything at once
-# and not give a language as an argument
-
-
-
 # labels will be in corresponding files in their own folder
 
 def create_ids(amount):
     ids = []
     for i in range(amount):
-        # some great way to create a new id that does not get destroyed by deepL
-        # numbers will most likely get translated and some words might too
+        # the id numbers will get translated in some languages but they are not that important
+        # only the placing of a red id marker matters
         id = "id " + str(i)
         ids.append(id) 
 
@@ -24,9 +16,8 @@ def create_ids(amount):
 
 def make_docx(data):
     lang = sys.argv[1]
-    #format the data, all should be in the same way and there should be no faulty lines
     for i in range(len(data)):
-        data[i] = data[i].replace("\n", "") # unnecessary? because done in the downsampling already
+        data[i] = data[i].replace("\n", "")
         data[i] = data[i].split("\t")
     doc = docx.Document()
     doc_count = 0 # get the number for the file (100 files)
@@ -57,9 +48,7 @@ def make_docx(data):
                 for i in range(len(final)):
                     string = final[i]
                     f.write('%s\n' % string)
-                    #f.write(final[i]+ '%s\n')
-                # for item in labels:
-                #     f.write("%s\n" % item)
+
             labels = []
             doc_count += 1
             #reset the file and the char count
@@ -67,9 +56,9 @@ def make_docx(data):
             id_count = 0
             doc = docx.Document()
 
-            
 
             # add the current line as well so we don't skip it!!!! IMPORTANT SO NO LINES GO MISSING WHEN MAKING THE DOCX :D
+
 
             # append the id to the labels
             line = [ids[id_count], data[i][0]]
@@ -84,10 +73,6 @@ def make_docx(data):
             font = run.font
             font.color.rgb = docx.shared.RGBColor(255, 0, 0) # color red
 
-            # # make a new line (new empty paragraph)
-            # doc.add_paragraph("")
-            #parapgraph.add_run("\n")
-
             # check that the characters are valid because en data has something invalid
             cleaned_string = ''.join(c for c in texts[i] if valid_xml_char_ordinal(c))
 
@@ -96,9 +81,9 @@ def make_docx(data):
             run = p.add_run(cleaned_string)
             run.bold = False
             run.font.color.rgb = None
-            #p.add_run(cleaned_string)
             
             id_count = id_count + 1
+
         else:
             # append the id to the labels
             line = [ids[id_count], data[i][0]]
@@ -113,10 +98,6 @@ def make_docx(data):
             font = run.font
             font.color.rgb = docx.shared.RGBColor(255, 0, 0) # color red
 
-            # # make a new line (new empty paragraph)
-            # doc.add_paragraph("")
-            #parapgraph.add_run("\n")
-
             # check that the characters are valid because en data has something invalid
             cleaned_string = ''.join(c for c in texts[i] if valid_xml_char_ordinal(c))
 
@@ -125,7 +106,6 @@ def make_docx(data):
             run = p.add_run(cleaned_string)
             run.bold = False
             run.font.color.rgb = None
-            #p.add_run(cleaned_string)
             
             id_count = id_count + 1
 
@@ -142,10 +122,8 @@ def make_docx(data):
         for i in range(len(final)):
             string = final[i]
             f.write('%s\n' % string)
-        # for item in labels:
-        #     f.write("%s\n" % item)
 
-
+# this is for checking that there are no weird characters that break the docx making
 def valid_xml_char_ordinal(c):
     codepoint = ord(c)
     # conditions ordered by presumed frequency

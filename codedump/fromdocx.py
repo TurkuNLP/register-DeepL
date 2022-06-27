@@ -3,9 +3,6 @@ from typing import Counter
 import docx
 
 
-# I still somehow have to check that it has not skipped a label?
-
-
 # get the file name from the command line and save here
 file_name = sys.stdin.readlines()
 text = file_name[0]
@@ -17,13 +14,11 @@ document = docx.Document(new)
 fname = sys.argv[1] # use argv to get the file 
 fname = ".././labels/" +  fname+ '.labels.txt'
 
-
 with open (fname) as f:
     labels = f.readlines()
 
 for i in range(len(labels)):
     labels[i] = labels[i].replace("\n", "")
-    # if there are no ids then no need to split
     labels[i] = labels[i].split("\t")
 #print(labels)
 
@@ -34,8 +29,10 @@ total = 0 # count the characters in the docx file
 id_found = False
 count = 0
 
+# check that the number of paragraphs matches labels in the txt file
 if len(document.paragraphs) / 2 != len(labels):
     raise Exception("DeepL has lost some text")
+
 
 # this version is for checking the id numbers
 # for i in range(len(document.paragraphs)):
@@ -88,10 +85,11 @@ if len(document.paragraphs) / 2 != len(labels):
 #             else:
 #                 continue
 #                 #raise Exception("the id is missing", current_id)
-            
+
+
 
 #look at all the paragraphs to find the colored ids
-# trust that nothing is missing because the id's were translated in japanese
+# trust that nothing is missing because the id numbers were translated in japanese
 for paragraph in document.paragraphs: 
     for run in paragraph.runs:
         if run.font.color.rgb == docx.shared.RGBColor(255, 0, 0) or run.font.bold == True:
@@ -113,15 +111,15 @@ for paragraph in document.paragraphs:
                 raise Exception("the ID is missing", current_id)
                 
 
+           # TODO add check for empty paragraphs and skip a label in the label files if that happens     
+
            
 #print(translations[:2])
 
-# and now just turn back to tsv format and save by printing?
+# and now just turn back to tsv format and save by printing
 for i in range(len(translations)):
         dummy = translations[i][0] + '\t' + translations[i][1]
         final.append(dummy)
    
 for i in range(len(final)):
     print(final[i])
-
-#print(total) # corresponds to the number that libreoffice gives

@@ -17,11 +17,11 @@ for i in range(len(data)):
             #with en data we end up here
         elif len(data[i]) == 1:
             indeces_delete.append(i)
-            # if there is only one column (text most likely), then put the text into the second column and the label to the other
-            data[i].append(data[i][0])
-            data[i][1] = data[i][1].replace("\t", "") # try to remove the tab and fail at least with the testi.txt, might not count as a true \t
-            data[i][0] = "other"
-            #print(data[i], i)
+            # # if there is only one column (text most likely), then put the text into the second column and the label to the other
+            # data[i].append(data[i][0])
+            # data[i][1] = data[i][1].replace("\t", "") # try to remove the tab and fail at least with the testi.txt, might not count as a true \t
+            # data[i][0] = "other"
+            # #print(data[i], i)
 
         # this is for the finnish data, there is somehow 3 columns and the second is empty
         elif len(data[1]) == 3:
@@ -34,7 +34,7 @@ for i in range(len(data)):
 
     # if the first column is empty we put it to other or delete (for english data ONLY)
     if data[i][0] == "":
-        data[i][0] = "other"
+        # data[i][0] = "other"
         indeces_delete.append(i)
         #print(data[i], i)
     if data[i][1] == "":

@@ -1,7 +1,5 @@
 #!/bin/bash
 
-# do this in the multilingual-register-data-new folder
-
 sub='gz'
 
 for f in * ; do 

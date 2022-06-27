@@ -2,24 +2,19 @@ import sys
 import random
 
 
-# we just split the data to those sets after translation
-# the english lines with empty labels are changed to have other as the label
-
-# first we shuffle the data to make sure they are not in order (texts?), and finally we shuffle again so that the labels are not in order
 # the idea is to get to below 25 million for all of the texts so we can translate to four different languages
 
 def main(data):
     random.Random(1234).shuffle(data)
     #use argv to choose what downsampling strategy to choose
     if len(sys.argv) == 1:
-        no_downsample(data)
+        # no downsampling done so only put it to a new file
+        print(data)
     elif len(sys.argv) == 3:
         downsampleByAll(data)
     else:
-        label_dict, sampled = format(data)
-        final = downsampleByPercent(sampled)
-        for i in range(len(final)):
-            print(final[i])
+        label_dict, sampled = count_chars(data)
+        downsampleByPercent(sampled)
   
 
 def downsampleByAll(data):
@@ -59,8 +54,18 @@ def downsampleByPercent(sampled):
         textlist = all_dict.get(key_list[i]) # get the texts by looking at the key
         # count the number to keep from the texts
         num = round(len(textlist) * (1 - percent))
+
+
+        # here the splicing has to be changed if the same file is to be used again.
+        # a check that the num:num+num does not go above is needed
+        # if num+num > len(textlist):
+        #     shortened = textlist[num:]
+        # else:
+        #     shortened = textlist[num:num+num]
+
         shortened = textlist[:num] # here I am just getting the percent of lines left (not counting characters here at all)
         #print(key_list[i], percent, num, len(textlist), len(shortened))
+
 
         # now we change the format back to tsv
         for j in range(len(shortened)):
@@ -70,24 +75,12 @@ def downsampleByPercent(sampled):
     # shuffle the data because it is in order now
     random.Random(1234).shuffle(final)
 
-    return final
-
-
-# this is for the rest of the files which do not need specific downsampling
-def no_downsample(data):
-    label_dict, newData = format(data)
-    final = []
-
-    for i in range(len(newData)):
-        dummy = newData[i][0] + '\t' + newData[i][1]
-        final.append(dummy)
-   
     for i in range(len(final)):
         print(final[i])
 
 
 def get_biggest_labels(data, cap):
-    label_dict, newData = format(data)
+    label_dict, newData = count_chars(data)
     # take first (biggest) labels
     biggest_labels = []
     for i in range(cap):
@@ -143,21 +136,7 @@ def downsampleByLabel(data, cap):
     return sampled
 
 
-def format(data):
-    test = []
-    # check the first line for how many columns it has
-    # this could be unreliable because what if the first line is broken?
-    test.append(data[0].replace("\n", ""))
-    test[0] = data[0].split("\t") # split the columns
-    if len(test[0]) == 2:
-        label_dict, newData = formatEN_FIN(data)
-    else:
-        label_dict, newData = formatFRE_SWE(data)
-    
-    return label_dict, newData
-
-
-def formatEN_FIN(data):
+def count_chars(data):
     all = {} # an empty dictionary
     current_char_count = 0
     all_count = 0
@@ -171,34 +150,8 @@ def formatEN_FIN(data):
         try:
             assert len(data[i]) == 2
         except AssertionError:
-            #print(data[i])
-            if data[i] == "":
-                indeces_delete.append(i)
-                #with en data we end up here
-            elif len(data[i]) == 1:
-                indeces_delete.append(i)
-               # if there is only one column (text most likely), then put the text into the second column and the label to the other
-                data[i].append(data[i][0])
-                data[i][1] = data[i][1].replace("\t", "") # try to remove the tab and fail at least with the testi.txt, might not count as a true \t
-                data[i][0] = "other"
-                #print(data[i], i)
-
-            # this is for the finnish data, there is somehow 3 columns and the second is empty
-            elif len(data[1]) == 3:
-                #move the the third column to the second
-                data[i][1] = data[i][2]
-                # remove the third column
-                data[i].pop(len(data[i]) -1)
-            else:
-                indeces_delete.append(i)
-
-        # if the first column is empty we put it to other or delete (for english data ONLY)
-        if data[i][0] == "":
-            data[i][0] = "other"
-            indeces_delete.append(i)
-            #print(data[i], i)
-        if data[i][3] == "":
-            indeces_delete.append(i)
+            print("ERROR, a mistake in formatting")
+            print(data[i])
 
 
         # count how many chars the current text has
@@ -218,57 +171,6 @@ def formatEN_FIN(data):
     sorted_dict = dict(sorted(all.items(), key=lambda item: item[1], reverse=True))
 
     return sorted_dict, data
-
-
-def formatFRE_SWE(data):
-    all = {} # an empty dictionary
-    current_char_count = 0
-    indeces_delete = [] # indeces marked for deletion in the data
-
-    for i in range(len(data)):
-        data[i] = data[i].replace("\n", "")
-        data[i] = data[i].split("\t")
-
-        #there should be four columns id, source, labels, text 
-        # in swe_dev some line has 'SUS' at the end???
-        try:
-            assert len(data[i]) == 4
-        except:
-            if len(data[i]) == 5:
-                #print(data[i], i)
-                data[i].pop(len(data[i]) -1)
-            else:
-                # line 151, 608, 775 in swe_dev has no text even in the original tsv file
-                # gets rid of empty lines as well
-                indeces_delete.append(i)
-                continue
-        if data[i][0] == "":
-            indeces_delete.append(i)
-            #print(data[i], i)
-        if data[i][1] == "":
-            indeces_delete.append(i)
-        
-        # count how many characters current text has
-        current_char_count = len(data[i][3])
-        # check whether the current label/key exist already
-        if data[i][2] in all:
-            all_count = all.get(data[i][2])
-            all[data[i][2]] = all_count + current_char_count # update the dictionary
-            current_char_count = 0
-        else:
-            all[data[i][2]] = current_char_count # add to the dictionary
-            current_char_count = 0
-
-    # remove the faulty lines
-    for i in sorted(indeces_delete, reverse=True):
-        data.pop(i)
-    # delete unnecessary fields
-    new_list = [[row[2], row[3]] for row in data]
-
-    sorted_dict = dict(sorted(all.items(), key=lambda item: item[1], reverse=True))
-    
-    return sorted_dict, new_list
-
 
 
 data = sys.stdin.readlines()

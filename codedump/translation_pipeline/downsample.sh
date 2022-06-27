@@ -1,17 +1,6 @@
 #!/bin/bash
 
 
-# if more data is wanted then in the downsample.py we just have to take more eng and fi by 
-# changing it to [:percent:] ? so it takes from the middle?
-# or I guess I could make a new list that only has the leftovers like [percent:percent+percent]
-# => look at slicing :
-# check whether it is inclusive to decide the exact nummbers ^
-
-
-
-# right now nothing is really done to the swe and fre, just faulty lines are taken out
-# swe is downsampled to fit four files
-
 # with these settings and the fifth biggest label char amount being the cap we get just under 25 million
 sub='gz'
 ALL=0
@@ -35,7 +24,7 @@ for f in *; do
     then
         echo ALL THE EN_TRAIN FILES;
         # zcat every train file because they continue from each other
-        zcat en_train1.truncated.tsv.gz en_train2.truncated.tsv.gz en_train3.truncated.tsv.gz en_train4.truncated.tsv.gz | python3 ../downsample.py 4 $ENG  > ../downsampled/${f%1.truncated.tsv.gz}.downsampled.tsv # | wc -c;
+        zcat en_train1.truncated.tsv.gz en_train2.truncated.tsv.gz en_train3.truncated.tsv.gz en_train4.truncated.tsv.gz | python3 ../downsample.py 4 $ENG  > ../downsampled/${f%1.truncated.tsv.gz}.downsampled.tsv
         CURRENT=$(zcat en_train1.truncated.tsv.gz en_train2.truncated.tsv.gz en_train3.truncated.tsv.gz en_train4.truncated.tsv.gz | python3 ../downsample.py 4 $ENG | wc -c);
         echo $CURRENT;
         ALL=$(($ALL + $CURRENT ))
@@ -44,7 +33,7 @@ for f in *; do
     if [[ "$f" == *"fi_train"* ]];
     then 
         echo $f;
-        zcat fi_train.truncated.tsv.gz | python3 ../downsample.py 4 $FIN > ../downsampled/${f%.truncated.tsv.gz}.downsampled.tsv #| wc -c;
+        zcat fi_train.truncated.tsv.gz | python3 ../downsample.py 4 $FIN > ../downsampled/${f%.truncated.tsv.gz}.downsampled.tsv
         CURRENT=$(zcat fi_train.truncated.tsv.gz | python3 ../downsample.py 4 $FIN | wc -c);
         echo $CURRENT;
         ALL=$(($ALL + $CURRENT ))
@@ -54,7 +43,7 @@ for f in *; do
     # if [[ "$f" == *"fi"* ]];
     # then
     #     echo $f;
-    #     cat $f | python3 ../downsample.py 4 $FIN | wc -c;
+    #     cat $f | python3 ../downsample.py 4 $FIN > FILENAME
     #     CURRENT=$(cat $f | python3 ../downsample.py 4 $FIN | wc -c);
     #     ALL=$(($ALL + $CURRENT ))
     #     continue
@@ -68,7 +57,7 @@ for f in *; do
     then
         # # downsample english dev and test as well
         # echo $f;
-        # zcat $f | python3 ../downsample.py 4 $ENG | wc -c;
+        # zcat $f | python3 ../downsample.py 4 $ENG > FILENAME
         # CURRENT=$(zcat $f | python3 ../downsample.py 4 $ENG | wc -c);
         # ALL=$(($ALL + $CURRENT ))
         continue
@@ -76,16 +65,17 @@ for f in *; do
         # downsample swe train set
         if [[ "$f" == *"swe_train"* ]];
         then
-            echo $f ; cat $f | python3 ../downsample.py $SWE > ../downsampled/${f%.truncated.tsv}.downsampled.tsv # | wc -c;
+            echo $f ; cat $f | python3 ../downsample.py $SWE > ../downsampled/${f%.truncated.tsv}.downsampled.tsv
             CURRENT=$(cat $f | python3 ../downsample.py $SWE | wc -c);
             echo $CURRENT;
             ALL=$(($ALL + $CURRENT ))
             continue
         fi;
 
+        # for files that do not need explicit downsampling
         if [[ "$f" == *"train"* ]];
         then
-            echo $f ; cat $f | python3 ../downsample.py > ../downsampled/${f%.truncated.tsv}.downsampled.tsv # | wc -c;
+            echo $f ; cat $f | python3 ../downsample.py > ../downsampled/${f%.truncated.tsv}.downsampled.tsv
             CURRENT=$(cat $f | python3 ../downsample.py | wc -c);
             echo $CURRENT;
             ALL=$(($ALL + $CURRENT ))
@@ -95,7 +85,7 @@ for f in *; do
         # if [[ "$f" == *"fre"* || "$f" == *"swe"* ]]
         # then
         #     echo $f;
-        #     cat $f | python3 ../downsample.py 20 | wc -c;
+        #     cat $f | python3 ../downsample.py 20 > FILENAME
         #     CURRENT=$(cat $f | python3 ../downsample.py 20 | wc -c);
         #     ALL=$(($ALL + $CURRENT ))
         # fi;

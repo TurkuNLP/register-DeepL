@@ -24,7 +24,7 @@ for i in range(len(data)):
             indeces_delete.append(i)
             continue
 
-    if data[i][0] == "":
+    if data[i][2] == "":
         indeces_delete.append(i)
         #print(data[i], i)
     if data[i][3] == "":
@@ -33,7 +33,8 @@ for i in range(len(data)):
 # remove the faulty lines
 for i in sorted(indeces_delete, reverse=True):
     data.pop(i)
-# delete unnecessary fields
+
+# delete unnecessary fields (id and source link etc.)
 new_list = [[row[2], row[3]] for row in data]
 
 final=[]

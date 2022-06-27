@@ -4,12 +4,11 @@ ALL=0
 CURRENT=0
 sub='gz'
 
-# do this in preprocessed_texts directory
 
 for f in * ; do 
     if [[ "$f" == *"en_train1"*  ]];
     then
-        echo echo ALL THE EN_TRAIN FILES;
+        echo ALL THE EN_TRAIN FILES;
         zcat en_train1.truncated.tsv.gz en_train2.truncated.tsv.gz en_train3.truncated.tsv.gz en_train4.truncated.tsv.gz | wc -c
     fi;
     if [[ "$f" == *"$sub"* ]];
@@ -25,5 +24,4 @@ for f in * ; do
 done
 echo ALL OF THE CHARACTERS
 echo $ALL
-# there is almost 200 million characters which is way too much
 
