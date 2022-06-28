@@ -1,12 +1,17 @@
 import sys
 
-indeces_delete = [] # indeces marked for deletion in the data
-# delete the sublabels altogether since they are unnecessary for now at least -Veronika
-
 def change_labels(data):
     #list of main labels (8)
     main_labels = ["IN", "NA", "HI", "LY", "IP", "SP", "ID", "OP"]
+    # list of full simplified labels (24)
     labels_full = ['HI', 'ID', 'IN', 'IP', 'LY', 'NA', 'OP', 'SP', 'av', 'ds', 'dtp', 'ed', 'en', 'fi', 'it', 'lt', 'nb', 'ne', 'ob', 'ra', 're', 'rs', 'rv', 'sr']
+
+    if sys.argv[1] == "full":
+        target_labels = labels_full
+    else:
+        target_labels = main_labels
+    indeces_delete = [] # indeces marked for deletion in the data
+    
     # split to lists
     for i in range(len(data)):
         data[i] = data[i].replace("\n", "")
@@ -15,7 +20,7 @@ def change_labels(data):
         labels = data[i][0].split()
         labelstring = ""
         for label in labels:
-            if label.lower() in labels_full or label in labels_full: #main_labels
+            if label.lower() in target_labels or label in target_labels: 
                 if labelstring == "":
                     labelstring = label
                 else:
@@ -28,7 +33,7 @@ def change_labels(data):
             #delete the mistake
             indeces_delete.append(i)
 
-    # remove the faulty lines  (MT machine translation removed,also DF from fi data)
+    # remove the faulty lines  (MT machine translation removed etc. )
     for i in sorted(indeces_delete, reverse=True):
         data.pop(i)
 

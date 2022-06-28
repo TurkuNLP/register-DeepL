@@ -14,8 +14,6 @@ module load pytorch
 
 # MULTI/CROSSLINGUAL (try on test set)
 
-# more loops to test all kings oflearning rates, epochs, tresholds etc. ?
-
 # FOR TRANSFER/TRANSLATED TESTING
 FILES="test_sets/spa_test.tsv test_sets/pt_test_modified.tsv test_sets/jpn_test.tsv test_sets/chi_all.tsv"
 
@@ -31,24 +29,9 @@ for file in $FILES; do
 for tr in $TRS; do
     echo $file
     echo $tr
-    srun python3 multilingual_evaluation.py --test_set $file --model saved_models/all_multilingual --treshold $tr
+    srun python3 register-code/multilabel/multilingual_evaluation.py --test_set data/{$file} --model saved_models/all_multilingual --treshold $tr
 done
 done
 
-
-
-
-
-# SPANISH
-#srun python3 multilingual_evaluation.py test_sets/spa_test_modified.tsv --batch 8 --treshold 0.4 --epochs 5 --learning 8e-6
-
-# PORTUGUESE
-#srun python3 multilingual_evaluation.py test_sets/pt_test_modified.tsv --batch 8 --treshold 0.4 --epochs 5 --learning 8e-6
-
-# JAPANESE
-#srun python3 multilingual_evaluation.py test_sets/jpn_test_modified.tsv --batch 8 --treshold 0.4 --epochs 5 --learning 8e-6
-
-# CHINESE
-#srun python3 multilingual_evaluation.py test_sets/chi_all_modified.tsv --batch 7 --treshold 0.4 --epochs 5 --learning 8e-6
 
 

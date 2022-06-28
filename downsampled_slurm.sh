@@ -16,35 +16,31 @@ BATCH=7
 LR=8e-6
 TR=0.4
 EPOCHS=5
-MODEL='sentence-transformers/paraphrase-xlm-r-multilingual-v1'
+MODEL='xlm-roberta-large'
 
 echo "learning rate: $LR treshold: $TR batch: $BATCH epochs: $EPOCHS"
 
 #downsampled main labels only
 
 # ENGLISH
-#srun python3 register-multilabel.py --train_set downsampled/en_train.downsampled.tsv --test_set multilingual-register-data-new/formatted/en_test.formatted.tsv --batch 7 --treshold 0.4 --epochs 5 --learning 8e-6
+#srun python3 register-multilabel.py --train_set data/downsampled/en_train.downsampled.tsv --test_set data/old-datasets/multilingual-register-data-new/formatted/en_test.formatted.tsv --batch 7 --treshold 0.4 --epochs 5 --learning 8e-6
 
 # FINNISH
-#srun python3 register-multilabel.py --train_set downsampled/fi_train.downsampled.tsv --test_set multilingual-register-data-new/formatted/fi_test.formatted.tsv --batch 7 --treshold 0.4 --epochs 5 --learning 8e-6
+#srun python3 register-multilabel.py --train_set data/downsampled/fi_train.downsampled.tsv --test_set data/old-datasets/multilingual-register-data-new/formatted/fi_test.formatted.tsv --batch 7 --treshold 0.4 --epochs 5 --learning 8e-6
 
 # SWEDISH
-#srun python3 register-multilabel.py --train_set downsampled/swe_train.downsampled.tsv --test_set multilingual-register-data-new/formatted/swe_test.tsv --batch 7 --treshold 0.4 --epochs 5 --learning 8e-6
+#srun python3 register-multilabel.py --train_set data/downsampled/swe_train.downsampled.tsv --test_set data/old-datasets/multilingual-register-data-new/formatted/swe_test.tsv --batch 7 --treshold 0.4 --epochs 5 --learning 8e-6
 
 # FRENCH WAS NOT DOWNSAMPLED (just shuffled) SO NO NEED FOR THAT
 # running anyway because the dev set was taken out
-#srun python3 register-multilabel.py --train_set downsampled/fre_train.downsampled.tsv --test_set multilingual-register-data-new/formatted/fre_test.formatted.tsv --batch 7 --treshold 0.4 --epochs 5 --learning 8e-6
+#srun python3 register-multilabel.py --train_set data/downsampled/fre_train.downsampled.tsv --test_set data/old-datasets/multilingual-register-data-new/formatted/fre_test.formatted.tsv --batch 7 --treshold 0.4 --epochs 5 --learning 8e-6
 
 
 # TRY MULTILINGUAL DOWNSAMPLED MODEL AS WELL
 
-#this does not work??
-#srun python3 register-multilabel.py --train_set downsampled/en_train.downsampled.tsv downsampled/fi_train.downsampled.tsv downsampled/swe_train.downsampled.tsv downsampled/fre_train.downsampled.tsv --test_set multilingual-register-data-new/formatted/fre_test.formatted.tsv --batch $BATCH --treshold $TR --epochs $EPOCHS --learning $LR --multilingual --checkpoint ../multilabel/downsampled --saved saved_models/downsampled_multilingual
 # this works
-srun python3 register-multilabel.py --train_set downsampled/main_labels_only/all_downsampled.tsv.gz --test_set test_sets/main_labels_only/pt_test_modified.tsv \
+srun python3 register-multilabel.py --train_set data/downsampled/main_labels_only/all_downsampled.tsv.gz --test_set data/test_sets/main_labels_only/pt_test_modified.tsv \
 --batch $BATCH --treshold $TR --epochs $EPOCHS --learning $LR --checkpoint ../multilabel/downsampled --lang downsampled --model $MODEL #--multilingual --saved saved_models/downsampled_multilingual
-
-#old-datasets/multilingual-register-data-new/main_labels_only/swe_test.formatted_modified.tsv 
 
 
 # TEST TO SEE HOW THE TRANSFER EVAL GOES
@@ -52,4 +48,4 @@ srun python3 register-multilabel.py --train_set downsampled/main_labels_only/all
 # TEST="test_sets/pt_test_modified.tsv" #"test_sets/spa_test.tsv" #"test_sets/jpn_test.tsv" #"test_sets/chi_all.tsv" 
 
 # echo $TEST
-# srun python3 register-multilabel.py --train_set downsampled/all_downsampled.tsv.gz --test_set $TEST --batch $BATCH --treshold $TR --epochs $EPOCHS --learning $LR --checkpoint ../multilabel/downsampled --lang downsampled_pt
+# srun python3 register-multilabel.py --train_set downsampled/all_downsampled.tsv.gz --test_set data/{$TEST} --batch $BATCH --treshold $TR --epochs $EPOCHS --learning $LR --checkpoint ../multilabel/downsampled --lang downsampled_pt

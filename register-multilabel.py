@@ -43,22 +43,17 @@ def arguments():
 args = arguments()
 pprint(args)
 
-# the data is fitted to these main labels
+# the data is fitted to these labels
 if(args.full == False):
     unique_labels = ["IN", "NA", "HI", "LY", "IP", "SP", "ID", "OP"]
 else:
     unique_labels = ['HI', 'ID', 'IN', 'IP', 'LY', 'NA', 'OP', 'SP', 'av', 'ds', 'dtp', 'ed', 'en', 'fi', 'it', 'lt', 'nb', 'ne', 'ob', 'ra', 're', 'rs', 'rv', 'sr']
 
 
-# it is possible to load zipped csv files like this according to documentation:
-# https://huggingface.co/docs/datasets/loading#csv
-# To load zipped CSV files:
-# url = "https://domain.org/train_data.zip"
-# data_files = {"train": url}
-# dataset = load_dataset("csv", data_files=data_files)
+# it is possible to load zipped csv files like this according to documentation: https://huggingface.co/docs/datasets/loading#csv
 train = datasets.load_dataset(
     "csv", 
-    data_files={'train':args.train_set}, # for multilingual I could give array of files instead of one file that I made
+    data_files={'train':args.train_set},
     delimiter="\t",
     split='train', # so that it returns a dataset instead of datasetdict
     column_names=['label', 'text'],
@@ -199,7 +194,7 @@ dataset = dataset.map(tokenize)
 
 num_labels = len(unique_labels)
 model = transformers.AutoModelForSequenceClassification.from_pretrained(model_name, num_labels=num_labels, problem_type="multi_label_classification", cache_dir="../new_cache_dir/")
-# these are in eval mode already and it says to change it to train but is that really necessary? it has worked with eval on but I should try stuff
+# these are in eval mode already and documentation says to change it to train but is that really necessary? it has worked with eval on but I should try stuff
 #model.train()
 # model.eval() 
 
@@ -309,11 +304,9 @@ def plot(logs, keys, labels, filename):
     plt.show()
     plt.savefig(filename) # set file name where to save the plots
 
-plot(training_logs.logs, ["loss", "eval_loss"], ["Training loss", "Evaluation loss"], "logs/small_languages/"+ args.lang +"_loss.jpg")
-# this second plot has the same legends that are in the loss so I should somehow reset the legend before making the second plot
-# apparently not possible since I do not use an axis or figures?
-#plt.get_legend().remove()
-plot(training_logs.logs, ["eval_f1"], ["Evaluation F1-score"], "logs/small_languages/"+ args.lang +"_f1.jpg")
+plot(training_logs.logs, ["loss", "eval_loss"], ["Training loss", "Evaluation loss"], "logs/"+ args.lang +"_loss.jpg")
+# TODO this second plot has the same legends that are in the loss so I should somehow reset the legend before making the second plot
+plot(training_logs.logs, ["eval_f1"], ["Evaluation F1-score"], "logs/"+ args.lang +"_f1.jpg")
 
 
 

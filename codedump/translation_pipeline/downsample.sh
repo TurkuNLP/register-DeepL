@@ -1,6 +1,11 @@
 #!/bin/bash
 
 
+# File paths
+PYTHON="../../../codedump/translation_pipeline/downsample.py"
+TARGET="../../downsampled/${f%.truncated.tsv}.downsampled.tsv"
+
+
 # with these settings and the fifth biggest label char amount being the cap we get just under 25 million
 sub='gz'
 ALL=0
@@ -24,8 +29,8 @@ for f in *; do
     then
         echo ALL THE EN_TRAIN FILES;
         # zcat every train file because they continue from each other
-        zcat en_train1.truncated.tsv.gz en_train2.truncated.tsv.gz en_train3.truncated.tsv.gz en_train4.truncated.tsv.gz | python3 ../downsample.py 4 $ENG  > ../downsampled/${f%1.truncated.tsv.gz}.downsampled.tsv
-        CURRENT=$(zcat en_train1.truncated.tsv.gz en_train2.truncated.tsv.gz en_train3.truncated.tsv.gz en_train4.truncated.tsv.gz | python3 ../downsample.py 4 $ENG | wc -c);
+        zcat en_train1.truncated.tsv.gz en_train2.truncated.tsv.gz en_train3.truncated.tsv.gz en_train4.truncated.tsv.gz | python3 $PYTHON 4 $ENG  > ../../downsampled/${f%1.truncated.tsv.gz}.downsampled.tsv
+        CURRENT=$(zcat en_train1.truncated.tsv.gz en_train2.truncated.tsv.gz en_train3.truncated.tsv.gz en_train4.truncated.tsv.gz | python3 $PYTHON 4 $ENG | wc -c);
         echo $CURRENT;
         ALL=$(($ALL + $CURRENT ))
         continue
@@ -33,8 +38,8 @@ for f in *; do
     if [[ "$f" == *"fi_train"* ]];
     then 
         echo $f;
-        zcat fi_train.truncated.tsv.gz | python3 ../downsample.py 4 $FIN > ../downsampled/${f%.truncated.tsv.gz}.downsampled.tsv
-        CURRENT=$(zcat fi_train.truncated.tsv.gz | python3 ../downsample.py 4 $FIN | wc -c);
+        zcat fi_train.truncated.tsv.gz | python3 $PYTHON 4 $FIN > ../../downsampled/${f%.truncated.tsv.gz}.downsampled.tsv
+        CURRENT=$(zcat fi_train.truncated.tsv.gz | python3 $PYTHON 4 $FIN | wc -c);
         echo $CURRENT;
         ALL=$(($ALL + $CURRENT ))
         continue
@@ -43,8 +48,8 @@ for f in *; do
     # if [[ "$f" == *"fi"* ]];
     # then
     #     echo $f;
-    #     cat $f | python3 ../downsample.py 4 $FIN > FILENAME
-    #     CURRENT=$(cat $f | python3 ../downsample.py 4 $FIN | wc -c);
+    #     cat $f | python3 $PYTHON 4 $FIN > $TARGET
+    #     CURRENT=$(cat $f | python3 $PYTHON 4 $FIN | wc -c);
     #     ALL=$(($ALL + $CURRENT ))
     #     continue
     # fi;
@@ -57,16 +62,16 @@ for f in *; do
     then
         # # downsample english dev and test as well
         # echo $f;
-        # zcat $f | python3 ../downsample.py 4 $ENG > FILENAME
-        # CURRENT=$(zcat $f | python3 ../downsample.py 4 $ENG | wc -c);
+        # zcat $f | python3 $PYTHON 4 $ENG > ../../downsampled/${f%.truncated.tsv.gz}.downsampled.tsv
+        # CURRENT=$(zcat $f | python3 $PYTHON 4 $ENG | wc -c);
         # ALL=$(($ALL + $CURRENT ))
         continue
     else
         # downsample swe train set
         if [[ "$f" == *"swe_train"* ]];
         then
-            echo $f ; cat $f | python3 ../downsample.py $SWE > ../downsampled/${f%.truncated.tsv}.downsampled.tsv
-            CURRENT=$(cat $f | python3 ../downsample.py $SWE | wc -c);
+            echo $f ; cat $f | python3 $PYTHON $SWE > $TARGET
+            CURRENT=$(cat $f | python3 $PYTHON $SWE | wc -c);
             echo $CURRENT;
             ALL=$(($ALL + $CURRENT ))
             continue
@@ -75,8 +80,8 @@ for f in *; do
         # for files that do not need explicit downsampling
         if [[ "$f" == *"train"* ]];
         then
-            echo $f ; cat $f | python3 ../downsample.py > ../downsampled/${f%.truncated.tsv}.downsampled.tsv
-            CURRENT=$(cat $f | python3 ../downsample.py | wc -c);
+            echo $f ; cat $f | python3 $PYTHON > $TARGET
+            CURRENT=$(cat $f | python3 $PYTHON | wc -c);
             echo $CURRENT;
             ALL=$(($ALL + $CURRENT ))
         fi;
@@ -85,8 +90,8 @@ for f in *; do
         # if [[ "$f" == *"fre"* || "$f" == *"swe"* ]]
         # then
         #     echo $f;
-        #     cat $f | python3 ../downsample.py 20 > FILENAME
-        #     CURRENT=$(cat $f | python3 ../downsample.py 20 | wc -c);
+        #     cat $f | python3 $PYTHON 20 > $TARGET
+        #     CURRENT=$(cat $f | python3 $PYTHON 20 | wc -c);
         #     ALL=$(($ALL + $CURRENT ))
         # fi;
     fi;

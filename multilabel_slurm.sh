@@ -48,27 +48,25 @@ EPOCHS=5 #5
 LR=2e-5    # "1e-5 4e-6 5e-6 7e-5 8e-6"
 TR=0.4    # "0.3 0.4 0.5 0.6"
 BATCH=8
-MODEL="xlm-roberta-large" #'TurkuNLP/bert-base-finnish-cased-v1' #'sentence-transformers/paraphrase-xlm-r-multilingual-v1' #"xlm-roberta-large"
+PATH="data/AfterDeepL/main_labels_only/"
+MODEL="xlm-roberta-large" #'TurkuNLP/bert-base-finnish-cased-v1' #"xlm-roberta-large"
 # PT 'neuralmind/bert-large-portuguese-cased'
 # ZH 'hfl/chinese-macbert-base'
-# have to use mean pooling when using this sbert??
-# check tomorrow
 
 echo "learning rate: $LR treshold: $TR batch: $BATCH epochs: $EPOCHS"
 
-
 # PORTUGUESE
-# srun python3 register-multilabel.py --train_set AfterDeepL/main_labels_only/pt_FINAL.modified.tsv.gz --test_set test_sets/main_labels_only/pt_test_modified.tsv \
+# srun python3 register-multilabel.py --train_set {$PATH}pt_FINAL.modified.tsv.gz --test_set data/test_sets/main_labels_only/pt_test_modified.tsv \
 # --batch $BATCH --treshold $TR --epochs $EPOCHS --learning $LR --checkpoint ../multilabel/pt --lang pt --model $MODEL
 
 # SPANISH
-#srun python3 register-multilabel.py --train_set AfterDeepL/main_labels_only/es_FINAL.modified.tsv.gz --test_set test_sets/main_labels_only/spa_test_modified.tsv --batch $BATCH --treshold $TR --epochs $EPOCHS --learning $LR --checkpoint ../multilabel/spa --lang spa --model $MODEL 
+#srun python3 register-multilabel.py --train_set {$PATH}es_FINAL.modified.tsv.gz --test_set data/test_sets/main_labels_only/spa_test_modified.tsv --batch $BATCH --treshold $TR --epochs $EPOCHS --learning $LR --checkpoint ../multilabel/spa --lang spa --model $MODEL 
 
 #JAPANESE
-#srun python3 register-multilabel.py --train_set AfterDeepL/main_labels_only/ja_FINAL.modified.tsv.gz --test_set test_sets/main_labels_only/jpn_test_modified.tsv --batch $BATCH --treshold $TR --epochs $EPOCHS --learning $LR --checkpoint ../multilabel/jpn --lang jpn --model $MODEL
+#srun python3 register-multilabel.py --train_set {$PATH}ja_FINAL.modified.tsv.gz --test_set data/test_sets/main_labels_only/jpn_test_modified.tsv --batch $BATCH --treshold $TR --epochs $EPOCHS --learning $LR --checkpoint ../multilabel/jpn --lang jpn --model $MODEL
 
 #CHINESE
-# srun python3 register-multilabel.py --train_set AfterDeepL/main_labels_only/chi_FINAL.modified.tsv.gz --test_set test_sets/main_labels_only/chi_all_modified.tsv \
+# srun python3 register-multilabel.py --train_set {$PATH}chi_FINAL.modified.tsv.gz --test_set data/test_sets/main_labels_only/chi_all_modified.tsv \
 # --batch $BATCH --treshold $TR --epochs $EPOCHS --learning $LR --checkpoint ../multilabel/chi --lang chi --model $MODEL
 
 
@@ -78,19 +76,19 @@ echo "learning rate: $LR treshold: $TR batch: $BATCH epochs: $EPOCHS"
 
 
 #FINNISH TEST
-# srun python3 register-multilabel.py --train_set AfterDeepL/main_labels_only/FIN_FINAL.modified.tsv.gz --test_set old-datasets/multilingual-register-data-new/main_labels_only/fi_test.tsv \
+# srun python3 register-multilabel.py --train_set {$PATH}FIN_FINAL.modified.tsv.gz --test_set data/old-datasets/multilingual-register-data-new/main_labels_only/fi_test.tsv \
 # --batch $BATCH --treshold $TR --epochs $EPOCHS --learning $LR --checkpoint ../multilabel/fin --lang fin --model $MODEL
 
 # transfer test for finnish with eng, fre, swe downsampled sets (= same as translated)
-srun python3 register-multilabel.py --train_set downsampled/main_labels_only/en_train.downsampled_modified.tsv downsampled/main_labels_only/fre_train.downsampled_modified.tsv downsampled/main_labels_only/swe_train.downsampled_modified.tsv --test_set old-datasets/multilingual-register-data-new/main_labels_only/fi_test.tsv \
+srun python3 register-multilabel.py --train_set data/downsampled/main_labels_only/all_downsampled.tsv.gz --test_set data/old-datasets/multilingual-register-data-new/main_labels_only/fi_test.tsv \
 --batch $BATCH --treshold $TR --epochs $EPOCHS --learning $LR --checkpoint ../multilabel/fin --lang fintransfer
 
 #SWEDISH TEST
-# srun python3 register-multilabel.py --train_set AfterDeepL/main_labels_only/SWE_FINAL.modified.tsv.gz --test_set old-datasets/multilingual-register-data-new/main_labels_only/swe_test.formatted_modified.tsv \
+# srun python3 register-multilabel.py --train_set {$PATH}SWE_FINAL.modified.tsv.gz --test_set data/old-datasets/multilingual-register-data-new/main_labels_only/swe_test.formatted_modified.tsv \
 # --batch $BATCH --treshold $TR --epochs $EPOCHS --learning $LR --checkpoint ../multilabel/swe --lang swe
 
 #Swedish transfer test
-# srun python3 register-multilabel.py --train_set downsampled/main_labels_only/en_train.downsampled_modified.tsv downsampled/main_labels_only/fre_train.downsampled_modified.tsv downsampled/main_labels_only/fi_train.downsampled_modified.tsv --test_set old-datasets/multilingual-register-data-new/main_labels_only/swe_test.formatted_modified.tsv \
+# srun python3 register-multilabel.py --train_set data/downsampled/main_labels_only/all_downsampled.tsv.gz --test_set data/old-datasets/multilingual-register-data-new/main_labels_only/swe_test.formatted_modified.tsv \
 # --batch $BATCH --treshold $TR --epochs $EPOCHS --learning $LR --checkpoint ../multilabel/swe --lang swetransfer
 
 
@@ -101,9 +99,9 @@ srun python3 register-multilabel.py --train_set downsampled/main_labels_only/en_
 
 # MULTI/CROSSLINGUAL (all translated files and original downsampled as train and dev)
 
-# srun python3 register-multilabel.py --train_set AfterDeepL/chi_FINAL.tsv.gz \
-#  AfterDeepL/ja_FINAL.tsv.gz AfterDeepL/es_FINAL.tsv.gz AfterDeepL/pt_FINAL.tsv.gz \
-#  downsampled/all_downsampled.tsv.gz \
+# srun python3 register-multilabel.py --train_set {$PATH}chi_FINAL.tsv.gz \
+#  {$PATH}ja_FINAL.tsv.gz AfterDeepL/es_FINAL.tsv.gz {$PATH}pt_FINAL.tsv.gz \
+#  data/downsampled/main_labels_only/all_downsampled.tsv.gz  \
 #  --test_set test_sets/chi_all.tsv \
 #  --batch $BATCH --treshold $TR --epochs $EPOCHS \
 #  --learning $LR --multilingual --checkpoint ../multilabel/all --saved saved_models/all_multilingual

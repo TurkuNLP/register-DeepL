@@ -6,10 +6,10 @@ for f in * ; do
 if [[ "$f" == *"$sub"* ]];
 then
     zcat $f |
-    python3 ../shorten.py |
-    gzip > ../preprocessed_texts/${f%.tsv.gz}.truncated.tsv.gz
+    python3 ../../../../codedump/translation_pipeline/shorten.py |
+    gzip > ../../../preprocessing/preprocessed_texts/${f%.tsv.gz}.truncated.tsv.gz
 else
     cat $f |
-    python3 ../shorten.py > ../preprocessed_texts/${f%.tsv}.truncated.tsv 
+    python3 ../../../../codedump/translation_pipeline/shorten.py > ../../../preprocessing/preprocessed_texts/${f%.tsv}.truncated.tsv 
 fi;
 done

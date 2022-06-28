@@ -14,18 +14,20 @@ module load pytorch
 
 # MULTI/CROSSLINGUAL (all original files)
 
+PATH="data/old-datasets/multilingual-register-data-new/formatted/"
+
 srun python3 multilingual_master_model.py \
-    --train_sets multilingual-register-data-new/formatted/en_train1.formatted.tsv \
-    multilingual-register-data-new/formatted/en_train2.formatted.tsv \
-    multilingual-register-data-new/formatted/en_train3.formatted.tsv \
-    multilingual-register-data-new/formatted/en_train4.formatted.tsv \
-    multilingual-register-data-new/formatted/fi_train.formatted.tsv \
-    multilingual-register-data-new/formatted/fre_train.formatted.tsv \
-    multilingual-register-data-new/formatted/swe_train.formatted.tsv \
-    --dev_sets multilingual-register-data-new/formatted/en_dev.formatted.tsv \
-    multilingual-register-data-new/formatted/fi_dev.formatted.tsv \
-    multilingual-register-data-new/formatted/fre_dev.formatted.tsv \
-    multilingual-register-data-new/formatted/swe_dev.formatted.tsv \
+    --train_sets {$PATH}en_train1.formatted.tsv \
+    {$PATH}en_train2.formatted.tsv \
+    {$PATH}en_train3.formatted.tsv \
+    {$PATH}en_train4.formatted.tsv \
+    {$PATH}fi_train.formatted.tsv \
+    {$PATH}fre_train.formatted.tsv \
+    {$PATH}swe_train.formatted.tsv \
+    --dev_sets {$PATH}en_dev.formatted.tsv \
+    {$PATH}fi_dev.formatted.tsv \
+    {$PATH}fre_dev.formatted.tsv \
+    {$PATH}swe_dev.formatted.tsv \
     # --test_sets multilingual-register-data-new/formatted/en_test.formatted.tsv \
     # multilingual-register-data-new/formatted/fi_test.formatted.tsv \
     # multilingual-register-data-new/formatted/fre_test.formatted.tsv \

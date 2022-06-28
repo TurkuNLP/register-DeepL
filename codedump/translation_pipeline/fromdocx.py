@@ -28,6 +28,7 @@ final = [] # the final final array that holds everything in tsv suitable format
 total = 0 # count the characters in the docx file
 id_found = False
 count = 0
+empty_found = False
 
 # check that the number of paragraphs matches labels in the txt file
 if len(document.paragraphs) / 2 != len(labels):
@@ -91,12 +92,29 @@ if len(document.paragraphs) / 2 != len(labels):
 #look at all the paragraphs to find the colored ids
 # trust that nothing is missing because the id numbers were translated in japanese
 for paragraph in document.paragraphs: 
+    # check for empty paragraphs
+    if paragraph.text == "":
+        # if an id was found and the next one is empty it is text so we skip it 
+        if empty_found == False and id_found == True:
+            count = count + 1
+            id_found = False
+            empty_found = False
+            continue
+        elif empty_found == False:
+            empty_found = True
+            continue
+        # if there are two empty paragraphs in a row (id + text) skip the label from the label file
+        elif empty_found == True:
+            count = count + 1
+            empty_found = False
+            continue
     for run in paragraph.runs:
         if run.font.color.rgb == docx.shared.RGBColor(255, 0, 0) or run.font.bold == True:
             #print(run.text)
             current_id = run.text
             # it finds the id!!!
             id_found = True
+            empty_found = False
         elif run.font.color.rgb == None and run.font.bold == False:
             if id_found == True:
                 #print(run.text)
@@ -106,13 +124,20 @@ for paragraph in document.paragraphs:
                 line = [label, text]
                 translations.append(line)
                 id_found = False
+                empty_found = False
+                count = count + 1
+            # if there was one empty paragraph which was the id we take the text and label anyway
+            elif empty_found == True and id_found == False:
+                text = run.text
+                label = labels[count][1]
+                line = [label, text]
+                translations.append(line)
+                id_found = False
+                empty_found = False
                 count = count + 1
             else:
                 raise Exception("the ID is missing", current_id)
                 
-
-           # TODO add check for empty paragraphs and skip a label in the label files if that happens     
-
            
 #print(translations[:2])
 

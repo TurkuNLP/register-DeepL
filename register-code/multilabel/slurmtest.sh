@@ -12,4 +12,4 @@
 
 
 module load pytorch             # first parameter is the train file and the second is the test file
-srun python3 simple-register-with-tests.py main_labels_only/ja_FINAL.modified.tsv.gz test_sets/jpn_test_modified.tsv  #downsampled/en_train.downsampled.tsv
+srun python3 register-code/multilabel/simple-register-with-tests.py data/AfterDeepL/main_labels_only/ja_FINAL.modified.tsv.gz data/test_sets/jpn_test_modified.tsv  #downsampled/en_train.downsampled.tsv

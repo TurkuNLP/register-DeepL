@@ -1,11 +1,17 @@
-**This README.md serves as a documentation for the python code and bash scripts used in making docx files for translation and turning the files back to tsv.**
+# **This README.md serves as a documentation for the python code and bash scripts used in making docx files for translation and turning the files back to tsv.**
 
-The files here are meant to make translating tsv data which are in labels, text format to another language easier and more straightforward. These files are specifically made for the register data (labels text), so for data that is in any other format these files would need to be modified.
+The files here are meant to make translating tsv data which are in a labels, text format to another language easier and more straightforward. These files are specifically made for the register data (labels text), so for data that is in any other format these files would need to be modified.
 
-## Formatting
-FORMAT is a file meant for formatting the texts to labels, texts and getting rid of faulty lines which either have no labels or text or have some extra information to get rid of before they can be used, e.g. id's and source links and extra columns.
+## formatting
+The file format.py is meant for formatting the labels and text and getting rid of faulty lines which either have no labels or text or have some extra information to get rid of before they can be used, e.g. id's and source links and extra columns. The script chooses which formatting method to use based on the amount of columns.
 
-# TODO HAVE SEPARATE ONES AND EXPLAIN THAT, CHANGE THE FORMAT BASH SCRIPT TO USE THOSE => SO A BUNCH OF IF CLAUSES
+example usage:
+
+```
+cat [FILE] | python3 format.py > formatted.tsv
+```
+
+there is also a bash script that can be used to format register data but file paths may need to be changed.
 
 
 # shortening
@@ -48,7 +54,7 @@ To make sure there are no duplicates, a script could compare the different files
 # counting characters
 count_chars_labelled.py is meant to count how many characters there are in all label combinations, it prints a dictionary where the character counts are and what label they belong to. A line count for labels is also possible but is currently commented out.
 
-Usage example:
+example usage:
 
 ```
 cat $f | python3 count_chars_labelled.py
@@ -63,10 +69,14 @@ count_chars.sh is a script for seeing how many characters a file has.
 # from tsv to docx
 todocx.py is meant for turning the data to a docx format which can then be fed to DeepL. The texts are saved to .docx and the labels to corresponding .txt files.
 
-The directory where to save the labels and the docx files has to changed in the code because it is currently hardcoded. 
-# TODO CHANGE THAT? ADD SYSARGS FOR THE PATHS
+example usage:
 
-The python script should be used with the bash script todocx.sh.
+The language is from the original file and meant to be put in the .docx file name. E.g., en or fi.
+```
+cat [FILE] | python3 todoxc.py [LANGUAGE]
+```
+
+There is also a bash script todocx.sh which also works as an example, file paths may need to be changed once again to make it work.
 
 
 
@@ -76,9 +86,9 @@ fromdocx.py is used to turn the translated .docx files back to .tsv files. It us
 The python script should be used with the bash script fromdocx.sh.
 
 
+# automating all of this
+The bash script automate-forDeepL is meant for automating this whole pipeline except for fromdocx because that happens after feeding the texts to DeepL. It works if all the file paths in it and the bash scripts it uses are correct. Currently it needs to be run from home of the repo by 
 
-# TODO ADD THE CHECK FOR EMPTY PARAGRAPHS DUE TO WARNING FROM FILIP
-
-
-
-# TODO SAY SOMETHING ABOUT THE AUTOMATE DOWNSAMPLING SCRIPT?
+```
+codedump/translation_pipeline/./auomate-forDeepL.sh
+```

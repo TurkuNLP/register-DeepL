@@ -16,6 +16,8 @@ def create_ids(amount):
 
 def make_docx(data):
     lang = sys.argv[1]
+    docx_path = sys.argv[2]
+    label_path = sys.argv[3]
     for i in range(len(data)):
         data[i] = data[i].replace("\n", "")
         data[i] = data[i].split("\t")
@@ -36,10 +38,10 @@ def make_docx(data):
         #print(len(line))
         # check whether the document has the right amount of characters
         if char_count + len(texts[i]) + len(ids[id_count]) + len("\n") > 950000: # what should be the exact number to make sure everything fits but does not go over?
-            doc.save(f"../preprocessing/ForDeepL/lol/{lang}_{doc_count:03d}.docx")
+            doc.save(f"{docx_path}{lang}_{doc_count:03d}.docx")
             
             # save the current labels as well to their own file
-            with open(f"../preprocessing/ForDeepL/full_labels/{lang}_{doc_count:03d}.labels.txt", 'w') as f:
+            with open(f"{label_path}{lang}_{doc_count:03d}.labels.txt", 'w') as f:
                 # if there are the ids use this:
                 final = []
                 for i in range(len(labels)):
@@ -111,9 +113,9 @@ def make_docx(data):
 
 
     # the loop ends but there is not enough characters so just save       
-    doc.save(f"../preprocessing/ForDeepL/lol/{lang}_{doc_count:03d}.docx")
+    doc.save(f"{docx_path}{lang}_{doc_count:03d}.docx")
     # save the current labels as well to their own file
-    with open(f'../preprocessing/ForDeepL/full_labels/{lang}_{doc_count:03d}.labels.txt', 'w') as f:
+    with open(f'{label_path}{lang}_{doc_count:03d}.labels.txt', 'w') as f:
         #if there are the ids use this:
         final = []
         for i in range(len(labels)):

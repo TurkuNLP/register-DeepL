@@ -15,22 +15,23 @@ module load pytorch
 
 
 EPOCHS=5
-LR=8e-6    # "1e-5 4e-6 5e-6 7e-5 8e-6"
-TR=0.4    # "0.3 0.4 0.5 0.6"
+LR=2e-5    # "1e-5 4e-6 5e-6 7e-5 8e-6"
+TR=0.5    # "0.3 0.4 0.5 0.6"
 BATCH=8
 
+PATH="data/AfterDeepL/full_labels/"
 
 echo "learning rate: $LR treshold: $TR batch: $BATCH epochs: $EPOCHS"
 
 
 # PORTUGUESE
-#srun python3 register-multilabel.py --train_set AfterDeepL/full_labels/pt_FINAL_full.tsv.gz --test_set test_sets/pt_test_modified.tsv --batch $BATCH --treshold $TR --epochs $EPOCHS --learning $LR --checkpoint ../multilabel/pt --lang pt --full
+#srun python3 register-multilabel.py --train_set {$PATH}pt_FINAL_full.tsv.gz --test_set data/test_sets/pt_test_modified.tsv --batch $BATCH --treshold $TR --epochs $EPOCHS --learning $LR --checkpoint ../multilabel/pt --lang pt --full
 
 # SPANISH
-#srun python3 register-multilabel.py --train_set AfterDeepL/full_labels/es_FINAL_full.tsv.gz --test_set test_sets/spa_test.tsv --batch $BATCH --treshold $TR --epochs $EPOCHS --learning $LR --checkpoint ../multilabel/spa --lang spa --full
+#srun python3 register-multilabel.py --train_set {$PATH}es_FINAL_full.tsv.gz --test_set data/test_sets/spa_test.tsv --batch $BATCH --treshold $TR --epochs $EPOCHS --learning $LR --checkpoint ../multilabel/spa --lang spa --full
 
 #JAPANESE
-srun python3 register-multilabel.py --train_set AfterDeepL/full_labels/ja_FINAL_full.tsv.gz --test_set test_sets/jpn_test.tsv --batch $BATCH --treshold $TR --epochs $EPOCHS --learning $LR --checkpoint ../multilabel/jpn --lang jpn --full
+srun python3 register-multilabel.py --train_set {$PATH}ja_FINAL_full.tsv.gz --test_set data/test_sets/jpn_test.tsv --batch $BATCH --treshold $TR --epochs $EPOCHS --learning $LR --checkpoint ../multilabel/jpn --lang jpn --full
 
 #CHINESE
 #srun python3 register-multilabel.py --train_set AfterDeepL/full_labels/chi_FINAL_full.tsv.gz --test_set test_sets/chi_all.tsv --batch $BATCH --treshold $TR --epochs $EPOCHS --learning $LR --checkpoint ../multilabel/chi --lang chi --full
@@ -42,7 +43,7 @@ srun python3 register-multilabel.py --train_set AfterDeepL/full_labels/ja_FINAL_
 # TEST="test_sets/jpn_test.tsv" #"test_sets/pt_test_modified.tsv" #"test_sets/spa_test.tsv" #"test_sets/jpn_test.tsv" #"test_sets/chi_all.tsv" 
 
 # echo $TEST
-# srun python3 register-multilabel.py --train_set downsampled/full_labels/all_downsampled_full.tsv.gz --test_set $TEST --batch $BATCH --treshold $TR --epochs $EPOCHS --learning $LR --checkpoint ../multilabel/downsampled --lang downsampled_pt --full
+# srun python3 register-multilabel.py --train_set data/downsampled/full_labels/all_downsampled_full.tsv.gz --test_set data/{$TEST} --batch $BATCH --treshold $TR --epochs $EPOCHS --learning $LR --checkpoint ../multilabel/downsampled --lang downsampled_pt --full
 
 
 echo "END: $(date)"
