@@ -16,26 +16,34 @@ def arguments():
         description="A script for getting register labeling benchmarks",
         epilog="Made by Anni Eskelinen"
     )
-    parser.add_argument('--train_set', nargs="+", required=True)
-    parser.add_argument('--test_set', nargs="+", required=True)
-    parser.add_argument('--full', action='store_true', default=False)
-    parser.add_argument('--model', default="xlm-roberta-large")
+    parser.add_argument('--train_set', nargs="+", required=True,
+        help="Give at least one or more train files separated by a space.")
+    parser.add_argument('--test_set', nargs="+", required=True,
+        help="Give at least one or more test files separated by a space.")
+    parser.add_argument('--full', action='store_true', default=False,
+        help="Decide whether or not to use full labels or only upper labels. Defaults to upper labels.")
+    parser.add_argument('--model', default="xlm-roberta-large",
+        help="Decide which model to use for training. Defaults to xlmr-large.")
     parser.add_argument('--treshold', type=float, default=0.5,
-        help="The treshold which to use for predictions, used in evaluation"
+        help="The treshold which to use for predictions, used in evaluation. Defaults to 0.5."
     )
     parser.add_argument('--batch', type=int, default=8,
-        help="The batch size for the model"
+        help="The batch size for the model. Defaults to 8."
     )
     parser.add_argument('--epochs', type=int, default=3,
-        help="The number of epochs to train for"
+        help="The number of epochs to train for. Defaults to 3."
     )
     parser.add_argument('--learning', type=float, default=8e-6,
-        help="The learning rate for the model"
+        help="The learning rate for the model. Defaults to 8e-6."
     )
-    parser.add_argument('--multilingual', action='store_true', default=False)
-    parser.add_argument('--saved', default="saved_models/all_multilingual")
-    parser.add_argument('--checkpoint', default="../multilabel/checkpoints")
-    parser.add_argument('--lang', default="")
+    parser.add_argument('--multilingual', action='store_true', default=False,
+        help="Decide whether or not to save the model. Defaults to not saving.")
+    parser.add_argument('--saved', default="saved_models/all_multilingual",
+        help="Give a new path for the saved model.")
+    parser.add_argument('--checkpoint', default="../multilabel/checkpoints",
+        help="Give a new path for the checkpoints")
+    parser.add_argument('--lang', default="",
+        help="Give a name to the saved plots.")
     args = parser.parse_args()
 
     return args 
