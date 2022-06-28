@@ -1,4 +1,4 @@
-# Register labeling code and data: 
+# Register labeling code and data 
 
 
 This repository includes code for register labeling (multi-label classification) using huggingface transformers and datasets and pytorch as well as code for making files for [translation](codedump/translation_pipeline/) and all the used data: originals, downsampled and translated.
@@ -15,10 +15,22 @@ It is possible to use either only upper labels (8) which tells the other upper c
 | en, fi, swe, fre  | spa  |
 | en, fi, swe, fre  | jp  |
 | en, fi, swe, fre  | zh  |
-| pt  | pt  |
-| spa  | spa  |
-| jp  | jp  |
-| zh  | zh  |
+| en, swe, fre  | fi  |
+| en, fi, fre  | swe  |
+| translated pt  | pt  |
+| translated spa  | spa  |
+| translated jp  | jp  |
+| translated zh  | zh  |
+| translated fi  | fi  |
+| translated swe  | swe  |
+
+## Results
+
+Results can be found here:
+https://docs.google.com/spreadsheets/d/18PIjD6Zvd-OPBe97tV2bbysrUFTlTBIeseL5uY3Jpbk/edit?usp=sharing 
+
+TLDR:
+cross-lingual transfer and translation work equally well with XLMR, japanese was the exception and got better results when using upper labels.
 
 
 ## How to use the script:
