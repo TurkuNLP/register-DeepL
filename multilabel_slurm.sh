@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH --job-name=translated
-#SBATCH --account=project_2005092 # 2000539
+#SBATCH --account=project_2000539 #2005092 # 2000539
 #SBATCH --partition=gpu
 #SBATCH --time=02:00:00 #1h 30 for 5 epochs, multi 5/6 hours
 #SBATCH --ntasks=1
@@ -45,10 +45,10 @@ module load pytorch
 
 
 EPOCHS=5 #5
-LR=2e-5    # "1e-5 4e-6 5e-6 7e-5 8e-6"
+LR=8e-6    # "1e-5 4e-6 5e-6 7e-5 8e-6"
 TR=0.4    # "0.3 0.4 0.5 0.6"
 BATCH=8
-PATH="data/AfterDeepL/main_labels_only/"
+DATAPATH="data/AfterDeepL/main_labels_only/" # for some reason this breaks the script atm and makes it not find srun command, PATH is already a variable I am overwriting?
 MODEL="xlm-roberta-large" #'TurkuNLP/bert-base-finnish-cased-v1' #"xlm-roberta-large"
 # PT 'neuralmind/bert-large-portuguese-cased'
 # ZH 'hfl/chinese-macbert-base'
@@ -56,35 +56,39 @@ MODEL="xlm-roberta-large" #'TurkuNLP/bert-base-finnish-cased-v1' #"xlm-roberta-l
 echo "learning rate: $LR treshold: $TR batch: $BATCH epochs: $EPOCHS"
 
 # PORTUGUESE
-# srun python3 register-multilabel.py --train_set {$PATH}pt_FINAL.modified.tsv.gz --test_set data/test_sets/main_labels_only/pt_test_modified.tsv \
+# srun python3 register-multilabel.py --train_set ${DATAPATH}pt_FINAL.modified.tsv.gz --test_set data/test_sets/main_labels_only/pt_test_modified.tsv \
 # --batch $BATCH --treshold $TR --epochs $EPOCHS --learning $LR --checkpoint ../multilabel/pt --lang pt --model $MODEL
 
 # SPANISH
-#srun python3 register-multilabel.py --train_set {$PATH}es_FINAL.modified.tsv.gz --test_set data/test_sets/main_labels_only/spa_test_modified.tsv --batch $BATCH --treshold $TR --epochs $EPOCHS --learning $LR --checkpoint ../multilabel/spa --lang spa --model $MODEL 
+#srun python3 register-multilabel.py --train_set ${DATAPATH}es_FINAL.modified.tsv.gz --test_set data/test_sets/main_labels_only/spa_test_modified.tsv --batch $BATCH --treshold $TR --epochs $EPOCHS --learning $LR --checkpoint ../multilabel/spa --lang spa --model $MODEL 
 
 #JAPANESE
-#srun python3 register-multilabel.py --train_set {$PATH}ja_FINAL.modified.tsv.gz --test_set data/test_sets/main_labels_only/jpn_test_modified.tsv --batch $BATCH --treshold $TR --epochs $EPOCHS --learning $LR --checkpoint ../multilabel/jpn --lang jpn --model $MODEL
+#srun python3 register-multilabel.py --train_set ${DATAPATH}ja_FINAL.modified.tsv.gz --test_set data/test_sets/main_labels_only/jpn_test_modified.tsv --batch $BATCH --treshold $TR --epochs $EPOCHS --learning $LR --checkpoint ../multilabel/jpn --lang jpn --model $MODEL
 
 #CHINESE
-# srun python3 register-multilabel.py --train_set {$PATH}chi_FINAL.modified.tsv.gz --test_set data/test_sets/main_labels_only/chi_all_modified.tsv \
+# srun python3 register-multilabel.py --train_set ${DATAPATH}chi_FINAL.modified.tsv.gz --test_set data/test_sets/main_labels_only/chi_all_modified.tsv \
 # --batch $BATCH --treshold $TR --epochs $EPOCHS --learning $LR --checkpoint ../multilabel/chi --lang chi --model $MODEL
 
 
+#TRANSFER
 
+# transfer test for some language with eng, fre, swe downsampled sets (= same as translated)
+srun python3 register-multilabel.py --train_set data/downsampled/main_labels_only/all_downsampled.tsv.gz --test_set data/test_sets/main_labels_only/pt_test_modified.tsv \
+--batch $BATCH --treshold $TR --epochs $EPOCHS --learning $LR --checkpoint ../multilabel/transfer --lang transfer
 
 
 
 
 #FINNISH TEST
-# srun python3 register-multilabel.py --train_set {$PATH}FIN_FINAL.modified.tsv.gz --test_set data/old-datasets/multilingual-register-data-new/main_labels_only/fi_test.tsv \
+# srun python3 register-multilabel.py --train_set ${DATAPATH}FIN_FINAL.modified.tsv.gz --test_set data/old-datasets/multilingual-register-data-new/main_labels_only/fi_test.tsv \
 # --batch $BATCH --treshold $TR --epochs $EPOCHS --learning $LR --checkpoint ../multilabel/fin --lang fin --model $MODEL
 
 # transfer test for finnish with eng, fre, swe downsampled sets (= same as translated)
-srun python3 register-multilabel.py --train_set data/downsampled/main_labels_only/all_downsampled.tsv.gz --test_set data/old-datasets/multilingual-register-data-new/main_labels_only/fi_test.tsv \
---batch $BATCH --treshold $TR --epochs $EPOCHS --learning $LR --checkpoint ../multilabel/fin --lang fintransfer
+# srun python3 register-multilabel.py --train_set data/downsampled/main_labels_only/all_downsampled.tsv.gz --test_set data/old-datasets/multilingual-register-data-new/main_labels_only/fi_test.tsv \
+# --batch $BATCH --treshold $TR --epochs $EPOCHS --learning $LR --checkpoint ../multilabel/fin --lang fintransfer
 
 #SWEDISH TEST
-# srun python3 register-multilabel.py --train_set {$PATH}SWE_FINAL.modified.tsv.gz --test_set data/old-datasets/multilingual-register-data-new/main_labels_only/swe_test.formatted_modified.tsv \
+# srun python3 register-multilabel.py --train_set ${DATAPATH}SWE_FINAL.modified.tsv.gz --test_set data/old-datasets/multilingual-register-data-new/main_labels_only/swe_test.formatted_modified.tsv \
 # --batch $BATCH --treshold $TR --epochs $EPOCHS --learning $LR --checkpoint ../multilabel/swe --lang swe
 
 #Swedish transfer test
@@ -99,8 +103,8 @@ srun python3 register-multilabel.py --train_set data/downsampled/main_labels_onl
 
 # MULTI/CROSSLINGUAL (all translated files and original downsampled as train and dev)
 
-# srun python3 register-multilabel.py --train_set {$PATH}chi_FINAL.tsv.gz \
-#  {$PATH}ja_FINAL.tsv.gz AfterDeepL/es_FINAL.tsv.gz {$PATH}pt_FINAL.tsv.gz \
+# srun python3 register-multilabel.py --train_set ${DATAPATH}chi_FINAL.tsv.gz \
+#  ${DATAPATH}ja_FINAL.tsv.gz AfterDeepL/es_FINAL.tsv.gz ${DATAPATH}pt_FINAL.tsv.gz \
 #  data/downsampled/main_labels_only/all_downsampled.tsv.gz  \
 #  --test_set test_sets/chi_all.tsv \
 #  --batch $BATCH --treshold $TR --epochs $EPOCHS \

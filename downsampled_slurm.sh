@@ -38,7 +38,7 @@ echo "learning rate: $LR treshold: $TR batch: $BATCH epochs: $EPOCHS"
 
 # TRY MULTILINGUAL DOWNSAMPLED MODEL AS WELL
 
-TEST="test_sets/pt_test_modified.tsv" #"test_sets/spa_test.tsv" #"test_sets/jpn_test.tsv" #"test_sets/chi_all.tsv" 
+TEST="test_sets/main_labels_only/pt_test_modified.tsv" #"test_sets/main_labels_only/spa_test_modified.tsv" #"test_sets/main_labels_only/jpn_test_modified.tsv" #"test_sets/main_labels_only/chi_all_modified.tsv" 
 
 echo $TEST
-srun python3 register-multilabel.py --train_set data/downsampled/main_labels_only/all_downsampled.tsv.gz --test_set data/{$TEST} --batch $BATCH --treshold $TR --epochs $EPOCHS --learning $LR --checkpoint ../multilabel/downsampled --lang downsampled --model $MODEL #--multilingual --saved saved_models/downsampled_multilingual
+srun python3 register-multilabel.py --train_set data/downsampled/main_labels_only/all_downsampled.tsv.gz --test_set data/$TEST --batch $BATCH --treshold $TR --epochs $EPOCHS --learning $LR --checkpoint ../multilabel/downsampled --lang downsampled --model $MODEL #--multilingual --saved saved_models/downsampled_multilingual
