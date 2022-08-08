@@ -75,7 +75,7 @@ train = datasets.load_dataset(
 train.shuffle(seed=1234)
 
 # this also shuffles by default (should I set a seed? or not shuffle anymore?) shuffle=False or seed=1234
-train, dev = train.train_test_split(test_size=0.2).values()
+#train, dev = train.train_test_split(test_size=0.2).values()
 
 test = datasets.load_dataset(
     "csv", 
@@ -88,7 +88,7 @@ test = datasets.load_dataset(
       "label":datasets.Value("string")})
     )
 
-dataset = datasets.DatasetDict({"train":train,"dev":dev, "test":test})
+dataset = datasets.DatasetDict({"train":train, "test":test}) #"dev":dev,
 pprint(dataset)
 
 
@@ -291,7 +291,7 @@ trainer = MultilabelTrainer(
     model=model,
     args=trainer_args,
     train_dataset=dataset["train"],
-    eval_dataset=dataset["dev"],
+    eval_dataset=dataset["test"],
     compute_metrics=compute_metrics,
     data_collator=data_collator,
     tokenizer = tokenizer,
@@ -311,9 +311,9 @@ def plot(logs, keys, labels, filename):
     plt.legend()
     plt.show()
     plt.savefig(filename) # set file name where to save the plots
+    plt.close() # this closes the current figure so that no texts are left hanging in the next one
 
 plot(training_logs.logs, ["loss", "eval_loss"], ["Training loss", "Evaluation loss"], "logs/"+ args.lang +"_loss.jpg")
-# TODO this second plot has the same legends that are in the loss so I should somehow reset the legend before making the second plot
 plot(training_logs.logs, ["eval_f1"], ["Evaluation F1-score"], "logs/"+ args.lang +"_f1.jpg")
 
 

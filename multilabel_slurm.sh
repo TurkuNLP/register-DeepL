@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH --job-name=translated
-#SBATCH --account=project_2000539 #2005092 # 2000539
+#SBATCH --account=project_2005092 #2005092 # 2000539
 #SBATCH --partition=gpu
 #SBATCH --time=02:00:00 #1h 30 for 5 epochs, multi 5/6 hours
 #SBATCH --ntasks=1
@@ -60,21 +60,21 @@ echo "learning rate: $LR treshold: $TR batch: $BATCH epochs: $EPOCHS"
 # --batch $BATCH --treshold $TR --epochs $EPOCHS --learning $LR --checkpoint ../multilabel/pt --lang pt --model $MODEL
 
 # SPANISH
-#srun python3 register-multilabel.py --train_set ${DATAPATH}es_FINAL.modified.tsv.gz --test_set data/test_sets/main_labels_only/spa_test_modified.tsv --batch $BATCH --treshold $TR --epochs $EPOCHS --learning $LR --checkpoint ../multilabel/spa --lang spa --model $MODEL 
+# srun python3 register-multilabel.py --train_set ${DATAPATH}es_FINAL.modified.tsv.gz --test_set data/test_sets/main_labels_only/spa_test_modified.tsv --batch $BATCH --treshold $TR --epochs $EPOCHS --learning $LR --checkpoint ../multilabel/spa --lang spa --model $MODEL 
 
 #JAPANESE
-#srun python3 register-multilabel.py --train_set ${DATAPATH}ja_FINAL.modified.tsv.gz --test_set data/test_sets/main_labels_only/jpn_test_modified.tsv --batch $BATCH --treshold $TR --epochs $EPOCHS --learning $LR --checkpoint ../multilabel/jpn --lang jpn --model $MODEL
+# srun python3 register-multilabel.py --train_set ${DATAPATH}ja_FINAL.modified.tsv.gz --test_set data/test_sets/main_labels_only/jpn_test_modified.tsv --batch $BATCH --treshold $TR --epochs $EPOCHS --learning $LR --checkpoint ../multilabel/jpn --lang jpn --model $MODEL
 
 #CHINESE
-# srun python3 register-multilabel.py --train_set ${DATAPATH}chi_FINAL.modified.tsv.gz --test_set data/test_sets/main_labels_only/chi_all_modified.tsv \
-# --batch $BATCH --treshold $TR --epochs $EPOCHS --learning $LR --checkpoint ../multilabel/chi --lang chi --model $MODEL
+srun python3 register-multilabel.py --train_set ${DATAPATH}chi_FINAL.modified.tsv.gz --test_set data/test_sets/main_labels_only/chi_all_modified.tsv \
+--batch $BATCH --treshold $TR --epochs $EPOCHS --learning $LR --checkpoint ../multilabel/chi --lang chi --model $MODEL
 
 
 #TRANSFER
 
 # transfer test for some language with eng, fre, swe downsampled sets (= same as translated)
-srun python3 register-multilabel.py --train_set data/downsampled/main_labels_only/all_downsampled.tsv.gz --test_set data/test_sets/main_labels_only/pt_test_modified.tsv \
---batch $BATCH --treshold $TR --epochs $EPOCHS --learning $LR --checkpoint ../multilabel/transfer --lang transfer
+# srun python3 register-multilabel.py --train_set data/downsampled/main_labels_only/all_downsampled.tsv.gz --test_set data/test_sets/main_labels_only/chi_all_modified.tsv \
+# --batch $BATCH --treshold $TR --epochs $EPOCHS --learning $LR --checkpoint ../multilabel/transfernodev3 --lang transfer
 
 
 
